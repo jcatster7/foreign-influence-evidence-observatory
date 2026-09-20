@@ -1,0 +1,12 @@
+{
+  "route": "public immutable GitHub release",
+  "release_url": "https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.3.0-preregistration",
+  "tag": "v0.3.0-preregistration",
+  "tag_commit_sha": "481b7ec13027cfd01c75c589679cd6193cef6b5c",
+  "published_at_utc": "2026-09-20T02:38:36Z",
+  "immutable": true,
+  "asset_name": "GITHUB_PREREGISTRATION_PACKET.zip",
+  "asset_sha256": "f859ddabedce0872638e74c611bea613058b44038a5f74b2f1b3260cec8efb22",
+  "osf_registration": false,
+  "external_spend_usd": 0
+}

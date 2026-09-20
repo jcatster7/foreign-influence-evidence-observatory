@@ -1,5 +1,9 @@
 # Exploratory search status
 
+## Preregistered acquisition attempt, 2026-09-20 UTC
+
+The [immutable GitHub preregistration](https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.3.0-preregistration) was published at 02:38:36 UTC. The registered harvester verified the public release and exact packet digest at 02:39:05 UTC, then OpenAlex returned HTTP 429 on the first query after four attempts. `searches/registered_openalex_2026-09-20_v0.3.0-preregistration/RUN.json` records an incomplete run with **zero acquired pages**. No registered screening queue or final result was produced. The fixed search can resume after the keyless daily allowance resets; all five cursor chains must finish. A free OpenAlex account/API key is another no-cost option, but the frozen script does not yet accept one, so it would require a logged prospective protocol/code amendment before use.
+
 As of 2026-09-19. This is **pre-registration scoping**, not the final systematic review or a PRISMA flow count.
 
 ## Reproducible discovery pass

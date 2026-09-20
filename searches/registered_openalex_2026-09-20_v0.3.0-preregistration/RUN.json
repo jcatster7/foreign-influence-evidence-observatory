@@ -1,0 +1,18 @@
+{
+  "registration_url": "https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.3.0-preregistration",
+  "cutoff_utc_date": "2026-09-20",
+  "queries": [
+    "\"foreign influence\" AND \"social media\" AND (Twitter OR Facebook OR TikTok OR Reddit OR YouTube)",
+    "\"coordinated inauthentic behavior\" AND (Twitter OR Facebook OR Instagram OR TikTok)",
+    "\"information operations\" AND \"social media\" AND (exposure OR recommendation)",
+    "\"bot detection\" AND (political OR election) AND validation",
+    "\"algorithmic amplification\" AND (political OR election) AND (Twitter OR Facebook OR TikTok OR YouTube)"
+  ],
+  "source": "OpenAlex core works",
+  "status": "in_progress",
+  "started_at_utc": "2026-09-20T02:39:05.928Z",
+  "registration_kind": "github_immutable_release",
+  "registration_verified_at_utc": "2026-09-20T02:39:05.928Z",
+  "registration_published_at_utc": "2026-09-20T02:38:36Z",
+  "registration_asset_sha256": "f859ddabedce0872638e74c611bea613058b44038a5f74b2f1b3260cec8efb22"
+}
