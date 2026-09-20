@@ -1,0 +1,59 @@
+{
+  "title": "Foreign Influence Evidence Observatory claim-boundary cases",
+  "version": "provisional-prior-known-2026-09-20",
+  "status": "software_self_check_only",
+  "case_file": "benchmark_cases.json",
+  "case_file_sha256": "0287d012983bcf105c8e8554f3248dc68b92a9514974f29fa228dfbe833cd47a",
+  "counts": {
+    "cases": 10,
+    "claim_slots": 80,
+    "supported": 8,
+    "contradicted": 1,
+    "unknown": 71,
+    "dataset_time_split_groups": 8,
+    "source_hash_present": 9,
+    "source_hash_missing": 1
+  },
+  "scope": {
+    "platforms": ["Facebook", "TikTok", "X", "YouTube"],
+    "units": "Mixed account, group, source-category, interaction, respondent, and aggregate claims; the unit is explicit in each case.",
+    "selection": "Prior-known, author-selected hard cases assembled before the immutable preregistration; not a random or held-out sample.",
+    "labels": ["supported", "contradicted", "unknown"],
+    "reference_rule": "Labels apply only to the exact claim subject and unit on each case, with the stated source and locator."
+  },
+  "provenance": {
+    "review": "Single-reviewer provisional labels on all ten cases; independent adjudication pending.",
+    "sources": "Four local report copies and six external source references. One external case has no content hash because its publisher blocked the local fetch.",
+    "rights": "Original case metadata may be shared under the repository text license. Linked articles and three local report copies retain their own rights; article full text and restricted platform account data are not redistributed. Case-level redistribution review remains pending."
+  },
+  "evaluation": {
+    "current_use": "Deterministic scorer self-check with safe, targeted-error, and overclaim fixtures.",
+    "unseen_detector_evaluation": false,
+    "held_out_test_set": false,
+    "population_false_positive_rate_available": false,
+    "verified_account_level_negative_denominator": false,
+    "split_rule_for_future_evaluation": "Hold out entire campaign or source dataset and collection-period blocks; never split rows from the same group across train and test."
+  },
+  "risks": [
+    "Selection favors illustrative claim-boundary failures and cannot estimate their prevalence.",
+    "Most claim slots are unknown; abstention and supported-claim coverage must accompany unsupported-assertion rates.",
+    "The one contradicted automation case is a group-level universal assertion, not an account-level reference-negative sample.",
+    "Historical detector versions, platforms, and periods cannot be assumed to represent current deployment.",
+    "Independent label adjudication and source-license review are incomplete."
+  ],
+  "prohibited_uses": [
+    "Do not report the scorer fixtures as performance of a real detector or language model.",
+    "Do not describe the contradicted-claim assertion rate as a population false-positive rate or false discovery proportion.",
+    "Do not turn unknown cases into verified negatives or publish account-level accusations from them.",
+    "Do not claim a final benchmark release until the preregistered gates pass."
+  ],
+  "release_gates": {
+    "source_hashes_complete": false,
+    "source_rights_reviewed": false,
+    "independent_adjudication_completed": false,
+    "held_out_campaign_period_split_established": false,
+    "unseen_predictions_scored": false,
+    "bias_card_present": true,
+    "ready_for_final_benchmark": false
+  }
+}

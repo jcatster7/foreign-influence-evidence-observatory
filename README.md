@@ -11,7 +11,7 @@ This project maps the evidence behind eight distinct social-media claims: accoun
 - [Platform disclosure source register](PLATFORM_SOURCE_REGISTER.md) for X, Meta, Reddit, TikTok, and YouTube/Google
 - [Independent reviewer workflow](REVIEWER_WORKFLOW.md) and packet generator for the frozen dual-review sample
 - [Meta-study options and pooling gates](META_STUDY_OPTIONS.md)
-- [Benchmark specification](BENCHMARK_SPEC.md), [ten provisional cases](benchmark_cases.json), [claim scorer](score_claims.ts), and [local report copies](sources/local_reports/README.md)
+- [Benchmark specification](BENCHMARK_SPEC.md), [ten provisional cases](benchmark_cases.json), [provisional benchmark card](BENCHMARK_CARD_PROVISIONAL.json), [claim scorer](score_claims.ts), and [local report copies](sources/local_reports/README.md)
 - [Low-cost displayed-country replication protocol](LOW_COST_REPLICATION_PROTOCOL.md)
 - [Search status](SEARCH_STATUS.md), [budget ledger](BUDGET_LEDGER.csv), [current amended preregistration packet](registration/GITHUB_PREREGISTRATION_PACKET_v0.3.1.zip), and [release verification record](registration/REGISTRATION_STATUS.json)
 
