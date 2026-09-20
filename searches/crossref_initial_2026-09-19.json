@@ -1,0 +1,1255 @@
+{
+  "method": "Crossref title search, top 30 per query; discovery only, not a complete systematic search",
+  "runs": [
+    {
+      "query": "foreign influence social media",
+      "url": "https://api.crossref.org/works?query.title=foreign+influence+social+media&rows=30&select=DOI%2Ctitle%2Ctype%2CURL%2Cpublished",
+      "fetched_at_utc": "2026-09-20T00:37:43.544Z",
+      "response_sha256": "268db03bf5d95e6c8128e4364f08c100e996f714bfa7b921f1759cf52c4ce057",
+      "reported_total_results": 3469378,
+      "returned": 30,
+      "items": [
+        {
+          "rank": 1,
+          "doi": "10.51685/jqd.2022.010",
+          "title": "Slanted Narratives, Social Media, and Foreign Influence in Libya",
+          "type": "journal-article",
+          "url": "https://doi.org/10.51685/jqd.2022.010",
+          "year": 2022
+        },
+        {
+          "rank": 2,
+          "doi": "10.1017/psrm.2022.9",
+          "title": "Asymmetric flooding as a tool for foreign influence on social media",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1017/psrm.2022.9",
+          "year": 2022
+        },
+        {
+          "rank": 3,
+          "doi": "10.64628/aai.mw7srapfp",
+          "title": "How foreign operations are manipulating social media to influence your views",
+          "type": "posted-content",
+          "url": "https://doi.org/10.64628/aai.mw7srapfp",
+          "year": 2024
+        },
+        {
+          "rank": 4,
+          "doi": "10.1093/acrefore/9780190228637.013.485",
+          "title": "Social Media and Foreign Policy",
+          "type": "reference-entry",
+          "url": "https://doi.org/10.1093/acrefore/9780190228637.013.485",
+          "year": 2017
+        },
+        {
+          "rank": 5,
+          "doi": "10.1038/s41404-020-0427-3",
+          "title": "Social media influence",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1038/s41404-020-0427-3",
+          "year": 2020
+        },
+        {
+          "rank": 6,
+          "doi": "10.1017/9781108628662.008",
+          "title": "Social influence and social media",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.1017/9781108628662.008",
+          "year": 2021
+        },
+        {
+          "rank": 7,
+          "doi": "10.1016/b978-0-12-811320-2.00006-x",
+          "title": "Social influence processes in social media",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.1016/b978-0-12-811320-2.00006-x",
+          "year": 2025
+        },
+        {
+          "rank": 8,
+          "doi": "10.1109/icimtech59029.2023.10278018",
+          "title": "Social Media Influence on Social Justice",
+          "type": "proceedings-article",
+          "url": "https://doi.org/10.1109/icimtech59029.2023.10278018",
+          "year": 2023
+        },
+        {
+          "rank": 9,
+          "doi": "10.1108/oxan-db263609",
+          "title": "Tehran may further restrict foreign social media",
+          "type": "other",
+          "url": "https://doi.org/10.1108/oxan-db263609",
+          "year": 2021
+        },
+        {
+          "rank": 10,
+          "doi": "10.24076/nsjis.v6i1.1062",
+          "title": "Foreign Policy, Public Diplomacy, and Social Media",
+          "type": "journal-article",
+          "url": "https://doi.org/10.24076/nsjis.v6i1.1062",
+          "year": 2023
+        },
+        {
+          "rank": 11,
+          "doi": "10.4018/978-1-5225-5652-7.ch015",
+          "title": "Social Media and Foreign Language Teacher Education",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.4018/978-1-5225-5652-7.ch015",
+          "year": null
+        },
+        {
+          "rank": 12,
+          "doi": "10.4018/978-1-5225-0483-2.ch014",
+          "title": "Social Media and Foreign Language Teacher Education",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.4018/978-1-5225-0483-2.ch014",
+          "year": 2017
+        },
+        {
+          "rank": 13,
+          "doi": "10.7249/rr2740",
+          "title": "Countering Russian Social Media Influence",
+          "type": "edited-book",
+          "url": "https://doi.org/10.7249/rr2740",
+          "year": 2018
+        },
+        {
+          "rank": 14,
+          "doi": "10.4018/979-8-3693-9246-1.ch003",
+          "title": "The Social Media Influence Journey",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.4018/979-8-3693-9246-1.ch003",
+          "year": 2024
+        },
+        {
+          "rank": 15,
+          "doi": "10.4135/9781452244723.n119",
+          "title": "Constituencies, Social Media Influence on",
+          "type": "reference-entry",
+          "url": "https://doi.org/10.4135/9781452244723.n119",
+          "year": 2014
+        },
+        {
+          "rank": 16,
+          "doi": "10.31617/1.2024(154)07",
+          "title": "Influence marketing in social media",
+          "type": "journal-article",
+          "url": "https://doi.org/10.31617/1.2024(154)07",
+          "year": 2024
+        },
+        {
+          "rank": 17,
+          "doi": "10.1037/e541652013-013",
+          "title": "Media Influence on Social Comparisons",
+          "type": "dataset",
+          "url": "https://doi.org/10.1037/e541652013-013",
+          "year": 2011
+        },
+        {
+          "rank": 18,
+          "doi": "10.18243/eon/2018.11.11.2",
+          "title": "Author Influence on Social Media",
+          "type": "journal-article",
+          "url": "https://doi.org/10.18243/eon/2018.11.11.2",
+          "year": 2018
+        },
+        {
+          "rank": 19,
+          "doi": "10.1080/23296151.2016.1165580",
+          "title": "Countering ISIS’s Social Media Influence",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1080/23296151.2016.1165580",
+          "year": 2016
+        },
+        {
+          "rank": 20,
+          "doi": "10.1177/0002764214527087",
+          "title": "Networked Influence in Social Media",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1177/0002764214527087",
+          "year": 2014
+        },
+        {
+          "rank": 21,
+          "doi": "10.4324/9781003050704-12",
+          "title": "The influence of social media",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.4324/9781003050704-12",
+          "year": 2020
+        },
+        {
+          "rank": 22,
+          "doi": "10.33752/ed-humanistics.v10i2.10794",
+          "title": "The Influence of Social Media on Students' Social Interactions",
+          "type": "journal-article",
+          "url": "https://doi.org/10.33752/ed-humanistics.v10i2.10794",
+          "year": 2025
+        },
+        {
+          "rank": 23,
+          "doi": "10.1108/oxan-db260617",
+          "title": "Foreign powers will use media for Balkan influence",
+          "type": "other",
+          "url": "https://doi.org/10.1108/oxan-db260617",
+          "year": 2021
+        },
+        {
+          "rank": 24,
+          "doi": "10.1177/004711789501200405",
+          "title": "The Influence of the Media on Foreign Policy",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1177/004711789501200405",
+          "year": 1995
+        },
+        {
+          "rank": 25,
+          "doi": "10.60060/jefi3811",
+          "title": "Foreign Influence over Media in the Western Balkans",
+          "type": "proceedings-article",
+          "url": "https://doi.org/10.60060/jefi3811",
+          "year": 2023
+        },
+        {
+          "rank": 26,
+          "doi": "10.36948/ijfmr.2025.v07i03.44930",
+          "title": "Social Media, an Influence: Impact of Social Media on Language Development",
+          "type": "journal-article",
+          "url": "https://doi.org/10.36948/ijfmr.2025.v07i03.44930",
+          "year": 2025
+        },
+        {
+          "rank": 27,
+          "doi": "10.31219/osf.io/4bpw7",
+          "title": "THE INFLUENCE SOCIAL MEDIA USE TIK-TOK IN SOCIAL MEDIA EFFECT",
+          "type": "posted-content",
+          "url": "https://doi.org/10.31219/osf.io/4bpw7",
+          "year": 2022
+        },
+        {
+          "rank": 28,
+          "doi": "10.1558/cj.21021",
+          "title": "Social Media and K–12 Foreign Language Education",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1558/cj.21021",
+          "year": 2024
+        },
+        {
+          "rank": 29,
+          "doi": "10.1177/0022343314558700",
+          "title": "Using social media to measure foreign policy dynamics",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1177/0022343314558700",
+          "year": 2015
+        },
+        {
+          "rank": 30,
+          "doi": "10.69760/aghel.02500116",
+          "title": "The Role of Foreign Languages in Social Media",
+          "type": "journal-article",
+          "url": "https://doi.org/10.69760/aghel.02500116",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "query": "coordinated inauthentic behavior social media",
+      "url": "https://api.crossref.org/works?query.title=coordinated+inauthentic+behavior+social+media&rows=30&select=DOI%2Ctitle%2Ctype%2CURL%2Cpublished",
+      "fetched_at_utc": "2026-09-20T00:37:44.632Z",
+      "response_sha256": "bce2f077b0bc64fc42d28fee5672d332ac4bf26043269b71c7dfa180f222cccb",
+      "reported_total_results": 2994911,
+      "returned": 30,
+      "items": [
+        {
+          "rank": 1,
+          "doi": "10.4337/9781800374263.coordinated.inauthentic.behavior",
+          "title": "Coordinated inauthentic behavior",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.4337/9781800374263.coordinated.inauthentic.behavior",
+          "year": 2022
+        },
+        {
+          "rank": 2,
+          "doi": "10.55041/ijsrem63590",
+          "title": "EXPOSING INAUTHENTIC SOCIAL MEDIA PROFILES",
+          "type": "journal-article",
+          "url": "https://doi.org/10.55041/ijsrem63590",
+          "year": 2026
+        },
+        {
+          "rank": 3,
+          "doi": "10.5210/spir.v2020i0.11132",
+          "title": "‘COORDINATED INAUTHENTIC BEHAVIOUR’ AND OTHER ONLINE INFLUENCE        OPERATIONS IN SOCIAL MEDIA SPACES",
+          "type": "journal-article",
+          "url": "https://doi.org/10.5210/spir.v2020i0.11132",
+          "year": 2020
+        },
+        {
+          "rank": 4,
+          "doi": "10.4324/9781003496106-4",
+          "title": "Coordinated Inauthentic Activity",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.4324/9781003496106-4",
+          "year": 2024
+        },
+        {
+          "rank": 5,
+          "doi": "10.1016/j.dss.2022.113819",
+          "title": "Coordinated inauthentic behavior and information spreading on Twitter",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1016/j.dss.2022.113819",
+          "year": 2022
+        },
+        {
+          "rank": 6,
+          "doi": "10.3389/fsoc.2023.1141416",
+          "title": "Coordinated inauthentic behavior: An innovative manipulation tactic to amplify COVID-19 anti-vaccine communication outreach via social media",
+          "type": "journal-article",
+          "url": "https://doi.org/10.3389/fsoc.2023.1141416",
+          "year": 2023
+        },
+        {
+          "rank": 7,
+          "doi": "10.1201/9781003415060-8",
+          "title": "Studying Fake News Proliferation by Detecting Coordinated Inauthentic Behavior",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.1201/9781003415060-8",
+          "year": 2023
+        },
+        {
+          "rank": 8,
+          "doi": "10.4324/9781003403203-14",
+          "title": "Coordinated Amplification, Coordinated Inauthentic Behaviour, Orchestrated Campaigns",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.4324/9781003403203-14",
+          "year": 2023
+        },
+        {
+          "rank": 9,
+          "doi": "10.56726/irjmets43492",
+          "title": "PREDICTING INAUTHENTIC ACCOUNTS ON SOCIAL MEDIA USING SVM",
+          "type": "journal-article",
+          "url": "https://doi.org/10.56726/irjmets43492",
+          "year": 2023
+        },
+        {
+          "rank": 10,
+          "doi": "10.1177/08944393211019951",
+          "title": "Inauthentic Newsfeeds and Agenda Setting in a Coordinated Inauthentic Information Operation",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1177/08944393211019951",
+          "year": 2021
+        },
+        {
+          "rank": 11,
+          "doi": "10.20944/preprints202601.0547.v1",
+          "title": "Detecting Coordinated Inauthentic Behavior Under Symmetry Breaking: An Adaptive Memory-Guided Causal Framework",
+          "type": "posted-content",
+          "url": "https://doi.org/10.20944/preprints202601.0547.v1",
+          "year": 2026
+        },
+        {
+          "rank": 12,
+          "doi": "10.1609/icwsm.v18i1.31305",
+          "title": "Socio-Linguistic Characteristics of Coordinated Inauthentic Accounts",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1609/icwsm.v18i1.31305",
+          "year": 2024
+        },
+        {
+          "rank": 13,
+          "doi": "10.1609/icwsm.v15i1.18074",
+          "title": "Coordinated Behavior on Social Media in 2019 UK General Election",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1609/icwsm.v15i1.18074",
+          "year": 2021
+        },
+        {
+          "rank": 14,
+          "doi": "10.1016/j.osnem.2022.100224",
+          "title": "Ready-to-(ab)use: From fake account trafficking to coordinated inauthentic behavior on Twitter",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1016/j.osnem.2022.100224",
+          "year": 2022
+        },
+        {
+          "rank": 15,
+          "doi": "10.2139/ssrn.7140738",
+          "title": "Using AI to Distinguish Between Organic Public Sentiment and State-Backed Inauthentic Behavior on Social Media",
+          "type": "posted-content",
+          "url": "https://doi.org/10.2139/ssrn.7140738",
+          "year": 2026
+        },
+        {
+          "rank": 16,
+          "doi": "10.1609/icwsm.v20i1.42711",
+          "title": "Coordinated Inauthentic Behavior on TikTok: Challenges and Opportunities for Detection in a Video-First Ecosystem",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1609/icwsm.v20i1.42711",
+          "year": 2026
+        },
+        {
+          "rank": 17,
+          "doi": "10.19079/metodo.2.2.227",
+          "title": "Social networks as inauthentic sociality",
+          "type": "journal-article",
+          "url": "https://doi.org/10.19079/metodo.2.2.227",
+          "year": 2014
+        },
+        {
+          "rank": 18,
+          "doi": "10.1177/29768624251369784",
+          "title": "Coordinated inauthentic behaviour on Facebook? A typology of manufactured attention",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1177/29768624251369784",
+          "year": 2025
+        },
+        {
+          "rank": 19,
+          "doi": "10.1145/3778356",
+          "title": "A Compression-Based Approach to Detecting Automated and Coordinated Behavior on Social Media",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1145/3778356",
+          "year": 2026
+        },
+        {
+          "rank": 20,
+          "doi": "10.12801/1947-5403.2025.17.01.02",
+          "title": "EDM, Tech House, or Business Techno? “Trolling” Inauthentic Club Music Through Social Media",
+          "type": "journal-article",
+          "url": "https://doi.org/10.12801/1947-5403.2025.17.01.02",
+          "year": 2025
+        },
+        {
+          "rank": 21,
+          "doi": "10.32614/cran.package.coortweet",
+          "title": "CooRTweet: Coordinated Networks Detection on Social Media",
+          "type": "dataset",
+          "url": "https://doi.org/10.32614/cran.package.coortweet",
+          "year": 2023
+        },
+        {
+          "rank": 22,
+          "doi": "10.3389/fcomm.2025.1510144",
+          "title": "There was coordinated inauthentic user behavior in the COVID-19 German X-discourse, but did it really matter?",
+          "type": "journal-article",
+          "url": "https://doi.org/10.3389/fcomm.2025.1510144",
+          "year": 2025
+        },
+        {
+          "rank": 23,
+          "doi": "10.1109/ic3sis69949.2026.11608305",
+          "title": "Graph-Enhanced Attention Networks for Detecting Relational Patterns in Inauthentic Social Media Profiles",
+          "type": "proceedings-article",
+          "url": "https://doi.org/10.1109/ic3sis69949.2026.11608305",
+          "year": 2026
+        },
+        {
+          "rank": 24,
+          "doi": "10.33767/osf.io/zakfn_v1",
+          "title": "Manufactured Virality: Astroturfing, Coordinated Inauthentic Behavior, and the Erosion of Organic Public Discourse Among Short-Form Video Users",
+          "type": "posted-content",
+          "url": "https://doi.org/10.33767/osf.io/zakfn_v1",
+          "year": 2026
+        },
+        {
+          "rank": 25,
+          "doi": "10.12681/eadd/45065",
+          "title": "Social media behavior analysis",
+          "type": "dissertation",
+          "url": "https://doi.org/10.12681/eadd/45065",
+          "year": null
+        },
+        {
+          "rank": 26,
+          "doi": "10.1108/ejm-03-2017-0182",
+          "title": "Social media engagement behavior",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1108/ejm-03-2017-0182",
+          "year": 2019
+        },
+        {
+          "rank": 27,
+          "doi": "10.1136/bmj-2026-100020",
+          "title": "Social media restrictions require timely and coordinated evaluation",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1136/bmj-2026-100020",
+          "year": 2026
+        },
+        {
+          "rank": 28,
+          "doi": "10.1002/9781119370680.ch18",
+          "title": "Social Media for Social Behavior Change",
+          "type": "other",
+          "url": "https://doi.org/10.1002/9781119370680.ch18",
+          "year": 2016
+        },
+        {
+          "rank": 29,
+          "doi": "10.1016/j.jjimei.2026.100420",
+          "title": "Detecting coordinated inauthentic behavior on twitter: A local outlier factor approach to the case of Inna Afinogenova in Colombia",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1016/j.jjimei.2026.100420",
+          "year": 2026
+        },
+        {
+          "rank": 30,
+          "doi": "10.1016/j.jretconser.2023.103521",
+          "title": "Authentic isn't always best: When inauthentic social media influencers induce positive consumer purchase intention through inspiration",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1016/j.jretconser.2023.103521",
+          "year": 2023
+        }
+      ]
+    },
+    {
+      "query": "social bot detection political influence",
+      "url": "https://api.crossref.org/works?query.title=social+bot+detection+political+influence&rows=30&select=DOI%2Ctitle%2Ctype%2CURL%2Cpublished",
+      "fetched_at_utc": "2026-09-20T00:37:46.137Z",
+      "response_sha256": "97d6b5476f6a1d43aa88d52622f916b5728725b5d15357dd004646e3a94af842",
+      "reported_total_results": 4541342,
+      "returned": 30,
+      "items": [
+        {
+          "rank": 1,
+          "doi": "10.1145/3313294.3313386",
+          "title": "Bot Detection in Reddit Political Discussion",
+          "type": "proceedings-article",
+          "url": "https://doi.org/10.1145/3313294.3313386",
+          "year": 2019
+        },
+        {
+          "rank": 2,
+          "doi": "10.30837/bi.2018.1(90).13",
+          "title": "Bot detection in social networks",
+          "type": "journal-article",
+          "url": "https://doi.org/10.30837/bi.2018.1(90).13",
+          "year": 2018
+        },
+        {
+          "rank": 3,
+          "doi": "10.55730/1300-0632.3848",
+          "title": "Evaluation of social bot detection models",
+          "type": "journal-article",
+          "url": "https://doi.org/10.55730/1300-0632.3848",
+          "year": 2022
+        },
+        {
+          "rank": 4,
+          "doi": "10.1007/978-3-030-01704-0_4",
+          "title": "Social Bot Detection Using Tweets Similarity",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.1007/978-3-030-01704-0_4",
+          "year": 2018
+        },
+        {
+          "rank": 5,
+          "doi": "10.1201/9781315181080-12",
+          "title": "Feature Engineering for Social Bot Detection",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.1201/9781315181080-12",
+          "year": 2018
+        },
+        {
+          "rank": 6,
+          "doi": "10.1145/3409116",
+          "title": "A decade of social bot detection",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1145/3409116",
+          "year": 2020
+        },
+        {
+          "rank": 7,
+          "doi": "10.1109/itca52113.2020.00136",
+          "title": "Social Bot Detection Using \"Features Fusion\"",
+          "type": "proceedings-article",
+          "url": "https://doi.org/10.1109/itca52113.2020.00136",
+          "year": 2020
+        },
+        {
+          "rank": 8,
+          "doi": "10.1109/icme55011.2023.00376",
+          "title": "Social Bot Detection Based on Window Strategy",
+          "type": "proceedings-article",
+          "url": "https://doi.org/10.1109/icme55011.2023.00376",
+          "year": 2023
+        },
+        {
+          "rank": 9,
+          "doi": "10.1109/transai54797.2022.00022",
+          "title": "Twitter Bot Detection using Social Network Analysis",
+          "type": "proceedings-article",
+          "url": "https://doi.org/10.1109/transai54797.2022.00022",
+          "year": 2022
+        },
+        {
+          "rank": 10,
+          "doi": "10.1007/978-3-032-13254-3_6",
+          "title": "Integrating Graph Features for Social Bot Detection",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.1007/978-3-032-13254-3_6",
+          "year": 2026
+        },
+        {
+          "rank": 11,
+          "doi": "10.1145/3433174.3433589",
+          "title": "Social networks bot detection using Benford’s law",
+          "type": "proceedings-article",
+          "url": "https://doi.org/10.1145/3433174.3433589",
+          "year": 2020
+        },
+        {
+          "rank": 12,
+          "doi": "10.31979/etd.j2wj-qnv8",
+          "title": "Social Media Bot Detection using Dropout-GAN",
+          "type": "dissertation",
+          "url": "https://doi.org/10.31979/etd.j2wj-qnv8",
+          "year": null
+        },
+        {
+          "rank": 13,
+          "doi": "10.1007/s11416-024-00521-5",
+          "title": "Social media bot detection using Dropout-GAN",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1007/s11416-024-00521-5",
+          "year": 2024
+        },
+        {
+          "rank": 14,
+          "doi": "10.1109/icds53782.2021.9626752",
+          "title": "Word Embedding for Social Bot Detection Systems",
+          "type": "proceedings-article",
+          "url": "https://doi.org/10.1109/icds53782.2021.9626752",
+          "year": 2021
+        },
+        {
+          "rank": 15,
+          "doi": "10.1007/978-981-96-2373-0_5",
+          "title": "RoleScan: Enhancing Social Bot Detection Using Social Role Vector",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.1007/978-981-96-2373-0_5",
+          "year": 2025
+        },
+        {
+          "rank": 16,
+          "doi": "10.1109/isi.2017.8004887",
+          "title": "Behavior enhanced deep bot detection in social media",
+          "type": "proceedings-article",
+          "url": "https://doi.org/10.1109/isi.2017.8004887",
+          "year": 2017
+        },
+        {
+          "rank": 17,
+          "doi": "10.1109/icbase70763.2026.11619416",
+          "title": "Heterogeneous Temporal Graph Transformer for Social Bot Detection",
+          "type": "proceedings-article",
+          "url": "https://doi.org/10.1109/icbase70763.2026.11619416",
+          "year": 2026
+        },
+        {
+          "rank": 18,
+          "doi": "10.1109/tifs.2023.3254429",
+          "title": "Deep Learning Based Social Bot Detection on Twitter",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1109/tifs.2023.3254429",
+          "year": 2023
+        },
+        {
+          "rank": 19,
+          "doi": "10.1109/csnt69054.2026.11502312",
+          "title": "Social Media Bot Detection with Multimodal Sentiment Analysis",
+          "type": "proceedings-article",
+          "url": "https://doi.org/10.1109/csnt69054.2026.11502312",
+          "year": 2026
+        },
+        {
+          "rank": 20,
+          "doi": "10.1007/s13278-024-01387-7",
+          "title": "Adversarial botometer: adversarial analysis for social bot detection",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1007/s13278-024-01387-7",
+          "year": 2024
+        },
+        {
+          "rank": 21,
+          "doi": "10.17721/ists.2025.9.11-17",
+          "title": "Social media automated account (bot) detection system architecture",
+          "type": "journal-article",
+          "url": "https://doi.org/10.17721/ists.2025.9.11-17",
+          "year": 2025
+        },
+        {
+          "rank": 22,
+          "doi": "10.1007/978-3-031-28183-9_14",
+          "title": "Social Media Bot Detection Using Machine Learning Approach",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.1007/978-3-031-28183-9_14",
+          "year": 2023
+        },
+        {
+          "rank": 23,
+          "doi": "10.1145/3660522",
+          "title": "Unsupervised Social Bot Detection via Structural Information Theory",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1145/3660522",
+          "year": 2024
+        },
+        {
+          "rank": 24,
+          "doi": "10.1117/12.3119552",
+          "title": "Social bot detection with dynamic heterogeneous graph networks",
+          "type": "proceedings-article",
+          "url": "https://doi.org/10.1117/12.3119552",
+          "year": 2026
+        },
+        {
+          "rank": 25,
+          "doi": "10.5210/fm.v26i7.11474",
+          "title": "The coming age of adversarial social bot detection",
+          "type": "journal-article",
+          "url": "https://doi.org/10.5210/fm.v26i7.11474",
+          "year": 2021
+        },
+        {
+          "rank": 26,
+          "doi": "10.1109/c3it60531.2024.10829441",
+          "title": "Malicious Social Bot Detection in Twitter: A Review",
+          "type": "proceedings-article",
+          "url": "https://doi.org/10.1109/c3it60531.2024.10829441",
+          "year": 2024
+        },
+        {
+          "rank": 27,
+          "doi": "10.1177/00187208231210145",
+          "title": "Improving Social Bot Detection Through Aid and Training",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1177/00187208231210145",
+          "year": 2023
+        },
+        {
+          "rank": 28,
+          "doi": "10.17721/1812-5409.2025/2.29",
+          "title": "Architecture of a social media bot detection system",
+          "type": "journal-article",
+          "url": "https://doi.org/10.17721/1812-5409.2025/2.29",
+          "year": 2025
+        },
+        {
+          "rank": 29,
+          "doi": "10.3390/mca25030058",
+          "title": "Bot Detection on Social Networks Using Persistent Homology",
+          "type": "journal-article",
+          "url": "https://doi.org/10.3390/mca25030058",
+          "year": 2020
+        },
+        {
+          "rank": 30,
+          "doi": "10.1287/isre.2022.1136",
+          "title": "Augmenting Social Bot Detection with Crowd-Generated Labels",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1287/isre.2022.1136",
+          "year": 2023
+        }
+      ]
+    },
+    {
+      "query": "algorithmic amplification political social media",
+      "url": "https://api.crossref.org/works?query.title=algorithmic+amplification+political+social+media&rows=30&select=DOI%2Ctitle%2Ctype%2CURL%2Cpublished",
+      "fetched_at_utc": "2026-09-20T00:37:47.424Z",
+      "response_sha256": "feb23b9423a8fe624cb228557354e4a5303a2fdc278f623fcfe8c928c6f0ca68",
+      "reported_total_results": 2492205,
+      "returned": 30,
+      "items": [
+        {
+          "rank": 1,
+          "doi": "10.1007/978-3-031-53503-1_11",
+          "title": "Algorithmic Amplification of Politics and Engagement Maximization on Social Media",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.1007/978-3-031-53503-1_11",
+          "year": 2024
+        },
+        {
+          "rank": 2,
+          "doi": "10.59075/k8ra0b02",
+          "title": "Algorithmic Amplification and Political Discourse: The Role of AI in Shaping Public Opinion on Social Media in Pakistan",
+          "type": "journal-article",
+          "url": "https://doi.org/10.59075/k8ra0b02",
+          "year": 2025
+        },
+        {
+          "rank": 3,
+          "doi": "10.31234/osf.io/vkqfu_v2",
+          "title": "Algorithmic Trait Amplification (ATA): A Theoretical Model of Narcissistic Trait Intensification in Algorithmic Social Media Environments",
+          "type": "posted-content",
+          "url": "https://doi.org/10.31234/osf.io/vkqfu_v2",
+          "year": 2026
+        },
+        {
+          "rank": 4,
+          "doi": "10.1080/1369118x.2025.2561046",
+          "title": "Hijacking algorithmic bias: analyzing the political discourse around ChatGPT on social media",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1080/1369118x.2025.2561046",
+          "year": 2025
+        },
+        {
+          "rank": 5,
+          "doi": "10.14711/thesis-991012873360703412",
+          "title": "Algorithmic impacts on social media",
+          "type": "dissertation",
+          "url": "https://doi.org/10.14711/thesis-991012873360703412",
+          "year": null
+        },
+        {
+          "rank": 6,
+          "doi": "10.4324/9780429428616-40",
+          "title": "Algorithmic Antisemitism on Social Media",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.4324/9780429428616-40",
+          "year": 2023
+        },
+        {
+          "rank": 7,
+          "doi": "10.55016/ojs/muj.v1i2.77457",
+          "title": "Algorithmic Bias of Social Media",
+          "type": "journal-article",
+          "url": "https://doi.org/10.55016/ojs/muj.v1i2.77457",
+          "year": 2023
+        },
+        {
+          "rank": 8,
+          "doi": "10.1007/978-1-4842-4885-0_11",
+          "title": "Algorithmic Biases and Social Media",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.1007/978-1-4842-4885-0_11",
+          "year": 2019
+        },
+        {
+          "rank": 9,
+          "doi": "10.1145/3641523.3665172",
+          "title": "Algorithmic Amplification",
+          "type": "proceedings-article",
+          "url": "https://doi.org/10.1145/3641523.3665172",
+          "year": 2024
+        },
+        {
+          "rank": 10,
+          "doi": "10.33425/3066-1226.1249",
+          "title": "Social Media Amplification System",
+          "type": "journal-article",
+          "url": "https://doi.org/10.33425/3066-1226.1249",
+          "year": 2026
+        },
+        {
+          "rank": 11,
+          "doi": "10.55966/assaj.2025.4.1.063",
+          "title": "Digital Disruption in Political PR: From Gatekeepers to Algorithmic Amplification",
+          "type": "journal-article",
+          "url": "https://doi.org/10.55966/assaj.2025.4.1.063",
+          "year": 2025
+        },
+        {
+          "rank": 12,
+          "doi": "10.11114/smc.v14i4.8716",
+          "title": "Rethinking Platform Affordances: Digital Engagement and Youth Political Participation in Algorithmic Social Media",
+          "type": "journal-article",
+          "url": "https://doi.org/10.11114/smc.v14i4.8716",
+          "year": 2026
+        },
+        {
+          "rank": 13,
+          "doi": "10.24195/2414-9616.2026-3.13",
+          "title": "Predictive modeling of political conflict escalation based on algorithmic analysis of social media",
+          "type": "journal-article",
+          "url": "https://doi.org/10.24195/2414-9616.2026-3.13",
+          "year": 2026
+        },
+        {
+          "rank": 14,
+          "doi": "10.1145/3311957.3359476",
+          "title": "Visualizing Algorithmic Selection in Social Media",
+          "type": "proceedings-article",
+          "url": "https://doi.org/10.1145/3311957.3359476",
+          "year": 2019
+        },
+        {
+          "rank": 15,
+          "doi": "10.52842/conf.caadria.2014.357",
+          "title": "Contextual Social Media as Algorithmic Engine",
+          "type": "proceedings-article",
+          "url": "https://doi.org/10.52842/conf.caadria.2014.357",
+          "year": 2014
+        },
+        {
+          "rank": 16,
+          "doi": "10.37282/991819.21.10",
+          "title": "On Algorithmic Amplification",
+          "type": "journal-article",
+          "url": "https://doi.org/10.37282/991819.21.10",
+          "year": 2021
+        },
+        {
+          "rank": 17,
+          "doi": "10.31305/rrijm.2022.v07.i10.004",
+          "title": "The Algorithmic Amplification of Concerns in a Media-Saturated World",
+          "type": "journal-article",
+          "url": "https://doi.org/10.31305/rrijm.2022.v07.i10.004",
+          "year": 2022
+        },
+        {
+          "rank": 18,
+          "doi": "10.54254/2753-7064/2026.bj32521",
+          "title": "Emotional Dynamics, Algorithmic Amplification Mechanisms, and Opinion Polarization in Celebrity Fan Culture on Social Media Platforms",
+          "type": "journal-article",
+          "url": "https://doi.org/10.54254/2753-7064/2026.bj32521",
+          "year": 2026
+        },
+        {
+          "rank": 19,
+          "doi": "10.61882/ist.202502.07.04",
+          "title": "Algorithmic Amplification of Surgical Misinformation: How Social Media Prioritizes Engagement Over Accuracy and Distorts Patient Choices",
+          "type": "journal-article",
+          "url": "https://doi.org/10.61882/ist.202502.07.04",
+          "year": 2025
+        },
+        {
+          "rank": 20,
+          "doi": "10.1257/rct.10933-2.0",
+          "title": "Algorithmic Drivers of Behavior on Social Media",
+          "type": "dataset",
+          "url": "https://doi.org/10.1257/rct.10933-2.0",
+          "year": 2023
+        },
+        {
+          "rank": 21,
+          "doi": "10.29235/1818-9857-2025-12-60-64",
+          "title": "Operating principles of social media algorithmic systems",
+          "type": "journal-article",
+          "url": "https://doi.org/10.29235/1818-9857-2025-12-60-64",
+          "year": 2026
+        },
+        {
+          "rank": 22,
+          "doi": "10.1257/rct.10933",
+          "title": "Algorithmic Drivers of Behavior on Social Media",
+          "type": "dataset",
+          "url": "https://doi.org/10.1257/rct.10933",
+          "year": 2023
+        },
+        {
+          "rank": 23,
+          "doi": "10.2139/ssrn.7219959",
+          "title": "Generation Z, Social Media, and Algorithmic Power",
+          "type": "posted-content",
+          "url": "https://doi.org/10.2139/ssrn.7219959",
+          "year": 2026
+        },
+        {
+          "rank": 24,
+          "doi": "10.1257/rct.10933-1.0",
+          "title": "Algorithmic Drivers of Behavior on Social Media",
+          "type": "dataset",
+          "url": "https://doi.org/10.1257/rct.10933-1.0",
+          "year": 2023
+        },
+        {
+          "rank": 25,
+          "doi": "10.1038/s41562-023-01604-x",
+          "title": "Amplification of emotion on social media",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1038/s41562-023-01604-x",
+          "year": 2023
+        },
+        {
+          "rank": 26,
+          "doi": "10.4135/9781452244723.n490",
+          "title": "Social Media Political Gaming",
+          "type": "reference-entry",
+          "url": "https://doi.org/10.4135/9781452244723.n490",
+          "year": 2014
+        },
+        {
+          "rank": 27,
+          "doi": "10.2139/ssrn.5243669",
+          "title": "Perceived Influence Capital and Algorithmic Amplification: A Strategic Analysis of Attention-Economy Asymmetries in Social Media Commerce",
+          "type": "posted-content",
+          "url": "https://doi.org/10.2139/ssrn.5243669",
+          "year": 2025
+        },
+        {
+          "rank": 28,
+          "doi": "10.3390/journalmedia7030137",
+          "title": "Resilient Information Quality in Social Media Environments: A Framework for Evaluating Information Under Misinformation and Algorithmic Amplification",
+          "type": "journal-article",
+          "url": "https://doi.org/10.3390/journalmedia7030137",
+          "year": 2026
+        },
+        {
+          "rank": 29,
+          "doi": "10.1093/hcr/hqac012",
+          "title": "Algorithmic Agents in the Hybrid Media System: Social Bots, Selective Amplification, and Partisan News about COVID-19",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1093/hcr/hqac012",
+          "year": 2022
+        },
+        {
+          "rank": 30,
+          "doi": "10.37082/ijirmps.v13.i2.232667",
+          "title": "Algorithmic Campaigning: Mapping the Agenda-Building Power of Political Parties on Social Media during Elections",
+          "type": "journal-article",
+          "url": "https://doi.org/10.37082/ijirmps.v13.i2.232667",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "query": "foreign information operations recommendation feed",
+      "url": "https://api.crossref.org/works?query.title=foreign+information+operations+recommendation+feed&rows=30&select=DOI%2Ctitle%2Ctype%2CURL%2Cpublished",
+      "fetched_at_utc": "2026-09-20T00:37:48.333Z",
+      "response_sha256": "2f5580396be0dd8ef9617217f7a75f02451fc648aafa0d4039d67e5fdf63f7eb",
+      "reported_total_results": 1950522,
+      "returned": 30,
+      "items": [
+        {
+          "rank": 1,
+          "doi": "10.4324/9781315037448-6",
+          "title": "Foreign Operations",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.4324/9781315037448-6",
+          "year": 2017
+        },
+        {
+          "rank": 2,
+          "doi": "10.1093/rfs/hhv039",
+          "title": "Thinking Outside the Borders: Investors' Underreaction to Foreign Operations Information",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1093/rfs/hhv039",
+          "year": 2015
+        },
+        {
+          "rank": 3,
+          "doi": "10.1093/hebz/9780198861898.003.0012",
+          "title": "Foreign Operations Modes",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.1093/hebz/9780198861898.003.0012",
+          "year": 2022
+        },
+        {
+          "rank": 4,
+          "doi": "10.1002/tie.5060060412",
+          "title": "Financing foreign operations",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1002/tie.5060060412",
+          "year": 1964
+        },
+        {
+          "rank": 5,
+          "doi": "10.4324/9780203018415-11",
+          "title": "Foreign espionage operations",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.4324/9780203018415-11",
+          "year": 2007
+        },
+        {
+          "rank": 6,
+          "doi": "10.4324/9780203018415.ch5",
+          "title": "Foreign espionage operations",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.4324/9780203018415.ch5",
+          "year": 2007
+        },
+        {
+          "rank": 7,
+          "doi": "10.1002/tie.5060070201",
+          "title": "Controlling Foreign Operations",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1002/tie.5060070201",
+          "year": 1965
+        },
+        {
+          "rank": 8,
+          "doi": "10.1002/9781118729786",
+          "title": "Foreign Exchange Operations",
+          "type": "monograph",
+          "url": "https://doi.org/10.1002/9781118729786",
+          "year": 2013
+        },
+        {
+          "rank": 9,
+          "doi": "10.1002/tie.4270060412",
+          "title": "Financing foreign operations",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1002/tie.4270060412",
+          "year": 1964
+        },
+        {
+          "rank": 10,
+          "doi": "10.1002/tie.5060070106",
+          "title": "Financing Foreign Operations",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1002/tie.5060070106",
+          "year": 1965
+        },
+        {
+          "rank": 11,
+          "doi": "10.7249/rra2853-1",
+          "title": "Defending American Interests Abroad: Early Detection of Foreign Malign Information Operations",
+          "type": "edited-book",
+          "url": "https://doi.org/10.7249/rra2853-1",
+          "year": 2025
+        },
+        {
+          "rank": 12,
+          "doi": "10.2308/tar-7059735",
+          "title": "Reporting Foreign Operations (Book).",
+          "type": "journal-article",
+          "url": "https://doi.org/10.2308/tar-7059735",
+          "year": 1957
+        },
+        {
+          "rank": 13,
+          "doi": "10.5006/c1978-78145",
+          "title": "Corrosion in Foreign Operations",
+          "type": "proceedings-article",
+          "url": "https://doi.org/10.5006/c1978-78145",
+          "year": 1978
+        },
+        {
+          "rank": 14,
+          "doi": "10.1136/bmj.1.5345.1609-c",
+          "title": "Foreign Bodies and Operations",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1136/bmj.1.5345.1609-c",
+          "year": 1963
+        },
+        {
+          "rank": 15,
+          "doi": "10.2307/4589006",
+          "title": "Health in Foreign Operations",
+          "type": "journal-article",
+          "url": "https://doi.org/10.2307/4589006",
+          "year": 1955
+        },
+        {
+          "rank": 16,
+          "doi": "10.4324/9780203088159-39",
+          "title": "Reporting on Foreign Operations",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.4324/9780203088159-39",
+          "year": 2006
+        },
+        {
+          "rank": 17,
+          "doi": "10.1021/cen-v037n008.p036",
+          "title": "Foreign Operations Pose Problems",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1021/cen-v037n008.p036",
+          "year": 1959
+        },
+        {
+          "rank": 18,
+          "doi": "10.21236/ada402019",
+          "title": "Information Operations",
+          "type": "report",
+          "url": "https://doi.org/10.21236/ada402019",
+          "year": 2002
+        },
+        {
+          "rank": 19,
+          "doi": "10.1007/978-3-322-90833-9_10",
+          "title": "Information Operations",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.1007/978-3-322-90833-9_10",
+          "year": 2004
+        },
+        {
+          "rank": 20,
+          "doi": "10.21236/ada577497",
+          "title": "Information Operations",
+          "type": "report",
+          "url": "https://doi.org/10.21236/ada577497",
+          "year": 2012
+        },
+        {
+          "rank": 21,
+          "doi": "10.4324/9781351038904-16",
+          "title": "Information operations",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.4324/9781351038904-16",
+          "year": 2020
+        },
+        {
+          "rank": 22,
+          "doi": "10.5040/9781666988178.ch-003",
+          "title": "Information Operations",
+          "type": "other",
+          "url": "https://doi.org/10.5040/9781666988178.ch-003",
+          "year": 2017
+        },
+        {
+          "rank": 23,
+          "doi": "10.1017/cbo9781139107174.023",
+          "title": "Optimal information feed",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.1017/cbo9781139107174.023",
+          "year": 2010
+        },
+        {
+          "rank": 24,
+          "doi": "10.1108/eb039350",
+          "title": "Reducing Costs in Foreign Operations",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1108/eb039350",
+          "year": 1990
+        },
+        {
+          "rank": 25,
+          "doi": "10.5089/9781557754462.071.ch006",
+          "title": "Statement on Foreign Exchange Operations",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.5089/9781557754462.071.ch006",
+          "year": 1995
+        },
+        {
+          "rank": 26,
+          "doi": "10.1142/9789811281969_0015",
+          "title": "CORPORATE PERFORMANCE OF FOREIGN OPERATIONS",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.1142/9789811281969_0015",
+          "year": 2023
+        },
+        {
+          "rank": 27,
+          "doi": "10.1021/cen-v057n035.p006",
+          "title": "FOREIGN OPERATIONS EASE RECESSION IMPACT",
+          "type": "journal-article",
+          "url": "https://doi.org/10.1021/cen-v057n035.p006",
+          "year": 1979
+        },
+        {
+          "rank": 28,
+          "doi": "10.1142/9789814618014_0015",
+          "title": "CORPORATE PERFORMANCE OF FOREIGN OPERATIONS",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.1142/9789814618014_0015",
+          "year": 2015
+        },
+        {
+          "rank": 29,
+          "doi": "10.1142/9789814280242_0013",
+          "title": "Foreign Operations and Segmental Reporting",
+          "type": "book-chapter",
+          "url": "https://doi.org/10.1142/9789814280242_0013",
+          "year": 2010
+        },
+        {
+          "rank": 30,
+          "doi": "10.18411/spc-22-07-2019-06",
+          "title": "Foreign experience in leasing operations",
+          "type": "proceedings-article",
+          "url": "https://doi.org/10.18411/spc-22-07-2019-06",
+          "year": 2019
+        }
+      ]
+    }
+  ]
+}

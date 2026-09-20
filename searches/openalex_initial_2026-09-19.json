@@ -1,0 +1,2310 @@
+{
+  "method": "OpenAlex exact-phrase Boolean search, top 50 per query; discovery pass, not a complete systematic search",
+  "runs": [
+    {
+      "query": "\"coordinated inauthentic behavior\" AND (Twitter OR Facebook OR TikTok OR Reddit)",
+      "url": "https://api.openalex.org/works?search=%22coordinated+inauthentic+behavior%22+AND+%28Twitter+OR+Facebook+OR+TikTok+OR+Reddit%29&per_page=50&select=id%2Cdisplay_name%2Cdoi%2Cpublication_year%2Ctype%2Cprimary_location",
+      "fetched_at_utc": "2026-09-20T00:40:27.916Z",
+      "response_sha256": "84e4fa35e5d1ac56731fc987fc6ed86eb84cfdba62c9d9397449a462fb92e018",
+      "reported_total_results": 657,
+      "api_estimated_cost_usd": 0.001,
+      "returned": 50,
+      "items": [
+        {
+          "rank": 1,
+          "openalex_id": "https://openalex.org/W4281620562",
+          "doi": "https://doi.org/10.1016/j.dss.2022.113819",
+          "title": "Coordinated inauthentic behavior and information spreading on Twitter",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1016/j.dss.2022.113819"
+        },
+        {
+          "rank": 2,
+          "openalex_id": "https://openalex.org/W3010968540",
+          "doi": "https://doi.org/10.1080/1369118x.2020.1739732",
+          "title": "It takes a village to manipulate the media: coordinated link sharing behavior during 2018 and 2019 Italian elections",
+          "year": 2020,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1080/1369118x.2020.1739732"
+        },
+        {
+          "rank": 3,
+          "openalex_id": "https://openalex.org/W4287217508",
+          "doi": "https://doi.org/10.1016/j.osnem.2022.100224",
+          "title": "Ready-to-(ab)use: From fake account trafficking to coordinated inauthentic behavior on Twitter",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1016/j.osnem.2022.100224"
+        },
+        {
+          "rank": 4,
+          "openalex_id": "https://openalex.org/W3047084175",
+          "doi": "https://doi.org/10.1177/1329878x20946113",
+          "title": "‘Corona? 5G? or both?’: the dynamics of COVID-19/5G conspiracy theories on Facebook",
+          "year": 2020,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1177/1329878x20946113"
+        },
+        {
+          "rank": 5,
+          "openalex_id": "https://openalex.org/W3211616085",
+          "doi": null,
+          "title": "The Global Disinformation Order: 2019 Global Inventory of Organised Social Media Manipulation",
+          "year": 2019,
+          "type": "article",
+          "landing_page_url": "https://digitalcommons.unl.edu/scholcom/207"
+        },
+        {
+          "rank": 6,
+          "openalex_id": "https://openalex.org/W3180831803",
+          "doi": "https://doi.org/10.3389/fdata.2021.689036",
+          "title": "Marginalizing the Mainstream: How Social Media Privilege Political Information",
+          "year": 2021,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.3389/fdata.2021.689036"
+        },
+        {
+          "rank": 7,
+          "openalex_id": "https://openalex.org/W3038754989",
+          "doi": "https://doi.org/10.1145/3400806.3400817",
+          "title": "Coordinated Link Sharing Behavior as a Signal to Surface Sources of Problematic Information on Facebook",
+          "year": 2020,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1145/3400806.3400817"
+        },
+        {
+          "rank": 8,
+          "openalex_id": "https://openalex.org/W4327616702",
+          "doi": "https://doi.org/10.3389/fsoc.2023.1141416",
+          "title": "Coordinated inauthentic behavior: An innovative manipulation tactic to amplify COVID-19 anti-vaccine communication outreach via social media",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.3389/fsoc.2023.1141416"
+        },
+        {
+          "rank": 9,
+          "openalex_id": "https://openalex.org/W4221154202",
+          "doi": "https://doi.org/10.1145/3555639",
+          "title": "Make Reddit Great Again: Assessing Community Effects of Moderation Interventions on r/The_Donald",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1145/3555639"
+        },
+        {
+          "rank": 10,
+          "openalex_id": "https://openalex.org/W4200028970",
+          "doi": "https://doi.org/10.37016/mr-2020-85",
+          "title": "Research note: Examining how various social media platforms have responded to COVID-19 misinformation",
+          "year": 2021,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.37016/mr-2020-85"
+        },
+        {
+          "rank": 11,
+          "openalex_id": "https://openalex.org/W4313513758",
+          "doi": "https://doi.org/10.1007/978-3-031-21127-0_11",
+          "title": "Manipulation During the French Presidential Campaign: Coordinated Inauthentic Behaviors and Astroturfing Analysis on Text and Images",
+          "year": 2023,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1007/978-3-031-21127-0_11"
+        },
+        {
+          "rank": 12,
+          "openalex_id": "https://openalex.org/W4382645829",
+          "doi": "https://doi.org/10.1093/joc/jqad015",
+          "title": "Modulating moderation: a history of objectionability in Twitter moderation practices",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1093/joc/jqad015"
+        },
+        {
+          "rank": 13,
+          "openalex_id": "https://openalex.org/W4391548528",
+          "doi": "https://doi.org/10.3390/books978-3-0365-1347-8-4",
+          "title": "Disinformation Echo Chambers on Facebook",
+          "year": 2023,
+          "type": "book-chapter",
+          "landing_page_url": "https://doi.org/10.3390/books978-3-0365-1347-8-4"
+        },
+        {
+          "rank": 14,
+          "openalex_id": "https://openalex.org/W4281564877",
+          "doi": "https://doi.org/10.17645/mac.v10i2.5154",
+          "title": "Humor That Harms? Examining Racist Audio-Visual Memetic Media on TikTok During Covid-19",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.17645/mac.v10i2.5154"
+        },
+        {
+          "rank": 15,
+          "openalex_id": "https://openalex.org/W4386098562",
+          "doi": "https://doi.org/10.1140/epjds/s13688-023-00410-9",
+          "title": "A language framework for modeling social media account behavior",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1140/epjds/s13688-023-00410-9"
+        },
+        {
+          "rank": 16,
+          "openalex_id": "https://openalex.org/W4235200878",
+          "doi": "https://doi.org/10.31235/osf.io/3jteh",
+          "title": "Understanding Coordinated and Inauthentic Link Sharing Behavior on Facebook in the Run-up to 2018 General Election and 2019 European Election in Italy",
+          "year": 2019,
+          "type": "preprint",
+          "landing_page_url": "https://doi.org/10.31235/osf.io/3jteh"
+        },
+        {
+          "rank": 17,
+          "openalex_id": "https://openalex.org/W3085798340",
+          "doi": "https://doi.org/10.25740/qb823mb8849",
+          "title": "Bolivarian Factions: Facebook Takes Down Inauthentic Assets",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://fsi.stanford.edu/zh-ch/node/234733"
+        },
+        {
+          "rank": 18,
+          "openalex_id": "https://openalex.org/W4416139419",
+          "doi": "https://doi.org/10.1609/icwsm.v20i1.42711",
+          "title": "Coordinated Inauthentic Behavior on TikTok: Challenges and Opportunities for Detection in a Video-First Ecosystem",
+          "year": 2026,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1609/icwsm.v20i1.42711"
+        },
+        {
+          "rank": 19,
+          "openalex_id": "https://openalex.org/W4410078593",
+          "doi": "https://doi.org/10.1038/s41598-025-00233-w",
+          "title": "Coordinated link sharing on Facebook",
+          "year": 2025,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1038/s41598-025-00233-w"
+        },
+        {
+          "rank": 20,
+          "openalex_id": "https://openalex.org/W3004034277",
+          "doi": "https://doi.org/10.1109/access.2020.3003370",
+          "title": "Charting the Landscape of Online Cryptocurrency Manipulation",
+          "year": 2020,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1109/access.2020.3003370"
+        },
+        {
+          "rank": 21,
+          "openalex_id": "https://openalex.org/W4401213118",
+          "doi": "https://doi.org/10.1080/14623528.2024.2375122",
+          "title": "Beyond Hate Speech and Misinformation: Facebook and the Rohingya Genocide in Myanmar",
+          "year": 2024,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1080/14623528.2024.2375122"
+        },
+        {
+          "rank": 22,
+          "openalex_id": "https://openalex.org/W4395447491",
+          "doi": "https://doi.org/10.1109/access.2024.3393482",
+          "title": "Coordinated Behavior in Information Operations on Twitter",
+          "year": 2024,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1109/access.2024.3393482"
+        },
+        {
+          "rank": 23,
+          "openalex_id": "https://openalex.org/W4324378992",
+          "doi": "https://doi.org/10.1007/s10462-023-10454-y",
+          "title": "Open-source intelligence: a comprehensive review of the current state, applications and future perspectives in cyber security",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1007/s10462-023-10454-y"
+        },
+        {
+          "rank": 24,
+          "openalex_id": "https://openalex.org/W4399629475",
+          "doi": "https://doi.org/10.1145/3630744.3663608",
+          "title": "The Great Ban: Efficacy and Unintended Consequences of a Massive Deplatforming Operation on Reddit",
+          "year": 2024,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1145/3630744.3663608"
+        },
+        {
+          "rank": 25,
+          "openalex_id": "https://openalex.org/W3093841183",
+          "doi": "https://doi.org/10.1609/icwsm.v17i1.22139",
+          "title": "Misleading Repurposing on Twitter",
+          "year": 2023,
+          "type": "conference-paper",
+          "landing_page_url": "http://dx.doi.org/10.1609/icwsm.v17i1.22139"
+        },
+        {
+          "rank": 26,
+          "openalex_id": "https://openalex.org/W4285387879",
+          "doi": "https://doi.org/10.1007/s13278-022-00908-6",
+          "title": "How disinformation operations against Russian opposition leader Alexei Navalny influence the international audience on Twitter",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1007/s13278-022-00908-6"
+        },
+        {
+          "rank": 27,
+          "openalex_id": "https://openalex.org/W3095051991",
+          "doi": "https://doi.org/10.37016/mr-2020-45",
+          "title": "State media warning labels can counteract the effects of foreign disinformation",
+          "year": 2020,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.37016/mr-2020-45"
+        },
+        {
+          "rank": 28,
+          "openalex_id": "https://openalex.org/W2903251195",
+          "doi": "https://doi.org/10.1109/snams.2018.8554675",
+          "title": "Reverse Engineering the Behaviour of Twitter Bots",
+          "year": 2018,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1109/snams.2018.8554675"
+        },
+        {
+          "rank": 29,
+          "openalex_id": "https://openalex.org/W4399205190",
+          "doi": "https://doi.org/10.1609/icwsm.v18i1.31409",
+          "title": "Tracking Fringe and Coordinated Activity on Twitter Leading Up to the US Capitol Attack",
+          "year": 2024,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1609/icwsm.v18i1.31409"
+        },
+        {
+          "rank": 30,
+          "openalex_id": "https://openalex.org/W2999852001",
+          "doi": "https://doi.org/10.37016/mr-2020-003",
+          "title": "Russian disinformation campaigns on Twitter target political communities across the spectrum. Collaboration between opposed political groups might be the most effective way to counter it.",
+          "year": 2020,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.37016/mr-2020-003"
+        },
+        {
+          "rank": 31,
+          "openalex_id": "https://openalex.org/W4376632676",
+          "doi": "https://doi.org/10.48550/arxiv.2305.07350",
+          "title": "Detecting Coordinated Inauthentic Behavior in Likes on Social Media: Proof of Concept",
+          "year": 2023,
+          "type": "preprint",
+          "landing_page_url": "http://arxiv.org/abs/2305.07350"
+        },
+        {
+          "rank": 32,
+          "openalex_id": "https://openalex.org/W4391262194",
+          "doi": "https://doi.org/10.1007/s41109-024-00610-w",
+          "title": "Modeling disinformation networks on Twitter: structure, behavior, and impact",
+          "year": 2024,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1007/s41109-024-00610-w"
+        },
+        {
+          "rank": 33,
+          "openalex_id": "https://openalex.org/W4400943930",
+          "doi": "https://doi.org/10.2139/ssrn.4899259",
+          "title": "Forty Thousand Fake Twitter Profiles: A Computational Framework for the Visual Analysis of Social Media Propaganda",
+          "year": 2024,
+          "type": "preprint",
+          "landing_page_url": "https://doi.org/10.2139/ssrn.4899259"
+        },
+        {
+          "rank": 34,
+          "openalex_id": "https://openalex.org/W4401276259",
+          "doi": "https://doi.org/10.1177/08944393241269394",
+          "title": "Forty Thousand Fake Twitter Profiles: A Computational Framework for the Visual Analysis of Social Media Propaganda",
+          "year": 2024,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1177/08944393241269394"
+        },
+        {
+          "rank": 35,
+          "openalex_id": "https://openalex.org/W3014935876",
+          "doi": "https://doi.org/10.1371/journal.pone.0241045",
+          "title": "The False positive problem of automatic bot detection in social science research",
+          "year": 2020,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1371/journal.pone.0241045"
+        },
+        {
+          "rank": 36,
+          "openalex_id": "https://openalex.org/W4327725286",
+          "doi": "https://doi.org/10.5117/9789463720762",
+          "title": "The Propagation of Misinformation in Social Media",
+          "year": 2023,
+          "type": "book",
+          "landing_page_url": "https://doi.org/10.5117/9789463720762"
+        },
+        {
+          "rank": 37,
+          "openalex_id": "https://openalex.org/W4200219697",
+          "doi": "https://doi.org/10.4324/9781003083078",
+          "title": "Social Media and Hate",
+          "year": 2021,
+          "type": "book",
+          "landing_page_url": "https://doi.org/10.4324/9781003083078"
+        },
+        {
+          "rank": 38,
+          "openalex_id": "https://openalex.org/W4386766469",
+          "doi": "https://doi.org/10.1126/sciadv.adh2132",
+          "title": "The efficacy of Facebook’s vaccine misinformation policies and architecture during the COVID-19 pandemic",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1126/sciadv.adh2132"
+        },
+        {
+          "rank": 39,
+          "openalex_id": "https://openalex.org/W4395065710",
+          "doi": "https://doi.org/10.48550/arxiv.2404.14244",
+          "title": "AI-Generated Faces in the Real World: A Large-Scale Case Study of Twitter Profile Images",
+          "year": 2024,
+          "type": "preprint",
+          "landing_page_url": "http://arxiv.org/abs/2404.14244"
+        },
+        {
+          "rank": 40,
+          "openalex_id": "https://openalex.org/W4388128897",
+          "doi": "https://doi.org/10.1038/s41586-023-06795-x",
+          "title": "Author Correction: Like-minded sources on Facebook are prevalent but not polarizing",
+          "year": 2023,
+          "type": "erratum",
+          "landing_page_url": "https://doi.org/10.1038/s41586-023-06795-x"
+        },
+        {
+          "rank": 41,
+          "openalex_id": "https://openalex.org/W4366121998",
+          "doi": "https://doi.org/10.1177/20539517231168101",
+          "title": "Organic online politics: Farmers, Facebook, and Myanmar's military coup",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1177/20539517231168101"
+        },
+        {
+          "rank": 42,
+          "openalex_id": "https://openalex.org/W4386794969",
+          "doi": "https://doi.org/10.48550/arxiv.2309.07745",
+          "title": "Disinformation Echo-Chambers on Facebook",
+          "year": 2023,
+          "type": "preprint",
+          "landing_page_url": "http://arxiv.org/abs/2309.07745"
+        },
+        {
+          "rank": 43,
+          "openalex_id": "https://openalex.org/W4367311229",
+          "doi": "https://doi.org/10.1145/3543873.3587672",
+          "title": "Detecting the Hidden Dynamics of Networked Actors Using Temporal Correlations",
+          "year": 2023,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1145/3543873.3587672"
+        },
+        {
+          "rank": 44,
+          "openalex_id": "https://openalex.org/W4386556851",
+          "doi": "https://doi.org/10.1177/20563051231196866",
+          "title": "A Workflow to Detect, Monitor, and Update Lists of Coordinated Social Media Accounts Across Time: The Case of the 2022 Italian Election",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1177/20563051231196866"
+        },
+        {
+          "rank": 45,
+          "openalex_id": "https://openalex.org/W3037604166",
+          "doi": null,
+          "title": "Like a virus: The coordinated spread of Coronavirus disinformation",
+          "year": 2020,
+          "type": "report",
+          "landing_page_url": "https://apo.org.au/node/305864"
+        },
+        {
+          "rank": 46,
+          "openalex_id": "https://openalex.org/W2988120509",
+          "doi": "https://doi.org/10.1145/3359229",
+          "title": "Disinformation as Collaborative Work",
+          "year": 2019,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1145/3359229"
+        },
+        {
+          "rank": 47,
+          "openalex_id": "https://openalex.org/W4281699368",
+          "doi": "https://doi.org/10.21203/rs.3.rs-1354959/v2",
+          "title": "Rapid Sharing of Islamophobic Hate on Facebook: The Case of the Tablighi Jamaat Controversy",
+          "year": 2022,
+          "type": "preprint",
+          "landing_page_url": "https://doi.org/10.21203/rs.3.rs-1354959/v2"
+        },
+        {
+          "rank": 48,
+          "openalex_id": "https://openalex.org/W4393951468",
+          "doi": "https://doi.org/10.1007/s11948-024-00473-5",
+          "title": "Performing Platform Governance: Facebook and the Stage Management of Data Relations",
+          "year": 2024,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1007/s11948-024-00473-5"
+        },
+        {
+          "rank": 49,
+          "openalex_id": "https://openalex.org/W4416300380",
+          "doi": "https://doi.org/10.1038/s44260-025-00056-w",
+          "title": "Large-scale detection of multilingual coordinated activity on Telegram",
+          "year": 2025,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1038/s44260-025-00056-w"
+        },
+        {
+          "rank": 50,
+          "openalex_id": "https://openalex.org/W3210546290",
+          "doi": "https://doi.org/10.1007/s13278-021-00815-2",
+          "title": "Amplifying influence through coordinated behaviour in social networks",
+          "year": 2021,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1007/s13278-021-00815-2"
+        }
+      ]
+    },
+    {
+      "query": "\"information operations\" AND \"social media\"",
+      "url": "https://api.openalex.org/works?search=%22information+operations%22+AND+%22social+media%22&per_page=50&select=id%2Cdisplay_name%2Cdoi%2Cpublication_year%2Ctype%2Cprimary_location",
+      "fetched_at_utc": "2026-09-20T00:40:29.080Z",
+      "response_sha256": "fa9df6d0fb6bd9a9fbfbad07a54f582920f71554dc0772cb8f446d618f03d4e5",
+      "reported_total_results": 4299,
+      "api_estimated_cost_usd": 0.001,
+      "returned": 50,
+      "items": [
+        {
+          "rank": 1,
+          "openalex_id": "https://openalex.org/W4319983294",
+          "doi": "https://doi.org/10.1007/s13278-023-01028-5",
+          "title": "Fake news, disinformation and misinformation in social media: a review",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1007/s13278-023-01028-5"
+        },
+        {
+          "rank": 2,
+          "openalex_id": "https://openalex.org/W3123948795",
+          "doi": "https://doi.org/10.1146/annurev-economics-081919-050239",
+          "title": "Political Effects of the Internet and Social Media",
+          "year": 2020,
+          "type": "review",
+          "landing_page_url": "https://doi.org/10.1146/annurev-economics-081919-050239"
+        },
+        {
+          "rank": 3,
+          "openalex_id": "https://openalex.org/W2026050329",
+          "doi": "https://doi.org/10.1177/0002764213479374",
+          "title": "The Arab Spring and Social Media Audiences",
+          "year": 2013,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1177/0002764213479374"
+        },
+        {
+          "rank": 4,
+          "openalex_id": "https://openalex.org/W2956617434",
+          "doi": "https://doi.org/10.1080/1369118x.2019.1637447",
+          "title": "After the ‘APIcalypse’: social media platforms and their fight against critical scholarly research",
+          "year": 2019,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1080/1369118x.2019.1637447"
+        },
+        {
+          "rank": 5,
+          "openalex_id": "https://openalex.org/W3107314676",
+          "doi": "https://doi.org/10.1007/s42001-020-00094-5",
+          "title": "Misinformation, manipulation, and abuse on social media in the era of COVID-19",
+          "year": 2020,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1007/s42001-020-00094-5"
+        },
+        {
+          "rank": 6,
+          "openalex_id": "https://openalex.org/W3004652140",
+          "doi": "https://doi.org/10.1080/10584609.2019.1674979",
+          "title": "A Picture Paints a Thousand Lies? The Effects and Mechanisms of Multimodal Disinformation and Rebuttals Disseminated via Social Media",
+          "year": 2020,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1080/10584609.2019.1674979"
+        },
+        {
+          "rank": 7,
+          "openalex_id": "https://openalex.org/W3032208390",
+          "doi": "https://doi.org/10.1145/3313831.3376213",
+          "title": "Effects of Credibility Indicators on Social Media News Sharing Intent",
+          "year": 2020,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1145/3313831.3376213"
+        },
+        {
+          "rank": 8,
+          "openalex_id": "https://openalex.org/W1600301157",
+          "doi": "https://doi.org/10.25916/sut.26271046",
+          "title": "Twitter free Iran: an evaluation of Twitter's role in public diplomacy and information operations in Iran's 2009 election crisis",
+          "year": 2009,
+          "type": "article",
+          "landing_page_url": "http://hdl.handle.net/1959.3/70941"
+        },
+        {
+          "rank": 9,
+          "openalex_id": "https://openalex.org/W1857308240",
+          "doi": "https://doi.org/10.1080/10357718.2015.1059799",
+          "title": "The strategic logic of Islamic State information operations",
+          "year": 2015,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1080/10357718.2015.1059799"
+        },
+        {
+          "rank": 10,
+          "openalex_id": "https://openalex.org/W3092568232",
+          "doi": "https://doi.org/10.1371/journal.pone.0239666",
+          "title": "Why do people spread false information online? The effects of message and viewer characteristics on self-reported likelihood of sharing social media disinformation",
+          "year": 2020,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1371/journal.pone.0239666"
+        },
+        {
+          "rank": 11,
+          "openalex_id": "https://openalex.org/W279145299",
+          "doi": null,
+          "title": "Terrorist Use of the Internet: Information Operations in Cyberspace",
+          "year": 2011,
+          "type": "report",
+          "landing_page_url": "https://digital.library.unt.edu/ark:/67531/metadc103142/"
+        },
+        {
+          "rank": 12,
+          "openalex_id": "https://openalex.org/W4280611690",
+          "doi": "https://doi.org/10.1177/07439156221103852",
+          "title": "Disinformation and Echo Chambers: How Disinformation Circulates on Social Media Through Identity-Driven Controversies",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1177/07439156221103852"
+        },
+        {
+          "rank": 13,
+          "openalex_id": "https://openalex.org/W2997149517",
+          "doi": "https://doi.org/10.1016/j.osnem.2019.100058",
+          "title": "Political communication on social media: A tale of hyperactive users and bias in recommender systems",
+          "year": 2019,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1016/j.osnem.2019.100058"
+        },
+        {
+          "rank": 14,
+          "openalex_id": "https://openalex.org/W4386639506",
+          "doi": "https://doi.org/10.1140/epjds/s13688-023-00414-5",
+          "title": "Russian propaganda on social media during the 2022 invasion of Ukraine",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1140/epjds/s13688-023-00414-5"
+        },
+        {
+          "rank": 15,
+          "openalex_id": "https://openalex.org/W3033580827",
+          "doi": "https://doi.org/10.1080/0960085x.2020.1770632",
+          "title": "What drives unverified information sharing and cyberchondria during the COVID-19 pandemic?",
+          "year": 2020,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1080/0960085x.2020.1770632"
+        },
+        {
+          "rank": 16,
+          "openalex_id": "https://openalex.org/W3068316593",
+          "doi": "https://doi.org/10.1609/icwsm.v15i1.18074",
+          "title": "Coordinated Behavior on Social Media in 2019 UK General Election",
+          "year": 2021,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1609/icwsm.v15i1.18074"
+        },
+        {
+          "rank": 17,
+          "openalex_id": "https://openalex.org/W2988120509",
+          "doi": "https://doi.org/10.1145/3359229",
+          "title": "Disinformation as Collaborative Work",
+          "year": 2019,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1145/3359229"
+        },
+        {
+          "rank": 18,
+          "openalex_id": "https://openalex.org/W3184486389",
+          "doi": "https://doi.org/10.1080/23738871.2021.1950196",
+          "title": "The strategic surprise of Russian information operations on social media in 2016 in the United States: mapping a blind spot",
+          "year": 2021,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1080/23738871.2021.1950196"
+        },
+        {
+          "rank": 19,
+          "openalex_id": "https://openalex.org/W3207319561",
+          "doi": "https://doi.org/10.1145/3476086",
+          "title": "Cross-platform Information Operations: Mobilizing Narratives & Building Resilience through both 'Big' & 'Alt' Tech",
+          "year": 2021,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1145/3476086"
+        },
+        {
+          "rank": 20,
+          "openalex_id": "https://openalex.org/W3112646659",
+          "doi": "https://doi.org/10.37016/mr-2020-49",
+          "title": "Tackling misinformation: What researchers could do with social media data",
+          "year": 2020,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.37016/mr-2020-49"
+        },
+        {
+          "rank": 21,
+          "openalex_id": "https://openalex.org/W2735151423",
+          "doi": "https://doi.org/10.7249/rr1742",
+          "title": "Monitoring Social Media: Lessons for Future Department of Defense Social Media Analysis in Support of Information Operations",
+          "year": 2017,
+          "type": "book",
+          "landing_page_url": "https://doi.org/10.7249/rr1742"
+        },
+        {
+          "rank": 22,
+          "openalex_id": "https://openalex.org/W4387672129",
+          "doi": "https://doi.org/10.55549/epstem.1371792",
+          "title": "Impact of Deepfake Technology on Social Media: Detection, Misinformation and Societal Implications",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.55549/epstem.1371792"
+        },
+        {
+          "rank": 23,
+          "openalex_id": "https://openalex.org/W3012132007",
+          "doi": "https://doi.org/10.1016/j.alter.2020.02.001",
+          "title": "Self-representations on social media",
+          "year": 2020,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1016/j.alter.2020.02.001"
+        },
+        {
+          "rank": 24,
+          "openalex_id": "https://openalex.org/W3131095897",
+          "doi": "https://doi.org/10.1109/cybersa49311.2020.9139709",
+          "title": "Application of the Benford’s law to Social bots and Information Operations activities",
+          "year": 2020,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1109/cybersa49311.2020.9139709"
+        },
+        {
+          "rank": 25,
+          "openalex_id": "https://openalex.org/W3163217719",
+          "doi": "https://doi.org/10.1145/3447548.3467391",
+          "title": "Identifying Coordinated Accounts on Social Media through Hidden Influence and Group Behaviours",
+          "year": 2021,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1145/3447548.3467391"
+        },
+        {
+          "rank": 26,
+          "openalex_id": "https://openalex.org/W3174204002",
+          "doi": "https://doi.org/10.1177/08944393211019951",
+          "title": "Inauthentic Newsfeeds and Agenda Setting in a Coordinated Inauthentic Information Operation",
+          "year": 2021,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1177/08944393211019951"
+        },
+        {
+          "rank": 27,
+          "openalex_id": "https://openalex.org/W2777092439",
+          "doi": "https://doi.org/10.55540/0031-1723.2931",
+          "title": "Russia's Improved Information Operations: From Georgia to Crimea",
+          "year": 2017,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.55540/0031-1723.2931"
+        },
+        {
+          "rank": 28,
+          "openalex_id": "https://openalex.org/W2565351507",
+          "doi": "https://doi.org/10.1016/j.giq.2016.12.004",
+          "title": "Measuring international relations in social media conversations",
+          "year": 2016,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1016/j.giq.2016.12.004"
+        },
+        {
+          "rank": 29,
+          "openalex_id": "https://openalex.org/W2994813731",
+          "doi": "https://doi.org/10.1080/1060586x.2019.1701879",
+          "title": "Social media and Russian territorial irredentism: some facts and a conjecture",
+          "year": 2019,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1080/1060586x.2019.1701879"
+        },
+        {
+          "rank": 30,
+          "openalex_id": "https://openalex.org/W1892874464",
+          "doi": "https://doi.org/10.1109/enic.2015.19",
+          "title": "Evaluating Algorithms for Detection of Compromised Social Media User Accounts",
+          "year": 2015,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1109/enic.2015.19"
+        },
+        {
+          "rank": 31,
+          "openalex_id": "https://openalex.org/W3127527288",
+          "doi": "https://doi.org/10.1016/j.techfore.2021.120661",
+          "title": "Relating foreign disinformation through social media, domestic online media fractionalization, government's control over cyberspace, and social media-induced offline violence: Insights from the agenda-building theoretical perspective",
+          "year": 2021,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1016/j.techfore.2021.120661"
+        },
+        {
+          "rank": 32,
+          "openalex_id": "https://openalex.org/W1743516929",
+          "doi": null,
+          "title": "The dark side of social media : review of online terrorism",
+          "year": 2012,
+          "type": "article",
+          "landing_page_url": "https://eprints.qut.edu.au/50162/2/50162.pdf"
+        },
+        {
+          "rank": 33,
+          "openalex_id": "https://openalex.org/W4386380139",
+          "doi": "https://doi.org/10.3390/info14090485",
+          "title": "Social Media Analytics on Russia–Ukraine Cyber War with Natural Language Processing: Perspectives and Challenges",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.3390/info14090485"
+        },
+        {
+          "rank": 34,
+          "openalex_id": "https://openalex.org/W4200192788",
+          "doi": "https://doi.org/10.1016/j.chb.2021.107131",
+          "title": "Mapping HCI research methods for studying social media interaction: A systematic literature review",
+          "year": 2021,
+          "type": "review",
+          "landing_page_url": "https://doi.org/10.1016/j.chb.2021.107131"
+        },
+        {
+          "rank": 35,
+          "openalex_id": "https://openalex.org/W4353070729",
+          "doi": "https://doi.org/10.1093/pnasnexus/pgad094",
+          "title": "The Spot the Troll Quiz game increases accuracy in discerning between real and inauthentic social media accounts",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1093/pnasnexus/pgad094"
+        },
+        {
+          "rank": 36,
+          "openalex_id": "https://openalex.org/W3180831803",
+          "doi": "https://doi.org/10.3389/fdata.2021.689036",
+          "title": "Marginalizing the Mainstream: How Social Media Privilege Political Information",
+          "year": 2021,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.3389/fdata.2021.689036"
+        },
+        {
+          "rank": 37,
+          "openalex_id": "https://openalex.org/W4395447491",
+          "doi": "https://doi.org/10.1109/access.2024.3393482",
+          "title": "Coordinated Behavior in Information Operations on Twitter",
+          "year": 2024,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1109/access.2024.3393482"
+        },
+        {
+          "rank": 38,
+          "openalex_id": "https://openalex.org/W4376057765",
+          "doi": "https://doi.org/10.5325/bustan.13.2.0190",
+          "title": "Digital Authoritarianism in the Middle East: Deception, Disinformation and Social Media",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.5325/bustan.13.2.0190"
+        },
+        {
+          "rank": 39,
+          "openalex_id": "https://openalex.org/W2961344948",
+          "doi": "https://doi.org/10.5120/ijca2019919126",
+          "title": "Impact of Social Media Application in Business Organizations",
+          "year": 2019,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.5120/ijca2019919126"
+        },
+        {
+          "rank": 40,
+          "openalex_id": "https://openalex.org/W4415990219",
+          "doi": "https://doi.org/10.3390/computers14110485",
+          "title": "NLP Models for Military Terminology Analysis and Detection of Information Operations on Social Media",
+          "year": 2025,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.3390/computers14110485"
+        },
+        {
+          "rank": 41,
+          "openalex_id": "https://openalex.org/W3164128970",
+          "doi": "https://doi.org/10.1109/ojcoms.2021.3074591",
+          "title": "Attribution Across Cyber Attack Types: Network Intrusions and Information Operations",
+          "year": 2021,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1109/ojcoms.2021.3074591"
+        },
+        {
+          "rank": 42,
+          "openalex_id": "https://openalex.org/W3126092582",
+          "doi": "https://doi.org/10.1177/2056305120984445",
+          "title": "Online Engagement Between Opposing Political Protest Groups via Social Media is Linked to Physical Violence of Offline Encounters",
+          "year": 2021,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1177/2056305120984445"
+        },
+        {
+          "rank": 43,
+          "openalex_id": "https://openalex.org/W3084561134",
+          "doi": "https://doi.org/10.3145/epi.2020.sep.07",
+          "title": "Intentional or inadvertent fake news sharing? Fact-checking warnings and users’ interaction with social media content",
+          "year": 2020,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.3145/epi.2020.sep.07"
+        },
+        {
+          "rank": 44,
+          "openalex_id": "https://openalex.org/W3086748812",
+          "doi": "https://doi.org/10.1016/j.ipm.2020.102385",
+          "title": "Combining advanced computational social science and graph theoretic techniques to reveal adversarial information operations",
+          "year": 2020,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1016/j.ipm.2020.102385"
+        },
+        {
+          "rank": 45,
+          "openalex_id": "https://openalex.org/W2950949504",
+          "doi": "https://doi.org/10.55540/0031-1723.2851",
+          "title": "Victory without Casualties: Russia's Information Operations",
+          "year": 2018,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.55540/0031-1723.2851"
+        },
+        {
+          "rank": 46,
+          "openalex_id": "https://openalex.org/W3039658914",
+          "doi": "https://doi.org/10.25253/99.2020222.11",
+          "title": "Social Media and Fake News in the Post-Truth Era: The Manipulation of Politics in the Election Process",
+          "year": 2020,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.25253/99.2020222.11"
+        },
+        {
+          "rank": 47,
+          "openalex_id": "https://openalex.org/W3088838442",
+          "doi": "https://doi.org/10.1609/icwsm.v15i1.18102",
+          "title": "Understanding the Use of Fauxtography on Social Media",
+          "year": 2021,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1609/icwsm.v15i1.18102"
+        },
+        {
+          "rank": 48,
+          "openalex_id": "https://openalex.org/W4323315151",
+          "doi": "https://doi.org/10.3390/electronics12051242",
+          "title": "A New Social Media-Driven Cyber Threat Intelligence",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.3390/electronics12051242"
+        },
+        {
+          "rank": 49,
+          "openalex_id": "https://openalex.org/W4409348430",
+          "doi": "https://doi.org/10.1609/aaai.v39i27.35046",
+          "title": "IOHunter: Graph Foundation Model to Uncover Online Information Operations",
+          "year": 2025,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1609/aaai.v39i27.35046"
+        },
+        {
+          "rank": 50,
+          "openalex_id": "https://openalex.org/W3034954501",
+          "doi": "https://doi.org/10.2139/ssrn.3612019",
+          "title": "Cyber Attacks and Cyber (Mis)information Operations during a Pandemic",
+          "year": 2020,
+          "type": "preprint",
+          "landing_page_url": "https://doi.org/10.2139/ssrn.3612019"
+        }
+      ]
+    },
+    {
+      "query": "\"bot detection\" AND political",
+      "url": "https://api.openalex.org/works?search=%22bot+detection%22+AND+political&per_page=50&select=id%2Cdisplay_name%2Cdoi%2Cpublication_year%2Ctype%2Cprimary_location",
+      "fetched_at_utc": "2026-09-20T00:40:29.596Z",
+      "response_sha256": "b9860fba03002a73f09ee7caa84d7a98343ce8f1c1397c055194484ec31052ff",
+      "reported_total_results": 2222,
+      "api_estimated_cost_usd": 0.001,
+      "returned": 50,
+      "items": [
+        {
+          "rank": 1,
+          "openalex_id": "https://openalex.org/W2787296320",
+          "doi": "https://doi.org/10.1016/j.ins.2018.08.019",
+          "title": "Deep neural networks for bot detection",
+          "year": 2018,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1016/j.ins.2018.08.019"
+        },
+        {
+          "rank": 2,
+          "openalex_id": "https://openalex.org/W3041367927",
+          "doi": "https://doi.org/10.1145/3409116",
+          "title": "A decade of social bot detection",
+          "year": 2020,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1145/3409116"
+        },
+        {
+          "rank": 3,
+          "openalex_id": "https://openalex.org/W2997788455",
+          "doi": "https://doi.org/10.1609/aaai.v34i01.5460",
+          "title": "Scalable and Generalizable Social Bot Detection through Data Selection",
+          "year": 2020,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1609/aaai.v34i01.5460"
+        },
+        {
+          "rank": 4,
+          "openalex_id": "https://openalex.org/W2797202416",
+          "doi": "https://doi.org/10.2139/ssrn.3144139",
+          "title": "Social Media, Political Polarization, and Political Disinformation: A Review of the Scientific Literature",
+          "year": 2018,
+          "type": "preprint",
+          "landing_page_url": "https://doi.org/10.2139/ssrn.3144139"
+        },
+        {
+          "rank": 5,
+          "openalex_id": "https://openalex.org/W2550819555",
+          "doi": "https://doi.org/10.5210/fm.v21i11.7090",
+          "title": "Social bots distort the 2016 U.S. Presidential election online discussion",
+          "year": 2016,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.5210/fm.v21i11.7090"
+        },
+        {
+          "rank": 6,
+          "openalex_id": "https://openalex.org/W2971881481",
+          "doi": "https://doi.org/10.1080/10584609.2019.1661888",
+          "title": "Political Astroturfing on Twitter: How to Coordinate a Disinformation Campaign",
+          "year": 2019,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1080/10584609.2019.1661888"
+        },
+        {
+          "rank": 7,
+          "openalex_id": "https://openalex.org/W4231258178",
+          "doi": "https://doi.org/10.1109/asonam.2016.7752287",
+          "title": "A new approach to bot detection: Striking the balance between precision and recall",
+          "year": 2016,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1109/asonam.2016.7752287"
+        },
+        {
+          "rank": 8,
+          "openalex_id": "https://openalex.org/W3014935876",
+          "doi": "https://doi.org/10.1371/journal.pone.0241045",
+          "title": "The False positive problem of automatic bot detection in social science research",
+          "year": 2020,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1371/journal.pone.0241045"
+        },
+        {
+          "rank": 9,
+          "openalex_id": "https://openalex.org/W2787037992",
+          "doi": "https://doi.org/10.1109/asonam.2018.8508646",
+          "title": "Analyzing the Digital Traces of Political Manipulation: The 2016 Russian Interference Twitter Campaign",
+          "year": 2018,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1109/asonam.2018.8508646"
+        },
+        {
+          "rank": 10,
+          "openalex_id": "https://openalex.org/W2554337180",
+          "doi": "https://doi.org/10.5555/3192424.3192525",
+          "title": "A new approach to bot detection: striking the balance between precision and recall",
+          "year": 2016,
+          "type": "article",
+          "landing_page_url": "http://ieeexplore.ieee.org/abstract/document/7752287"
+        },
+        {
+          "rank": 11,
+          "openalex_id": "https://openalex.org/W2936935342",
+          "doi": "https://doi.org/10.1145/3313294.3313386",
+          "title": "Bot Detection in Reddit Political Discussion",
+          "year": 2019,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1145/3313294.3313386"
+        },
+        {
+          "rank": 12,
+          "openalex_id": "https://openalex.org/W3197022418",
+          "doi": "https://doi.org/10.1609/aaai.v36i4.20314",
+          "title": "Heterogeneity-Aware Twitter Bot Detection with Relational Graph Transformers",
+          "year": 2022,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1609/aaai.v36i4.20314"
+        },
+        {
+          "rank": 13,
+          "openalex_id": "https://openalex.org/W202178741",
+          "doi": "https://doi.org/10.1609/icwsm.v5i1.14127",
+          "title": "Detecting and Tracking Political Abuse in Social Media",
+          "year": 2021,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1609/icwsm.v5i1.14127"
+        },
+        {
+          "rank": 14,
+          "openalex_id": "https://openalex.org/W4313572588",
+          "doi": "https://doi.org/10.1007/s13278-022-01020-5",
+          "title": "Machine learning-based social media bot detection: a comprehensive literature review",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1007/s13278-022-01020-5"
+        },
+        {
+          "rank": 15,
+          "openalex_id": "https://openalex.org/W4380887356",
+          "doi": "https://doi.org/10.5210/fm.v28i6.13185",
+          "title": "Social bot detection in the age of ChatGPT: Challenges and opportunities",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.5210/fm.v28i6.13185"
+        },
+        {
+          "rank": 16,
+          "openalex_id": "https://openalex.org/W2937643694",
+          "doi": "https://doi.org/10.1109/access.2019.2904220",
+          "title": "Contrast Pattern-Based Classification for Bot Detection on Twitter",
+          "year": 2019,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1109/access.2019.2904220"
+        },
+        {
+          "rank": 17,
+          "openalex_id": "https://openalex.org/W2893495107",
+          "doi": null,
+          "title": "Supervised Machine Learning Bot Detection Techniques to Identify Social Twitter Bots",
+          "year": 2018,
+          "type": "article",
+          "landing_page_url": "https://scholar.smu.edu/datasciencereview/vol1/iss2/5"
+        },
+        {
+          "rank": 18,
+          "openalex_id": "https://openalex.org/W4395097571",
+          "doi": "https://doi.org/10.1145/3660522",
+          "title": "Unsupervised Social Bot Detection via Structural Information Theory",
+          "year": 2024,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1145/3660522"
+        },
+        {
+          "rank": 19,
+          "openalex_id": "https://openalex.org/W3194561115",
+          "doi": "https://doi.org/10.1177/20539517211033566",
+          "title": "Bot, or not? Comparing three methods for detecting social bots in five political discourses",
+          "year": 2021,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1177/20539517211033566"
+        },
+        {
+          "rank": 20,
+          "openalex_id": "https://openalex.org/W4323310035",
+          "doi": "https://doi.org/10.1007/s00521-023-08352-z",
+          "title": "Social media bot detection with deep learning methods: a systematic review",
+          "year": 2023,
+          "type": "review",
+          "landing_page_url": "https://doi.org/10.1007/s00521-023-08352-z"
+        },
+        {
+          "rank": 21,
+          "openalex_id": "https://openalex.org/W4220686914",
+          "doi": "https://doi.org/10.1007/s13278-022-00869-w",
+          "title": "DeeProBot: a hybrid deep neural network model for social bot detection based on user profile data",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1007/s13278-022-00869-w"
+        },
+        {
+          "rank": 22,
+          "openalex_id": "https://openalex.org/W4200222034",
+          "doi": "https://doi.org/10.3390/sym14010030",
+          "title": "Social Bots Detection via Fusing BERT and Graph Convolutional Networks",
+          "year": 2021,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.3390/sym14010030"
+        },
+        {
+          "rank": 23,
+          "openalex_id": "https://openalex.org/W3214818997",
+          "doi": "https://doi.org/10.1007/s13278-021-00800-9",
+          "title": "GANBOT: a GAN-based framework for social bot detection",
+          "year": 2021,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1007/s13278-021-00800-9"
+        },
+        {
+          "rank": 24,
+          "openalex_id": "https://openalex.org/W4365458124",
+          "doi": "https://doi.org/10.1016/j.jksuci.2023.04.004",
+          "title": "Systematic Literature Review of Social Media Bots Detection Systems",
+          "year": 2023,
+          "type": "review",
+          "landing_page_url": "https://doi.org/10.1016/j.jksuci.2023.04.004"
+        },
+        {
+          "rank": 25,
+          "openalex_id": "https://openalex.org/W2990592856",
+          "doi": "https://doi.org/10.26615/978-954-452-056-4_065",
+          "title": "Language-Agnostic Twitter Bot Detection",
+          "year": 2019,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.26615/978-954-452-056-4_065"
+        },
+        {
+          "rank": 26,
+          "openalex_id": "https://openalex.org/W4282007661",
+          "doi": "https://doi.org/10.48550/arxiv.2206.04564",
+          "title": "TwiBot-22: Towards Graph-Based Twitter Bot Detection",
+          "year": 2022,
+          "type": "preprint",
+          "landing_page_url": "http://arxiv.org/abs/2206.04564"
+        },
+        {
+          "rank": 27,
+          "openalex_id": "https://openalex.org/W3158792679",
+          "doi": "https://doi.org/10.1109/access.2021.3074953",
+          "title": "Tweet-Based Bot Detection Using Big Data Analytics",
+          "year": 2021,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1109/access.2021.3074953"
+        },
+        {
+          "rank": 28,
+          "openalex_id": "https://openalex.org/W4380301730",
+          "doi": "https://doi.org/10.1609/icwsm.v17i1.22179",
+          "title": "BotBuster: Multi-Platform Bot Detection Using a Mixture of Experts",
+          "year": 2023,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1609/icwsm.v17i1.22179"
+        },
+        {
+          "rank": 29,
+          "openalex_id": "https://openalex.org/W4226381434",
+          "doi": "https://doi.org/10.1007/s42001-022-00177-5",
+          "title": "Botometer 101: social bot practicum for computational social scientists",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1007/s42001-022-00177-5"
+        },
+        {
+          "rank": 30,
+          "openalex_id": "https://openalex.org/W3192149550",
+          "doi": "https://doi.org/10.1177/08944393211034991",
+          "title": "Automation on Twitter: Measuring the Effectiveness of Approaches to Bot Detection",
+          "year": 2021,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1177/08944393211034991"
+        },
+        {
+          "rank": 31,
+          "openalex_id": "https://openalex.org/W2769471736",
+          "doi": "https://doi.org/10.1145/3110025.3110090",
+          "title": "Of Bots and Humans (on Twitter)",
+          "year": 2017,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1145/3110025.3110090"
+        },
+        {
+          "rank": 32,
+          "openalex_id": "https://openalex.org/W3215033904",
+          "doi": "https://doi.org/10.1109/icecct52121.2021.9616841",
+          "title": "Twitter Bot Detection using Machine Learning Algorithms",
+          "year": 2021,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1109/icecct52121.2021.9616841"
+        },
+        {
+          "rank": 33,
+          "openalex_id": "https://openalex.org/W4242048916",
+          "doi": "https://doi.org/10.31235/osf.io/a5gk6",
+          "title": "Political Astroturfing on Twitter: How to Coordinate a Disinformation Campaign",
+          "year": 2019,
+          "type": "preprint",
+          "landing_page_url": "https://doi.org/10.31235/osf.io/a5gk6"
+        },
+        {
+          "rank": 34,
+          "openalex_id": "https://openalex.org/W4210908032",
+          "doi": "https://doi.org/10.1016/j.osnem.2022.100198",
+          "title": "Stabilizing a supervised bot detection algorithm: How much data is needed for consistent predictions?",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1016/j.osnem.2022.100198"
+        },
+        {
+          "rank": 35,
+          "openalex_id": "https://openalex.org/W4288086170",
+          "doi": "https://doi.org/10.1145/3359163",
+          "title": "Hateful People or Hateful Bots? Detection and Characterization of Bots Spreading Religious Hatred in Arabic Social Media",
+          "year": 2019,
+          "type": "preprint",
+          "landing_page_url": "http://arxiv.org/abs/1908.00153"
+        },
+        {
+          "rank": 36,
+          "openalex_id": "https://openalex.org/W3191965547",
+          "doi": "https://doi.org/10.1088/1742-6596/1950/1/012006",
+          "title": "Twitter bot detection using supervised machine learning",
+          "year": 2021,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1088/1742-6596/1950/1/012006"
+        },
+        {
+          "rank": 37,
+          "openalex_id": "https://openalex.org/W4364357667",
+          "doi": "https://doi.org/10.5121/csit.2023.130604",
+          "title": "Botshape: A Novel Social Bots Detection Approach via Behavioral Patterns",
+          "year": 2023,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.5121/csit.2023.130604"
+        },
+        {
+          "rank": 38,
+          "openalex_id": "https://openalex.org/W4281631069",
+          "doi": "https://doi.org/10.3390/app12125915",
+          "title": "An Evolutionary Computation Approach for Twitter Bot Detection",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.3390/app12125915"
+        },
+        {
+          "rank": 39,
+          "openalex_id": "https://openalex.org/W4401863527",
+          "doi": "https://doi.org/10.1145/3637528.3671871",
+          "title": "SEBot: Structural Entropy Guided Multi-View Contrastive learning for Social Bot Detection",
+          "year": 2024,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1145/3637528.3671871"
+        },
+        {
+          "rank": 40,
+          "openalex_id": "https://openalex.org/W3086839491",
+          "doi": "https://doi.org/10.1145/3396956.3401801",
+          "title": "Bot detection in twitter landscape using unsupervised learning",
+          "year": 2020,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1145/3396956.3401801"
+        },
+        {
+          "rank": 41,
+          "openalex_id": "https://openalex.org/W3122709690",
+          "doi": null,
+          "title": "Social Bots Distort the 2016 US Presidential Election Online Discussion",
+          "year": 2016,
+          "type": "preprint",
+          "landing_page_url": "https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID2982233_code2721602.pdf?abstractid=2982233&mirid=1&type=2"
+        },
+        {
+          "rank": 42,
+          "openalex_id": "https://openalex.org/W4284972390",
+          "doi": "https://doi.org/10.1007/s13278-022-00897-6",
+          "title": "T-Bot: AI-based social media bot detection model for trend-centric twitter network",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1007/s13278-022-00897-6"
+        },
+        {
+          "rank": 43,
+          "openalex_id": "https://openalex.org/W4393377491",
+          "doi": "https://doi.org/10.3758/s13428-024-02357-9",
+          "title": "Creating a Bot-tleneck for malicious AI: Psychological methods for bot detection",
+          "year": 2024,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.3758/s13428-024-02357-9"
+        },
+        {
+          "rank": 44,
+          "openalex_id": "https://openalex.org/W4367047167",
+          "doi": "https://doi.org/10.1145/3543507.3583214",
+          "title": "Simplistic Collection and Labeling Practices Limit the Utility of Benchmark Datasets for Twitter Bot Detection",
+          "year": 2023,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1145/3543507.3583214"
+        },
+        {
+          "rank": 45,
+          "openalex_id": "https://openalex.org/W4212955467",
+          "doi": "https://doi.org/10.1017/s0003055421001507",
+          "title": "Why Botter: How Pro-Government Bots Fight Opposition in Russia",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1017/s0003055421001507"
+        },
+        {
+          "rank": 46,
+          "openalex_id": "https://openalex.org/W3091890513",
+          "doi": "https://doi.org/10.1145/3320269.3372202",
+          "title": "BOTection: Bot Detection by Building Markov Chain Models of Bots Network Behavior",
+          "year": 2020,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1145/3320269.3372202"
+        },
+        {
+          "rank": 47,
+          "openalex_id": "https://openalex.org/W2997742313",
+          "doi": "https://doi.org/10.1016/j.procs.2019.11.187",
+          "title": "Social Bot Detection on 2019 Indonesia President Candidate’s Supporter’s Tweets",
+          "year": 2019,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1016/j.procs.2019.11.187"
+        },
+        {
+          "rank": 48,
+          "openalex_id": "https://openalex.org/W4387272168",
+          "doi": "https://doi.org/10.1049/icp.2023.1822",
+          "title": "Explainable Twitter bot detection model for limited features",
+          "year": 2023,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1049/icp.2023.1822"
+        },
+        {
+          "rank": 49,
+          "openalex_id": "https://openalex.org/W3036082643",
+          "doi": "https://doi.org/10.1002/hbe2.202",
+          "title": "Political polarization drives online conversations about COVID ‐19 in the United States",
+          "year": 2020,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1002/hbe2.202"
+        },
+        {
+          "rank": 50,
+          "openalex_id": "https://openalex.org/W2947145950",
+          "doi": "https://doi.org/10.1038/s42005-020-0340-4",
+          "title": "The role of bot squads in the political propaganda on Twitter",
+          "year": 2020,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1038/s42005-020-0340-4"
+        }
+      ]
+    },
+    {
+      "query": "\"algorithmic amplification\" AND political",
+      "url": "https://api.openalex.org/works?search=%22algorithmic+amplification%22+AND+political&per_page=50&select=id%2Cdisplay_name%2Cdoi%2Cpublication_year%2Ctype%2Cprimary_location",
+      "fetched_at_utc": "2026-09-20T00:40:30.596Z",
+      "response_sha256": "4c11da9a0799bebad1643af2016ed02bc7b3bbe467d1a96fac5c7397a6a8c4f7",
+      "reported_total_results": 3586,
+      "api_estimated_cost_usd": 0.001,
+      "returned": 50,
+      "items": [
+        {
+          "rank": 1,
+          "openalex_id": "https://openalex.org/W4206125442",
+          "doi": "https://doi.org/10.1073/pnas.2025334119",
+          "title": "Algorithmic Amplification of Politics on Twitter",
+          "year": 2021,
+          "type": "preprint",
+          "landing_page_url": "http://arxiv.org/abs/2110.11010"
+        },
+        {
+          "rank": 2,
+          "openalex_id": "https://openalex.org/W2797202416",
+          "doi": "https://doi.org/10.2139/ssrn.3144139",
+          "title": "Social Media, Political Polarization, and Political Disinformation: A Review of the Scientific Literature",
+          "year": 2018,
+          "type": "preprint",
+          "landing_page_url": "https://doi.org/10.2139/ssrn.3144139"
+        },
+        {
+          "rank": 3,
+          "openalex_id": "https://openalex.org/W3206593531",
+          "doi": "https://doi.org/10.1073/pnas.2025334119",
+          "title": "Algorithmic amplification of politics on Twitter",
+          "year": 2021,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1073/pnas.2025334119"
+        },
+        {
+          "rank": 4,
+          "openalex_id": "https://openalex.org/W4211017739",
+          "doi": "https://doi.org/10.1038/s41586-019-1138-y",
+          "title": "Machine behaviour",
+          "year": 2019,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1038/s41586-019-1138-y"
+        },
+        {
+          "rank": 5,
+          "openalex_id": "https://openalex.org/W4392563408",
+          "doi": "https://doi.org/10.1140/epjds/s13688-024-00456-3",
+          "title": "Evaluating Twitter’s algorithmic amplification of low-credibility content: an observational study",
+          "year": 2024,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1140/epjds/s13688-024-00456-3"
+        },
+        {
+          "rank": 6,
+          "openalex_id": "https://openalex.org/W4408138635",
+          "doi": "https://doi.org/10.1093/pnasnexus/pgaf062",
+          "title": "Engagement, user satisfaction, and the amplification of divisive content on social media",
+          "year": 2025,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1093/pnasnexus/pgaf062"
+        },
+        {
+          "rank": 7,
+          "openalex_id": "https://openalex.org/W4386301029",
+          "doi": "https://doi.org/10.1007/978-3-031-53503-1_11",
+          "title": "Algorithmic Amplification of Politics and Engagement Maximization on Social Media",
+          "year": 2024,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1007/978-3-031-53503-1_11"
+        },
+        {
+          "rank": 8,
+          "openalex_id": "https://openalex.org/W4411542040",
+          "doi": "https://doi.org/10.1145/3715275.3732159",
+          "title": "Auditing Political Exposure Bias: Algorithmic Amplification on Twitter/X During the 2024 U.S. Presidential Election",
+          "year": 2025,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1145/3715275.3732159"
+        },
+        {
+          "rank": 9,
+          "openalex_id": "https://openalex.org/W4410753812",
+          "doi": "https://doi.org/10.3390/admsci15060202",
+          "title": "Viral Leadership: Algorithmic Amplification and the Rise of Leadership Fashions",
+          "year": 2025,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.3390/admsci15060202"
+        },
+        {
+          "rank": 10,
+          "openalex_id": "https://openalex.org/W4308804602",
+          "doi": "https://doi.org/10.1080/14742837.2022.2143345",
+          "title": "Amplification, evasion, hijacking: algorithms as repertoire for social movements and the struggle for visibility",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1080/14742837.2022.2143345"
+        },
+        {
+          "rank": 11,
+          "openalex_id": "https://openalex.org/W4296703176",
+          "doi": "https://doi.org/10.1093/pnasnexus/pgac186",
+          "title": "Social media sharing of low-quality news sources by political elites",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1093/pnasnexus/pgac186"
+        },
+        {
+          "rank": 12,
+          "openalex_id": "https://openalex.org/W4405359942",
+          "doi": "https://doi.org/10.2139/ssrn.5018879",
+          "title": "Auditing Political Exposure Bias: Algorithmic Amplification on Twitter/X Approaching the 2024 U.S. Presidential Election",
+          "year": 2024,
+          "type": "preprint",
+          "landing_page_url": "https://doi.org/10.2139/ssrn.5018879"
+        },
+        {
+          "rank": 13,
+          "openalex_id": "https://openalex.org/W4378718287",
+          "doi": "https://doi.org/10.48550/arxiv.2305.16941",
+          "title": "Engagement, User Satisfaction, and the Amplification of Divisive Content on Social Media",
+          "year": 2023,
+          "type": "preprint",
+          "landing_page_url": "http://arxiv.org/abs/2305.16941"
+        },
+        {
+          "rank": 14,
+          "openalex_id": "https://openalex.org/W4376056120",
+          "doi": "https://doi.org/10.1177/20539517231172424",
+          "title": "Ethical scaling for content moderation: Extreme speech and the (in)significance of artificial intelligence",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1177/20539517231172424"
+        },
+        {
+          "rank": 15,
+          "openalex_id": "https://openalex.org/W2974097540",
+          "doi": "https://doi.org/10.22230/cjc.2019v44n3a3653",
+          "title": "Data Segregation and Algorithmic Amplification: A Conversation with Wendy Hui Kyong Chun",
+          "year": 2019,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.22230/cjc.2019v44n3a3653"
+        },
+        {
+          "rank": 16,
+          "openalex_id": "https://openalex.org/W7118131279",
+          "doi": "https://doi.org/10.1080/1062726x.2025.2606676",
+          "title": "Social Bots as Agenda-Builders: Evaluating the Impact of Algorithmic Amplification on Organizational Messaging",
+          "year": 2026,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1080/1062726x.2025.2606676"
+        },
+        {
+          "rank": 17,
+          "openalex_id": "https://openalex.org/W4411687312",
+          "doi": "https://doi.org/10.59075/k8ra0b02",
+          "title": "Algorithmic Amplification and Political Discourse: The Role of AI in Shaping Public Opinion on Social Media in Pakistan",
+          "year": 2025,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.59075/k8ra0b02"
+        },
+        {
+          "rank": 18,
+          "openalex_id": "https://openalex.org/W4387277768",
+          "doi": "https://doi.org/10.1038/s41598-023-43980-4",
+          "title": "Crowdsourced audit of Twitter’s recommender systems",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1038/s41598-023-43980-4"
+        },
+        {
+          "rank": 19,
+          "openalex_id": "https://openalex.org/W4308661826",
+          "doi": "https://doi.org/10.1007/978-3-031-13694-8",
+          "title": "Europe in the Age of Post-Truth Politics",
+          "year": 2022,
+          "type": "book",
+          "landing_page_url": "https://doi.org/10.1007/978-3-031-13694-8"
+        },
+        {
+          "rank": 20,
+          "openalex_id": "https://openalex.org/W4412787296",
+          "doi": "https://doi.org/10.3389/frai.2025.1569115",
+          "title": "AI-driven disinformation: policy recommendations for democratic resilience",
+          "year": 2025,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.3389/frai.2025.1569115"
+        },
+        {
+          "rank": 21,
+          "openalex_id": "https://openalex.org/W4391884843",
+          "doi": "https://doi.org/10.1103/physrevresearch.6.013170",
+          "title": "Multidimensional political polarization in online social networks",
+          "year": 2024,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1103/physrevresearch.6.013170"
+        },
+        {
+          "rank": 22,
+          "openalex_id": "https://openalex.org/W4412560582",
+          "doi": "https://doi.org/10.55966/assaj.2025.4.1.063",
+          "title": "Digital Disruption in Political PR: From Gatekeepers to Algorithmic Amplification",
+          "year": 2025,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.55966/assaj.2025.4.1.063"
+        },
+        {
+          "rank": 23,
+          "openalex_id": "https://openalex.org/W7130386561",
+          "doi": "https://doi.org/10.1038/s41586-026-10098-2",
+          "title": "The political effects of X’s feed algorithm",
+          "year": 2026,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1038/s41586-026-10098-2"
+        },
+        {
+          "rank": 24,
+          "openalex_id": "https://openalex.org/W3124717596",
+          "doi": "https://doi.org/10.1007/s13347-020-00441-4",
+          "title": "Public Actors Without Public Values: Legitimacy, Domination and the Regulation of the Technology Sector",
+          "year": 2021,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1007/s13347-020-00441-4"
+        },
+        {
+          "rank": 25,
+          "openalex_id": "https://openalex.org/W4401035240",
+          "doi": "https://doi.org/10.1177/14614448241262415",
+          "title": "Social media platforms for politics: A comparison of Facebook, Instagram, Twitter, YouTube, Reddit, Snapchat, and WhatsApp",
+          "year": 2024,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1177/14614448241262415"
+        },
+        {
+          "rank": 26,
+          "openalex_id": "https://openalex.org/W3160110907",
+          "doi": "https://doi.org/10.51685/jqd.2021.005",
+          "title": "Love and Anger in Global Party Politics",
+          "year": 2021,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.51685/jqd.2021.005"
+        },
+        {
+          "rank": 27,
+          "openalex_id": "https://openalex.org/W3003606046",
+          "doi": "https://doi.org/10.1177/1529100620946707",
+          "title": "Citizens Versus the Internet: Confronting Digital Challenges With Cognitive Tools",
+          "year": 2020,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1177/1529100620946707"
+        },
+        {
+          "rank": 28,
+          "openalex_id": "https://openalex.org/W4305072354",
+          "doi": "https://doi.org/10.31305/rrijm.2022.v07.i10.004",
+          "title": "The Algorithmic Amplification of Concerns in a Media-Saturated World",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.31305/rrijm.2022.v07.i10.004"
+        },
+        {
+          "rank": 29,
+          "openalex_id": "https://openalex.org/W4391785078",
+          "doi": "https://doi.org/10.1017/pan.2023.42",
+          "title": "Estimating the Ideology of Political YouTube Videos",
+          "year": 2024,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1017/pan.2023.42"
+        },
+        {
+          "rank": 30,
+          "openalex_id": "https://openalex.org/W4321473289",
+          "doi": "https://doi.org/10.1145/3544548.3580644",
+          "title": "Upvotes? Downvotes? No Votes? Understanding the relationship between reaction mechanisms and political discourse on Reddit",
+          "year": 2023,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1145/3544548.3580644"
+        },
+        {
+          "rank": 31,
+          "openalex_id": "https://openalex.org/W4379233380",
+          "doi": "https://doi.org/10.1111/socf.12907",
+          "title": "Who Controls the Code, Controls the System: Algorithmically Amplified Bullshit, Social Inequality, and the Ubiquitous Surveillance of Everyday Life",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1111/socf.12907"
+        },
+        {
+          "rank": 32,
+          "openalex_id": "https://openalex.org/W4404390517",
+          "doi": "https://doi.org/10.48550/arxiv.2411.01852",
+          "title": "Auditing Political Exposure Bias: Algorithmic Amplification on Twitter/X During the 2024 U.S. Presidential Election",
+          "year": 2024,
+          "type": "preprint",
+          "landing_page_url": "https://arxiv.org/abs/2411.01852"
+        },
+        {
+          "rank": 33,
+          "openalex_id": "https://openalex.org/W4283170039",
+          "doi": "https://doi.org/10.1145/3531146.3533201",
+          "title": "Accountable Data: The Politics and Pragmatics of Disclosure Datasets",
+          "year": 2022,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1145/3531146.3533201"
+        },
+        {
+          "rank": 34,
+          "openalex_id": "https://openalex.org/W4407955680",
+          "doi": "https://doi.org/10.1007/s00146-025-02230-z",
+          "title": "Algorithmically mediated judgment: an arendtian perspective on political subjectivity in social media",
+          "year": 2025,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1007/s00146-025-02230-z"
+        },
+        {
+          "rank": 35,
+          "openalex_id": "https://openalex.org/W3171461543",
+          "doi": null,
+          "title": "Information Fiduciaries and Political Microtargeting: A Legal Framework for Regulating Political Advertising on Digital Platforms",
+          "year": 2021,
+          "type": "article",
+          "landing_page_url": "https://scholarlycommons.law.northwestern.edu/nulr/vol115/iss6/6"
+        },
+        {
+          "rank": 36,
+          "openalex_id": "https://openalex.org/W2996846411",
+          "doi": "https://doi.org/10.29085/9781783303922.003",
+          "title": "Information Literacy in the Digital Age: Why Critical Digital Literacy Matters for Democracy",
+          "year": 2019,
+          "type": "other",
+          "landing_page_url": "https://doi.org/10.29085/9781783303922.003"
+        },
+        {
+          "rank": 37,
+          "openalex_id": "https://openalex.org/W4388588253",
+          "doi": "https://doi.org/10.1093/pnasnexus/pgad382",
+          "title": "The event-driven nature of online political hostility: How offline political events make online interactions more hostile",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1093/pnasnexus/pgad382"
+        },
+        {
+          "rank": 38,
+          "openalex_id": "https://openalex.org/W4376311790",
+          "doi": "https://doi.org/10.48550/arxiv.2305.06125",
+          "title": "Evaluating Twitter's Algorithmic Amplification of Low-Credibility Content: An Observational Study",
+          "year": 2023,
+          "type": "preprint",
+          "landing_page_url": "http://arxiv.org/abs/2305.06125"
+        },
+        {
+          "rank": 39,
+          "openalex_id": "https://openalex.org/W4387671266",
+          "doi": "https://doi.org/10.3389/frsps.2023.1260896",
+          "title": "A century of pluralistic ignorance: what we have learned about its origins, forms, and consequences",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.3389/frsps.2023.1260896"
+        },
+        {
+          "rank": 40,
+          "openalex_id": "https://openalex.org/W4391578807",
+          "doi": "https://doi.org/10.7551/mitpress/14329.001.0001",
+          "title": "Algorithms of Resistance",
+          "year": 2024,
+          "type": "book",
+          "landing_page_url": "https://doi.org/10.7551/mitpress/14329.001.0001"
+        },
+        {
+          "rank": 41,
+          "openalex_id": "https://openalex.org/W4410362196",
+          "doi": "https://doi.org/10.3390/socsci14050304",
+          "title": "Climate Change Disinformation on Social Media: A Meta-Synthesis on Epistemic Welfare in the Post-Truth Era",
+          "year": 2025,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.3390/socsci14050304"
+        },
+        {
+          "rank": 42,
+          "openalex_id": "https://openalex.org/W4402702536",
+          "doi": "https://doi.org/10.1007/s41109-024-00668-6",
+          "title": "Auditing the audits: evaluating methodologies for social media recommender system audits",
+          "year": 2024,
+          "type": "article",
+          "landing_page_url": "http://dx.doi.org/10.1007/s41109-024-00668-6"
+        },
+        {
+          "rank": 43,
+          "openalex_id": "https://openalex.org/W4406469685",
+          "doi": "https://doi.org/10.1177/02632764241304687",
+          "title": "Machine Learning, Synthetic Data, and the Politics of Difference",
+          "year": 2025,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1177/02632764241304687"
+        },
+        {
+          "rank": 44,
+          "openalex_id": "https://openalex.org/W4390723916",
+          "doi": "https://doi.org/10.3758/s13428-023-02307-x",
+          "title": "Diminished diversity-of-thought in a standard large language model",
+          "year": 2024,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.3758/s13428-023-02307-x"
+        },
+        {
+          "rank": 45,
+          "openalex_id": "https://openalex.org/W4402580738",
+          "doi": "https://doi.org/10.1038/s41598-024-71263-z",
+          "title": "Negative online news articles are shared more to social media",
+          "year": 2024,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1038/s41598-024-71263-z"
+        },
+        {
+          "rank": 46,
+          "openalex_id": "https://openalex.org/W4400586030",
+          "doi": "https://doi.org/10.47305/jlpe2411050sh",
+          "title": "The Future of Political Discourse: AI and Media Literacy Education",
+          "year": 2024,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.47305/jlpe2411050sh"
+        },
+        {
+          "rank": 47,
+          "openalex_id": "https://openalex.org/W4413918520",
+          "doi": "https://doi.org/10.1109/mipro65660.2025.11131918",
+          "title": "Research on the Impact of Algorithmic Echo Chambers on Perceptions and Attitudes of Social Network Users in a Digital Society",
+          "year": 2025,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1109/mipro65660.2025.11131918"
+        },
+        {
+          "rank": 48,
+          "openalex_id": "https://openalex.org/W2946590006",
+          "doi": "https://doi.org/10.1017/s1537592719000434",
+          "title": "Trumpism and the Dialectic of Neoliberal Reason",
+          "year": 2019,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1017/s1537592719000434"
+        },
+        {
+          "rank": 49,
+          "openalex_id": "https://openalex.org/W4416381104",
+          "doi": "https://doi.org/10.1017/s0020818325101069",
+          "title": "Information Disorder and Global Politics",
+          "year": 2025,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1017/s0020818325101069"
+        },
+        {
+          "rank": 50,
+          "openalex_id": "https://openalex.org/W4412012594",
+          "doi": "https://doi.org/10.3389/fcomm.2025.1616465",
+          "title": "From framing to emotion: evolving narratives in Ibero-American political mediatization (2008–2019)",
+          "year": 2025,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.3389/fcomm.2025.1616465"
+        }
+      ]
+    },
+    {
+      "query": "\"foreign influence\" AND \"social media\"",
+      "url": "https://api.openalex.org/works?search=%22foreign+influence%22+AND+%22social+media%22&per_page=50&select=id%2Cdisplay_name%2Cdoi%2Cpublication_year%2Ctype%2Cprimary_location",
+      "fetched_at_utc": "2026-09-20T00:40:31.345Z",
+      "response_sha256": "e8629731efe859d765e546a0b01cceb1c71662f316a3035506653abca9983d50",
+      "reported_total_results": 3449,
+      "api_estimated_cost_usd": 0.001,
+      "returned": 50,
+      "items": [
+        {
+          "rank": 1,
+          "openalex_id": "https://openalex.org/W3123948795",
+          "doi": "https://doi.org/10.1146/annurev-economics-081919-050239",
+          "title": "Political Effects of the Internet and Social Media",
+          "year": 2020,
+          "type": "review",
+          "landing_page_url": "https://doi.org/10.1146/annurev-economics-081919-050239"
+        },
+        {
+          "rank": 2,
+          "openalex_id": "https://openalex.org/W3211616085",
+          "doi": null,
+          "title": "The Global Disinformation Order: 2019 Global Inventory of Organised Social Media Manipulation",
+          "year": 2019,
+          "type": "article",
+          "landing_page_url": "https://digitalcommons.unl.edu/scholcom/207"
+        },
+        {
+          "rank": 3,
+          "openalex_id": "https://openalex.org/W4313894975",
+          "doi": "https://doi.org/10.1038/s41467-022-35576-9",
+          "title": "Exposure to the Russian Internet Research Agency foreign influence campaign on Twitter in the 2016 US election and its relationship to attitudes and voting behavior",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1038/s41467-022-35576-9"
+        },
+        {
+          "rank": 4,
+          "openalex_id": "https://openalex.org/W4220657114",
+          "doi": "https://doi.org/10.1017/psrm.2022.9",
+          "title": "Asymmetric flooding as a tool for foreign influence on social media",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1017/psrm.2022.9"
+        },
+        {
+          "rank": 5,
+          "openalex_id": "https://openalex.org/W3042287377",
+          "doi": "https://doi.org/10.1017/9781108920377",
+          "title": "Social Media and International Relations",
+          "year": 2020,
+          "type": "book",
+          "landing_page_url": "https://doi.org/10.1017/9781108920377"
+        },
+        {
+          "rank": 6,
+          "openalex_id": "https://openalex.org/W4386639506",
+          "doi": "https://doi.org/10.1140/epjds/s13688-023-00414-5",
+          "title": "Russian propaganda on social media during the 2022 invasion of Ukraine",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1140/epjds/s13688-023-00414-5"
+        },
+        {
+          "rank": 7,
+          "openalex_id": "https://openalex.org/W2055389078",
+          "doi": "https://doi.org/10.1080/15377857.2014.866412",
+          "title": "Revolution 2.0 in Egypt: Pushing for Change, Foreign Influences on a Popular Revolt",
+          "year": 2014,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1080/15377857.2014.866412"
+        },
+        {
+          "rank": 8,
+          "openalex_id": "https://openalex.org/W3163217719",
+          "doi": "https://doi.org/10.1145/3447548.3467391",
+          "title": "Identifying Coordinated Accounts on Social Media through Hidden Influence and Group Behaviours",
+          "year": 2021,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1145/3447548.3467391"
+        },
+        {
+          "rank": 9,
+          "openalex_id": "https://openalex.org/W2931974742",
+          "doi": "https://doi.org/10.1017/psrm.2018.68",
+          "title": "Missing the Target? Using Surveys to Validate Social Media Ad Targeting",
+          "year": 2019,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1017/psrm.2018.68"
+        },
+        {
+          "rank": 10,
+          "openalex_id": "https://openalex.org/W4367679264",
+          "doi": "https://doi.org/10.1007/s10660-022-09636-7",
+          "title": "Political social media marketing: a systematic literature review and agenda for future research",
+          "year": 2023,
+          "type": "review",
+          "landing_page_url": "https://doi.org/10.1007/s10660-022-09636-7"
+        },
+        {
+          "rank": 11,
+          "openalex_id": "https://openalex.org/W2931398110",
+          "doi": "https://doi.org/10.48550/arxiv.1904.01596",
+          "title": "Analyzing Polarization in Social Media: Method and Application to Tweets on 21 Mass Shootings",
+          "year": 2019,
+          "type": "preprint",
+          "landing_page_url": "http://arxiv.org/abs/1904.01596"
+        },
+        {
+          "rank": 12,
+          "openalex_id": "https://openalex.org/W2991581987",
+          "doi": "https://doi.org/10.1073/pnas.1906420116",
+          "title": "Assessing the Russian Internet Research Agency’s impact on the political attitudes and behaviors of American Twitter users in late 2017",
+          "year": 2019,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1073/pnas.1906420116"
+        },
+        {
+          "rank": 13,
+          "openalex_id": "https://openalex.org/W4375827590",
+          "doi": "https://doi.org/10.2139/ssrn.4429558",
+          "title": "The Algorithmic Management of Polarization and Violence on Social Media",
+          "year": 2023,
+          "type": "preprint",
+          "landing_page_url": "https://doi.org/10.2139/ssrn.4429558"
+        },
+        {
+          "rank": 14,
+          "openalex_id": "https://openalex.org/W2900218011",
+          "doi": "https://doi.org/10.69985/rtqz8308",
+          "title": "Data Craft: The Manipulation of Social Media Metadata",
+          "year": 2018,
+          "type": "report",
+          "landing_page_url": "https://doi.org/10.69985/rtqz8308"
+        },
+        {
+          "rank": 15,
+          "openalex_id": "https://openalex.org/W2958393574",
+          "doi": "https://doi.org/10.4324/9780429260537",
+          "title": "RussiaGate and Propaganda: Disinformation in the Age of Social Media",
+          "year": 2019,
+          "type": "article",
+          "landing_page_url": "https://www.taylorfrancis.com/books/9780429260537"
+        },
+        {
+          "rank": 16,
+          "openalex_id": "https://openalex.org/W2797963409",
+          "doi": "https://doi.org/10.1109/ssp.2018.8450823",
+          "title": "Influence Estimation on Social Media Networks Using Causal Inference",
+          "year": 2018,
+          "type": "conference-paper",
+          "landing_page_url": "https://doi.org/10.1109/ssp.2018.8450823"
+        },
+        {
+          "rank": 17,
+          "openalex_id": "https://openalex.org/W4283261036",
+          "doi": "https://doi.org/10.3389/fpos.2022.885362",
+          "title": "Connectivity Between Russian Information Sources and Extremist Communities Across Social Media Platforms",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.3389/fpos.2022.885362"
+        },
+        {
+          "rank": 18,
+          "openalex_id": "https://openalex.org/W2274277923",
+          "doi": "https://doi.org/10.4236/oalib.1101486",
+          "title": "Framing the Occupy Nigeria Protests in Newspapers and Social Media",
+          "year": 2015,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.4236/oalib.1101486"
+        },
+        {
+          "rank": 19,
+          "openalex_id": "https://openalex.org/W3096296182",
+          "doi": "https://doi.org/10.37016/mr-2020-47",
+          "title": "Breaking Harmony Square: A game that “inoculates” against political misinformation",
+          "year": 2020,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.37016/mr-2020-47"
+        },
+        {
+          "rank": 20,
+          "openalex_id": "https://openalex.org/W3102526628",
+          "doi": "https://doi.org/10.51685/jqd.2022.010",
+          "title": "Slanted Narratives, Social Media, and Foreign Influence in Libya",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.51685/jqd.2022.010"
+        },
+        {
+          "rank": 21,
+          "openalex_id": "https://openalex.org/W4293546235",
+          "doi": "https://doi.org/10.1017/s1537592722001931",
+          "title": "Political Coalitions and Social Media: Evidence from Pakistan",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1017/s1537592722001931"
+        },
+        {
+          "rank": 22,
+          "openalex_id": "https://openalex.org/W2380995824",
+          "doi": "https://doi.org/10.1017/s0266078416000250",
+          "title": "Anglicized Korean Neologisms of the New Millennium: An Overview",
+          "year": 2016,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1017/s0266078416000250"
+        },
+        {
+          "rank": 23,
+          "openalex_id": "https://openalex.org/W2969656656",
+          "doi": "https://doi.org/10.1017/s1049096519001021",
+          "title": "A New Model for Industry–Academic Partnerships",
+          "year": 2019,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1017/s1049096519001021"
+        },
+        {
+          "rank": 24,
+          "openalex_id": "https://openalex.org/W4317886282",
+          "doi": "https://doi.org/10.1108/qmr-03-2022-0048",
+          "title": "Destination branding through social media: juxtaposition of foreign influencer’s narratives and state’s presentation on the event of Pakistan Tourism Summit 2019",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1108/qmr-03-2022-0048"
+        },
+        {
+          "rank": 25,
+          "openalex_id": "https://openalex.org/W4210677338",
+          "doi": "https://doi.org/10.31234/osf.io/tp6vy",
+          "title": "Nudging social media sharing towards accuracy",
+          "year": 2021,
+          "type": "preprint",
+          "landing_page_url": "https://doi.org/10.31234/osf.io/tp6vy"
+        },
+        {
+          "rank": 26,
+          "openalex_id": "https://openalex.org/W4403039308",
+          "doi": "https://doi.org/10.1038/s41467-024-52179-8",
+          "title": "Social identity correlates of social media engagement before and after the 2022 Russian invasion of Ukraine",
+          "year": 2024,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1038/s41467-024-52179-8"
+        },
+        {
+          "rank": 27,
+          "openalex_id": "https://openalex.org/W4382051553",
+          "doi": "https://doi.org/10.3386/w31399",
+          "title": "Exporting Ideology: The Right and Left of Foreign Influence",
+          "year": 2023,
+          "type": "report",
+          "landing_page_url": "https://doi.org/10.3386/w31399"
+        },
+        {
+          "rank": 28,
+          "openalex_id": "https://openalex.org/W4308671128",
+          "doi": "https://doi.org/10.48550/arxiv.2211.04154",
+          "title": "Russian propaganda on social media during the 2022 invasion of Ukraine",
+          "year": 2022,
+          "type": "preprint",
+          "landing_page_url": "http://arxiv.org/abs/2211.04154"
+        },
+        {
+          "rank": 29,
+          "openalex_id": "https://openalex.org/W3025770518",
+          "doi": "https://doi.org/10.1057/s42984-020-00012-z",
+          "title": "The easy weaponization of social media: why profit has trumped security for U.S. companies",
+          "year": 2020,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1057/s42984-020-00012-z"
+        },
+        {
+          "rank": 30,
+          "openalex_id": "https://openalex.org/W4308802752",
+          "doi": "https://doi.org/10.1177/00223433221092815",
+          "title": "Introducing the Online Political Influence Efforts dataset",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1177/00223433221092815"
+        },
+        {
+          "rank": 31,
+          "openalex_id": "https://openalex.org/W4364362179",
+          "doi": "https://doi.org/10.1017/s1351324923000104",
+          "title": "A transformer-based multi-task framework for joint detection of aggression and hate on social media data",
+          "year": 2023,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1017/s1351324923000104"
+        },
+        {
+          "rank": 32,
+          "openalex_id": "https://openalex.org/W4406028570",
+          "doi": "https://doi.org/10.1080/00933104.2024.2439302",
+          "title": "Baudrillard, hyperreality, and the ‘problematic’ of (mis/dis)information in social media",
+          "year": 2025,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1080/00933104.2024.2439302"
+        },
+        {
+          "rank": 33,
+          "openalex_id": "https://openalex.org/W4414425721",
+          "doi": "https://doi.org/10.17645/mac.10697",
+          "title": "Government Communication on Social Media: Research Foci, Domains, and Future Directions",
+          "year": 2025,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.17645/mac.10697"
+        },
+        {
+          "rank": 34,
+          "openalex_id": "https://openalex.org/W4399120361",
+          "doi": "https://doi.org/10.1371/journal.pone.0302323",
+          "title": "Virtual lab coats: The effects of verified source information on social media post credibility",
+          "year": 2024,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1371/journal.pone.0302323"
+        },
+        {
+          "rank": 35,
+          "openalex_id": "https://openalex.org/W4402401336",
+          "doi": "https://doi.org/10.1093/pnasnexus/pgae396",
+          "title": "Measuring receptivity to misinformation at scale on a social media platform",
+          "year": 2024,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1093/pnasnexus/pgae396"
+        },
+        {
+          "rank": 36,
+          "openalex_id": "https://openalex.org/W2808356107",
+          "doi": null,
+          "title": "Systemic Social Media Regulation",
+          "year": 2018,
+          "type": "article",
+          "landing_page_url": "https://scholarship.law.duke.edu/dltr/vol16/iss1/14"
+        },
+        {
+          "rank": 37,
+          "openalex_id": "https://openalex.org/W4226106458",
+          "doi": "https://doi.org/10.1515/9781503631151",
+          "title": "Tyrants on Twitter",
+          "year": 2022,
+          "type": "book",
+          "landing_page_url": "https://doi.org/10.1515/9781503631151"
+        },
+        {
+          "rank": 38,
+          "openalex_id": "https://openalex.org/W3012284140",
+          "doi": "https://doi.org/10.5117/9789463724838",
+          "title": "The Politics of Social Media Manipulation",
+          "year": 2021,
+          "type": "book",
+          "landing_page_url": "https://doi.org/10.5117/9789463724838"
+        },
+        {
+          "rank": 39,
+          "openalex_id": "https://openalex.org/W4317772760",
+          "doi": "https://doi.org/10.1007/978-3-031-16624-2_20",
+          "title": "Computational Social Science for Policy and Quality of Democracy: Public Opinion, Hate Speech, Misinformation, and Foreign Influence Campaigns",
+          "year": 2023,
+          "type": "book-chapter",
+          "landing_page_url": "https://doi.org/10.1007/978-3-031-16624-2_20"
+        },
+        {
+          "rank": 40,
+          "openalex_id": "https://openalex.org/W3088749783",
+          "doi": "https://doi.org/10.1080/17512786.2020.1832139",
+          "title": "Visual Mis/disinformation in Journalism and Public Communications: Current Verification Practices, Challenges, and Future Opportunities",
+          "year": 2020,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1080/17512786.2020.1832139"
+        },
+        {
+          "rank": 41,
+          "openalex_id": "https://openalex.org/W3093957097",
+          "doi": null,
+          "title": "The Role of Social Media Influencers in the Consumer Decision-making Process",
+          "year": 2020,
+          "type": "dissertation",
+          "landing_page_url": "http://www.theseus.fi/handle/10024/341524"
+        },
+        {
+          "rank": 42,
+          "openalex_id": "https://openalex.org/W4200260098",
+          "doi": "https://doi.org/10.1108/oxan-db264532",
+          "title": "Malicious uses of social media bots will rise",
+          "year": 2021,
+          "type": "other",
+          "landing_page_url": "https://doi.org/10.1108/oxan-db264532"
+        },
+        {
+          "rank": 43,
+          "openalex_id": "https://openalex.org/W3160003359",
+          "doi": "https://doi.org/10.1017/ajil.2021.10",
+          "title": "Government Agencies and Private Companies Undertake Actions to Limit the Impact of Foreign Influence and Interference in the 2020 U.S. Election",
+          "year": 2021,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1017/ajil.2021.10"
+        },
+        {
+          "rank": 44,
+          "openalex_id": "https://openalex.org/W4401276259",
+          "doi": "https://doi.org/10.1177/08944393241269394",
+          "title": "Forty Thousand Fake Twitter Profiles: A Computational Framework for the Visual Analysis of Social Media Propaganda",
+          "year": 2024,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1177/08944393241269394"
+        },
+        {
+          "rank": 45,
+          "openalex_id": "https://openalex.org/W4400943930",
+          "doi": "https://doi.org/10.2139/ssrn.4899259",
+          "title": "Forty Thousand Fake Twitter Profiles: A Computational Framework for the Visual Analysis of Social Media Propaganda",
+          "year": 2024,
+          "type": "preprint",
+          "landing_page_url": "https://doi.org/10.2139/ssrn.4899259"
+        },
+        {
+          "rank": 46,
+          "openalex_id": "https://openalex.org/W4362652899",
+          "doi": "https://doi.org/10.59263/gmjacs.12.01.2022.218",
+          "title": "Role of Influencers in Digital Marketing: The moderating impact of follower’s interaction",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.59263/gmjacs.12.01.2022.218"
+        },
+        {
+          "rank": 47,
+          "openalex_id": "https://openalex.org/W3197052143",
+          "doi": "https://doi.org/10.1093/acrefore/9780190228613.013.917",
+          "title": "Global Social Media Ethics and the Responsibility of Journalism",
+          "year": 2021,
+          "type": "reference-entry",
+          "landing_page_url": "https://doi.org/10.1093/acrefore/9780190228613.013.917"
+        },
+        {
+          "rank": 48,
+          "openalex_id": "https://openalex.org/W4294952471",
+          "doi": "https://doi.org/10.1007/s44206-022-00010-6",
+          "title": "Deepfakes and Democracy (Theory): How Synthetic Audio-Visual Media for Disinformation and Hate Speech Threaten Core Democratic Functions",
+          "year": 2022,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1007/s44206-022-00010-6"
+        },
+        {
+          "rank": 49,
+          "openalex_id": "https://openalex.org/W7135058374",
+          "doi": "https://doi.org/10.1177/00104140261431834",
+          "title": "Authoritarian Persuasion at Home and Abroad: The Partial Effectiveness of Foreign Influencers in Propaganda Work",
+          "year": 2026,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1177/00104140261431834"
+        },
+        {
+          "rank": 50,
+          "openalex_id": "https://openalex.org/W3135318017",
+          "doi": "https://doi.org/10.1016/j.ijdrr.2021.102151",
+          "title": "Handling false information in emergency management: A cross-national comparative study of European practices",
+          "year": 2021,
+          "type": "article",
+          "landing_page_url": "https://doi.org/10.1016/j.ijdrr.2021.102151"
+        }
+      ]
+    }
+  ]
+}

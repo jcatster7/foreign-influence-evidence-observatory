@@ -1,0 +1,184 @@
+[
+  {
+    "case_id": "displayed_origin_only",
+    "dataset_id": "local_origin_600",
+    "source": "sources/local_reports/origin_600_report_v1.md",
+    "evidence": "X displayed a non-US country for some selected visible reposters; no independent location or operator verification.",
+    "labels": {
+      "origin": "unknown",
+      "operation_attribution": "unknown",
+      "automation": "unknown",
+      "coordination": "unknown",
+      "deception": "unknown",
+      "exposure": "unknown",
+      "recommendation": "unknown",
+      "impact": "unknown"
+    },
+    "source_locator": "Executive summary; Design and estimand; Evidence and limitations",
+    "source_sha256": "7104d775903b53f6ef5c1de1061f2888a7e4c2cc8ed174a3e810d852739ab412",
+    "retrieved_at_utc": null,
+    "source_hash_scope": "Local report file bytes at case assembly"
+  },
+  {
+    "case_id": "feed_shift_only",
+    "dataset_id": "figshare_28033772_v1",
+    "source": "sources/local_reports/matched_feed_2023_heterogeneity_report.md",
+    "evidence": "Paired 2023 feeds show an aggregate conservative-relative source-share shift; public rows anonymize accounts.",
+    "labels": {
+      "origin": "unknown",
+      "operation_attribution": "unknown",
+      "automation": "unknown",
+      "coordination": "unknown",
+      "deception": "unknown",
+      "exposure": "supported",
+      "recommendation": "supported",
+      "impact": "unknown"
+    },
+    "source_locator": "Executive summary and participant-level decomposition",
+    "source_sha256": "eca867cf8b9a2f7d0354c125bb050b7a28f7f7e4393152de79b5c855e2003142",
+    "retrieved_at_utc": null,
+    "source_hash_scope": "Local report file bytes at case assembly"
+  },
+  {
+    "case_id": "anonymous_news_source",
+    "dataset_id": "figshare_28033772_v1",
+    "source": "sources/local_reports/matched_feed_2023_heterogeneity_report.md",
+    "evidence": "An unmatched anonymous News-account category contributes to the aggregate feed shift; unmatched means absent from an external outlet lookup.",
+    "labels": {
+      "origin": "unknown",
+      "operation_attribution": "unknown",
+      "automation": "unknown",
+      "coordination": "unknown",
+      "deception": "unknown",
+      "exposure": "supported",
+      "recommendation": "supported",
+      "impact": "unknown"
+    },
+    "source_locator": "News matching category table and explanatory paragraph (lines 48-54 at capture)",
+    "source_sha256": "eca867cf8b9a2f7d0354c125bb050b7a28f7f7e4393152de79b5c855e2003142",
+    "retrieved_at_utc": null,
+    "source_hash_scope": "Local report file bytes at case assembly"
+  },
+  {
+    "case_id": "values_misalignment_only",
+    "dataset_id": "pnas_2610388123",
+    "source": "sources/local_reports/matched_feed_2024_synthesis_report.md",
+    "evidence": "The 2024 matched-feed study reports aggregate value misalignment for selected content; it does not identify foreign or automated accounts.",
+    "labels": {
+      "origin": "unknown",
+      "operation_attribution": "unknown",
+      "automation": "unknown",
+      "coordination": "unknown",
+      "deception": "unknown",
+      "exposure": "supported",
+      "recommendation": "supported",
+      "impact": "unknown"
+    },
+    "source_locator": "2024 value-selection pattern; opening summary",
+    "source_sha256": "a787850800b7319946e55c99c05f700fad42ce48e411f3e92b84505fdb37f1a7",
+    "retrieved_at_utc": null,
+    "source_hash_scope": "Local report file bytes at case assembly"
+  },
+  {
+    "case_id": "facebook_media_coordination",
+    "dataset_id": "rogers_righetti_2025_facebook",
+    "source": "https://journals.sagepub.com/doi/10.1177/29768624251369784",
+    "evidence": "The authors observed highly coordinated link sharing by identifiable media groups; they found similar sharing signatures in an influence operation. Coordination behavior alone does not classify the groups as deceptive.",
+    "labels": {
+      "origin": "unknown",
+      "operation_attribution": "unknown",
+      "automation": "unknown",
+      "coordination": "supported",
+      "deception": "unknown",
+      "exposure": "unknown",
+      "recommendation": "unknown",
+      "impact": "unknown"
+    },
+    "source_locator": "Article comparison of Facebook media groups and influence operation",
+    "source_sha256": null,
+    "retrieved_at_utc": null,
+    "source_hash_scope": "No reusable HTML response; DOI page reviewed via web reader"
+  },
+  {
+    "case_id": "tiktok_duet_signal_only",
+    "dataset_id": "luceri_2026_tiktok",
+    "source": "https://ojs.aaai.org/index.php/ICWSM/article/view/42711",
+    "evidence": "The authors found that video reply and Duet/Stitch interactions often reflect organic engagement; this interaction type alone is insufficient to label coordination or deception.",
+    "labels": {
+      "origin": "unknown",
+      "operation_attribution": "unknown",
+      "automation": "unknown",
+      "coordination": "unknown",
+      "deception": "unknown",
+      "exposure": "unknown",
+      "recommendation": "unknown",
+      "impact": "unknown"
+    },
+    "source_locator": "Article abstract; full-text validation pending",
+    "source_sha256": "cd6c11a72383e25a3c2e545f0a79d52537402cc4d8d83bf4a53eff27dbd515da",
+    "retrieved_at_utc": "2026-09-20T00:52:56.056Z",
+    "source_hash_scope": "HTTP 200 HTML response body; raw bytes not redistributed"
+  },
+  {
+    "case_id": "ira_potential_exposure",
+    "dataset_id": "eady_2023_ira_2016",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9829855/",
+    "evidence": "Researchers combined respondent follow lists with posts by followed accounts to reconstruct potential exposure to platform-attributed IRA posts in 2016. They state that they cannot know which posts respondents actually saw. They assessed observational associations with attitudes and voting, not a ranked-versus-chronological effect.",
+    "labels": {
+      "origin": "unknown",
+      "operation_attribution": "supported",
+      "automation": "unknown",
+      "coordination": "unknown",
+      "deception": "unknown",
+      "exposure": "unknown",
+      "recommendation": "unknown",
+      "impact": "unknown"
+    },
+    "source_locator": "Methods: social media data, potential exposures (PMC9829855); authors explicitly say observed views are unknown",
+    "source_sha256": "cf6b33a533d03da58a4227e93004b414ee67322b39ce16819970f5efc0e9112d",
+    "retrieved_at_utc": "2026-09-20T00:53:53.372Z",
+    "source_hash_scope": "HTTP 200 HTML response body; raw bytes not redistributed"
+  },
+  {
+    "case_id": "botometer_score_only",
+    "dataset_id": "rauchfleisch_2020_botometer",
+    "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0241045",
+    "evidence": "Rauchfleisch and Kaiser found false positives and temporal score variation when applying Botometer thresholds; a threshold-crossing score alone does not verify full automation for an account.",
+    "labels": {
+      "origin": "unknown",
+      "operation_attribution": "unknown",
+      "automation": "unknown",
+      "coordination": "unknown",
+      "deception": "unknown",
+      "exposure": "unknown",
+      "recommendation": "unknown",
+      "impact": "unknown"
+    },
+    "source_locator": "Discussion: threshold false positives and temporal variation",
+    "source_sha256": "b6a5c86134279f4f796770ec286b72a1164746559dc1be03a1967044bfb81479",
+    "retrieved_at_utc": "2026-09-20T00:52:57.689Z",
+    "source_hash_scope": "HTTP 200 HTML response body; raw bytes not redistributed"
+  },
+  {
+    "case_id": "botometer_reviewed_false_positive_group",
+    "dataset_id": "rauchfleisch_2020_botometer",
+    "unit": "group_claim",
+    "claim_subject": "All 27 German politician accounts flagged by Botometer above 0.76 were fully automated",
+    "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0241045",
+    "evidence": "The authors manually inspected the 27 flagged politician accounts and reported only one with possible cross-posting automation. This contradicts the universal claim for the group; it does not provide account-level labels for reuse.",
+    "labels": {
+      "origin": "unknown",
+      "operation_attribution": "unknown",
+      "automation": "contradicted",
+      "coordination": "unknown",
+      "deception": "unknown",
+      "exposure": "unknown",
+      "recommendation": "unknown",
+      "impact": "unknown"
+    },
+    "source_locator": "Discussion: manual check of all 27 flagged politician accounts",
+    "source_sha256": "b6a5c86134279f4f796770ec286b72a1164746559dc1be03a1967044bfb81479",
+    "retrieved_at_utc": "2026-09-20T00:52:57.689Z",
+    "source_hash_scope": "HTTP 200 HTML response body; raw bytes not redistributed"
+  }
+]

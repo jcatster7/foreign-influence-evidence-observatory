@@ -1,0 +1,98 @@
+{
+  "status": "prepared_not_submitted",
+  "prepared_utc_date": "2026-09-20",
+  "registration_template": "OSF Open-Ended registration",
+  "external_spend_usd": 0.0,
+  "spending_cap_usd": 20.0,
+  "files": [
+    {
+      "path": "registration/OSF_OPEN_ENDED_REGISTRATION_TEXT.md",
+      "sha256": "967d3419127fdffe24f3ccfdac60d653753185de4c0ad4a689a6e126757a25fb",
+      "bytes": 8427
+    },
+    {
+      "path": "PREREGISTRATION_DRAFT.md",
+      "sha256": "0340a4ef9d869472fbde7bd8b9baa498caf8624d2c1c4f6ae37502dcb6f2ac98",
+      "bytes": 7387
+    },
+    {
+      "path": "SEARCH_PROTOCOL.md",
+      "sha256": "84c1bd7e950d5c984fb65a3e83a8bba0b47e761b03952e0b5104823b0c2eab0c",
+      "bytes": 5634
+    },
+    {
+      "path": "EXTRACTION_CODEBOOK.md",
+      "sha256": "2fd5d4e982fc44729eb2d5ca65eafb03bbdad366d11e9fab3af56cd02f6ff3eb",
+      "bytes": 6888
+    },
+    {
+      "path": "BENCHMARK_SPEC.md",
+      "sha256": "a467722c3d2cad2fbde2f987bdcacecfca4800be61d2f2512054dfd494d81ef6",
+      "bytes": 7761
+    },
+    {
+      "path": "LOW_COST_REPLICATION_PROTOCOL.md",
+      "sha256": "6c0f9fd6fb328fd4b1b0c132f9c5224da8c0a2ced123dd14d7f3c4d55206f2a6",
+      "bytes": 2371
+    },
+    {
+      "path": "benchmark_cases.json",
+      "sha256": "de748592f09509605fd63a9121768b03304df6c5fda91fa1cf8a251e13f1445f",
+      "bytes": 8643
+    },
+    {
+      "path": "score_claims.ts",
+      "sha256": "2ae10f0ef35975966a7b10c5045acf6c7488378d63150f6eef0468f3e8689e17",
+      "bytes": 6429
+    },
+    {
+      "path": "audit_screening.ts",
+      "sha256": "83f7462f3f5b0f13f0dbff08b81442be48e2112a7147bfe504d762a75f743980",
+      "bytes": 5779
+    },
+    {
+      "path": "search_openalex_full.ts",
+      "sha256": "41fc0535631f780428bd87ee2b635f3b95a6eb09e3ed06de1a2a5e16f894d11d",
+      "bytes": 4158
+    },
+    {
+      "path": "prepare_screening_queue.ts",
+      "sha256": "6d7ec3e0a049ba51be8c62f923c50e6b9afeace2dcd22cdf8d5e4f46d5549055",
+      "bytes": 5234
+    },
+    {
+      "path": "sources/local_reports/README.md",
+      "sha256": "36693faecd43d88de9c68dbdf651200626519a7dbe5dd59bdded00529b4f17e9",
+      "bytes": 1483
+    },
+    {
+      "path": "sources/local_reports/origin_600_report_v1.md",
+      "sha256": "7104d775903b53f6ef5c1de1061f2888a7e4c2cc8ed174a3e810d852739ab412",
+      "bytes": 4232
+    },
+    {
+      "path": "sources/local_reports/matched_feed_2023_heterogeneity_report.md",
+      "sha256": "eca867cf8b9a2f7d0354c125bb050b7a28f7f7e4393152de79b5c855e2003142",
+      "bytes": 6950
+    },
+    {
+      "path": "sources/local_reports/matched_feed_2024_synthesis_report.md",
+      "sha256": "a787850800b7319946e55c99c05f700fad42ce48e411f3e92b84505fdb37f1a7",
+      "bytes": 3308
+    },
+    {
+      "path": "search_openalex_registered.ts",
+      "sha256": "a55041b5ac528fd29a1d5d1906472466a586f3d120a7ba8ae8bd15e719088c63",
+      "bytes": 5928
+    },
+    {
+      "path": "LICENSE.md",
+      "sha256": "c07c9519607e8b39bd6fcbcc02d828e289d4a1cf7c953ee4e6b78cfb6c8d0f44",
+      "bytes": 962
+    }
+  ],
+  "exclusions": [
+    "Raw source pages and incomplete exploratory screening queue are prior scoping material, not confirmatory attachments.",
+    "Restricted or account-level source content is not included."
+  ]
+}
