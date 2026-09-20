@@ -26,16 +26,33 @@ if (registration.protocol !== 'https:' || registration.hostname !== 'osf.io' || 
   throw new Error('Expected a public OSF registration URL, for example https://osf.io/abcde/');
 }
 if (!/^\d{4}-\d{2}-\d{2}$/.test(cutoff) || Number.isNaN(Date.parse(`${cutoff}T00:00:00Z`))) throw new Error('Invalid UTC cutoff date');
+const registrationId = registration.pathname.split('/')[1];
+const osfResponse = await fetch(`https://api.osf.io/v2/registrations/${registrationId}/`, {
+  headers: { accept: 'application/json' }, signal: AbortSignal.timeout(15000) });
+if (!osfResponse.ok) throw new Error(`OSF registration is not publicly verifiable: HTTP ${osfResponse.status}`);
+const osfRecord = await osfResponse.json() as { data?: { id?: string; type?: string;
+  attributes?: { public?: boolean; withdrawn?: boolean; embargoed?: boolean; date_registered?: string };
+  links?: { html?: string } } };
+const osfAttributes = osfRecord.data?.attributes;
+if (osfRecord.data?.id !== registrationId || osfRecord.data.type !== 'registrations' ||
+    osfRecord.data.links?.html !== registration.toString() || !osfAttributes?.public ||
+    osfAttributes.withdrawn || osfAttributes.embargoed ||
+    !osfAttributes.date_registered || Number.isNaN(Date.parse(osfAttributes.date_registered)) ||
+    osfAttributes.date_registered.slice(0, 10) > cutoff) {
+  throw new Error('Expected an active public OSF registration dated on or before the search cutoff');
+}
 const folder = dirname(fileURLToPath(import.meta.url));
 const outdir = resolve(folder, 'searches', `registered_openalex_${cutoff}_${registration.pathname.split('/')[1]}`);
 mkdirSync(outdir, { recursive: true });
 const run = { registration_url: registration.toString(), cutoff_utc_date: cutoff, queries, source: 'OpenAlex core works',
-  status: 'in_progress', started_at_utc: new Date().toISOString() };
+  status: 'in_progress', started_at_utc: new Date().toISOString(),
+  osf_public_verified_at_utc: new Date().toISOString(), osf_date_registered: osfAttributes.date_registered };
 const runPath = resolve(outdir, 'RUN.json');
 let initialRun = run;
 if (existsSync(runPath)) {
   const prior = JSON.parse(readFileSync(runPath, 'utf8')) as typeof run;
-  if (prior.registration_url !== run.registration_url || prior.cutoff_utc_date !== cutoff || JSON.stringify(prior.queries) !== JSON.stringify(queries)) {
+  if (prior.registration_url !== run.registration_url || prior.cutoff_utc_date !== cutoff ||
+      prior.osf_date_registered !== run.osf_date_registered || JSON.stringify(prior.queries) !== JSON.stringify(queries)) {
     throw new Error('Registered run parameters changed; use a new directory and log the deviation');
   }
   initialRun = prior;

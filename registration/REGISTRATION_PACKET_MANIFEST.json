@@ -17,8 +17,8 @@
     },
     {
       "path": "SEARCH_PROTOCOL.md",
-      "sha256": "db122b7a772bcac50b8b08abce08d6db3f4a65d23b06da1a946a1e527b1d5317",
-      "bytes": 6344
+      "sha256": "0a08564809c1f24f9a9271ece5729c7fdc41d1699e22f00e313c5b945e5aacf2",
+      "bytes": 6539
     },
     {
       "path": "EXTRACTION_CODEBOOK.md",
@@ -82,8 +82,8 @@
     },
     {
       "path": "search_openalex_registered.ts",
-      "sha256": "d0cc01714a341b106475c7b1774b68884a8ffd32af4c3649b40365a7657f4340",
-      "bytes": 6615
+      "sha256": "bc6cd1c0411698efc3f1fcd4a0d01d470987416d015ee6f301e4f8da837b5fc5",
+      "bytes": 7900
     },
     {
       "path": "LICENSE.md",
@@ -92,8 +92,8 @@
     },
     {
       "path": "prepare_registered_queue.ts",
-      "sha256": "23328f59af34e05ce217f3ff754a3f1b50e2e1a31e346f452adc48ce53a67eba",
-      "bytes": 10226
+      "sha256": "d8e11983ae401151fe9dd3ba4388efcf8010c3d4fab1fb6399dd3c8f1e234e04",
+      "bytes": 10430
     },
     {
       "path": "SOURCE_EXTRACTIONS.md",
