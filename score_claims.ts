@@ -6,7 +6,10 @@ import { fileURLToPath } from 'node:url';
 
 type Claim = 'origin' | 'operation_attribution' | 'automation' | 'coordination' | 'deception' | 'exposure' | 'recommendation' | 'impact';
 type Label = 'supported' | 'contradicted' | 'unknown';
-type Case = { case_id: string; dataset_id: string; source: string; source_sha256: string | null; source_locator: string; labels: Record<Claim, Label> };
+type Case = { case_id: string; dataset_id: string; unit: string; claim_subject: string; platform: string;
+  collection_period: string; source: string; source_sha256: string | null; source_locator: string;
+  label_provenance: { basis: string; review_status: 'single_reviewer_provisional'; independent_adjudication: 'pending' };
+  split_group: { dataset_id: string; time_block: string }; labels: Record<Claim, Label> };
 type Prediction = { case_id: string; claims: Partial<Record<Claim, Label>> };
 
 const claims: Claim[] = ['origin', 'operation_attribution', 'automation', 'coordination', 'deception', 'exposure', 'recommendation', 'impact'];
@@ -18,7 +21,12 @@ function validateCases(): void {
   for (const item of cases) {
     assert(!ids.has(item.case_id), `duplicate case: ${item.case_id}`);
     ids.add(item.case_id);
-    assert(item.dataset_id && item.source && item.source_locator);
+    assert(item.dataset_id && item.unit && item.claim_subject && item.platform && item.collection_period &&
+      item.source && item.source_locator, `incomplete case metadata: ${item.case_id}`);
+    assert(item.label_provenance?.basis && item.label_provenance.review_status === 'single_reviewer_provisional' &&
+      item.label_provenance.independent_adjudication === 'pending', `unreviewed provenance status: ${item.case_id}`);
+    assert.equal(item.split_group?.dataset_id, item.dataset_id, `split dataset mismatch: ${item.case_id}`);
+    assert.equal(item.split_group?.time_block, item.collection_period, `split period mismatch: ${item.case_id}`);
     if (item.source_sha256) assert(/^[a-f0-9]{64}$/.test(item.source_sha256), `invalid source hash: ${item.case_id}`);
     if (item.source.startsWith('https://')) new URL(item.source);
     else {

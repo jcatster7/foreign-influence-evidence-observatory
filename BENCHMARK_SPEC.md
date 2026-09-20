@@ -4,7 +4,7 @@ Version 0.1, 2026-09-19. This is a benchmark design, not a scored benchmark rele
 
 ## Record schema
 
-One JSON Lines record is one claim-evidence bundle. A bundle can concern an account, a group, or an aggregate claim; its unit must be explicit. The provisional JSON cases include source locators and content hashes where obtainable but remain smaller than the planned release schema. A hash of an HTTP response documents the observed bytes; it does not preserve or license the full article. One publisher returned HTTP 403 to the local fetch, so its provisional case has a DOI locator but no content hash.
+One JSON Lines record is one claim-evidence bundle. A bundle can concern an account, a group, or an aggregate claim; its unit must be explicit. The ten provisional JSON cases now state their unit, exact claim subject, platform, period, single-reviewer label basis, and dataset/time split group. Independent adjudication remains pending, and the cases remain smaller than the planned release schema. A hash of an HTTP response documents the observed bytes; it does not preserve or license the full article. One publisher returned HTTP 403 to the local fetch, so its provisional case has a DOI locator but no content hash.
 
 - `case_id`, `dataset_id`, `unit`, `claim_subject`, `platform`, `collection_period`, `source_url`, `source_locator`, `retrieved_at_utc`, `source_sha256`, `source_hash_scope`
 - `observations`: typed observations, each with `kind`, `value`, `method`, `source_span`, and `missingness`

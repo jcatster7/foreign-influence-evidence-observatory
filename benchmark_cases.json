@@ -17,7 +17,20 @@
     "source_locator": "Executive summary; Design and estimand; Evidence and limitations",
     "source_sha256": "7104d775903b53f6ef5c1de1061f2888a7e4c2cc8ed174a3e810d852739ab412",
     "retrieved_at_utc": null,
-    "source_hash_scope": "Local report file bytes at case assembly"
+    "source_hash_scope": "Local report file bytes at case assembly",
+    "unit": "selected_visible_repost_events",
+    "claim_subject": "Selected reposters displayed as non-US by X had foreign operators",
+    "platform": "X",
+    "collection_period": "2026",
+    "label_provenance": {
+      "basis": "Platform-displayed country only; no independent operator verification.",
+      "review_status": "single_reviewer_provisional",
+      "independent_adjudication": "pending"
+    },
+    "split_group": {
+      "dataset_id": "local_origin_600",
+      "time_block": "2026"
+    }
   },
   {
     "case_id": "feed_shift_only",
@@ -37,7 +50,20 @@
     "source_locator": "Executive summary and participant-level decomposition",
     "source_sha256": "eca867cf8b9a2f7d0354c125bb050b7a28f7f7e4393152de79b5c855e2003142",
     "retrieved_at_utc": null,
-    "source_hash_scope": "Local report file bytes at case assembly"
+    "source_hash_scope": "Local report file bytes at case assembly",
+    "unit": "aggregate_feed_comparison",
+    "claim_subject": "The 2023 matched feeds had a source-share increment relative to the followed baseline",
+    "platform": "X",
+    "collection_period": "2023",
+    "label_provenance": {
+      "basis": "Local secondary analysis of public anonymized matched-feed data.",
+      "review_status": "single_reviewer_provisional",
+      "independent_adjudication": "pending"
+    },
+    "split_group": {
+      "dataset_id": "figshare_28033772_v1",
+      "time_block": "2023"
+    }
   },
   {
     "case_id": "anonymous_news_source",
@@ -57,7 +83,20 @@
     "source_locator": "News matching category table and explanatory paragraph (lines 48-54 at capture)",
     "source_sha256": "eca867cf8b9a2f7d0354c125bb050b7a28f7f7e4393152de79b5c855e2003142",
     "retrieved_at_utc": null,
-    "source_hash_scope": "Local report file bytes at case assembly"
+    "source_hash_scope": "Local report file bytes at case assembly",
+    "unit": "source_category_aggregate",
+    "claim_subject": "Unmatched anonymous News sources contributed to the matched-feed shift and were foreign operators",
+    "platform": "X",
+    "collection_period": "2023",
+    "label_provenance": {
+      "basis": "Source matching and feed comparison are observed; operator identity is unverified.",
+      "review_status": "single_reviewer_provisional",
+      "independent_adjudication": "pending"
+    },
+    "split_group": {
+      "dataset_id": "figshare_28033772_v1",
+      "time_block": "2023"
+    }
   },
   {
     "case_id": "values_misalignment_only",
@@ -77,7 +116,20 @@
     "source_locator": "2024 value-selection pattern; opening summary",
     "source_sha256": "a787850800b7319946e55c99c05f700fad42ce48e411f3e92b84505fdb37f1a7",
     "retrieved_at_utc": null,
-    "source_hash_scope": "Local report file bytes at case assembly"
+    "source_hash_scope": "Local report file bytes at case assembly",
+    "unit": "aggregate_feed_comparison",
+    "claim_subject": "The 2024 matched feeds selected content with lower value alignment than the followed inventory",
+    "platform": "X",
+    "collection_period": "2024",
+    "label_provenance": {
+      "basis": "Local secondary synthesis of the public matched-feed comparison.",
+      "review_status": "single_reviewer_provisional",
+      "independent_adjudication": "pending"
+    },
+    "split_group": {
+      "dataset_id": "pnas_2610388123",
+      "time_block": "2024"
+    }
   },
   {
     "case_id": "facebook_media_coordination",
@@ -97,7 +149,20 @@
     "source_locator": "Article comparison of Facebook media groups and influence operation",
     "source_sha256": null,
     "retrieved_at_utc": null,
-    "source_hash_scope": "No reusable HTML response; DOI page reviewed via web reader"
+    "source_hash_scope": "No reusable HTML response; DOI page reviewed via web reader",
+    "unit": "media_group_comparison",
+    "claim_subject": "Coordinated Facebook link sharing by the inspected media groups was deceptive",
+    "platform": "Facebook",
+    "collection_period": "study periods reported in article",
+    "label_provenance": {
+      "basis": "Published behavioral comparison; deception is not resolved by sharing similarity.",
+      "review_status": "single_reviewer_provisional",
+      "independent_adjudication": "pending"
+    },
+    "split_group": {
+      "dataset_id": "rogers_righetti_2025_facebook",
+      "time_block": "study periods reported in article"
+    }
   },
   {
     "case_id": "tiktok_duet_signal_only",
@@ -117,7 +182,20 @@
     "source_locator": "Article abstract; full-text validation pending",
     "source_sha256": "cd6c11a72383e25a3c2e545f0a79d52537402cc4d8d83bf4a53eff27dbd515da",
     "retrieved_at_utc": "2026-09-20T00:52:56.056Z",
-    "source_hash_scope": "HTTP 200 HTML response body; raw bytes not redistributed"
+    "source_hash_scope": "HTTP 200 HTML response body; raw bytes not redistributed",
+    "unit": "interaction_type",
+    "claim_subject": "A TikTok Duet or Stitch interaction alone establishes covert coordination",
+    "platform": "TikTok",
+    "collection_period": "2024 election",
+    "label_provenance": {
+      "basis": "Published abstract only; full-text validation remains pending.",
+      "review_status": "single_reviewer_provisional",
+      "independent_adjudication": "pending"
+    },
+    "split_group": {
+      "dataset_id": "luceri_2026_tiktok",
+      "time_block": "2024 election"
+    }
   },
   {
     "case_id": "ira_potential_exposure",
@@ -137,7 +215,20 @@
     "source_locator": "Methods: social media data, potential exposures (PMC9829855); authors explicitly say observed views are unknown",
     "source_sha256": "cf6b33a533d03da58a4227e93004b414ee67322b39ce16819970f5efc0e9112d",
     "retrieved_at_utc": "2026-09-20T00:53:53.372Z",
-    "source_hash_scope": "HTTP 200 HTML response body; raw bytes not redistributed"
+    "source_hash_scope": "HTTP 200 HTML response body; raw bytes not redistributed",
+    "unit": "respondent_exposure_proxy",
+    "claim_subject": "Respondents were delivered posts by platform-attributed IRA accounts in their observed feeds",
+    "platform": "X",
+    "collection_period": "2016 election",
+    "label_provenance": {
+      "basis": "Platform-attributed account list and reconstructed potential exposure; delivery unobserved.",
+      "review_status": "single_reviewer_provisional",
+      "independent_adjudication": "pending"
+    },
+    "split_group": {
+      "dataset_id": "eady_2023_ira_2016",
+      "time_block": "2016 election"
+    }
   },
   {
     "case_id": "botometer_score_only",
@@ -157,7 +248,20 @@
     "source_locator": "Discussion: threshold false positives and temporal variation",
     "source_sha256": "b6a5c86134279f4f796770ec286b72a1164746559dc1be03a1967044bfb81479",
     "retrieved_at_utc": "2026-09-20T00:52:57.689Z",
-    "source_hash_scope": "HTTP 200 HTML response body; raw bytes not redistributed"
+    "source_hash_scope": "HTTP 200 HTML response body; raw bytes not redistributed",
+    "unit": "threshold_account_claim",
+    "claim_subject": "An account above a researcher-chosen Botometer threshold is fully automated",
+    "platform": "X",
+    "collection_period": "2019 validation",
+    "label_provenance": {
+      "basis": "Historical detector validation shows score thresholds do not prove account automation.",
+      "review_status": "single_reviewer_provisional",
+      "independent_adjudication": "pending"
+    },
+    "split_group": {
+      "dataset_id": "rauchfleisch_2020_botometer",
+      "time_block": "2019 validation"
+    }
   },
   {
     "case_id": "botometer_reviewed_false_positive_group",
@@ -179,7 +283,18 @@
     "source_locator": "Discussion: manual check of all 27 flagged politician accounts",
     "source_sha256": "b6a5c86134279f4f796770ec286b72a1164746559dc1be03a1967044bfb81479",
     "retrieved_at_utc": "2026-09-20T00:52:57.689Z",
-    "source_hash_scope": "HTTP 200 HTML response body; raw bytes not redistributed"
+    "source_hash_scope": "HTTP 200 HTML response body; raw bytes not redistributed",
+    "platform": "X",
+    "collection_period": "2019 validation",
+    "label_provenance": {
+      "basis": "Authors manually inspected the flagged group and reported at most one possible cross-posting case.",
+      "review_status": "single_reviewer_provisional",
+      "independent_adjudication": "pending"
+    },
+    "split_group": {
+      "dataset_id": "rauchfleisch_2020_botometer",
+      "time_block": "2019 validation"
+    }
   },
   {
     "case_id": "youtube_engagement_not_recommendation",
@@ -201,6 +316,17 @@
     "source_locator": "Abstract; theoretical model paragraphs on engagement as the dependent variable and unmeasured recommendation distribution",
     "source_sha256": "003d129b5fff876b591555ea5b77bb8f10c09690896220f580c036244e99877c",
     "retrieved_at_utc": "2026-09-20T01:17:11Z",
-    "source_hash_scope": "HTTP 200 HTML response body; raw bytes not redistributed"
+    "source_hash_scope": "HTTP 200 HTML response body; raw bytes not redistributed",
+    "platform": "YouTube",
+    "collection_period": "2024 election",
+    "label_provenance": {
+      "basis": "Authors explicitly distinguish observed engagement from unmeasured recommender behavior.",
+      "review_status": "single_reviewer_provisional",
+      "independent_adjudication": "pending"
+    },
+    "split_group": {
+      "dataset_id": "hassan_2026_youtube_geopolitical_narratives",
+      "time_block": "2024 election"
+    }
   }
 ]

@@ -27,8 +27,8 @@
     },
     {
       "path": "BENCHMARK_SPEC.md",
-      "sha256": "90f7841851602bab08ce0368653fa45c26ecd53f2c60d73dac77e9950f20702b",
-      "bytes": 9169
+      "sha256": "075b3fab44bca5e49a67f213da223b43bb402cbc1b99d55ff0a0ecd537ecc6ca",
+      "bytes": 9285
     },
     {
       "path": "LOW_COST_REPLICATION_PROTOCOL.md",
@@ -37,13 +37,13 @@
     },
     {
       "path": "benchmark_cases.json",
-      "sha256": "4cb4161e80d467bc9ce8a825207b61a4562d4769c9a219ae5170049a209e7431",
-      "bytes": 9949
+      "sha256": "0287d012983bcf105c8e8554f3248dc68b92a9514974f29fa228dfbe833cd47a",
+      "bytes": 15149
     },
     {
       "path": "score_claims.ts",
-      "sha256": "f1ab9aa851dbc950f3e56e59d2f14764b4f859e35c9e363035cb9a9f2a3f8701",
-      "bytes": 6582
+      "sha256": "48bf57ff381d9b9be72feb4452a429f2363b129a3b7b8e9616fb56d99a75542c",
+      "bytes": 7432
     },
     {
       "path": "audit_screening.ts",
