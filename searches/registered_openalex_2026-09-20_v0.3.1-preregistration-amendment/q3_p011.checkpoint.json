@@ -1,0 +1,14 @@
+{
+  "registration_url": "https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.3.1-preregistration-amendment",
+  "query_index": 3,
+  "query": "\"information operations\" AND \"social media\" AND (exposure OR recommendation)",
+  "page": 11,
+  "url": "https://api.openalex.org/works?search=%22information+operations%22+AND+%22social+media%22+AND+%28exposure+OR+recommendation%29&filter=to_publication_date%3A2026-09-20&per_page=100&cursor=IlsxLjk5NDQxMTcsIDE3MzQ4MjU2MDAwMDAsICdodHRwczovL29wZW5hbGV4Lm9yZy9XNDQwNTY3NzUxNyddIg%3D%3D&select=id%2Cdisplay_name%2Cdoi%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Cabstract_inverted_index",
+  "cursor_in": "IlsxLjk5NDQxMTcsIDE3MzQ4MjU2MDAwMDAsICdodHRwczovL29wZW5hbGV4Lm9yZy9XNDQwNTY3NzUxNyddIg==",
+  "cursor_out": "IlsxLjcwMzY2NzYsIDE2Mzk2OTkyMDAwMDAsICdodHRwczovL29wZW5hbGV4Lm9yZy9XNDIwMDM2MjQ1NyddIg==",
+  "fetched_at_utc": "2026-09-20T19:05:36.626Z",
+  "response_sha256": "733852d762a2019a58b9c920fd5d7c07a87fa219e775dc2a9a315c961b3a23db",
+  "reported_total_results": 2384,
+  "returned": 100,
+  "api_estimated_cost_usd": 0.001
+}

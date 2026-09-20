@@ -1,0 +1,14 @@
+{
+  "registration_url": "https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.3.1-preregistration-amendment",
+  "query_index": 5,
+  "query": "\"algorithmic amplification\" AND (political OR election) AND (Twitter OR Facebook OR TikTok OR YouTube)",
+  "page": 6,
+  "url": "https://api.openalex.org/works?search=%22algorithmic+amplification%22+AND+%28political+OR+election%29+AND+%28Twitter+OR+Facebook+OR+TikTok+OR+YouTube%29&filter=to_publication_date%3A2026-09-20&per_page=100&cursor=Ils5LjY5NDI5NiwgMTc2MTk1NTIwMDAwMCwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1c0NDE3MjY0MzY3J10i&select=id%2Cdisplay_name%2Cdoi%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Cabstract_inverted_index",
+  "cursor_in": "Ils5LjY5NDI5NiwgMTc2MTk1NTIwMDAwMCwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1c0NDE3MjY0MzY3J10i",
+  "cursor_out": "Ils3Ljk0NzQ1MzUsIDE3ODIzNDU2MDAwMDAsICdodHRwczovL29wZW5hbGV4Lm9yZy9XNDQxNzI5OTY1OCddIg==",
+  "fetched_at_utc": "2026-09-20T19:06:04.493Z",
+  "response_sha256": "30adc1e6bf216944d9eae9ada8f6af1880afc9a30514600d868a64e28b10e608",
+  "reported_total_results": 2832,
+  "returned": 100,
+  "api_estimated_cost_usd": 0.001
+}

@@ -1,0 +1,14 @@
+{
+  "registration_url": "https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.3.1-preregistration-amendment",
+  "query_index": 2,
+  "query": "\"coordinated inauthentic behavior\" AND (Twitter OR Facebook OR Instagram OR TikTok)",
+  "page": 1,
+  "url": "https://api.openalex.org/works?search=%22coordinated+inauthentic+behavior%22+AND+%28Twitter+OR+Facebook+OR+Instagram+OR+TikTok%29&filter=to_publication_date%3A2026-09-20&per_page=100&cursor=*&select=id%2Cdisplay_name%2Cdoi%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Cabstract_inverted_index",
+  "cursor_in": "*",
+  "cursor_out": "IlsxOC44NTA5NzUsIDE2OTczMjgwMDAwMDAsICdodHRwczovL29wZW5hbGV4Lm9yZy9XNDM4NzcyNDMwMCddIg==",
+  "fetched_at_utc": "2026-09-20T19:05:22.154Z",
+  "response_sha256": "b58669690bcddb723162b02bdca9d1f32e7034f76955ef683b96880f74c20b27",
+  "reported_total_results": 657,
+  "returned": 100,
+  "api_estimated_cost_usd": 0.001
+}

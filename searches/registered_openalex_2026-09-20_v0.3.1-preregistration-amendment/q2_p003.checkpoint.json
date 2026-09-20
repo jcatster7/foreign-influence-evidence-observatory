@@ -1,0 +1,14 @@
+{
+  "registration_url": "https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.3.1-preregistration-amendment",
+  "query_index": 2,
+  "query": "\"coordinated inauthentic behavior\" AND (Twitter OR Facebook OR Instagram OR TikTok)",
+  "page": 3,
+  "url": "https://api.openalex.org/works?search=%22coordinated+inauthentic+behavior%22+AND+%28Twitter+OR+Facebook+OR+Instagram+OR+TikTok%29&filter=to_publication_date%3A2026-09-20&per_page=100&cursor=Ils3LjcxNTA5MywgMTYzODgzNTIwMDAwMCwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1c0MjA2OTAwNjU3J10i&select=id%2Cdisplay_name%2Cdoi%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Cabstract_inverted_index",
+  "cursor_in": "Ils3LjcxNTA5MywgMTYzODgzNTIwMDAwMCwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1c0MjA2OTAwNjU3J10i",
+  "cursor_out": "Ils0LjQ3NjQ5MiwgMTc2NzEzOTIwMDAwMCwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1c3MTE3NzQ1NTE2J10i",
+  "fetched_at_utc": "2026-09-20T19:05:23.791Z",
+  "response_sha256": "79c2f6cbdbdaeb54ffbc8ec0126207587c03997c02a0b633a685e88646e56d42",
+  "reported_total_results": 657,
+  "returned": 100,
+  "api_estimated_cost_usd": 0.001
+}

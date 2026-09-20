@@ -1,0 +1,18 @@
+{
+  "tag": "v0.3.2-missing-title-amendment",
+  "parent_release": "v0.3.1-preregistration-amendment",
+  "parent_packet_sha256": "2216419fff4b3b0e4fe4e3be75f785130aa267a328c415ef69bf668f257285ed",
+  "registered_harvest_run_sha256": "545829993d100396f8480e710368f489b57f151b54cf95d90891c6bf99c0b333",
+  "files": [
+    {
+      "path": "registration/AMENDMENT_v0.3.2.md",
+      "sha256": "9ca404ffe932f330b0426911fea4a1c9c48caefa5a32ca21f6bcca43618bb1af",
+      "bytes": 1790
+    },
+    {
+      "path": "prepare_registered_queue_v032.ts",
+      "sha256": "af726bd0b15de7117bdd8ce81420fbd8bcb4746b8fab9d1344cb13b0ef6ea3e9",
+      "bytes": 11245
+    }
+  ]
+}

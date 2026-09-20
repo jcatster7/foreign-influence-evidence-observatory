@@ -1,0 +1,14 @@
+{
+  "registration_url": "https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.3.1-preregistration-amendment",
+  "query_index": 1,
+  "query": "\"foreign influence\" AND \"social media\" AND (Twitter OR Facebook OR TikTok OR Reddit OR YouTube)",
+  "page": 13,
+  "url": "https://api.openalex.org/works?search=%22foreign+influence%22+AND+%22social+media%22+AND+%28Twitter+OR+Facebook+OR+TikTok+OR+Reddit+OR+YouTube%29&filter=to_publication_date%3A2026-09-20&per_page=100&cursor=IlsxLjM0NzQ5NzEsIDE3MTA3MjAwMDAwMDAsICdodHRwczovL29wZW5hbGV4Lm9yZy9XNDM5MjkxNDkwNyddIg%3D%3D&select=id%2Cdisplay_name%2Cdoi%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Cabstract_inverted_index",
+  "cursor_in": "IlsxLjM0NzQ5NzEsIDE3MTA3MjAwMDAwMDAsICdodHRwczovL29wZW5hbGV4Lm9yZy9XNDM5MjkxNDkwNyddIg==",
+  "cursor_out": "IlsxLjAwMTMyMywgMTU0NTAwNDgwMDAwMCwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1cyOTEyMzIzMjc0J10i",
+  "fetched_at_utc": "2026-09-20T19:05:13.699Z",
+  "response_sha256": "5a3ed72aff3b6acfefeb691fa93e9fa3634f5856dc98a969d338b6395cf5039f",
+  "reported_total_results": 2170,
+  "returned": 100,
+  "api_estimated_cost_usd": 0.001
+}

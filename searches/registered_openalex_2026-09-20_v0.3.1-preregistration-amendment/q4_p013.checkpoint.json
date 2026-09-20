@@ -1,0 +1,14 @@
+{
+  "registration_url": "https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.3.1-preregistration-amendment",
+  "query_index": 4,
+  "query": "\"bot detection\" AND (political OR election) AND validation",
+  "page": 13,
+  "url": "https://api.openalex.org/works?search=%22bot+detection%22+AND+%28political+OR+election%29+AND+validation&filter=to_publication_date%3A2026-09-20&per_page=100&cursor=IlswLjM4NDY4NjMsIDE3NDQxNTY4MDAwMDAsICdodHRwczovL29wZW5hbGV4Lm9yZy9XNDQwOTM1MTMyMiddIg%3D%3D&select=id%2Cdisplay_name%2Cdoi%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Cabstract_inverted_index",
+  "cursor_in": "IlswLjM4NDY4NjMsIDE3NDQxNTY4MDAwMDAsICdodHRwczovL29wZW5hbGV4Lm9yZy9XNDQwOTM1MTMyMiddIg==",
+  "cursor_out": "IlswLjI4NzY5MTYsIDE1OTI1MjQ4MDAwMDAsICdodHRwczovL29wZW5hbGV4Lm9yZy9XMzA0NjA0NDcxNyddIg==",
+  "fetched_at_utc": "2026-09-20T19:05:58.546Z",
+  "response_sha256": "99ec24b1a6303b10e315fea9ecfce70975376d4f8fe174916639741890a8793b",
+  "reported_total_results": 1387,
+  "returned": 100,
+  "api_estimated_cost_usd": 0.001
+}
