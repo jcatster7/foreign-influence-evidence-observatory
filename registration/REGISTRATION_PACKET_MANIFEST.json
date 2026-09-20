@@ -7,8 +7,8 @@
   "files": [
     {
       "path": "registration/OSF_OPEN_ENDED_REGISTRATION_TEXT.md",
-      "sha256": "967d3419127fdffe24f3ccfdac60d653753185de4c0ad4a689a6e126757a25fb",
-      "bytes": 8427
+      "sha256": "4aae98a72da13c9c10e7239bd0d6758d8a898483428b2e9add2440890faf3a79",
+      "bytes": 8458
     },
     {
       "path": "PREREGISTRATION_DRAFT.md",
@@ -17,8 +17,8 @@
     },
     {
       "path": "SEARCH_PROTOCOL.md",
-      "sha256": "84c1bd7e950d5c984fb65a3e83a8bba0b47e761b03952e0b5104823b0c2eab0c",
-      "bytes": 5634
+      "sha256": "9bd66b521ea06866e07173d720c8dddf5c35324a7a37605b705aa49059c01970",
+      "bytes": 6195
     },
     {
       "path": "EXTRACTION_CODEBOOK.md",
@@ -47,8 +47,8 @@
     },
     {
       "path": "audit_screening.ts",
-      "sha256": "83f7462f3f5b0f13f0dbff08b81442be48e2112a7147bfe504d762a75f743980",
-      "bytes": 5779
+      "sha256": "2c48398877daa0ec502535882ab7aabfe5667e18c5250e7d9a27f43e81acdfb5",
+      "bytes": 7086
     },
     {
       "path": "search_openalex_full.ts",
@@ -89,6 +89,11 @@
       "path": "LICENSE.md",
       "sha256": "c07c9519607e8b39bd6fcbcc02d828e289d4a1cf7c953ee4e6b78cfb6c8d0f44",
       "bytes": 962
+    },
+    {
+      "path": "prepare_registered_queue.ts",
+      "sha256": "b490abf827b3f9d8c3d151199dacbd32082f8bc281e53feace9c12b7175b2be6",
+      "bytes": 9638
     }
   ],
   "exclusions": [

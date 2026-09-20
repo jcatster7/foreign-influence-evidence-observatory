@@ -1,11 +1,22 @@
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import { existsSync, readFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const folder = dirname(fileURLToPath(import.meta.url));
-const queuePath = resolve(folder, 'searches/openalex_partial_screening_queue.jsonl');
-const decisionPath = process.argv[2] ? resolve(process.argv[2]) : resolve(folder, 'searches/screening_decisions.jsonl');
+const flags = new Map<string, string>();
+const positionals: string[] = [];
+for (const argument of process.argv.slice(2)) {
+  const match = /^--(queue|summary|decisions)=(.+)$/.exec(argument);
+  if (match) flags.set(match[1], match[2]);
+  else if (argument.startsWith('--')) throw new Error(`Unknown option: ${argument}`);
+  else positionals.push(argument);
+}
+if (positionals.length > 1 || (positionals.length && flags.has('decisions'))) throw new Error('Specify one decision file');
+const queuePath = resolve(flags.get('queue') ?? resolve(folder, 'searches/openalex_partial_screening_queue.jsonl'));
+const summaryPath = resolve(flags.get('summary') ?? resolve(folder, 'searches/openalex_partial_screening_queue_summary.json'));
+const decisionPath = resolve(flags.get('decisions') ?? positionals[0] ?? resolve(folder, 'searches/screening_decisions.jsonl'));
 type Queue = { record_key: string; calibration_sample: boolean; screening_status: 'unscreened' };
 type Decision = { record_key: string; reviewer_id: string; stage: 'title_abstract' | 'full_text' | 'title_adjudication' | 'full_text_adjudication';
   decision: 'retrieve_full_text' | 'exclude' | 'include_dataset' | 'background_method';
@@ -62,18 +73,26 @@ for (const record of queue) {
   if (finalTitle === 'retrieve_full_text' && new Set(full.map((x) => x.reviewer_id)).size < 2) fullTextMissingSecond++;
   if (new Set(full.map((x) => x.decision)).size > 1 && !fullTextAdjudications.has(record.record_key)) fullTextDisagreementsUnadjudicated++;
 }
-const harvest = JSON.parse(readFileSync(resolve(folder, 'searches/openalex_partial_screening_queue_summary.json'), 'utf8')) as
-  { queries: { complete: boolean }[] };
+const harvest = JSON.parse(readFileSync(summaryPath, 'utf8')) as
+  { status?: string; queue_sha256?: string; queries: { complete?: boolean }[] };
+assert.equal(harvest.queries?.length, 5, 'expected five OpenAlex query families');
+const registeredQueue = harvest.status === 'registered_openalex_queue_unscreened';
+if (registeredQueue) {
+  const digest = createHash('sha256').update(readFileSync(queuePath)).digest('hex');
+  assert.equal(digest, harvest.queue_sha256, 'registered queue bytes differ from frozen summary');
+} else assert.equal(harvest.status, 'partial_pre_registration_queue_no_screening_decisions', 'unknown queue status');
+const indexedChainComplete = registeredQueue || harvest.queries.every((x) => x.complete);
 const report = { queue_records: queue.length, decisions: decisions.length, title_unscreened: titleUnscreened,
   calibration_missing_second_reviewer: calibrationMissingSecond,
   title_disagreements_unadjudicated: titleDisagreementsUnadjudicated,
   full_text_missing_second_reviewer: fullTextMissingSecond,
   full_text_disagreements_unadjudicated: fullTextDisagreementsUnadjudicated,
-  scoping_openalex_cursor_chain_complete: harvest.queries.every((x) => x.complete),
-  scoping_screening_gate_passed: false,
+  queue_kind: registeredQueue ? 'registered_openalex' : 'pre_registration_scoping_openalex',
+  indexed_cursor_chain_complete: indexedChainComplete,
+  indexed_screening_gate_passed: false,
   ready_for_final_study_count: false,
-  final_count_blocker: 'This queue is a pre-registration OpenAlex subset. It cannot verify the registered search, supplemental sources, dataset merges, or dual-coded extractions.' };
-report.scoping_screening_gate_passed = report.scoping_openalex_cursor_chain_complete && !report.title_unscreened &&
+  final_count_blocker: 'OpenAlex screening alone cannot verify supplemental sources, publication-to-dataset merges, dual-coded constructs, risk of bias, or the final PRISMA flow.' };
+report.indexed_screening_gate_passed = report.indexed_cursor_chain_complete && !report.title_unscreened &&
   !report.calibration_missing_second_reviewer && !report.title_disagreements_unadjudicated &&
   !report.full_text_missing_second_reviewer && !report.full_text_disagreements_unadjudicated;
 console.log(JSON.stringify(report, null, 2));

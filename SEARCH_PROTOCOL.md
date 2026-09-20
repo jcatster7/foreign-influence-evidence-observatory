@@ -8,6 +8,8 @@ OpenAlex core works is the primary searchable index. Search all publication year
 
 After the OSF registration is public, run `search_openalex_registered.ts` with the registration URL and the final UTC cutoff date. It writes a `RUN.json`, each raw JSON response, and a paired checkpoint containing the response hash and cursor. A resumed run verifies its fixed query, URL, cursor, and raw-byte hash before accepting a checkpoint. An HTTP limit or safety cap leaves the run incomplete. The earlier `search_openalex_full.ts` and its derived page records are scoping material only; they did not retain the raw response bytes and cannot substitute for this registered acquisition.
 
+Run `prepare_registered_queue.ts --run-dir=<completed registered run directory>` only after `RUN.json` says complete. The builder verifies the five frozen queries, each raw response hash and cursor chain, then writes a DOI/OpenAlex-deduplicated queue with title, reconstructed abstract, source-page provenance, and a deterministic 20% calibration sample within each primary-query stratum. It refuses to overwrite a queue or summary whose bytes differ from a regenerated version. The queue is an input to human screening, not a machine-made inclusion decision.
+
 1. `"foreign influence" AND "social media" AND (Twitter OR Facebook OR TikTok OR Reddit OR YouTube)`
 2. `"coordinated inauthentic behavior" AND (Twitter OR Facebook OR Instagram OR TikTok)`
 3. `"information operations" AND "social media" AND (exposure OR recommendation)`

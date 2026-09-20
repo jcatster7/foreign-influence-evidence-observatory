@@ -17,6 +17,8 @@ The 2026-09-19/20 scoping search collected 8,793 OpenAlex rows across five query
 
 The registered acquisition script, `search_openalex_registered.ts`, requires the public OSF registration URL and a UTC cutoff date. It archives raw OpenAlex responses plus hash-checked checkpoints. The current scoping files do not include those raw response bytes.
 
+After that registered acquisition completes, `prepare_registered_queue.ts` verifies its raw page hashes and cursor chains and freezes a title-and-abstract screening queue with a deterministic 20% dual-review sample. No registered queue exists yet.
+
 ## Claim boundary
 
 The local 600-event visible-repost pilot reports differences in X-displayed country signals among selected positions. Its original screenshot audit was incomplete, and it cannot establish nationality, bot identity, coordination, foreign control, or recommendation amplification. Historical public matched-feed analyses measure aggregate feed composition under different outcomes and periods; they do not identify the reposters in the origin pilot. The source extractions identify these and other pieces without combining them into a claim that a platform amplified foreign bots.
@@ -33,7 +35,7 @@ node --experimental-strip-types prepare_screening_queue.ts
 node --experimental-strip-types audit_screening.ts
 ```
 
-The scorer self-check must pass. The screening audit applies only to the pre-registration OpenAlex queue and always reports `ready_for_final_study_count: false`; even a fully reviewed scoping queue cannot certify the registered review. Search acquisition scripts use public Crossref and OpenAlex endpoints; consult `SEARCH_STATUS.md` before rerunning because the current keyless OpenAlex quota was exhausted. Source pages may change, so preserve dates, URLs, and response hashes.
+The scorer self-check must pass. The screening audit defaults to the pre-registration queue and can also read a registered queue with `--queue=`, `--summary=`, and `--decisions=`. It always reports `ready_for_final_study_count: false`: an indexed screening check cannot certify supplemental source intake, independent-dataset merges, construct coding, or risk of bias. Search acquisition scripts use public Crossref and OpenAlex endpoints; consult `SEARCH_STATUS.md` before rerunning because the current keyless OpenAlex quota was exhausted. Source pages may change, so preserve dates, URLs, and response hashes.
 
 ## Release conditions and cost
 

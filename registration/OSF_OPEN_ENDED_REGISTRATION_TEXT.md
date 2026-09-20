@@ -45,4 +45,4 @@ Publish query URLs and page hashes, screening decisions with safe source metadat
 
 ## Attached files
 
-`PREREGISTRATION_DRAFT.md`, `SEARCH_PROTOCOL.md`, `EXTRACTION_CODEBOOK.md`, `BENCHMARK_SPEC.md`, `LOW_COST_REPLICATION_PROTOCOL.md`, `benchmark_cases.json`, `score_claims.ts`, `search_openalex_registered.ts`, `audit_screening.ts`, and byte-identical copies of three local source reports under `sources/local_reports/`. The registration packet manifest records exact SHA-256 digests. The existing search and benchmark pilot cases are identified as prior knowledge and are not attached as confirmatory results.
+`PREREGISTRATION_DRAFT.md`, `SEARCH_PROTOCOL.md`, `EXTRACTION_CODEBOOK.md`, `BENCHMARK_SPEC.md`, `LOW_COST_REPLICATION_PROTOCOL.md`, `benchmark_cases.json`, `score_claims.ts`, `search_openalex_registered.ts`, `prepare_registered_queue.ts`, `audit_screening.ts`, and byte-identical copies of three local source reports under `sources/local_reports/`. The registration packet manifest records exact SHA-256 digests. The existing search and benchmark pilot cases are identified as prior knowledge and are not attached as confirmatory results.
