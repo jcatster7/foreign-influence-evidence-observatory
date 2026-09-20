@@ -180,5 +180,27 @@
     "source_sha256": "b6a5c86134279f4f796770ec286b72a1164746559dc1be03a1967044bfb81479",
     "retrieved_at_utc": "2026-09-20T00:52:57.689Z",
     "source_hash_scope": "HTTP 200 HTML response body; raw bytes not redistributed"
+  },
+  {
+    "case_id": "youtube_engagement_not_recommendation",
+    "dataset_id": "hassan_2026_youtube_geopolitical_narratives",
+    "unit": "aggregate_claim",
+    "claim_subject": "Geopolitical campaign videos received a measured YouTube recommendation increment",
+    "source": "https://www.frontiersin.org/journals/political-science/articles/10.3389/fpos.2026.1901653/full",
+    "evidence": "The study compared engagement on YouTube videos from official US presidential campaign channels. Its authors state that their data capture engagement rather than recommender behavior and that further algorithmic distribution is theoretical, not directly measured.",
+    "labels": {
+      "origin": "unknown",
+      "operation_attribution": "unknown",
+      "automation": "unknown",
+      "coordination": "unknown",
+      "deception": "unknown",
+      "exposure": "unknown",
+      "recommendation": "unknown",
+      "impact": "unknown"
+    },
+    "source_locator": "Abstract; theoretical model paragraphs on engagement as the dependent variable and unmeasured recommendation distribution",
+    "source_sha256": "003d129b5fff876b591555ea5b77bb8f10c09690896220f580c036244e99877c",
+    "retrieved_at_utc": "2026-09-20T01:17:11Z",
+    "source_hash_scope": "HTTP 200 HTML response body; raw bytes not redistributed"
   }
 ]

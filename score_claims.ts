@@ -94,16 +94,18 @@ const targetedById = new Map(targeted.map((item) => [item.case_id, item]));
 targetedById.get('displayed_origin_only')!.claims.origin = 'supported';
 targetedById.get('facebook_media_coordination')!.claims.deception = 'supported';
 targetedById.get('ira_potential_exposure')!.claims.exposure = 'supported';
+targetedById.get('youtube_engagement_not_recommendation')!.claims.recommendation = 'supported';
 targetedById.get('botometer_reviewed_false_positive_group')!.claims.automation = 'supported';
 const targetedResult = score(targeted);
-assert.equal(targetedResult.unsupportedAssertions, 4, 'four distinct claim-boundary errors expected');
-assert.equal(targetedResult.unknownAssertions, 3, 'three proxy-to-fact promotions expected');
+assert.equal(targetedResult.unsupportedAssertions, 5, 'five distinct claim-boundary errors expected');
+assert.equal(targetedResult.unknownAssertions, 4, 'four proxy-to-fact promotions expected');
 assert.equal(targetedResult.falsePositiveAssertions, 1, 'one contradicted group claim expected');
 assert.deepEqual(targetedResult.errors, [
   'displayed_origin_only:origin',
   'facebook_media_coordination:deception',
   'ira_potential_exposure:exposure',
   'botometer_reviewed_false_positive_group:automation',
+  'youtube_engagement_not_recommendation:recommendation',
 ]);
 
 if (process.argv[2]) {

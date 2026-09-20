@@ -7,8 +7,8 @@
   "files": [
     {
       "path": "registration/OSF_OPEN_ENDED_REGISTRATION_TEXT.md",
-      "sha256": "4aae98a72da13c9c10e7239bd0d6758d8a898483428b2e9add2440890faf3a79",
-      "bytes": 8458
+      "sha256": "63e65f1eaf6abb8c75fc8a0f4c232499321d7e33b9bbd953c57125d669a82052",
+      "bytes": 8457
     },
     {
       "path": "PREREGISTRATION_DRAFT.md",
@@ -27,8 +27,8 @@
     },
     {
       "path": "BENCHMARK_SPEC.md",
-      "sha256": "a467722c3d2cad2fbde2f987bdcacecfca4800be61d2f2512054dfd494d81ef6",
-      "bytes": 7761
+      "sha256": "b4cd525a267b4280a0d3508a4a150820ace98f52118a2db0f7a9870ada289b8c",
+      "bytes": 8122
     },
     {
       "path": "LOW_COST_REPLICATION_PROTOCOL.md",
@@ -37,13 +37,13 @@
     },
     {
       "path": "benchmark_cases.json",
-      "sha256": "de748592f09509605fd63a9121768b03304df6c5fda91fa1cf8a251e13f1445f",
-      "bytes": 8643
+      "sha256": "4cb4161e80d467bc9ce8a825207b61a4562d4769c9a219ae5170049a209e7431",
+      "bytes": 9949
     },
     {
       "path": "score_claims.ts",
-      "sha256": "2ae10f0ef35975966a7b10c5045acf6c7488378d63150f6eef0468f3e8689e17",
-      "bytes": 6429
+      "sha256": "f1ab9aa851dbc950f3e56e59d2f14764b4f859e35c9e363035cb9a9f2a3f8701",
+      "bytes": 6582
     },
     {
       "path": "audit_screening.ts",
