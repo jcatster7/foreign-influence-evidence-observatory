@@ -9,6 +9,7 @@ This project maps the evidence behind eight distinct social-media claims: accoun
 - [Preregistration draft](PREREGISTRATION_DRAFT.md), [exact search protocol](SEARCH_PROTOCOL.md), and [extraction codebook](EXTRACTION_CODEBOOK.md)
 - [Source extractions](SOURCE_EXTRACTIONS.md), [provisional evidence map](EVIDENCE_MAP_SEED.csv), and [edge map](EDGE_MAP_SEED.csv)
 - [Platform disclosure source register](PLATFORM_SOURCE_REGISTER.md) for X, Meta, Reddit, TikTok, and YouTube/Google
+- [Meta-study options and pooling gates](META_STUDY_OPTIONS.md)
 - [Benchmark specification](BENCHMARK_SPEC.md), [ten provisional cases](benchmark_cases.json), [claim scorer](score_claims.ts), and [local report copies](sources/local_reports/README.md)
 - [Low-cost displayed-country replication protocol](LOW_COST_REPLICATION_PROTOCOL.md)
 - [Search status](SEARCH_STATUS.md), [budget ledger](BUDGET_LEDGER.csv), and [OSF registration packet](registration/OSF_REGISTRATION_PACKET.zip)
