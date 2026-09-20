@@ -32,11 +32,13 @@ mkdirSync(outdir, { recursive: true });
 const run = { registration_url: registration.toString(), cutoff_utc_date: cutoff, queries, source: 'OpenAlex core works',
   status: 'in_progress', started_at_utc: new Date().toISOString() };
 const runPath = resolve(outdir, 'RUN.json');
+let initialRun = run;
 if (existsSync(runPath)) {
   const prior = JSON.parse(readFileSync(runPath, 'utf8')) as typeof run;
   if (prior.registration_url !== run.registration_url || prior.cutoff_utc_date !== cutoff || JSON.stringify(prior.queries) !== JSON.stringify(queries)) {
     throw new Error('Registered run parameters changed; use a new directory and log the deviation');
   }
+  initialRun = prior;
 } else writeFileSync(runPath, JSON.stringify(run, null, 2) + '\n');
 
 type Reply = { meta: { count: number; next_cursor: string | null; cost_usd?: number }; results: unknown[] };
@@ -44,8 +46,11 @@ const digest = (bytes: string) => createHash('sha256').update(bytes).digest('hex
 const sleep = (ms: number) => new Promise((done) => setTimeout(done, ms));
 for (let qi = 0; qi < queries.length; qi++) {
   let cursor = '*';
+  const seenCursors = new Set<string>();
   for (let page = 1; cursor; page++) {
     if (page > 200) throw new Error(`Safety page cap reached for query ${qi + 1}; search remains incomplete`);
+    if (seenCursors.has(cursor)) throw new Error(`Repeated cursor in query ${qi + 1}; search remains incomplete`);
+    seenCursors.add(cursor);
     const base = `q${qi + 1}_p${String(page).padStart(3, '0')}`;
     const rawPath = resolve(outdir, `${base}.response.json`);
     const recordPath = resolve(outdir, `${base}.checkpoint.json`);
@@ -58,7 +63,11 @@ for (let qi = 0; qi < queries.length; qi++) {
     if (existsSync(recordPath) || existsSync(rawPath)) {
       if (!existsSync(recordPath) || !existsSync(rawPath)) throw new Error(`Incomplete checkpoint: ${base}`);
       const prior = JSON.parse(readFileSync(recordPath, 'utf8')) as { url: string; cursor_in: string; cursor_out: string | null; response_sha256: string };
-      if (prior.url !== url.toString() || prior.cursor_in !== cursor || digest(readFileSync(rawPath, 'utf8')) !== prior.response_sha256) {
+      const priorRaw = readFileSync(rawPath, 'utf8');
+      const priorReply = JSON.parse(priorRaw) as Reply;
+      if (prior.url !== url.toString() || prior.cursor_in !== cursor || digest(priorRaw) !== prior.response_sha256 ||
+          !Array.isArray(priorReply.results) || priorReply.results.length > 100 ||
+          priorReply.meta?.next_cursor !== prior.cursor_out) {
         throw new Error(`Checkpoint mismatch: ${base}`);
       }
       cursor = prior.cursor_out ?? '';
@@ -74,7 +83,11 @@ for (let qi = 0; qi < queries.length; qi++) {
     if (!response?.ok) throw new Error(`API failure ${response?.status}: ${url}`);
     const raw = await response.text();
     const parsed = JSON.parse(raw) as Reply;
-    if (!Array.isArray(parsed.results) || typeof parsed.meta?.count !== 'number') throw new Error(`Malformed API response: ${url}`);
+    if (!Array.isArray(parsed.results) || parsed.results.length > 100 ||
+        !Number.isInteger(parsed.meta?.count) || parsed.meta.count < 0 ||
+        (parsed.meta.next_cursor !== null && typeof parsed.meta.next_cursor !== 'string')) {
+      throw new Error(`Malformed API response: ${url}`);
+    }
     const record = { registration_url: registration.toString(), query_index: qi + 1, query: queries[qi], page,
       url: url.toString(), cursor_in: cursor, cursor_out: parsed.meta.next_cursor, fetched_at_utc: new Date().toISOString(),
       response_sha256: digest(raw), reported_total_results: parsed.meta.count, returned: parsed.results.length,
@@ -90,6 +103,8 @@ for (let qi = 0; qi < queries.length; qi++) {
     await sleep(120);
   }
 }
-const complete = { ...run, status: 'complete', completed_at_utc: new Date().toISOString() };
-writeFileSync(runPath, JSON.stringify(complete, null, 2) + '\n');
+if (initialRun.status !== 'complete') {
+  const complete = { ...initialRun, status: 'complete', completed_at_utc: new Date().toISOString() };
+  writeFileSync(runPath, JSON.stringify(complete, null, 2) + '\n');
+}
 console.log(`Registered OpenAlex harvest complete: ${outdir}`);

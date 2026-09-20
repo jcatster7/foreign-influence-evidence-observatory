@@ -14,6 +14,7 @@ const fixedQueries = [
   '"bot detection" AND (political OR election) AND validation',
   '"algorithmic amplification" AND (political OR election) AND (Twitter OR Facebook OR TikTok OR YouTube)',
 ];
+const fixedSelect = 'id,display_name,doi,publication_year,publication_date,type,primary_location,abstract_inverted_index';
 if (run.status !== 'complete' || JSON.stringify(run.queries) !== JSON.stringify(fixedQueries) ||
     !run.registration_url?.startsWith('https://osf.io/')) {
   throw new Error('A complete five-query OSF-registered OpenAlex run is required');
@@ -43,10 +44,13 @@ const pageCounts: { query_index: number; pages: number; retrieved: number; repor
 const checkpointNames = readdirSync(directory).filter((name) => /^q\d+_p\d+\.checkpoint\.json$/.test(name));
 for (let qi = 1; qi <= 5; qi++) {
   let cursor = '*';
+  const seenCursors = new Set<string>();
   let page = 1;
   let retrieved = 0;
   let reportedTotal = 0;
   while (cursor) {
+    if (seenCursors.has(cursor)) throw new Error(`Repeated cursor in query ${qi}`);
+    seenCursors.add(cursor);
     const base = `q${qi}_p${String(page).padStart(3, '0')}`;
     const checkpointPath = resolve(directory, `${base}.checkpoint.json`);
     const rawPath = resolve(directory, `${base}.response.json`);
@@ -62,7 +66,10 @@ for (let qi = 1; qi <= 5; qi++) {
         url.origin !== 'https://api.openalex.org' || url.pathname !== '/works' ||
         url.searchParams.get('search') !== run.queries[qi - 1] ||
         url.searchParams.get('filter') !== `to_publication_date:${run.cutoff_utc_date}` ||
-        url.searchParams.get('per_page') !== '100' || url.searchParams.get('cursor') !== cursor) {
+        url.searchParams.get('per_page') !== '100' || url.searchParams.get('cursor') !== cursor ||
+        url.searchParams.get('select') !== fixedSelect || [...url.searchParams.keys()].length !== 5 ||
+        response.results.length > 100 || !Number.isInteger(response.meta?.count) || response.meta.count < 0 ||
+        (response.meta.next_cursor !== null && typeof response.meta.next_cursor !== 'string')) {
       throw new Error(`Checkpoint or response mismatch: ${base}`);
     }
     for (const work of response.results) {
