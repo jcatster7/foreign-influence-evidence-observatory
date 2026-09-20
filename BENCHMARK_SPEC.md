@@ -40,6 +40,10 @@ The scorer separately counts assertions against `unknown` labels and assertions 
 
 The evaluator's deterministic self-check includes five targeted mistakes: promoting a displayed country to verified origin, coordination to deception, potential exposure to observed delivery, engagement to a measured recommendation increment, and a Botometer-flagged group to universal automation. Four assert facts over `unknown`; the Botometer group claim contradicts a source-backed finding. The check verifies that these error types stay distinct in the reported score. It tests the scorer, not a new detector or an unseen case set.
 
+### Denominator guard for detector-error claims
+
+Keep three different quantities separate: false-positive rate is `FP / (FP + TN)` among reference negatives; false discovery proportion is `FP / (FP + TP)` among predicted positives; and the benchmark's contradicted-claim assertion rate is an error count over the deliberately selected claim slots above. The last quantity estimates neither of the first two. In [Rauchfleisch and Kaiser (2020)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0241045), the reported 41% human share among accounts classified as bots at a 0.76 threshold comes from a resampling thought experiment assuming 15% bots. It is a false discovery proportion under that assumed mix, not an observed false-positive rate in the Twitter population. Do not relabel it, pool it as a binomial FPR, or transfer it to a newer Botometer version. An account-level historical validation must state the negative-label source, score version, threshold, account denominator, and how repeated daily scores were reduced.
+
 Seçkin et al.'s 26-campaign data are a promising source of platform-attributed positives and time/topic controls, but the [Zenodo files](https://zenodo.org/records/14189053) are restricted and require academic-affiliation access. Their control sampling does not independently prove every control account is a true negative. We will not silently use those controls as ground truth or bypass the stated one-file-per-researcher-per-day condition.
 
 ## Release gate
