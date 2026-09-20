@@ -19,6 +19,8 @@ The 2026-09-19/20 scoping search collected 8,793 OpenAlex rows across five query
 
 The registered acquisition script, `search_openalex_registered.ts`, requires the amended public immutable GitHub release URL and a UTC cutoff date. It optionally reads a free OpenAlex key from `OPENALEX_API_KEY` and sends it in a bearer header; the key is never saved. It archives raw OpenAlex responses plus hash-checked checkpoints. The current scoping files do not include those raw response bytes.
 
+Keep the OpenAlex key out of chat and Git. After creating or rotating it at [OpenAlex API settings](https://openalex.org/settings/api), save it locally in `.env.local` as `OPENALEX_API_KEY=<key>`; this file is ignored by Git. Load it only for the registered run with `set -a; source .env.local; set +a` in the shell that runs the script. Never commit or publish the key. A key pasted into a conversation should be rotated before use because OpenAlex also treats personal API keys as sign-in credentials.
+
 After that registered acquisition completes, `prepare_registered_queue.ts` verifies its raw page hashes and cursor chains and freezes a title-and-abstract screening queue with a deterministic 20% dual-review sample. No registered queue exists yet.
 
 ## Claim boundary
