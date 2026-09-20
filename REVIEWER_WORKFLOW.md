@@ -1,6 +1,6 @@
 # Independent screening workflow
 
-Status: implementation guide for the frozen [search protocol](SEARCH_PROTOCOL.md). No registered OpenAlex queue or independent reviewer decisions exist yet. The 2026-09-19/20 partial queue is for practice only and must never be reported as the registered review.
+Status: implementation guide for the frozen [search protocol](SEARCH_PROTOCOL.md). A complete registered OpenAlex queue and reviewer packets now exist under `searches/registered_openalex_2026-09-20_v0.3.1-preregistration-amendment/`, following the [missing-title processing amendment](registration/AMENDMENT_v0.3.2.md). No reviewer decisions exist yet. The earlier partial queue is for practice only and must never be reported as the registered review.
 
 ## Packet creation
 

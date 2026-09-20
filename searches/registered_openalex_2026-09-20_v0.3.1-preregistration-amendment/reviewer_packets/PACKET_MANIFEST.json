@@ -1,0 +1,20 @@
+{
+  "mode": "registered_title_abstract",
+  "queue_sha256": "9b76667ab1dd89ccecc822e58b62a8c96d54f0108f1ce565624bf288fd237a4a",
+  "queue_records": 8587,
+  "reviewer_a_records": 8587,
+  "reviewer_b_calibration_records": 1719,
+  "records_missing_title": 145,
+  "reviewer_a_sha256": "5412229dbdb56f1216bc35f7b9221fb05fd70fab3f5073899ca5d315144968a2",
+  "reviewer_b_sha256": "cfa75ce93ead09c9b8769b1a63774d7f8bc5f49685a69f5acb23794ea90bf9a7",
+  "assignment": "A screens every record; B independently screens the frozen stratified 20% sample. Disputes and uncertain records need additional dual review.",
+  "decisions_schema": {
+    "record_key": "string",
+    "reviewer_id": "string",
+    "stage": "title_abstract",
+    "decision": "retrieve_full_text | exclude | background_method",
+    "reason": "string",
+    "decided_at_utc": "ISO 8601 UTC",
+    "source_locator": "title or abstract locator"
+  }
+}

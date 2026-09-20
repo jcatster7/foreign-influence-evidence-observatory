@@ -1,0 +1,47 @@
+{
+  "status": "registered_openalex_queue_unscreened",
+  "registration_url": "https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.3.1-preregistration-amendment",
+  "cutoff_utc_date": "2026-09-20",
+  "queue_sha256": "9b76667ab1dd89ccecc822e58b62a8c96d54f0108f1ce565624bf288fd237a4a",
+  "queue_builder_amendment": "v0.3.2-missing-title-preservation",
+  "raw_rows_missing_title": 160,
+  "screening_records_missing_title": 145,
+  "retrieved": 9430,
+  "unique_openalex_ids": 8627,
+  "duplicate_doi_records_collapsed": 40,
+  "unique_screening_records": 8587,
+  "calibration_count": 1719,
+  "records_with_abstract": 8210,
+  "queries": [
+    {
+      "query_index": 1,
+      "pages": 22,
+      "retrieved": 2170,
+      "reported_total_at_last_page": 2170
+    },
+    {
+      "query_index": 2,
+      "pages": 7,
+      "retrieved": 657,
+      "reported_total_at_last_page": 657
+    },
+    {
+      "query_index": 3,
+      "pages": 24,
+      "retrieved": 2384,
+      "reported_total_at_last_page": 2384
+    },
+    {
+      "query_index": 4,
+      "pages": 14,
+      "retrieved": 1387,
+      "reported_total_at_last_page": 1387
+    },
+    {
+      "query_index": 5,
+      "pages": 29,
+      "retrieved": 2832,
+      "reported_total_at_last_page": 2832
+    }
+  ]
+}
