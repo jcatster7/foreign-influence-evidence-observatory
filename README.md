@@ -1,6 +1,6 @@
 # Foreign Influence Evidence Observatory
 
-**Status: [immutable GitHub preregistration published](https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.3.0-preregistration) on 2026-09-20 at 02:38:36 UTC; review and benchmark provisional.** The earlier [registration-candidate release](https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.2.0-registration-candidate) was scoping preparation. This is not an OSF registry deposit. No final systematic study count, causal claim about foreign bots, or population false-positive rate is released here.
+**Status: [immutable GitHub preregistration published](https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.3.0-preregistration) on 2026-09-20 at 02:38:36 UTC, with a [prospective free-access amendment](https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.3.1-preregistration-amendment) at 03:33:49 UTC; review and benchmark provisional.** The earlier [registration-candidate release](https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.2.0-registration-candidate) was scoping preparation. This is not an OSF registry deposit. No final systematic study count, causal claim about foreign bots, or population false-positive rate is released here.
 
 This project maps the evidence behind eight distinct social-media claims: account/operator origin (O), operation attribution (P), automation (A), coordination (C), deception (D), observed feed delivery (E), feed-selection increment (R), and audience impact (I). It keeps `unknown` as a valid result. A platform country label, bot score, coordinated posting pattern, potential timeline exposure, and matched-feed difference each answer different questions.
 
@@ -12,11 +12,11 @@ This project maps the evidence behind eight distinct social-media claims: accoun
 - [Meta-study options and pooling gates](META_STUDY_OPTIONS.md)
 - [Benchmark specification](BENCHMARK_SPEC.md), [ten provisional cases](benchmark_cases.json), [claim scorer](score_claims.ts), and [local report copies](sources/local_reports/README.md)
 - [Low-cost displayed-country replication protocol](LOW_COST_REPLICATION_PROTOCOL.md)
-- [Search status](SEARCH_STATUS.md), [budget ledger](BUDGET_LEDGER.csv), [GitHub preregistration packet](registration/GITHUB_PREREGISTRATION_PACKET.zip), and [release verification record](registration/REGISTRATION_STATUS.json)
+- [Search status](SEARCH_STATUS.md), [budget ledger](BUDGET_LEDGER.csv), [current amended preregistration packet](registration/GITHUB_PREREGISTRATION_PACKET_v0.3.1.zip), and [release verification record](registration/REGISTRATION_STATUS.json)
 
 The 2026-09-19/20 scoping search collected 8,793 OpenAlex rows across five query families, but its fifth cursor stopped at a keyless API limit. The saved rows contain 7,986 distinct DOI-or-OpenAlex screening records after deduplication. Every record remains unscreened. Those numbers are acquisition diagnostics, **not** PRISMA inclusion counts. The registered search will be rerun after the immutable GitHub preregistration release is published.
 
-The registered acquisition script, `search_openalex_registered.ts`, requires the public immutable GitHub release URL and a UTC cutoff date. It archives raw OpenAlex responses plus hash-checked checkpoints. The current scoping files do not include those raw response bytes.
+The registered acquisition script, `search_openalex_registered.ts`, requires the amended public immutable GitHub release URL and a UTC cutoff date. It optionally reads a free OpenAlex key from `OPENALEX_API_KEY` and sends it in a bearer header; the key is never saved. It archives raw OpenAlex responses plus hash-checked checkpoints. The current scoping files do not include those raw response bytes.
 
 After that registered acquisition completes, `prepare_registered_queue.ts` verifies its raw page hashes and cursor chains and freezes a title-and-abstract screening queue with a deterministic 20% dual-review sample. No registered queue exists yet.
 
