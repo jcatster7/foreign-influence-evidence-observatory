@@ -1,6 +1,6 @@
 # Foreign Influence Evidence Observatory
 
-**Status: preregistration packet prepared; review and benchmark provisional.** No final systematic study count, causal claim about foreign bots, or population false-positive rate is released here.
+**Status: preregistration packet prepared; OSF submission pending; review and benchmark provisional.** The [time-stamped registration-candidate release](https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.2.0-registration-candidate) freezes the current packet but is not an OSF registration. No final systematic study count, causal claim about foreign bots, or population false-positive rate is released here.
 
 This project maps the evidence behind eight distinct social-media claims: account/operator origin (O), operation attribution (P), automation (A), coordination (C), deception (D), observed feed delivery (E), feed-selection increment (R), and audience impact (I). It keeps `unknown` as a valid result. A platform country label, bot score, coordinated posting pattern, potential timeline exposure, and matched-feed difference each answer different questions.
 
