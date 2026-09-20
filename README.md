@@ -12,7 +12,7 @@ This project maps the evidence behind eight distinct social-media claims: accoun
 - [Independent reviewer workflow](REVIEWER_WORKFLOW.md) and packet generator for the frozen dual-review sample
 - [Meta-study options and pooling gates](META_STUDY_OPTIONS.md)
 - [Benchmark specification](BENCHMARK_SPEC.md), [ten provisional cases](benchmark_cases.json), [provisional benchmark card](BENCHMARK_CARD_PROVISIONAL.json), [claim scorer](score_claims.ts), and [local report copies](sources/local_reports/README.md)
-- [Low-cost displayed-country replication protocol](LOW_COST_REPLICATION_PROTOCOL.md)
+- [Low-cost displayed-country replication protocol](LOW_COST_REPLICATION_PROTOCOL.md) and [historical input audit](replication/INPUT_AUDIT.md)
 - [Search status](SEARCH_STATUS.md), [budget ledger](BUDGET_LEDGER.csv), [current amended preregistration packet](registration/GITHUB_PREREGISTRATION_PACKET_v0.3.1.zip), and [release verification record](registration/REGISTRATION_STATUS.json)
 
 The 2026-09-19/20 scoping search collected 8,793 OpenAlex rows across five query families, but its fifth cursor stopped at a keyless API limit. The saved rows contain 7,986 distinct DOI-or-OpenAlex screening records after deduplication. Every record remains unscreened. Those numbers are acquisition diagnostics, **not** PRISMA inclusion counts. The registered search was attempted after the immutable GitHub releases but acquired zero pages because OpenAlex returned HTTP 429; it remains incomplete.
