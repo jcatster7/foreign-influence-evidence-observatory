@@ -34,7 +34,7 @@ Split by campaign/dataset and collection period, never by row, to avoid leakage.
 
 ## Existing local evidence and temporal boundary
 
-The 600-event origin pilot, the 2023/2024 matched-feed analyses, and exploratory Crossref/OpenAlex searches run on 2026-09-19 are known before registration. They are pre-existing scoping evidence, not confirmatory tests of this preregistration. After registration, rerun the frozen searches across the full indexed result sets and apply the frozen eligibility rules. New hypotheses, screening rules, and benchmark thresholds must be frozen before evaluating newly acquired candidate datasets. Document deviations with date and rationale; never silently retrofit the plan to results.
+The 600-event origin pilot, the 2023/2024 matched-feed analyses, exploratory Crossref/OpenAlex searches run on 2026-09-19/20, and the attached 18-record provisional evidence map and 13-link edge map are known before registration. The map and source extractions are author-selected leads without independent coding or systematic screening. They are pre-existing scoping evidence, not confirmatory tests of this preregistration. After registration, rerun the frozen searches across the full indexed result sets and apply the frozen eligibility rules. New hypotheses, screening rules, and benchmark thresholds must be frozen before evaluating newly acquired candidate datasets. Document deviations with date and rationale; never silently retrofit the plan to results.
 
 ## Cost and stopping rule
 

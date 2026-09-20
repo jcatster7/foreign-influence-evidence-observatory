@@ -7,13 +7,13 @@
   "files": [
     {
       "path": "registration/OSF_OPEN_ENDED_REGISTRATION_TEXT.md",
-      "sha256": "63e65f1eaf6abb8c75fc8a0f4c232499321d7e33b9bbd953c57125d669a82052",
-      "bytes": 8457
+      "sha256": "73e20171d44e956480106bb3f02f9be52bab4047cd5cba671f16fc15d55533a2",
+      "bytes": 8758
     },
     {
       "path": "PREREGISTRATION_DRAFT.md",
-      "sha256": "0340a4ef9d869472fbde7bd8b9baa498caf8624d2c1c4f6ae37502dcb6f2ac98",
-      "bytes": 7387
+      "sha256": "3b77f4aa42720660bbf42f7957ddca53c73d2dcddddba91426405422e8747d89",
+      "bytes": 7569
     },
     {
       "path": "SEARCH_PROTOCOL.md",
@@ -27,8 +27,8 @@
     },
     {
       "path": "BENCHMARK_SPEC.md",
-      "sha256": "b4cd525a267b4280a0d3508a4a150820ace98f52118a2db0f7a9870ada289b8c",
-      "bytes": 8122
+      "sha256": "90f7841851602bab08ce0368653fa45c26ecd53f2c60d73dac77e9950f20702b",
+      "bytes": 9169
     },
     {
       "path": "LOW_COST_REPLICATION_PROTOCOL.md",
@@ -94,6 +94,21 @@
       "path": "prepare_registered_queue.ts",
       "sha256": "b490abf827b3f9d8c3d151199dacbd32082f8bc281e53feace9c12b7175b2be6",
       "bytes": 9638
+    },
+    {
+      "path": "SOURCE_EXTRACTIONS.md",
+      "sha256": "9a0136d599809900a6d0dc6698cca47bc911ad7e0991a5f33f64be26c380fbb6",
+      "bytes": 9896
+    },
+    {
+      "path": "EVIDENCE_MAP_SEED.csv",
+      "sha256": "b59b84d668a35e5f5c119a45f7e34cffbbdda0c2566b102c2080691e5e24d20a",
+      "bytes": 6982
+    },
+    {
+      "path": "EDGE_MAP_SEED.csv",
+      "sha256": "bf4a85a0dc64f7e7175e02f232361734766cf14fb5ab5562fff64c177942ea4f",
+      "bytes": 4260
     }
   ],
   "exclusions": [
