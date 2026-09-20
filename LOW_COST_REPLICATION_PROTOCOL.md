@@ -6,9 +6,13 @@ Version 0.1, 2026-09-19. Protocol only; no new observations collected.
 
 Does the 600-event pilot's contrast in X-displayed country signals replicate under a prespecified, independently archived sample, and how much do missing panels and repeated accounts change it? This is a validation of a displayed origin signal, not a test of bot identity or foreign control.
 
+[X's current help page](https://help.x.com/en/managing-your-account/how-to-change-country-settings) says its public “About this Account” country or region is inferred from aggregated IP addresses, and public accounts may choose whether to show a region or country. Record the help-page retrieval date and the visible panel wording with each collection run. This signal can differ from physical residence or operator identity, and country-level missingness may reflect an account's display choice.
+
 ## Sampling and capture
 
 Freeze target eligibility, ideology coding rule, post window, position rule, and collection dates before capture. Select targets from a declared roster using a recorded random seed. Sample equal numbers of posts per target and visible repost positions per post. Save the post URL, UTC capture time, selected position, anonymized account key, displayed country category, and an archived screenshot at observation time. Record failed loads and inaccessible panels as outcomes. Use two independent reviewers for at least a prespecified 20% sample; adjudicate disagreements without overwriting initial codes.
+
+Before drawing the sample, perform an access preflight on a small, separately logged set of accounts excluded from analysis. Verify that repost positions, the account panel, and permitted local screenshot capture are available in the chosen browser session. Record the browser date, login state, interface language, and any access failure. If these steps are unavailable, do not draw replacement observations from a different interface without registering a protocol deviation first. Do not treat a region-only display or hidden location as `displayed_us` or `displayed_non_us`.
 
 ## Analysis
 

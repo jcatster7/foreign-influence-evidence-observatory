@@ -32,8 +32,8 @@
     },
     {
       "path": "LOW_COST_REPLICATION_PROTOCOL.md",
-      "sha256": "6c0f9fd6fb328fd4b1b0c132f9c5224da8c0a2ced123dd14d7f3c4d55206f2a6",
-      "bytes": 2371
+      "sha256": "58ffbce0f7614527a91847679d5995934fd21348485d567b3a749e14085f32f8",
+      "bytes": 3453
     },
     {
       "path": "benchmark_cases.json",
