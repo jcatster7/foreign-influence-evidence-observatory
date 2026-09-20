@@ -1,9 +1,14 @@
 {
-  "status": "ready_for_immutable_release",
+  "status": "ready_for_immutable_amendment_release",
   "prepared_utc_date": "2026-09-20",
   "external_spend_usd": 0.0,
   "spending_cap_usd": 20.0,
   "files": [
+    {
+      "path": "registration/AMENDMENT_v0.3.1.md",
+      "sha256": "b3d44ae4c866ea55e05ef6c0b8af08c99d9888445f68b945945c5c981fedc955",
+      "bytes": 1437
+    },
     {
       "path": "registration/GITHUB_PREREGISTRATION.md",
       "sha256": "d907895ba7df09729e05150005e1773ec4e7d863a52cf5979a7026ae5269581d",
@@ -16,8 +21,8 @@
     },
     {
       "path": "SEARCH_PROTOCOL.md",
-      "sha256": "9025f4d6fc4b2d3fb642fc668f429dfd12724e13c71483e5b97ab3117e48d4b7",
-      "bytes": 6664
+      "sha256": "7e73e4e84cb7eae43fd236978f3150c63e9fc89231f69529cfa4f1d6a71594d9",
+      "bytes": 6950
     },
     {
       "path": "EXTRACTION_CODEBOOK.md",
@@ -81,8 +86,8 @@
     },
     {
       "path": "search_openalex_registered.ts",
-      "sha256": "ba228f580ad15ef112fb564dd36a2a569389bce11a31fd800ed9cc1f9360df3b",
-      "bytes": 8911
+      "sha256": "a3d458a5c837d819010cece42a742bbcda46f08e7b40aca4d21f1edfb9298edb",
+      "bytes": 9186
     },
     {
       "path": "LICENSE.md",
@@ -115,5 +120,6 @@
     "Restricted or account-level source content is not included."
   ],
   "registration_route": "GitHub immutable release",
-  "intended_tag": "v0.3.0-preregistration"
+  "intended_tag": "v0.3.1-preregistration-amendment",
+  "amends": "https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.3.0-preregistration"
 }

@@ -1,0 +1,7 @@
+# Prospective amendment: free OpenAlex authentication
+
+Prepared 2026-09-20 UTC, after the [v0.3.0 immutable preregistration](https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.3.0-preregistration). The v0.3.0 harvester verified the release at 02:39:05 UTC and received HTTP 429 on the first OpenAlex request after four attempts. It saved zero results. The keyless allowance is exhausted; this amendment adds optional free-account authentication before any confirmatory records are acquired.
+
+Only the acquisition access method changes. `OPENALEX_API_KEY` is read from the process environment and sent as an HTTPS bearer header. The key is not written to a URL, checkpoint, run file, or release packet. `RUN.json` records `api_auth_mode` as `environment_bearer_key` or `keyless`, and a resumed run must retain that mode. The five queries, UTC publication cutoff, selected fields, paging, deduplication, screening, extraction, benchmark rules, pooling gate, and $20 external spending cap remain as in v0.3.0. Free key access requires no payment; use of any paid allowance would require a separate decision and budget entry.
+
+The new immutable packet and release must be published before using the amended harvester. The prior incomplete zero-page run remains an audit record and must not be merged into the new run. If a key is unavailable, the amended harvester can use the keyless allowance after reset.

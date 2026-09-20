@@ -34,12 +34,12 @@ if (!releaseResponse.ok) throw new Error(`GitHub preregistration is not publicly
 const release = await releaseResponse.json() as { tag_name?: string; html_url?: string; draft?: boolean;
   immutable?: boolean; published_at?: string; assets?: { name?: string; digest?: string }[] };
 const folder = dirname(fileURLToPath(import.meta.url));
-const packet = resolve(folder, 'registration', 'GITHUB_PREREGISTRATION_PACKET.zip');
+const packet = resolve(folder, 'registration', 'GITHUB_PREREGISTRATION_PACKET_v0.3.1.zip');
 const packetSha = createHash('sha256').update(readFileSync(packet)).digest('hex');
 if (release.tag_name !== tag || release.html_url !== registration.toString() || release.draft || !release.immutable ||
     !release.published_at || Number.isNaN(Date.parse(release.published_at)) ||
     release.published_at.slice(0, 10) > cutoff ||
-    !release.assets?.some((asset) => asset.name === 'GITHUB_PREREGISTRATION_PACKET.zip' && asset.digest === `sha256:${packetSha}`)) {
+    !release.assets?.some((asset) => asset.name === 'GITHUB_PREREGISTRATION_PACKET_v0.3.1.zip' && asset.digest === `sha256:${packetSha}`)) {
   throw new Error('Expected an immutable public GitHub release dated by the cutoff with the exact local packet attached');
 }
 const manifest = JSON.parse(readFileSync(resolve(folder, 'registration', 'REGISTRATION_PACKET_MANIFEST.json'), 'utf8')) as
@@ -51,8 +51,10 @@ for (const path of ['search_openalex_registered.ts', 'prepare_registered_queue.t
 }
 const outdir = resolve(folder, 'searches', `registered_openalex_${cutoff}_${tag}`);
 mkdirSync(outdir, { recursive: true });
+const openalexKey = process.env.OPENALEX_API_KEY?.trim();
 const run = { registration_url: registration.toString(), cutoff_utc_date: cutoff, queries, source: 'OpenAlex core works',
   status: 'in_progress', started_at_utc: new Date().toISOString(),
+  api_auth_mode: openalexKey ? 'environment_bearer_key' : 'keyless',
   registration_kind: 'github_immutable_release', registration_verified_at_utc: new Date().toISOString(),
   registration_published_at_utc: release.published_at, registration_asset_sha256: packetSha };
 const runPath = resolve(outdir, 'RUN.json');
@@ -61,7 +63,8 @@ if (existsSync(runPath)) {
   const prior = JSON.parse(readFileSync(runPath, 'utf8')) as typeof run;
   if (prior.registration_url !== run.registration_url || prior.cutoff_utc_date !== cutoff ||
       prior.registration_published_at_utc !== run.registration_published_at_utc ||
-      prior.registration_asset_sha256 !== run.registration_asset_sha256 || JSON.stringify(prior.queries) !== JSON.stringify(queries)) {
+      prior.registration_asset_sha256 !== run.registration_asset_sha256 ||
+      prior.api_auth_mode !== run.api_auth_mode || JSON.stringify(prior.queries) !== JSON.stringify(queries)) {
     throw new Error('Registered run parameters changed; use a new directory and log the deviation');
   }
   initialRun = prior;
@@ -101,7 +104,7 @@ for (let qi = 0; qi < queries.length; qi++) {
     }
     let response: Response | undefined;
     for (let attempt = 0; attempt < 4; attempt++) {
-      response = await fetch(url);
+      response = await fetch(url, openalexKey ? { headers: { authorization: `Bearer ${openalexKey}` } } : undefined);
       if (response.ok) break;
       if (![429, 500, 502, 503, 504].includes(response.status)) throw new Error(`HTTP ${response.status}: ${url}`);
       await sleep(1000 * 2 ** attempt);
