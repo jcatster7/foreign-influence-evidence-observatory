@@ -1,6 +1,6 @@
 # Foreign Influence Evidence Observatory
 
-**Status: preregistration packet prepared; OSF submission pending; review and benchmark provisional.** The [time-stamped registration-candidate release](https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.2.0-registration-candidate) freezes the current packet but is not an OSF registration. No final systematic study count, causal claim about foreign bots, or population false-positive rate is released here.
+**Status: GitHub preregistration packet prepared for an immutable release; review and benchmark provisional.** The earlier [registration-candidate release](https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.2.0-registration-candidate) was scoping preparation. No final systematic study count, causal claim about foreign bots, or population false-positive rate is released here.
 
 This project maps the evidence behind eight distinct social-media claims: account/operator origin (O), operation attribution (P), automation (A), coordination (C), deception (D), observed feed delivery (E), feed-selection increment (R), and audience impact (I). It keeps `unknown` as a valid result. A platform country label, bot score, coordinated posting pattern, potential timeline exposure, and matched-feed difference each answer different questions.
 
@@ -12,11 +12,11 @@ This project maps the evidence behind eight distinct social-media claims: accoun
 - [Meta-study options and pooling gates](META_STUDY_OPTIONS.md)
 - [Benchmark specification](BENCHMARK_SPEC.md), [ten provisional cases](benchmark_cases.json), [claim scorer](score_claims.ts), and [local report copies](sources/local_reports/README.md)
 - [Low-cost displayed-country replication protocol](LOW_COST_REPLICATION_PROTOCOL.md)
-- [Search status](SEARCH_STATUS.md), [budget ledger](BUDGET_LEDGER.csv), and [OSF registration packet](registration/OSF_REGISTRATION_PACKET.zip)
+- [Search status](SEARCH_STATUS.md), [budget ledger](BUDGET_LEDGER.csv), and [GitHub preregistration packet](registration/GITHUB_PREREGISTRATION_PACKET.zip)
 
-The 2026-09-19/20 scoping search collected 8,793 OpenAlex rows across five query families, but its fifth cursor stopped at a keyless API limit. The saved rows contain 7,986 distinct DOI-or-OpenAlex screening records after deduplication. Every record remains unscreened. Those numbers are acquisition diagnostics, **not** PRISMA inclusion counts. The registered search will be rerun after the OSF registration is submitted.
+The 2026-09-19/20 scoping search collected 8,793 OpenAlex rows across five query families, but its fifth cursor stopped at a keyless API limit. The saved rows contain 7,986 distinct DOI-or-OpenAlex screening records after deduplication. Every record remains unscreened. Those numbers are acquisition diagnostics, **not** PRISMA inclusion counts. The registered search will be rerun after the immutable GitHub preregistration release is published.
 
-The registered acquisition script, `search_openalex_registered.ts`, requires the public OSF registration URL and a UTC cutoff date. It archives raw OpenAlex responses plus hash-checked checkpoints. The current scoping files do not include those raw response bytes.
+The registered acquisition script, `search_openalex_registered.ts`, requires the public immutable GitHub release URL and a UTC cutoff date. It archives raw OpenAlex responses plus hash-checked checkpoints. The current scoping files do not include those raw response bytes.
 
 After that registered acquisition completes, `prepare_registered_queue.ts` verifies its raw page hashes and cursor chains and freezes a title-and-abstract screening queue with a deterministic 20% dual-review sample. No registered queue exists yet.
 
@@ -51,4 +51,4 @@ External spend is tracked in `BUDGET_LEDGER.csv`, currently **$0** against a har
 - [PRISMA 2020](https://www.prisma-statement.org/prisma-2020)
 - [SWiM guidance](https://www.bmj.com/content/368/bmj.l6890)
 - [OpenAlex API documentation](https://help.openalex.org/api/)
-- [OSF registration guidance](https://help.osf.io/article/330-welcome-to-registrations)
+- [GitHub immutable releases](https://docs.github.com/en/code-security/concepts/supply-chain-security/immutable-releases)

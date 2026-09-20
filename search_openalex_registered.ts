@@ -3,7 +3,7 @@ import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from '
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-// Run only after the OSF registration is public. The URL is recorded, not authenticated by this script.
+// Run only after the GitHub preregistration release is public and immutable.
 const queries = [
   '"foreign influence" AND "social media" AND (Twitter OR Facebook OR TikTok OR Reddit OR YouTube)',
   '"coordinated inauthentic behavior" AND (Twitter OR Facebook OR Instagram OR TikTok)',
@@ -19,40 +19,49 @@ const args = new Map(process.argv.slice(2).map((arg) => {
 const registrationUrl = args.get('registration-url');
 const cutoff = args.get('cutoff');
 if (!registrationUrl || !cutoff || args.size !== 2) {
-  throw new Error('Usage: node --experimental-strip-types search_openalex_registered.ts --registration-url=https://osf.io/REGISTRATION/ --cutoff=YYYY-MM-DD');
+  throw new Error('Usage: node --experimental-strip-types search_openalex_registered.ts --registration-url=https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/TAG --cutoff=YYYY-MM-DD');
 }
 const registration = new URL(registrationUrl);
-if (registration.protocol !== 'https:' || registration.hostname !== 'osf.io' || !/^\/[a-z0-9]{5,}\/$/i.test(registration.pathname)) {
-  throw new Error('Expected a public OSF registration URL, for example https://osf.io/abcde/');
+const match = /^\/jcatster7\/foreign-influence-evidence-observatory\/releases\/tag\/(v[0-9][a-z0-9.-]*)$/.exec(registration.pathname);
+if (registration.protocol !== 'https:' || registration.hostname !== 'github.com' || !match || registration.search || registration.hash) {
+  throw new Error('Expected the observatory GitHub preregistration release URL');
 }
 if (!/^\d{4}-\d{2}-\d{2}$/.test(cutoff) || Number.isNaN(Date.parse(`${cutoff}T00:00:00Z`))) throw new Error('Invalid UTC cutoff date');
-const registrationId = registration.pathname.split('/')[1];
-const osfResponse = await fetch(`https://api.osf.io/v2/registrations/${registrationId}/`, {
+const tag = match[1];
+const releaseResponse = await fetch(`https://api.github.com/repos/jcatster7/foreign-influence-evidence-observatory/releases/tags/${tag}`, {
   headers: { accept: 'application/json' }, signal: AbortSignal.timeout(15000) });
-if (!osfResponse.ok) throw new Error(`OSF registration is not publicly verifiable: HTTP ${osfResponse.status}`);
-const osfRecord = await osfResponse.json() as { data?: { id?: string; type?: string;
-  attributes?: { public?: boolean; withdrawn?: boolean; embargoed?: boolean; date_registered?: string };
-  links?: { html?: string } } };
-const osfAttributes = osfRecord.data?.attributes;
-if (osfRecord.data?.id !== registrationId || osfRecord.data.type !== 'registrations' ||
-    osfRecord.data.links?.html !== registration.toString() || !osfAttributes?.public ||
-    osfAttributes.withdrawn || osfAttributes.embargoed ||
-    !osfAttributes.date_registered || Number.isNaN(Date.parse(osfAttributes.date_registered)) ||
-    osfAttributes.date_registered.slice(0, 10) > cutoff) {
-  throw new Error('Expected an active public OSF registration dated on or before the search cutoff');
-}
+if (!releaseResponse.ok) throw new Error(`GitHub preregistration is not publicly verifiable: HTTP ${releaseResponse.status}`);
+const release = await releaseResponse.json() as { tag_name?: string; html_url?: string; draft?: boolean;
+  immutable?: boolean; published_at?: string; assets?: { name?: string; digest?: string }[] };
 const folder = dirname(fileURLToPath(import.meta.url));
-const outdir = resolve(folder, 'searches', `registered_openalex_${cutoff}_${registration.pathname.split('/')[1]}`);
+const packet = resolve(folder, 'registration', 'GITHUB_PREREGISTRATION_PACKET.zip');
+const packetSha = createHash('sha256').update(readFileSync(packet)).digest('hex');
+if (release.tag_name !== tag || release.html_url !== registration.toString() || release.draft || !release.immutable ||
+    !release.published_at || Number.isNaN(Date.parse(release.published_at)) ||
+    release.published_at.slice(0, 10) > cutoff ||
+    !release.assets?.some((asset) => asset.name === 'GITHUB_PREREGISTRATION_PACKET.zip' && asset.digest === `sha256:${packetSha}`)) {
+  throw new Error('Expected an immutable public GitHub release dated by the cutoff with the exact local packet attached');
+}
+const manifest = JSON.parse(readFileSync(resolve(folder, 'registration', 'REGISTRATION_PACKET_MANIFEST.json'), 'utf8')) as
+  { files: { path: string; sha256: string }[] };
+for (const path of ['search_openalex_registered.ts', 'prepare_registered_queue.ts', 'SEARCH_PROTOCOL.md']) {
+  const frozen = manifest.files.find((item) => item.path === path);
+  const current = createHash('sha256').update(readFileSync(resolve(folder, path))).digest('hex');
+  if (!frozen || frozen.sha256 !== current) throw new Error(`Current ${path} differs from frozen preregistration packet`);
+}
+const outdir = resolve(folder, 'searches', `registered_openalex_${cutoff}_${tag}`);
 mkdirSync(outdir, { recursive: true });
 const run = { registration_url: registration.toString(), cutoff_utc_date: cutoff, queries, source: 'OpenAlex core works',
   status: 'in_progress', started_at_utc: new Date().toISOString(),
-  osf_public_verified_at_utc: new Date().toISOString(), osf_date_registered: osfAttributes.date_registered };
+  registration_kind: 'github_immutable_release', registration_verified_at_utc: new Date().toISOString(),
+  registration_published_at_utc: release.published_at, registration_asset_sha256: packetSha };
 const runPath = resolve(outdir, 'RUN.json');
 let initialRun = run;
 if (existsSync(runPath)) {
   const prior = JSON.parse(readFileSync(runPath, 'utf8')) as typeof run;
   if (prior.registration_url !== run.registration_url || prior.cutoff_utc_date !== cutoff ||
-      prior.osf_date_registered !== run.osf_date_registered || JSON.stringify(prior.queries) !== JSON.stringify(queries)) {
+      prior.registration_published_at_utc !== run.registration_published_at_utc ||
+      prior.registration_asset_sha256 !== run.registration_asset_sha256 || JSON.stringify(prior.queries) !== JSON.stringify(queries)) {
     throw new Error('Registered run parameters changed; use a new directory and log the deviation');
   }
   initialRun = prior;

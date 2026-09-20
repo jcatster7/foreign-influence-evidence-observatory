@@ -1,24 +1,23 @@
 {
-  "status": "prepared_not_submitted",
+  "status": "ready_for_immutable_release",
   "prepared_utc_date": "2026-09-20",
-  "registration_template": "OSF Open-Ended registration",
   "external_spend_usd": 0.0,
   "spending_cap_usd": 20.0,
   "files": [
     {
-      "path": "registration/OSF_OPEN_ENDED_REGISTRATION_TEXT.md",
-      "sha256": "73e20171d44e956480106bb3f02f9be52bab4047cd5cba671f16fc15d55533a2",
-      "bytes": 8758
+      "path": "registration/GITHUB_PREREGISTRATION.md",
+      "sha256": "d907895ba7df09729e05150005e1773ec4e7d863a52cf5979a7026ae5269581d",
+      "bytes": 1864
     },
     {
       "path": "PREREGISTRATION_DRAFT.md",
-      "sha256": "3b77f4aa42720660bbf42f7957ddca53c73d2dcddddba91426405422e8747d89",
-      "bytes": 7569
+      "sha256": "57297415d1a7e23121db1d9df15cf9073f74e054720b0e8a267cc3b792f6f5bf",
+      "bytes": 7732
     },
     {
       "path": "SEARCH_PROTOCOL.md",
-      "sha256": "0a08564809c1f24f9a9271ece5729c7fdc41d1699e22f00e313c5b945e5aacf2",
-      "bytes": 6539
+      "sha256": "9025f4d6fc4b2d3fb642fc668f429dfd12724e13c71483e5b97ab3117e48d4b7",
+      "bytes": 6664
     },
     {
       "path": "EXTRACTION_CODEBOOK.md",
@@ -82,18 +81,18 @@
     },
     {
       "path": "search_openalex_registered.ts",
-      "sha256": "bc6cd1c0411698efc3f1fcd4a0d01d470987416d015ee6f301e4f8da837b5fc5",
-      "bytes": 7900
+      "sha256": "ba228f580ad15ef112fb564dd36a2a569389bce11a31fd800ed9cc1f9360df3b",
+      "bytes": 8911
     },
     {
       "path": "LICENSE.md",
-      "sha256": "c07c9519607e8b39bd6fcbcc02d828e289d4a1cf7c953ee4e6b78cfb6c8d0f44",
-      "bytes": 962
+      "sha256": "0c8c18e9674791662dafee5266235dc94bb334cc9ac33c7a2bd8eecbe977d893",
+      "bytes": 974
     },
     {
       "path": "prepare_registered_queue.ts",
-      "sha256": "d8e11983ae401151fe9dd3ba4388efcf8010c3d4fab1fb6399dd3c8f1e234e04",
-      "bytes": 10430
+      "sha256": "671733a60097f412aae1313a87861fcad16eee48d933d106b5c774ecb5e529d9",
+      "bytes": 10757
     },
     {
       "path": "SOURCE_EXTRACTIONS.md",
@@ -114,5 +113,7 @@
   "exclusions": [
     "Raw source pages and incomplete exploratory screening queue are prior scoping material, not confirmatory attachments.",
     "Restricted or account-level source content is not included."
-  ]
+  ],
+  "registration_route": "GitHub immutable release",
+  "intended_tag": "v0.3.0-preregistration"
 }

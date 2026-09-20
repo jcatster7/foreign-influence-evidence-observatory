@@ -1,6 +1,6 @@
 # Foreign Influence Evidence Observatory — preregistration draft
 
-Version 0.1, 2026-09-19. **Draft for registration; not registered or published.**
+Version 0.2, 2026-09-20. Protocol prepared for an immutable GitHub preregistration release. The release timestamp marks the prospective boundary.
 
 ## Research question
 
@@ -42,13 +42,13 @@ External spending cap: **$20 total**, recorded with date, vendor, purpose, and r
 
 ## Registration and archive plan
 
-Submit this protocol through the OSF **Registration** workflow after screening fields and extraction code are finalized. Keep active data/code in a versioned repository, because OSF Projects are being phased out while Registrations continue. Registration status must be recorded with its permanent URL and timestamp before calling this work preregistered.
+Publish the complete packet as a public GitHub release with repository immutable releases enabled. Record the release URL, timestamp, tag commit, attached packet digest, and GitHub `immutable` status before any confirmatory search. This is a time-stamped public preregistration, not an OSF registration or curated registry deposit. Later amendments must link back to the frozen packet and precede the affected analysis.
 
 ## Primary guidance and source leads
 
 - PRISMA 2020: https://www.prisma-statement.org/prisma-2020
 - SWiM: https://www.bmj.com/content/368/bmj.l6890
-- OSF transition: https://help.osf.io/article/759-details-of-osf-projects-transition
+- GitHub immutable releases: https://docs.github.com/en/code-security/concepts/supply-chain-security/immutable-releases
 - X information-operations archive description: https://blog.x.com/en_us/topics/company/2019/information-ops-on-twitter
 - Meta threat indicator repository: https://github.com/facebook/threat-research
 - Public matched-feed replication: https://doi.org/10.6084/m9.figshare.28033772.v1

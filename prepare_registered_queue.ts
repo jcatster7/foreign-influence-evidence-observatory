@@ -7,7 +7,8 @@ if (!argument?.startsWith('--run-dir=')) throw new Error('Usage: node --experime
 const directory = resolve(argument.slice('--run-dir='.length));
 const run = JSON.parse(readFileSync(resolve(directory, 'RUN.json'), 'utf8')) as
   { registration_url: string; cutoff_utc_date: string; queries: string[]; status: string;
-    osf_public_verified_at_utc?: string; osf_date_registered?: string };
+    registration_kind?: string; registration_verified_at_utc?: string;
+    registration_published_at_utc?: string; registration_asset_sha256?: string };
 const fixedQueries = [
   '"foreign influence" AND "social media" AND (Twitter OR Facebook OR TikTok OR Reddit OR YouTube)',
   '"coordinated inauthentic behavior" AND (Twitter OR Facebook OR Instagram OR TikTok)',
@@ -17,10 +18,11 @@ const fixedQueries = [
 ];
 const fixedSelect = 'id,display_name,doi,publication_year,publication_date,type,primary_location,abstract_inverted_index';
 if (run.status !== 'complete' || JSON.stringify(run.queries) !== JSON.stringify(fixedQueries) ||
-    !run.registration_url?.startsWith('https://osf.io/') ||
-    !run.osf_public_verified_at_utc || !run.osf_date_registered ||
-    run.osf_date_registered.slice(0, 10) > run.cutoff_utc_date) {
-  throw new Error('A complete five-query OSF-registered OpenAlex run is required');
+    !/^https:\/\/github\.com\/jcatster7\/foreign-influence-evidence-observatory\/releases\/tag\/v[0-9][a-z0-9.-]*$/.test(run.registration_url) ||
+    run.registration_kind !== 'github_immutable_release' || !run.registration_verified_at_utc ||
+    !run.registration_published_at_utc || !/^[a-f0-9]{64}$/.test(run.registration_asset_sha256 ?? '') ||
+    run.registration_published_at_utc.slice(0, 10) > run.cutoff_utc_date) {
+  throw new Error('A complete five-query immutable GitHub-preregistered OpenAlex run is required');
 }
 const sha256 = (value: string) => createHash('sha256').update(value).digest('hex');
 type Work = { id: string; display_name: string; doi: string | null; publication_year: number | null;

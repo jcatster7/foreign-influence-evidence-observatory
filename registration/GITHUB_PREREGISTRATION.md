@@ -1,0 +1,9 @@
+# GitHub immutable-release preregistration
+
+Prepared 2026-09-20 UTC. This document records a registration-route amendment requested by Justin before the first confirmatory search. The earlier OSF packet and `v0.2.0-registration-candidate` release were preparation artifacts. No OSF registration was submitted. The 2026-09-19/20 OpenAlex and Crossref acquisitions, 18-record seed map, 13-edge seed map, local reports, and ten benchmark cases were known before this preregistration; none constitutes a confirmatory result.
+
+The prospective protocol is `PREREGISTRATION_DRAFT.md`, with `SEARCH_PROTOCOL.md`, `EXTRACTION_CODEBOOK.md`, `BENCHMARK_SPEC.md`, and `LOW_COST_REPLICATION_PROTOCOL.md`. The attached manifest lists exact byte hashes. Publish this complete packet as `v0.3.0-preregistration` with GitHub immutable releases enabled. The public release's `published_at` timestamp is the registration boundary. The search program must verify the immutable release and exact packet digest before writing a confirmatory run. Any acquisition made before that timestamp remains exploratory.
+
+The preregistered study is an evidence map, not a promise of a pooled effect. Full-text inclusion and construct labels require two independent coders. Numerical pooling requires the compatibility and independence gates in the protocol. `unknown` labels are retained. Population false-positive rates require independently verified negatives. The current seed and benchmark are provisional, selected prior knowledge.
+
+GitHub release immutability provides a locked public timestamped artifact and tag. It is not OSF registration, peer review, or evidence that the registered analysis has been completed. Record deviations with date, rationale, and the affected protocol section, linked to this immutable release before using altered rules. External spend remains capped at $20.
