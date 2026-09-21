@@ -1,0 +1,60 @@
+{
+  "audit_version": "1.0.0",
+  "status": "passed",
+  "overall_goal_complete": false,
+  "requirements": {
+    "open_reproducible_repository": {
+      "status": "achieved",
+      "evidence": "public GitHub repository with immutable registration releases and hash-audited artifacts",
+      "immutable_releases_verified": 4
+    },
+    "preregistered_cross_platform_evidence_map": {
+      "status": "incomplete",
+      "acquisition_complete": true,
+      "queue_records": 8587,
+      "title_abstract_decisions": 0,
+      "title_abstract_unscreened": 8587,
+      "calibration_records": 1719,
+      "provisional_seed_records": 18,
+      "provisional_edge_records": 13,
+      "final_map_ready": false
+    },
+    "benchmark_unknown_and_false_positive_tests": {
+      "status": "incomplete",
+      "software_audit_passed": true,
+      "release_gates": {
+        "source_hashes_complete": true,
+        "source_rights_reviewed": true,
+        "independent_adjudication_completed": false,
+        "held_out_campaign_period_split_established": false,
+        "unseen_predictions_scored": false,
+        "bias_card_present": true,
+        "ready_for_final_benchmark": false
+      },
+      "open_blockers": [
+        "independent_adjudication_completed",
+        "held_out_campaign_period_split_established",
+        "unseen_predictions_scored"
+      ]
+    },
+    "low_cost_replication": {
+      "status": "incomplete",
+      "protocol_registered": true,
+      "access_preflight_passed": false,
+      "new_observations": 0,
+      "replication_claim_ready": false
+    },
+    "external_spend_cap": {
+      "status": "achieved",
+      "spend_usd": 0,
+      "cap_usd": 20,
+      "remaining_usd": 20
+    }
+  },
+  "authoritative_blockers": [
+    "8,587 registered title/abstract records need Reviewer A decisions; 1,719 calibration records also need independent Reviewer B decisions.",
+    "Admitted full texts and all eight construct labels need two independent coders before the evidence map is final.",
+    "The benchmark needs completed independent adjudication, a real qualifying held-out pool, and predictions frozen before label reveal.",
+    "The replication needs an authorized X session that passes preflight, a frozen new sample, archived observations, and independent coding."
+  ]
+}
