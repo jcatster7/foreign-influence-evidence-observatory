@@ -72,6 +72,7 @@ const caseBytes = readFileSync(casesPath);
 const cases = JSON.parse(caseBytes.toString('utf8')) as BenchmarkCase[];
 const card = JSON.parse(readFileSync(cardPath, 'utf8')) as Card;
 const rights = JSON.parse(readFileSync(rightsPath, 'utf8')) as RightsReview;
+const registrationStatus = JSON.parse(readFileSync(resolve(folder, 'registration', 'REGISTRATION_STATUS.json'), 'utf8')) as Record<string, any>;
 
 const ids = new Set<string>();
 const labelCounts: Record<Label, number> = { supported: 0, contradicted: 0, unknown: 0 };
@@ -197,6 +198,27 @@ assert(existsSync(workbookPath), 'independent adjudication workbook is missing')
 assert.equal(workbookManifest.workbook_sha256, createHash('sha256').update(readFileSync(workbookPath)).digest('hex'), 'adjudication workbook hash mismatch');
 assert.equal(card.release_gates.independent_adjudication_completed, false, 'independent adjudication cannot pass before validated decisions exist');
 
+const heldoutRegistration = registrationStatus.benchmark_heldout_amendment;
+assert(heldoutRegistration, 'held-out registration record is missing');
+assert.equal(heldoutRegistration.tag, 'v0.4.0-heldout-amendment');
+assert.equal(heldoutRegistration.immutable, true, 'held-out amendment is not recorded as immutable');
+assert.equal(heldoutRegistration.heldout_candidates_selected_before_release, 0, 'held-out candidates existed before registration');
+assert.equal(heldoutRegistration.heldout_reference_labels_created_before_release, 0, 'held-out labels existed before registration');
+assert.equal(heldoutRegistration.heldout_predictions_scored_before_release, 0, 'held-out predictions existed before registration');
+const heldoutPacketPath = resolve(folder, 'registration', String(heldoutRegistration.asset_name));
+assert(existsSync(heldoutPacketPath), 'held-out amendment packet is missing');
+assert.equal(createHash('sha256').update(readFileSync(heldoutPacketPath)).digest('hex'), heldoutRegistration.asset_sha256,
+  'held-out amendment packet hash mismatch');
+const heldoutManifest = JSON.parse(readFileSync(resolve(folder, 'registration', 'HELDOUT_AMENDMENT_MANIFEST_v0.4.0.json'), 'utf8')) as Record<string, any>;
+assert.deepEqual(heldoutManifest.prospective_state, {
+  heldout_candidates_selected: 0,
+  heldout_reference_labels_created: 0,
+  heldout_predictions_scored: 0,
+}, 'held-out amendment was not prospective');
+assert.equal(heldoutRegistration.heldout_split_established, false, 'registration status incorrectly claims a real split');
+assert.equal(card.release_gates.held_out_campaign_period_split_established, false, 'protocol registration alone cannot establish a real split');
+assert.equal(card.release_gates.unseen_predictions_scored, false, 'no held-out predictions have been scored');
+
 const finalGateInputs = [
   'source_hashes_complete',
   'source_rights_reviewed',
@@ -210,7 +232,7 @@ assert.equal(card.release_gates.ready_for_final_benchmark, expectedReady, 'final
 
 const blockers = finalGateInputs.filter((gate) => card.release_gates[gate] !== true);
 const audit = {
-  audit_version: '1.0.0',
+  audit_version: '1.1.0',
   status: 'passed',
   benchmark_status: card.status,
   case_file: card.case_file,
@@ -225,6 +247,7 @@ const audit = {
     'card counts, platforms, source-hash gate, and case-file hash match the case file',
     'every distinct source has a conservative repository-use rights decision and no external article bytes are redistributed',
     'the independent adjudication packet covers all 80 claim slots without exposing provisional labels',
+    'the immutable held-out amendment predates every candidate, reference label, and prediction while leaving real split and scoring gates false',
     'unknown labels remain distinct from verified negatives',
     'final readiness equals the conjunction of all required release gates',
   ],

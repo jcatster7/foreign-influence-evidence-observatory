@@ -27,5 +27,18 @@
     "asset_name": "GITHUB_PREREGISTRATION_PACKET_v0.3.2.zip",
     "asset_sha256": "a6082720cf4265d1ddf67dbd69ff3ac3e009c914a15197192cbf974de242a698",
     "queue_generated_after_release": true
+  },
+  "benchmark_heldout_amendment": {
+    "release_url": "https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.4.0-heldout-amendment",
+    "tag": "v0.4.0-heldout-amendment",
+    "tag_commit_sha": "21c8d17e48240dce5a6f2a780965e5bd95a2175d",
+    "published_at_utc": "2026-09-21T07:43:18Z",
+    "immutable": true,
+    "asset_name": "GITHUB_PREREGISTRATION_PACKET_v0.4.0.zip",
+    "asset_sha256": "0decc2e727a9de0ea9f21ee78fb78e607685c89cdfafd241dcb8dc3db012f2cf",
+    "heldout_candidates_selected_before_release": 0,
+    "heldout_reference_labels_created_before_release": 0,
+    "heldout_predictions_scored_before_release": 0,
+    "heldout_split_established": false
   }
 }

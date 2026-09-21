@@ -1,5 +1,5 @@
 {
-  "audit_version": "1.0.0",
+  "audit_version": "1.1.0",
   "status": "passed",
   "benchmark_status": "software_self_check_only",
   "case_file": "benchmark_cases.json",
@@ -23,6 +23,7 @@
     "card counts, platforms, source-hash gate, and case-file hash match the case file",
     "every distinct source has a conservative repository-use rights decision and no external article bytes are redistributed",
     "the independent adjudication packet covers all 80 claim slots without exposing provisional labels",
+    "the immutable held-out amendment predates every candidate, reference label, and prediction while leaving real split and scoring gates false",
     "unknown labels remain distinct from verified negatives",
     "final readiness equals the conjunction of all required release gates"
   ],
