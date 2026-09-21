@@ -40,7 +40,7 @@
     "low_cost_replication": {
       "status": "incomplete",
       "protocol_registered": true,
-      "access_preflight_passed": false,
+      "access_preflight_passed": true,
       "new_observations": 0,
       "replication_claim_ready": false
     },
@@ -55,6 +55,6 @@
     "8,587 registered title/abstract records need Reviewer A decisions; 1,719 calibration records also need independent Reviewer B decisions.",
     "Admitted full texts and all eight construct labels need two independent coders before the evidence map is final.",
     "The benchmark needs completed independent adjudication, a real qualifying held-out pool, and predictions frozen before label reveal.",
-    "The replication needs an authorized X session that passes preflight, a frozen new sample, archived observations, and independent coding."
+    "The replication preflight passes; it still needs a prospectively frozen sample, archived observations, and independent coding."
   ]
 }

@@ -1,0 +1,38 @@
+{
+  "tag": "v0.5.0-replication-sample-amendment",
+  "parent_release": "v0.4.0-heldout-amendment",
+  "parent_packet_sha256": "0decc2e727a9de0ea9f21ee78fb78e607685c89cdfafd241dcb8dc3db012f2cf",
+  "prospective_state": {
+    "target_inventories_created": 0,
+    "sample_frozen": false,
+    "target_frame_about_panels_inspected": 0,
+    "replication_observations_collected": 0
+  },
+  "files": [
+    {
+      "path": "registration/AMENDMENT_v0.5.0_REPLICATION_SAMPLE.md",
+      "sha256": "950374dac20880e7d1f35ad76f7e2d4d3b82ea9b1d864b82070e82d62f68f067",
+      "bytes": 5631
+    },
+    {
+      "path": "freeze_replication_sample.ts",
+      "sha256": "b66f83cef529befb8ae197204f17d0a55233b5e6ff1350dba8b83bb9708db5c5",
+      "bytes": 7456
+    },
+    {
+      "path": "replication/target_inventory.schema.json",
+      "sha256": "a2d2d2a10b9c88e1090bb53d551a782f7ceb69e4dd4b63dfb522981382feada7",
+      "bytes": 1367
+    },
+    {
+      "path": "replication/historical_pilot_target_frame.csv",
+      "sha256": "0ad2f614bb0dd310cddf7ffc903b01e29141817728a0e1d9945644e1d5defb6f",
+      "bytes": 687
+    },
+    {
+      "path": "replication/ACCESS_PREFLIGHT_2026-09-20.md",
+      "sha256": "a97927c0ae8f0935807dedcf80421b4e8457d0a9cb5595ae5d91dd8089bbb975",
+      "bytes": 3873
+    }
+  ]
+}

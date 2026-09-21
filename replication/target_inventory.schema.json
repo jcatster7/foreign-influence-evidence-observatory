@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Foreign-origin replication target inventory",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["target_account_id", "target_handle", "pilot_stratum", "profile_checked_at_utc", "profile_accessible", "qualifying_posts", "exclusion_reason"],
+  "properties": {
+    "target_account_id": { "type": "string", "pattern": "^[0-9]+$" },
+    "target_handle": { "type": "string", "pattern": "^[A-Za-z0-9_]{1,15}$" },
+    "pilot_stratum": { "enum": ["far_left", "far_right"] },
+    "profile_checked_at_utc": { "type": "string", "format": "date-time" },
+    "profile_accessible": { "type": "boolean" },
+    "qualifying_posts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["post_id", "posted_at_utc", "url", "original_post", "reply", "repost"],
+        "properties": {
+          "post_id": { "type": "string", "pattern": "^[0-9]+$" },
+          "posted_at_utc": { "type": "string", "format": "date-time" },
+          "url": { "type": "string", "format": "uri", "pattern": "^https://x\\.com/" },
+          "original_post": { "const": true },
+          "reply": { "const": false },
+          "repost": { "const": false }
+        }
+      }
+    },
+    "exclusion_reason": { "type": ["string", "null"] }
+  }
+}

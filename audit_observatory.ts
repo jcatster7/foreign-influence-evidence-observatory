@@ -100,7 +100,8 @@ const replicationPath = argument('replication', resolve(folder, 'replication', '
 const replication = json<Record<string, any>>(replicationPath);
 assert.equal(sha256(resolve(folder, String(replication.protocol_file))), replication.protocol_sha256, 'replication protocol hash mismatch');
 assert.equal(replication.included_in_immutable_registration, true);
-assert.equal(replication.latest_preflight_passed, false);
+assert.equal(replication.authorized_x_session_available, replication.latest_preflight_passed,
+  'authorized-session and preflight states disagree');
 assert.equal(replication.sample_frozen, false);
 assert.equal(replication.new_observations, 0);
 assert.equal(replication.replication_claim_ready, false);
@@ -165,7 +166,7 @@ const report = {
     '8,587 registered title/abstract records need Reviewer A decisions; 1,719 calibration records also need independent Reviewer B decisions.',
     'Admitted full texts and all eight construct labels need two independent coders before the evidence map is final.',
     'The benchmark needs completed independent adjudication, a real qualifying held-out pool, and predictions frozen before label reveal.',
-    'The replication needs an authorized X session that passes preflight, a frozen new sample, archived observations, and independent coding.',
+    'The replication preflight passes; it still needs a prospectively frozen sample, archived observations, and independent coding.',
   ],
 };
 const outputPath = argument('output', resolve(folder, 'OBSERVATORY_STATUS.json'));
