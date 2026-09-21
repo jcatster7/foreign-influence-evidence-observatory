@@ -1,14 +1,14 @@
 {
   "status": "partial_post_inventory_checkpoint_not_sample",
-  "captured_at_utc": "2026-09-21T17:10:00Z",
+  "captured_at_utc": "2026-09-21T17:31:00Z",
   "registered_amendment": "v0.5.0-replication-sample-amendment",
-  "method": "Authorized English-language X session; Latest search constrained by target handle, registered date window, and exclusions for replies and reposts. Results were filtered again by exact UTC timestamp and canonical target status URL.",
+  "method": "Authorized English-language X session. Initial Latest searches used the registered date and post-type constraints. After X search errors, acquisition continued through each public profile's Posts timeline; pinned posts were excluded, canonical target status URLs were retained, and exact UTC timestamps were filtered to the registered window. No About panel was opened.",
   "origin_or_about_fields_collected": false,
   "target_about_panels_inspected": 0,
   "sample_frozen": false,
   "observations_collected": 0,
   "complete_target_inventories": 0,
-  "search_exhaustion_note": "The first three searches reached five consecutive no-growth scrolls. X then returned 'Something went wrong' for two subsequent target searches and continued returning the error after a 30-second cooldown and reload. Those two zero-result attempts are access failures, not target exclusions.",
+  "search_exhaustion_note": "X Latest search began returning 'Something went wrong'. Direct profile Posts timelines remained accessible and resolved the two initially failed targets. A later long browser batch reset before full post arrays could be exported; this checkpoint therefore preserves verified counts and bounds, while only explicitly listed first-five records are recoverable from it. It is not a complete inventory and cannot freeze the sample.",
   "accounts": [
     {
       "target_account_id": "170254080",
@@ -18,11 +18,26 @@
       "newest_seen_utc": "2026-09-20T20:30:00.000Z",
       "oldest_seen_utc": "2026-08-22T13:30:00.000Z",
       "first_five": [
-        ["2101770874731032815", "2026-09-20T20:30:00.000Z"],
-        ["2101755775794483642", "2026-09-20T19:30:00.000Z"],
-        ["2101740676454969381", "2026-09-20T18:30:00.000Z"],
-        ["2101710478754095151", "2026-09-20T16:30:00.000Z"],
-        ["2101695379360083989", "2026-09-20T15:30:00.000Z"]
+        [
+          "2101770874731032815",
+          "2026-09-20T20:30:00.000Z"
+        ],
+        [
+          "2101755775794483642",
+          "2026-09-20T19:30:00.000Z"
+        ],
+        [
+          "2101740676454969381",
+          "2026-09-20T18:30:00.000Z"
+        ],
+        [
+          "2101710478754095151",
+          "2026-09-20T16:30:00.000Z"
+        ],
+        [
+          "2101695379360083989",
+          "2026-09-20T15:30:00.000Z"
+        ]
       ]
     },
     {
@@ -33,11 +48,26 @@
       "newest_seen_utc": "2026-09-18T22:26:22.000Z",
       "oldest_seen_utc": "2026-08-24T22:02:16.000Z",
       "first_five": [
-        ["2101075383504245158", "2026-09-18T22:26:22.000Z"],
-        ["2101060127298376042", "2026-09-18T21:25:44.000Z"],
-        ["2101002026188484970", "2026-09-18T17:34:52.000Z"],
-        ["2100712644625801318", "2026-09-17T22:24:58.000Z"],
-        ["2100678574432821681", "2026-09-17T20:09:35.000Z"]
+        [
+          "2101075383504245158",
+          "2026-09-18T22:26:22.000Z"
+        ],
+        [
+          "2101060127298376042",
+          "2026-09-18T21:25:44.000Z"
+        ],
+        [
+          "2101002026188484970",
+          "2026-09-18T17:34:52.000Z"
+        ],
+        [
+          "2100712644625801318",
+          "2026-09-17T22:24:58.000Z"
+        ],
+        [
+          "2100678574432821681",
+          "2026-09-17T20:09:35.000Z"
+        ]
       ]
     },
     {
@@ -48,17 +78,128 @@
       "newest_seen_utc": "2026-09-20T19:00:35.000Z",
       "oldest_seen_utc": "2026-09-17T22:15:06.000Z",
       "first_five": [
-        ["2101748375527846015", "2026-09-20T19:00:35.000Z"],
-        ["2101733333415682322", "2026-09-20T18:00:49.000Z"],
-        ["2101710578423103892", "2026-09-20T16:30:24.000Z"],
-        ["2101687937981125061", "2026-09-20T15:00:26.000Z"],
-        ["2101672848947392525", "2026-09-20T14:00:29.000Z"]
+        [
+          "2101748375527846015",
+          "2026-09-20T19:00:35.000Z"
+        ],
+        [
+          "2101733333415682322",
+          "2026-09-20T18:00:49.000Z"
+        ],
+        [
+          "2101710578423103892",
+          "2026-09-20T16:30:24.000Z"
+        ],
+        [
+          "2101687937981125061",
+          "2026-09-20T15:00:26.000Z"
+        ],
+        [
+          "2101672848947392525",
+          "2026-09-20T14:00:29.000Z"
+        ]
+      ]
+    },
+    {
+      "target_account_id": "16935292",
+      "target_handle": "democracynow",
+      "pilot_stratum": "far_left",
+      "in_window_posts_seen": 314,
+      "newest_seen_utc": "2026-09-20T12:07:00.000Z",
+      "oldest_seen_utc": "2026-08-22T12:07:00.000Z",
+      "first_five_not_persisted": true
+    },
+    {
+      "target_account_id": "878284831",
+      "target_handle": "OccupyDemocrats",
+      "pilot_stratum": "far_left",
+      "in_window_posts_seen": 128,
+      "newest_seen_utc": "2026-09-20T14:58:11.000Z",
+      "oldest_seen_utc": "2026-08-22T18:38:06.000Z",
+      "first_five_not_persisted": true
+    },
+    {
+      "target_account_id": "1243560408025198593",
+      "target_handle": "MeidasTouch",
+      "pilot_stratum": "far_left",
+      "in_window_posts_seen": 364,
+      "newest_seen_utc": "2026-09-20T20:52:41.000Z",
+      "oldest_seen_utc": "2026-08-22T14:00:53.000Z",
+      "first_five_not_persisted": true
+    },
+    {
+      "target_account_id": "15115280",
+      "target_handle": "PalmerReport",
+      "pilot_stratum": "far_left",
+      "in_window_posts_seen": 16,
+      "newest_seen_utc": "2026-09-18T13:10:03.000Z",
+      "oldest_seen_utc": "2026-08-25T18:49:51.000Z",
+      "first_five_not_persisted": true
+    },
+    {
+      "target_account_id": "82689705",
+      "target_handle": "newrepublic",
+      "pilot_stratum": "far_left",
+      "in_window_posts_seen": 628,
+      "newest_seen_utc": "2026-09-20T23:20:20.000Z",
+      "oldest_seen_utc": "2026-08-22T03:13:22.000Z",
+      "first_five_not_persisted": true
+    },
+    {
+      "target_account_id": "18510860",
+      "target_handle": "MotherJones",
+      "pilot_stratum": "far_left",
+      "in_window_posts_seen": 572,
+      "newest_seen_utc": "2026-09-20T23:00:19.000Z",
+      "oldest_seen_utc": "2026-08-22T00:00:13.000Z",
+      "first_five_not_persisted": true
+    },
+    {
+      "target_account_id": "1947301",
+      "target_handle": "thenation",
+      "pilot_stratum": "far_left",
+      "in_window_posts_seen": 243,
+      "newest_seen_utc": "2026-09-20T15:15:01.000Z",
+      "oldest_seen_utc": "2026-08-22T14:32:00.000Z",
+      "first_five_not_persisted": true
+    },
+    {
+      "target_account_id": "2361224263",
+      "target_handle": "DailySignal",
+      "pilot_stratum": "far_right",
+      "in_window_posts_seen": 276,
+      "newest_seen_utc": "2026-09-19T22:00:16.000Z",
+      "oldest_seen_utc": "2026-08-22T15:41:25.000Z",
+      "first_five": [
+        [
+          "2101431206378156406",
+          "2026-09-19T22:00:16.000Z"
+        ],
+        [
+          "2101416041792639123",
+          "2026-09-19T21:00:01.000Z"
+        ],
+        [
+          "2101407780481679575",
+          "2026-09-19T20:27:11.000Z"
+        ],
+        [
+          "2101400941589373081",
+          "2026-09-19T20:00:01.000Z"
+        ],
+        [
+          "2101355714568474973",
+          "2026-09-19T17:00:18.000Z"
+        ]
       ]
     }
   ],
-  "failed_search_attempts": [
-    "democracynow",
-    "OccupyDemocrats"
-  ],
-  "external_spend_usd": 0
+  "failed_search_attempts": [],
+  "external_spend_usd": 0,
+  "accounts_examined": 11,
+  "strata_accounts_examined": {
+    "far_left": 10,
+    "far_right": 1
+  },
+  "in_window_posts_seen_total": 2893
 }
