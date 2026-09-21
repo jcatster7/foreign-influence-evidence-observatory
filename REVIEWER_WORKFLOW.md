@@ -41,6 +41,8 @@ Reviewers work independently until their initial decisions are locked. Each deci
 
 After both calibration packets are complete, compare decisions and log disagreements, a third adjudication decision where needed, and any rule clarification before screening the rest. Give reviewer B every uncertain or disputed non-calibration record. Full-text inclusion and all eight construct labels require two independent coders for every admitted dataset. Keep original decisions and an adjudicated result; preserve publication-to-dataset merge decisions and risk-of-bias reasons. The platform disclosure and citation-chasing sources need parallel intake and full-text review before a final PRISMA flow or map.
 
+Run `compare_screening_decisions.ts` only on decision files that passed workbook import. It requires complete A and B decisions for the frozen calibration sample, rejects duplicate or out-of-sample B decisions, writes a three-category confusion matrix, raw agreement, marginal expected agreement, Cohen's kappa, and a hash-locked disagreement queue. Kappa is a calibration-workflow diagnostic, not a study-quality or detector-performance measure. Do not resolve disagreements by changing either original decision; add a separate `title_adjudication` record with rationale after discussion.
+
 Run `audit_screening.ts` with the registered queue, summary, and combined decision JSONL to verify the indexed screening gate. Its `ready_for_final_study_count` flag remains false because supplemental sources, dataset merges, and dual-coded extractions require separate verification. Do not publish a final study count or benchmark performance from these packets alone.
 
 ## Resource boundary
