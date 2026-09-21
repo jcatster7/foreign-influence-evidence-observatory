@@ -21,6 +21,8 @@ Two Excel workbooks provide a human-readable interface over the immutable JSONL 
 
 Each workbook has a summary, instructions, frozen identifiers, source metadata, the missing-title container attachment, and validated decision choices. Reviewers edit only `decision`, `reason`, `decided_at_utc`, and `source_locator`. The workbook manifest records the frozen queue hash, source packet hash, attachment hash, output hashes, and assigned counts. The JSONL packets remain canonical; returned workbooks must be checked against their manifest before their four decision columns are imported. Do not distribute Reviewer A's completed workbook to Reviewer B before B's initial calibration decisions are locked.
 
+Use `import_reviewer_workbook.py` on a returned workbook. It rejects changed source metadata, missing or invalid decisions, blank reasons or locators, invalid timestamps, reordered or extra rows, an incomplete packet, and unexpected sheets. A successful import writes canonical decision JSONL plus a manifest containing hashes of the returned workbook, canonical packet, container attachment, and decision output. Run it with the bundled workspace Python environment, which includes `openpyxl`; never treat a spreadsheet's displayed completion percentage as sufficient validation.
+
 The practice mode accepts only the partial preregistration queue and marks its output `practice_only`:
 
 ```bash

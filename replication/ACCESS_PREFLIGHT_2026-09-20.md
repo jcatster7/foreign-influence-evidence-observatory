@@ -13,3 +13,7 @@ Status: **failed before sampling; no replication observations collected**. This 
 | External spend | $0. |
 
 The planned replication must stop at this preflight gate. A valid collection run requires an authorized X session in which both repost positions and the public About panel are accessible, plus a prespecified roster, screenshot archive, and two independent reviewers. The old pilot's account data cannot substitute for this new capture. If access is later restored, run a fresh dated preflight on accounts excluded from the sample before freezing posts or inspecting origin panels.
+
+## Recheck, 2026-09-21 UTC
+
+The same excluded test account and Codex in-app browser were checked again while signed out. The public profile and visible post interface rendered. Selecting `Joined April 2010` / `x.com/AOC/about` redirected to `x.com/i/jf/onboarding/web?...mode=login`. The required About panel remained inaccessible, so the check stopped before inspecting repost positions or collecting any observations. External spend remained $0.
