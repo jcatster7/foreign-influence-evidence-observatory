@@ -1,6 +1,6 @@
 {
   "status": "partial_post_inventory_checkpoint_not_sample",
-  "captured_at_utc": "2026-09-21T17:31:00Z",
+  "captured_at_utc": "2026-09-21T17:49:00Z",
   "registered_amendment": "v0.5.0-replication-sample-amendment",
   "method": "Authorized English-language X session. Initial Latest searches used the registered date and post-type constraints. After X search errors, acquisition continued through each public profile's Posts timeline; pinned posts were excluded, canonical target status URLs were retained, and exact UTC timestamps were filtered to the registered window. No About panel was opened.",
   "origin_or_about_fields_collected": false,
@@ -8,7 +8,7 @@
   "sample_frozen": false,
   "observations_collected": 0,
   "complete_target_inventories": 0,
-  "search_exhaustion_note": "X Latest search began returning 'Something went wrong'. Direct profile Posts timelines remained accessible and resolved the two initially failed targets. A later long browser batch reset before full post arrays could be exported; this checkpoint therefore preserves verified counts and bounds, while only explicitly listed first-five records are recoverable from it. It is not a complete inventory and cannot freeze the sample.",
+  "search_exhaustion_note": "X Latest search began returning 'Something went wrong'. Direct profile Posts timelines remained accessible and resolved the two initially failed targets. A later long browser batch reset before full post arrays could be exported; this checkpoint therefore preserves verified counts and bounds, while only explicitly listed first-five records are recoverable from it. It is not a complete inventory and cannot freeze the sample. A later search burst recovered for FDRLST and townhallcom, then throttling resumed for WesternJournalX and realDailyWire. gatewaypundit exposed 1,010 in-window posts but the interface stopped at 2026-08-30, before reaching the registered window start; its traversal is explicitly incomplete.",
   "accounts": [
     {
       "target_account_id": "170254080",
@@ -192,14 +192,108 @@
           "2026-09-19T17:00:18.000Z"
         ]
       ]
+    },
+    {
+      "target_account_id": "19211550",
+      "target_handle": "gatewaypundit",
+      "pilot_stratum": "far_right",
+      "in_window_posts_seen": 1010,
+      "newest_seen_utc": "2026-09-20T23:36:31.000Z",
+      "oldest_seen_utc": "2026-08-30T01:46:17.000Z",
+      "window_traversal_complete": false,
+      "first_five": [
+        [
+          "2101817814591922254",
+          "2026-09-20T23:36:31.000Z"
+        ],
+        [
+          "2101786048166809882",
+          "2026-09-20T21:30:17.000Z"
+        ],
+        [
+          "2101785998455955792",
+          "2026-09-20T21:30:05.000Z"
+        ],
+        [
+          "2101785134705897742",
+          "2026-09-20T21:26:40.000Z"
+        ],
+        [
+          "2101779949627621460",
+          "2026-09-20T21:06:03.000Z"
+        ]
+      ]
+    },
+    {
+      "target_account_id": "1408003598",
+      "target_handle": "FDRLST",
+      "pilot_stratum": "far_right",
+      "in_window_posts_seen": 230,
+      "newest_seen_utc": "2026-09-19T13:19:00.000Z",
+      "oldest_seen_utc": "2026-08-22T15:18:44.000Z",
+      "first_five": [
+        [
+          "2101300025108095248",
+          "2026-09-19T13:19:00.000Z"
+        ],
+        [
+          "2101105552273056145",
+          "2026-09-19T00:26:14.000Z"
+        ],
+        [
+          "2101023741824176629",
+          "2026-09-18T19:01:09.000Z"
+        ],
+        [
+          "2101015900799545530",
+          "2026-09-18T18:30:00.000Z"
+        ],
+        [
+          "2101004972225609915",
+          "2026-09-18T17:46:34.000Z"
+        ]
+      ]
+    },
+    {
+      "target_account_id": "28614262",
+      "target_handle": "townhallcom",
+      "pilot_stratum": "far_right",
+      "in_window_posts_seen": 185,
+      "newest_seen_utc": "2026-09-18T20:43:21.000Z",
+      "oldest_seen_utc": "2026-08-22T21:49:18.000Z",
+      "first_five": [
+        [
+          "2101049457794334893",
+          "2026-09-18T20:43:21.000Z"
+        ],
+        [
+          "2101046648814145585",
+          "2026-09-18T20:32:11.000Z"
+        ],
+        [
+          "2101046342520868873",
+          "2026-09-18T20:30:58.000Z"
+        ],
+        [
+          "2101045489521049802",
+          "2026-09-18T20:27:34.000Z"
+        ],
+        [
+          "2101043535784898696",
+          "2026-09-18T20:19:49.000Z"
+        ]
+      ]
     }
   ],
-  "failed_search_attempts": [],
+  "failed_search_attempts": [
+    "WesternJournalX",
+    "realDailyWire"
+  ],
   "external_spend_usd": 0,
-  "accounts_examined": 11,
+  "accounts_examined": 14,
   "strata_accounts_examined": {
     "far_left": 10,
-    "far_right": 1
+    "far_right": 4
   },
-  "in_window_posts_seen_total": 2893
+  "in_window_posts_seen_total": 4318
 }
