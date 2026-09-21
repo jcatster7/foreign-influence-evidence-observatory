@@ -40,5 +40,18 @@
     "heldout_reference_labels_created_before_release": 0,
     "heldout_predictions_scored_before_release": 0,
     "heldout_split_established": false
+  },
+  "replication_sampling_amendment": {
+    "release_url": "https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.5.0-replication-sample-amendment",
+    "tag": "v0.5.0-replication-sample-amendment",
+    "tag_commit_sha": "0330cc3b265d034c326d5ea654f230e69b393020",
+    "published_at_utc": "2026-09-21T16:52:02Z",
+    "immutable": true,
+    "asset_name": "GITHUB_PREREGISTRATION_PACKET_v0.5.0.zip",
+    "asset_sha256": "3815410cfeed5fb408b77e5b2b19c669f84eb5a3f1481eee0dcef3bcd15b0398",
+    "target_inventories_created_before_release": 0,
+    "sample_frozen_before_release": false,
+    "target_frame_about_panels_inspected_before_release": 0,
+    "replication_observations_collected_before_release": 0
   }
 }

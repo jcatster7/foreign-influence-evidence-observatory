@@ -6,7 +6,7 @@
     "open_reproducible_repository": {
       "status": "achieved",
       "evidence": "public GitHub repository with immutable registration releases and hash-audited artifacts",
-      "immutable_releases_verified": 4
+      "immutable_releases_verified": 5
     },
     "preregistered_cross_platform_evidence_map": {
       "status": "incomplete",

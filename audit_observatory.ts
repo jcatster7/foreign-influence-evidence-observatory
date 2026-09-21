@@ -82,7 +82,7 @@ assert.equal(edgeSeedRecords, 13);
 const registrationStatus = json<Record<string, any>>(resolve(folder, 'registration', 'REGISTRATION_STATUS.json'));
 assert.equal(registrationStatus.route, 'public immutable GitHub release');
 const releases = [registrationStatus, registrationStatus.amendment, registrationStatus.processing_amendment,
-  registrationStatus.benchmark_heldout_amendment];
+  registrationStatus.benchmark_heldout_amendment, registrationStatus.replication_sampling_amendment];
 for (const release of releases) {
   assert.equal(release.immutable, true, `release is not immutable: ${release.tag}`);
   const assetPath = resolve(folder, 'registration', release.asset_name);
@@ -100,6 +100,9 @@ const replicationPath = argument('replication', resolve(folder, 'replication', '
 const replication = json<Record<string, any>>(replicationPath);
 assert.equal(sha256(resolve(folder, String(replication.protocol_file))), replication.protocol_sha256, 'replication protocol hash mismatch');
 assert.equal(replication.included_in_immutable_registration, true);
+assert.equal(replication.sampling_amendment_registered, true);
+assert.equal(replication.target_inventories_created, 0);
+assert.equal(replication.target_frame_about_panels_inspected, 0);
 assert.equal(replication.authorized_x_session_available, replication.latest_preflight_passed,
   'authorized-session and preflight states disagree');
 assert.equal(replication.sample_frozen, false);
