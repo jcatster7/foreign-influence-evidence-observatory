@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/jcatster7/foreign-influence-evidence-observatory/blob/main/benchmark_heldout/candidate.schema.json",
+  "title": "Sealed-label held-out benchmark candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id",
+    "group_id",
+    "dataset_id",
+    "time_block",
+    "platform",
+    "primary_claim",
+    "evidence_bundle_sha256",
+    "reference_commitment_sha256",
+    "independent_consensus_complete",
+    "rights_reviewed",
+    "prior_known_overlap"
+  ],
+  "properties": {
+    "case_id": { "type": "string", "minLength": 1 },
+    "group_id": { "type": "string", "minLength": 1 },
+    "dataset_id": { "type": "string", "minLength": 1 },
+    "time_block": { "type": "string", "minLength": 1 },
+    "platform": { "type": "string", "minLength": 1 },
+    "primary_claim": {
+      "enum": ["origin", "operation_attribution", "automation", "coordination", "deception", "exposure", "recommendation", "impact"]
+    },
+    "evidence_bundle_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "reference_commitment_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "independent_consensus_complete": { "const": true },
+    "rights_reviewed": { "const": true },
+    "prior_known_overlap": { "const": false }
+  }
+}

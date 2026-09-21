@@ -1,0 +1,32 @@
+{
+  "tag": "v0.4.0-heldout-amendment",
+  "parent_release": "v0.3.2-missing-title-amendment",
+  "parent_packet_sha256": "a6082720cf4265d1ddf67dbd69ff3ac3e009c914a15197192cbf974de242a698",
+  "prospective_state": {
+    "heldout_candidates_selected": 0,
+    "heldout_reference_labels_created": 0,
+    "heldout_predictions_scored": 0
+  },
+  "files": [
+    {
+      "path": "registration/AMENDMENT_v0.4.0_HELDOUT.md",
+      "sha256": "0872e73aae781205ca62a92fc9432e9bfd21d399603fa9fac708128d4116a16b",
+      "bytes": 4164
+    },
+    {
+      "path": "assign_heldout_split.ts",
+      "sha256": "646188feb99c773a90253cc0e0d6fbd56670404734e4200a845e63609bc00081",
+      "bytes": 7093
+    },
+    {
+      "path": "benchmark_heldout/README.md",
+      "sha256": "f24375f0c6188314a53d469d7b84c34048d359e67d8662a637b1ba5bf5e78379",
+      "bytes": 744
+    },
+    {
+      "path": "benchmark_heldout/candidate.schema.json",
+      "sha256": "ae2de725ec6b59fa46e41315aa73b5d11cd97bcf626023f5ae3ec58acdf4aef1",
+      "bytes": 1351
+    }
+  ]
+}
