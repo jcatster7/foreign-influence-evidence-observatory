@@ -1,0 +1,64 @@
+{
+  "status": "partial_post_inventory_checkpoint_not_sample",
+  "captured_at_utc": "2026-09-21T17:10:00Z",
+  "registered_amendment": "v0.5.0-replication-sample-amendment",
+  "method": "Authorized English-language X session; Latest search constrained by target handle, registered date window, and exclusions for replies and reposts. Results were filtered again by exact UTC timestamp and canonical target status URL.",
+  "origin_or_about_fields_collected": false,
+  "target_about_panels_inspected": 0,
+  "sample_frozen": false,
+  "observations_collected": 0,
+  "complete_target_inventories": 0,
+  "search_exhaustion_note": "The first three searches reached five consecutive no-growth scrolls. X then returned 'Something went wrong' for two subsequent target searches and continued returning the error after a 30-second cooldown and reload. Those two zero-result attempts are access failures, not target exclusions.",
+  "accounts": [
+    {
+      "target_account_id": "170254080",
+      "target_handle": "jacobin",
+      "pilot_stratum": "far_left",
+      "in_window_posts_seen": 298,
+      "newest_seen_utc": "2026-09-20T20:30:00.000Z",
+      "oldest_seen_utc": "2026-08-22T13:30:00.000Z",
+      "first_five": [
+        ["2101770874731032815", "2026-09-20T20:30:00.000Z"],
+        ["2101755775794483642", "2026-09-20T19:30:00.000Z"],
+        ["2101740676454969381", "2026-09-20T18:30:00.000Z"],
+        ["2101710478754095151", "2026-09-20T16:30:00.000Z"],
+        ["2101695379360083989", "2026-09-20T15:30:00.000Z"]
+      ]
+    },
+    {
+      "target_account_id": "4128420672",
+      "target_handle": "curaffairs",
+      "pilot_stratum": "far_left",
+      "in_window_posts_seen": 40,
+      "newest_seen_utc": "2026-09-18T22:26:22.000Z",
+      "oldest_seen_utc": "2026-08-24T22:02:16.000Z",
+      "first_five": [
+        ["2101075383504245158", "2026-09-18T22:26:22.000Z"],
+        ["2101060127298376042", "2026-09-18T21:25:44.000Z"],
+        ["2101002026188484970", "2026-09-18T17:34:52.000Z"],
+        ["2100712644625801318", "2026-09-17T22:24:58.000Z"],
+        ["2100678574432821681", "2026-09-17T20:09:35.000Z"]
+      ]
+    },
+    {
+      "target_account_id": "19605981",
+      "target_handle": "truthout",
+      "pilot_stratum": "far_left",
+      "in_window_posts_seen": 14,
+      "newest_seen_utc": "2026-09-20T19:00:35.000Z",
+      "oldest_seen_utc": "2026-09-17T22:15:06.000Z",
+      "first_five": [
+        ["2101748375527846015", "2026-09-20T19:00:35.000Z"],
+        ["2101733333415682322", "2026-09-20T18:00:49.000Z"],
+        ["2101710578423103892", "2026-09-20T16:30:24.000Z"],
+        ["2101687937981125061", "2026-09-20T15:00:26.000Z"],
+        ["2101672848947392525", "2026-09-20T14:00:29.000Z"]
+      ]
+    }
+  ],
+  "failed_search_attempts": [
+    "democracynow",
+    "OccupyDemocrats"
+  ],
+  "external_spend_usd": 0
+}
