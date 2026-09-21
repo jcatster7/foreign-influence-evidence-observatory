@@ -79,6 +79,10 @@ const evidenceSeedRecords = readFileSync(resolve(folder, 'EVIDENCE_MAP_SEED.csv'
 const edgeSeedRecords = readFileSync(resolve(folder, 'EDGE_MAP_SEED.csv'), 'utf8').trim().split('\n').length - 1;
 assert.equal(evidenceSeedRecords, 18);
 assert.equal(edgeSeedRecords, 13);
+const metaStudyMemo = readFileSync(resolve(folder, 'META_STUDY_OPTIONS.md'), 'utf8');
+assert(metaStudyMemo.includes('8,587 deduplicated records remain unscreened'), 'meta-study memo has stale screening status');
+assert(metaStudyMemo.includes('1,719-record independent calibration sample'), 'meta-study memo omits registered calibration count');
+assert(!metaStudyMemo.includes('7,986 unscreened records'), 'meta-study memo retains superseded scoping count');
 const registrationStatus = json<Record<string, any>>(resolve(folder, 'registration', 'REGISTRATION_STATUS.json'));
 assert.equal(registrationStatus.route, 'public immutable GitHub release');
 const releases = [registrationStatus, registrationStatus.amendment, registrationStatus.processing_amendment,
