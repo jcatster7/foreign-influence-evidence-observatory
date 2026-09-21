@@ -99,6 +99,13 @@ const publicExplorer = readFileSync(resolve(folder, 'docs', 'index.html'), 'utf8
 assert(publicExplorer.includes('Unknown is a valid result.'), 'public explorer omits the primary evidence boundary');
 assert(publicExplorer.includes('External spending: $0 of $20.'), 'public explorer has stale budget text');
 assert(!publicExplorer.includes('href="../studies/'), 'public explorer exposes broken local-source links');
+const publicationStatus = json<Record<string, any>>(resolve(folder, 'PUBLICATION_STATUS.json'));
+assert.equal(publicationStatus.public_explorer_url, 'https://jcatster7.github.io/foreign-influence-evidence-observatory/');
+assert.equal(publicationStatus.first_verified_build_status, 'built');
+assert.equal(publicationStatus.first_verified_http_status, 200);
+assert.equal(publicationStatus.https_enforced, true);
+assert.equal(publicationStatus.index_sha256, sha256(resolve(folder, 'docs', 'index.html')), 'published explorer hash is stale');
+assert.equal(publicationStatus.external_spend_usd, 0);
 const metaStudyMemo = readFileSync(resolve(folder, 'META_STUDY_OPTIONS.md'), 'utf8');
 assert(metaStudyMemo.includes('8,587 deduplicated records remain unscreened'), 'meta-study memo has stale screening status');
 assert(metaStudyMemo.includes('1,719-record independent calibration sample'), 'meta-study memo omits registered calibration count');

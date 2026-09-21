@@ -1,0 +1,15 @@
+{
+  "public_explorer_url": "https://jcatster7.github.io/foreign-influence-evidence-observatory/",
+  "repository_url": "https://github.com/jcatster7/foreign-influence-evidence-observatory",
+  "host": "GitHub Pages",
+  "source_branch": "main",
+  "source_path": "/docs",
+  "build_type": "legacy",
+  "https_enforced": true,
+  "first_verified_build_commit": "7fe5dfb20bc8fe524ee2435616f693fecc3a1b9c",
+  "first_verified_build_status": "built",
+  "first_verified_at_utc": "2026-09-21T17:22:53Z",
+  "first_verified_http_status": 200,
+  "index_sha256": "8628573b1c82366bbe547d50761db9eeae5333546160be2bea7b481d114e4972",
+  "external_spend_usd": 0
+}

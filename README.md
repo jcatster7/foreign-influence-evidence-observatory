@@ -4,7 +4,7 @@
 
 This project maps the evidence behind eight distinct social-media claims: account/operator origin (O), operation attribution (P), automation (A), coordination (C), deception (D), observed feed delivery (E), feed-selection increment (R), and audience impact (I). It keeps `unknown` as a valid result. A platform country label, bot score, coordinated posting pattern, potential timeline exposure, and matched-feed difference each answer different questions.
 
-The dependency-free public explorer is generated from audited repository artifacts under `docs/`. Its publication URL is recorded here after GitHub Pages finishes deployment.
+Explore the audited provisional evidence at **[jcatster7.github.io/foreign-influence-evidence-observatory](https://jcatster7.github.io/foreign-influence-evidence-observatory/)**. The dependency-free site is generated from repository artifacts under `docs/` and served by GitHub Pages.
 
 ## Current materials
 
