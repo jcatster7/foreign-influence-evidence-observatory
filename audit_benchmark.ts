@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
@@ -73,6 +74,19 @@ const cases = JSON.parse(caseBytes.toString('utf8')) as BenchmarkCase[];
 const card = JSON.parse(readFileSync(cardPath, 'utf8')) as Card;
 const rights = JSON.parse(readFileSync(rightsPath, 'utf8')) as RightsReview;
 const registrationStatus = JSON.parse(readFileSync(resolve(folder, 'registration', 'REGISTRATION_STATUS.json'), 'utf8')) as Record<string, any>;
+const scorerSelfCheckPath = resolve(folder, 'BENCHMARK_SCORER_SELF_CHECK.json');
+const scorerSelfCheck = JSON.parse(readFileSync(scorerSelfCheckPath, 'utf8')) as Record<string, any>;
+const liveScorerSelfCheck = JSON.parse(execFileSync(process.execPath, [
+  '--experimental-strip-types', resolve(folder, 'score_claims.ts'),
+], { encoding: 'utf8' })) as Record<string, any>;
+assert.deepEqual(scorerSelfCheck, liveScorerSelfCheck, 'published scorer self-check is stale');
+assert.equal(scorerSelfCheck.evaluatorSelfCheck, 'passed');
+assert.equal(scorerSelfCheck.safe.unsupportedAssertions, 0);
+assert.equal(scorerSelfCheck.targeted.unsupportedAssertions, 5);
+assert.equal(scorerSelfCheck.targeted.unknownAssertions, 4);
+assert.equal(scorerSelfCheck.targeted.falsePositiveAssertions, 1);
+assert.equal(scorerSelfCheck.overclaim.assertedClaims, 80);
+assert.equal(scorerSelfCheck.overclaim.unsupportedAssertions, 72);
 
 const ids = new Set<string>();
 const labelCounts: Record<Label, number> = { supported: 0, contradicted: 0, unknown: 0 };
@@ -249,6 +263,7 @@ const audit = {
     'the independent adjudication packet covers all 80 claim slots without exposing provisional labels',
     'the immutable held-out amendment predates every candidate, reference label, and prediction while leaving real split and scoring gates false',
     'unknown labels remain distinct from verified negatives',
+    'the published scorer self-check matches the registered scorer and detects four unknown-label promotions plus one contradicted-claim false positive',
     'final readiness equals the conjunction of all required release gates',
   ],
   release_gates: card.release_gates,

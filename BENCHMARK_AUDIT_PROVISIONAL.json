@@ -25,6 +25,7 @@
     "the independent adjudication packet covers all 80 claim slots without exposing provisional labels",
     "the immutable held-out amendment predates every candidate, reference label, and prediction while leaving real split and scoring gates false",
     "unknown labels remain distinct from verified negatives",
+    "the published scorer self-check matches the registered scorer and detects four unknown-label promotions plus one contradicted-claim false positive",
     "final readiness equals the conjunction of all required release gates"
   ],
   "release_gates": {

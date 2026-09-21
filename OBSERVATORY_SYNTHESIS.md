@@ -43,7 +43,7 @@ Three recurring patterns matter:
 
 The provisional benchmark has 10 prior-known cases and 80 claim slots: 8 `supported`, 1 `contradicted`, and 71 `unknown`. All source hashes and rights reviews are complete. The cases test whether a system abstains when evidence does not support a claim and whether it avoids a specific contradicted universal automation assertion.
 
-These cases are software checks, not an unseen evaluation set. A population false-positive rate is unavailable because the benchmark has no verified account-level negative denominator. Final release requires independent adjudication, a qualifying held-out campaign/period pool, frozen predictions before label reveal, and unseen scoring. The [benchmark card](BENCHMARK_CARD_PROVISIONAL.json) and [audit](BENCHMARK_AUDIT_PROVISIONAL.json) enforce these limits.
+These cases are software checks, not an unseen evaluation set. The published [scorer self-check](BENCHMARK_SCORER_SELF_CHECK.json) verifies that the safe fixture makes zero unsupported assertions, the targeted fixture detects four promotions of `unknown` evidence plus one assertion over a contradicted automation claim, and the assert-everything fixture flags 72 unsupported assertions across 80 claim slots. Those are controlled fixture outcomes, not model performance. A population false-positive rate is unavailable because the benchmark has no verified account-level negative denominator. Final release requires independent adjudication, a qualifying held-out campaign/period pool, frozen predictions before label reveal, and unseen scoring. The [benchmark card](BENCHMARK_CARD_PROVISIONAL.json) and [audit](BENCHMARK_AUDIT_PROVISIONAL.json) enforce these limits.
 
 ## Low-cost replication status
 
