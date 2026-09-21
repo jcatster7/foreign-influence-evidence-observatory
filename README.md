@@ -12,7 +12,7 @@ This project maps the evidence behind eight distinct social-media claims: accoun
 - [Independent reviewer workflow](REVIEWER_WORKFLOW.md), packet generator, strict workbook importer, and agreement/disagreement generator for the frozen dual-review sample
 - Human-readable Excel workbooks for Reviewer A and the independent Reviewer B calibration sample under `outputs/01a0bc0d-6825-7f03-a634-a1c583c931ed/`
 - [Meta-study options and pooling gates](META_STUDY_OPTIONS.md)
-- [Benchmark specification](BENCHMARK_SPEC.md), [ten provisional cases](benchmark_cases.json), [provisional benchmark card](BENCHMARK_CARD_PROVISIONAL.json), [claim scorer](score_claims.ts), and [local report copies](sources/local_reports/README.md)
+- [Benchmark specification](BENCHMARK_SPEC.md), [ten provisional cases](benchmark_cases.json), [provisional benchmark card](BENCHMARK_CARD_PROVISIONAL.json), [machine-readable audit](BENCHMARK_AUDIT_PROVISIONAL.json), [claim scorer](score_claims.ts), and [local report copies](sources/local_reports/README.md)
 - [Low-cost displayed-country replication protocol](LOW_COST_REPLICATION_PROTOCOL.md) and [historical input audit](replication/INPUT_AUDIT.md)
 - [Search status](SEARCH_STATUS.md), [budget ledger](BUDGET_LEDGER.csv), [registered search packet](registration/GITHUB_PREREGISTRATION_PACKET_v0.3.1.zip), [queue-processing amendment](registration/GITHUB_PREREGISTRATION_PACKET_v0.3.2.zip), and [release verification record](registration/REGISTRATION_STATUS.json)
 
@@ -36,6 +36,7 @@ With Node.js 25 or a TypeScript runtime supporting type stripping:
 
 ```bash
 node --experimental-strip-types score_claims.ts
+node --experimental-strip-types audit_benchmark.ts
 node --experimental-strip-types prepare_screening_queue.ts
 node --experimental-strip-types audit_screening.ts
 ```

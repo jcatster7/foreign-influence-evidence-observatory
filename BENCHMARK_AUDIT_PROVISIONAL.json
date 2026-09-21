@@ -1,0 +1,42 @@
+{
+  "audit_version": "1.0.0",
+  "status": "passed",
+  "benchmark_status": "software_self_check_only",
+  "case_file": "benchmark_cases.json",
+  "case_file_sha256": "6ed070b346b9540e2cbaf13ff3b2fa857cd373c064708a6c6d3d632973957601",
+  "computed_counts": {
+    "cases": 10,
+    "claim_slots": 80,
+    "supported": 8,
+    "contradicted": 1,
+    "unknown": 71,
+    "dataset_time_split_groups": 8,
+    "source_hash_present": 10,
+    "source_hash_missing": 0
+  },
+  "verified_invariants": [
+    "case identifiers are unique",
+    "claim and label schemas are exact",
+    "dataset/time split fields agree with case metadata",
+    "local source hashes match current file bytes",
+    "external sources have retrieval times and syntactically valid hashes",
+    "card counts, platforms, source-hash gate, and case-file hash match the case file",
+    "unknown labels remain distinct from verified negatives",
+    "final readiness equals the conjunction of all required release gates"
+  ],
+  "release_gates": {
+    "source_hashes_complete": true,
+    "source_rights_reviewed": false,
+    "independent_adjudication_completed": false,
+    "held_out_campaign_period_split_established": false,
+    "unseen_predictions_scored": false,
+    "bias_card_present": true,
+    "ready_for_final_benchmark": false
+  },
+  "open_blockers": [
+    "source_rights_reviewed",
+    "independent_adjudication_completed",
+    "held_out_campaign_period_split_established",
+    "unseen_predictions_scored"
+  ]
+}

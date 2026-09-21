@@ -3,7 +3,7 @@
   "version": "provisional-prior-known-2026-09-20",
   "status": "software_self_check_only",
   "case_file": "benchmark_cases.json",
-  "case_file_sha256": "0287d012983bcf105c8e8554f3248dc68b92a9514974f29fa228dfbe833cd47a",
+  "case_file_sha256": "6ed070b346b9540e2cbaf13ff3b2fa857cd373c064708a6c6d3d632973957601",
   "counts": {
     "cases": 10,
     "claim_slots": 80,
@@ -11,8 +11,8 @@
     "contradicted": 1,
     "unknown": 71,
     "dataset_time_split_groups": 8,
-    "source_hash_present": 9,
-    "source_hash_missing": 1
+    "source_hash_present": 10,
+    "source_hash_missing": 0
   },
   "scope": {
     "platforms": ["Facebook", "TikTok", "X", "YouTube"],
@@ -23,7 +23,7 @@
   },
   "provenance": {
     "review": "Single-reviewer provisional labels on all ten cases; independent adjudication pending.",
-    "sources": "Four local report copies and six external source references. One external case has no content hash because its publisher blocked the local fetch.",
+    "sources": "Four local-source case references cover three report files; six external case references cover five distinct sources. Every case has a source hash, and external source bytes are not redistributed.",
     "rights": "Original case metadata may be shared under the repository text license. Linked articles and three local report copies retain their own rights; article full text and restricted platform account data are not redistributed. Case-level redistribution review remains pending."
   },
   "evaluation": {
@@ -48,7 +48,7 @@
     "Do not claim a final benchmark release until the preregistered gates pass."
   ],
   "release_gates": {
-    "source_hashes_complete": false,
+    "source_hashes_complete": true,
     "source_rights_reviewed": false,
     "independent_adjudication_completed": false,
     "held_out_campaign_period_split_established": false,

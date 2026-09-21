@@ -134,7 +134,7 @@
   {
     "case_id": "facebook_media_coordination",
     "dataset_id": "rogers_righetti_2025_facebook",
-    "source": "https://journals.sagepub.com/doi/10.1177/29768624251369784",
+    "source": "https://pure.uva.nl/ws/files/256825421/rogers-righetti-2025-coordinated-inauthentic-behaviour-on-facebook-a-typology-of-manufactured-attention.pdf",
     "evidence": "The authors observed highly coordinated link sharing by identifiable media groups; they found similar sharing signatures in an influence operation. Coordination behavior alone does not classify the groups as deceptive.",
     "labels": {
       "origin": "unknown",
@@ -146,10 +146,10 @@
       "recommendation": "unknown",
       "impact": "unknown"
     },
-    "source_locator": "Article comparison of Facebook media groups and influence operation",
-    "source_sha256": null,
-    "retrieved_at_utc": null,
-    "source_hash_scope": "No reusable HTML response; DOI page reviewed via web reader",
+    "source_locator": "Final published version, abstract and introduction; DOI 10.1177/29768624251369784",
+    "source_sha256": "d46c898802a44bdfaaa971efa61710876851b7c816b30dd459480738418b7f08",
+    "retrieved_at_utc": "2026-09-21T07:27:14.081610Z",
+    "source_hash_scope": "Open-access final published PDF response body from the University of Amsterdam repository; raw bytes not redistributed",
     "unit": "media_group_comparison",
     "claim_subject": "Coordinated Facebook link sharing by the inspected media groups was deceptive",
     "platform": "Facebook",
