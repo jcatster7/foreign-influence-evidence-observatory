@@ -6,6 +6,7 @@ This project maps the evidence behind eight distinct social-media claims: accoun
 
 ## Current materials
 
+- [Current observatory synthesis](OBSERVATORY_SYNTHESIS.md), aggregating the claim boundaries, cross-platform evidence, benchmark, replication, and recommended meta-study program
 - [Preregistration draft](PREREGISTRATION_DRAFT.md), [exact search protocol](SEARCH_PROTOCOL.md), and [extraction codebook](EXTRACTION_CODEBOOK.md)
 - [Source extractions](SOURCE_EXTRACTIONS.md), [provisional evidence map](EVIDENCE_MAP_SEED.csv), and [edge map](EDGE_MAP_SEED.csv)
 - [Platform disclosure source register](PLATFORM_SOURCE_REGISTER.md) for X, Meta, Reddit, TikTok, and YouTube/Google

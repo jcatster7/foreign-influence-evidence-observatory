@@ -83,6 +83,15 @@ const metaStudyMemo = readFileSync(resolve(folder, 'META_STUDY_OPTIONS.md'), 'ut
 assert(metaStudyMemo.includes('8,587 deduplicated records remain unscreened'), 'meta-study memo has stale screening status');
 assert(metaStudyMemo.includes('1,719-record independent calibration sample'), 'meta-study memo omits registered calibration count');
 assert(!metaStudyMemo.includes('7,986 unscreened records'), 'meta-study memo retains superseded scoping count');
+const synthesis = readFileSync(resolve(folder, 'OBSERVATORY_SYNTHESIS.md'), 'utf8');
+for (const statement of [
+  '9,430 rows across 96 archived response pages',
+  '8,587 records, all unscreened',
+  '1,719 records',
+  '10 prior-known cases and 80 claim slots: 8 `supported`, 1 `contradicted`, and 71 `unknown`',
+  '14 of 20 registered targets and 4,318 in-window posts seen',
+  '$0 of the $20 cap',
+]) assert(synthesis.includes(statement), `observatory synthesis is missing audited statement: ${statement}`);
 const registrationStatus = json<Record<string, any>>(resolve(folder, 'registration', 'REGISTRATION_STATUS.json'));
 assert.equal(registrationStatus.route, 'public immutable GitHub release');
 const releases = [registrationStatus, registrationStatus.amendment, registrationStatus.processing_amendment,
