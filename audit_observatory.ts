@@ -89,6 +89,16 @@ assert.equal(claimGraph.datasets.length, evidenceSeedRecords);
 assert.equal(claimGraph.transitions.length, edgeSeedRecords);
 assert.equal(claimGraph.interpretation.unknown_is_valid, true);
 assert.equal(claimGraph.interpretation.final_review_complete, false);
+const publicExplorerBuild = JSON.parse(execFileSync(process.execPath, [
+  '--experimental-strip-types', resolve(folder, 'build_public_explorer.ts'),
+], { encoding: 'utf8' }));
+assert.equal(publicExplorerBuild.status, 'passed');
+assert.equal(publicExplorerBuild.datasets, evidenceSeedRecords);
+assert.equal(publicExplorerBuild.transitions, edgeSeedRecords);
+const publicExplorer = readFileSync(resolve(folder, 'docs', 'index.html'), 'utf8');
+assert(publicExplorer.includes('Unknown is a valid result.'), 'public explorer omits the primary evidence boundary');
+assert(publicExplorer.includes('External spending: $0 of $20.'), 'public explorer has stale budget text');
+assert(!publicExplorer.includes('href="../studies/'), 'public explorer exposes broken local-source links');
 const metaStudyMemo = readFileSync(resolve(folder, 'META_STUDY_OPTIONS.md'), 'utf8');
 assert(metaStudyMemo.includes('8,587 deduplicated records remain unscreened'), 'meta-study memo has stale screening status');
 assert(metaStudyMemo.includes('1,719-record independent calibration sample'), 'meta-study memo omits registered calibration count');

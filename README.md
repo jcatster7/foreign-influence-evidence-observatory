@@ -4,6 +4,8 @@
 
 This project maps the evidence behind eight distinct social-media claims: account/operator origin (O), operation attribution (P), automation (A), coordination (C), deception (D), observed feed delivery (E), feed-selection increment (R), and audience impact (I). It keeps `unknown` as a valid result. A platform country label, bot score, coordinated posting pattern, potential timeline exposure, and matched-feed difference each answer different questions.
 
+The dependency-free public explorer is generated from audited repository artifacts under `docs/`. Its publication URL is recorded here after GitHub Pages finishes deployment.
+
 ## Current materials
 
 - [Current observatory synthesis](OBSERVATORY_SYNTHESIS.md), aggregating the claim boundaries, cross-platform evidence, benchmark, replication, and recommended meta-study program
