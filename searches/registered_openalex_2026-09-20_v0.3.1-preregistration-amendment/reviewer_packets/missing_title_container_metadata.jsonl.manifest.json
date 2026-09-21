@@ -1,0 +1,9 @@
+{
+  "status": "reviewer_metadata_attachment",
+  "frozen_queue_sha256": "9b76667ab1dd89ccecc822e58b62a8c96d54f0108f1ce565624bf288fd237a4a",
+  "frozen_queue_modified": false,
+  "records": 145,
+  "journal_issues": 142,
+  "journal_volumes": 3,
+  "attachment_sha256": "2c9d0e04990dfea986d4ff07664c19405ae24b1857d4150cb5bf62f923abf8a4"
+}

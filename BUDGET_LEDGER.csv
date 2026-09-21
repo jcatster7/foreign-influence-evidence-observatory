@@ -3,3 +3,4 @@ date_utc,vendor,purpose,amount_usd,cumulative_usd,evidence
 2026-09-19,Crossref and OpenAlex,Keyless scholarly metadata discovery; OpenAlex metering estimate 0.005 USD but no charge,0.00,0.00,searches/crossref_initial_2026-09-19.json and searches/openalex_initial_2026-09-19.json
 2026-09-20,OpenAlex,Expanded keyless cursor harvest stopped at HTTP 429 after 89 saved pages; no paid plan or key,0.00,0.00,searches/openalex_full_2026-09-19/
 2026-09-20,OpenAlex,Completed registered 96-page harvest under free API allowance; API estimated usage 0.096 USD,0.00,0.00,searches/registered_openalex_2026-09-20_v0.3.1-preregistration-amendment/
+2026-09-21,OpenAlex and Crossref,Missing-title metadata recovery for 145 container records using free public APIs,0.00,0.00,searches/registered_openalex_2026-09-20_v0.3.1-preregistration-amendment/title_recovery*/

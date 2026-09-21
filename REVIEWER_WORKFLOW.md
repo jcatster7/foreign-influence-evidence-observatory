@@ -20,6 +20,10 @@ node --experimental-strip-types make_reviewer_packets.ts --queue=searches/openal
 
 The current practice queue produces 7,986 A records and 1,599 B records; 131 lack titles. These are workflow diagnostics, not eligible-study counts. Missing titles or abstracts require metadata retrieval or advancement to full text, with the source and reason logged. They are never silently excluded.
 
+### Registered missing-title attachment
+
+The registered packet has 145 missing-title records. Audited batch lookups found that OpenAlex still supplies null titles and Crossref classifies all 145 DOI records as containers: 142 journal issues and 3 journal volumes. The keyed `reviewer_packets/missing_title_container_metadata.jsonl` attachment supplies the Crossref container name, publisher, primary resource URL, response-file locator, and response hash. It does not alter the frozen queue or invent an article title. Reviewers must inspect the linked issue or volume for constituent works and log the exact work-level locator. A container record cannot be excluded merely because it lacks a title; if its contents cannot be resolved, advance it as ambiguous or record full-text unavailability under the protocol.
+
 ## Decisions and adjudication
 
 Reviewers work independently until their initial decisions are locked. Each decision is one JSONL object with `record_key`, `reviewer_id`, `stage`, `decision`, `reason`, `decided_at_utc`, and `source_locator`, matching `audit_screening.ts`. At title/abstract stage, decisions are `retrieve_full_text`, `exclude`, or `background_method`. Use the exact exclusion rules in `SEARCH_PROTOCOL.md`. An ambiguous record advances. A title-only exclusion needs a specific unrelated-topic or nonempirical reason. A machine score never excludes a record.
