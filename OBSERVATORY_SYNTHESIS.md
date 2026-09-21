@@ -31,7 +31,7 @@ These are source families and candidate datasets, not final included-study count
 
 ## Provisional source-level synthesis
 
-The current [source extractions](SOURCE_EXTRACTIONS.md) identify 15 inspected dataset or study records. The immutable seed map contains 18 records and 13 claim-transition edges. These totals are scoping artifacts and cannot be used as a PRISMA count.
+The current [source extractions](SOURCE_EXTRACTIONS.md) identify 15 inspected dataset or study records. The immutable seed map contains 18 records and 13 claim-transition edges. The generated [claim-evidence graph](CLAIM_EVIDENCE_GRAPH_PROVISIONAL.json) combines those tables, preserves each source and limitation, verifies controlled evidence states, and records the input hashes. These totals are scoping artifacts and cannot be used as a PRISMA count.
 
 Three recurring patterns matter:
 

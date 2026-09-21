@@ -1,0 +1,540 @@
+{
+  "title": "Foreign Influence Evidence Observatory provisional claim-evidence graph",
+  "version": "2026-09-21-provisional-seed",
+  "status": "scoping_only_not_systematic_review",
+  "claim_codes": {
+    "O": "account_or_operator_origin",
+    "P": "operation_attribution",
+    "A": "automation",
+    "C": "coordination",
+    "D": "deception",
+    "E": "observed_feed_delivery",
+    "R": "recommendation_increment",
+    "I": "audience_impact"
+  },
+  "interpretation": {
+    "node_states": [
+      "measured_association",
+      "measurement_validation",
+      "platform_disclosure",
+      "proxy",
+      "supported",
+      "unknown"
+    ],
+    "edge_classes": [
+      "causal_test",
+      "measured_association",
+      "proxy_only",
+      "untested"
+    ],
+    "unknown_is_valid": true,
+    "final_review_complete": false,
+    "prohibition": "Do not convert proxy, platform_disclosure, measurement_validation, or measured_association into verified account origin, automation, foreign control, recommendation causality, or audience impact."
+  },
+  "inputs": {
+    "evidence_map": {
+      "path": "EVIDENCE_MAP_SEED.csv",
+      "sha256": "b59b84d668a35e5f5c119a45f7e34cffbbdda0c2566b102c2080691e5e24d20a",
+      "records": 18
+    },
+    "edge_map": {
+      "path": "EDGE_MAP_SEED.csv",
+      "sha256": "bf4a85a0dc64f7e7175e02f232361734766cf14fb5ab5562fff64c177942ea4f",
+      "records": 13
+    }
+  },
+  "datasets": [
+    {
+      "record_id": "local_origin_v1",
+      "dataset_id": "local_origin_600",
+      "platform": "X",
+      "period": "2026",
+      "source_type": "selected visible-repost pilot",
+      "constructs": {
+        "O": "proxy",
+        "P": "unknown",
+        "A": "unknown",
+        "C": "unknown",
+        "D": "unknown",
+        "E": "unknown",
+        "R": "unknown",
+        "I": "unknown"
+      },
+      "independence_note": "one frozen local sample",
+      "evidence_status": "Internal descriptive pilot; original screenshot audit incomplete",
+      "source": "../studies/foreign_origin_amplification_600/REPORT_v1.md"
+    },
+    {
+      "record_id": "gauthier_2023",
+      "dataset_id": "figshare_28033772_v1",
+      "platform": "X",
+      "period": "2023-07 to 2023-09",
+      "source_type": "public matched-feed replication",
+      "constructs": {
+        "O": "unknown",
+        "P": "unknown",
+        "A": "unknown",
+        "C": "unknown",
+        "D": "unknown",
+        "E": "supported",
+        "R": "supported",
+        "I": "unknown"
+      },
+      "independence_note": "Dataset shared by local acquisition; heterogeneity; mechanism; synthesis reports",
+      "evidence_status": "complete public-data secondary analysis",
+      "source": "../studies/political_recommendation_amplification/public_results/heterogeneity/MANIFEST.md"
+    },
+    {
+      "record_id": "epstein_2024",
+      "dataset_id": "pnas_2610388123",
+      "platform": "X",
+      "period": "2024-09 to 2024-10",
+      "source_type": "public matched-feed study",
+      "constructs": {
+        "O": "unknown",
+        "P": "unknown",
+        "A": "unknown",
+        "C": "unknown",
+        "D": "unknown",
+        "E": "supported",
+        "R": "supported",
+        "I": "unknown"
+      },
+      "independence_note": "independent of 2023 dataset",
+      "evidence_status": "complete public-data secondary synthesis",
+      "source": "../studies/political_recommendation_amplification/public_results/synthesis/MANIFEST.md"
+    },
+    {
+      "record_id": "x_io_archive",
+      "dataset_id": "x_information_operations_archive",
+      "platform": "X",
+      "period": "historical",
+      "source_type": "platform-attributed operation archive",
+      "constructs": {
+        "O": "unknown",
+        "P": "platform_disclosure",
+        "A": "unknown",
+        "C": "platform_disclosure",
+        "D": "platform_disclosure",
+        "E": "unknown",
+        "R": "unknown",
+        "I": "unknown"
+      },
+      "independence_note": "Each campaign requires separate dataset ID after intake",
+      "evidence_status": "candidate source only",
+      "source": "https://blog.x.com/en_us/topics/company/2019/information-ops-on-twitter"
+    },
+    {
+      "record_id": "meta_threat_indicators",
+      "dataset_id": "meta_threat_research",
+      "platform": "Facebook/Instagram",
+      "period": "multiple",
+      "source_type": "platform threat indicator repository",
+      "constructs": {
+        "O": "unknown",
+        "P": "platform_disclosure",
+        "A": "unknown",
+        "C": "platform_disclosure",
+        "D": "platform_disclosure",
+        "E": "unknown",
+        "R": "unknown",
+        "I": "unknown"
+      },
+      "independence_note": "Indicators are not feed exposure records; campaign-level intake pending",
+      "evidence_status": "candidate source only",
+      "source": "https://github.com/facebook/threat-research"
+    },
+    {
+      "record_id": "rogers_righetti_2025",
+      "dataset_id": "rogers_righetti_2025_facebook",
+      "platform": "Facebook",
+      "period": "various",
+      "source_type": "empirical coordination typology",
+      "constructs": {
+        "O": "unknown",
+        "P": "unknown",
+        "A": "unknown",
+        "C": "supported",
+        "D": "unknown",
+        "E": "unknown",
+        "R": "unknown",
+        "I": "unknown"
+      },
+      "independence_note": "Behavioral coordination can resemble an influence operation across actor types",
+      "evidence_status": "full text reviewed; extraction pending",
+      "source": "https://journals.sagepub.com/doi/10.1177/29768624251369784"
+    },
+    {
+      "record_id": "luceri_2026",
+      "dataset_id": "luceri_2026_tiktok",
+      "platform": "TikTok",
+      "period": "2024 election",
+      "source_type": "empirical video coordination detection",
+      "constructs": {
+        "O": "unknown",
+        "P": "unknown",
+        "A": "proxy",
+        "C": "proxy",
+        "D": "unknown",
+        "E": "unknown",
+        "R": "unknown",
+        "I": "unknown"
+      },
+      "independence_note": "Duet and Stitch can be organic; no feed denominator",
+      "evidence_status": "abstract reviewed; full text pending",
+      "source": "https://ojs.aaai.org/index.php/ICWSM/article/view/42711"
+    },
+    {
+      "record_id": "mannocci_2022",
+      "dataset_id": "mannocci_2022_uk_election",
+      "platform": "X",
+      "period": "2019 UK election",
+      "source_type": "empirical coordinated-retweet analysis",
+      "constructs": {
+        "O": "unknown",
+        "P": "unknown",
+        "A": "unknown",
+        "C": "proxy",
+        "D": "unknown",
+        "E": "proxy",
+        "R": "unknown",
+        "I": "unknown"
+      },
+      "independence_note": "Retweet cascades and outreach do not directly measure feed ranking",
+      "evidence_status": "abstract and article page reviewed; extraction pending",
+      "source": "https://www.sciencedirect.com/science/article/pii/S0167923622000902"
+    },
+    {
+      "record_id": "eady_2023",
+      "dataset_id": "eady_2023_ira_2016",
+      "platform": "X",
+      "period": "2016 US election",
+      "source_type": "linked survey and reconstructed potential timeline exposure",
+      "constructs": {
+        "O": "unknown",
+        "P": "platform_disclosure",
+        "A": "unknown",
+        "C": "unknown",
+        "D": "unknown",
+        "E": "proxy",
+        "R": "unknown",
+        "I": "unknown"
+      },
+      "independence_note": "Follow-list and post reconstruction gives potential exposure; actual delivered or viewed posts unknown; no ranking counterfactual",
+      "evidence_status": "full text reviewed; extraction pending",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9829855/"
+    },
+    {
+      "record_id": "huszar_2021",
+      "dataset_id": "huszar_2021_holdback",
+      "platform": "X",
+      "period": "2020",
+      "source_type": "randomized ranked versus chronological timeline experiment",
+      "constructs": {
+        "O": "unknown",
+        "P": "unknown",
+        "A": "unknown",
+        "C": "unknown",
+        "D": "unknown",
+        "E": "supported",
+        "R": "supported",
+        "I": "unknown"
+      },
+      "independence_note": "Platform-run holdback; political source groups not foreign-operation accounts",
+      "evidence_status": "full text reviewed",
+      "source": "https://www.pnas.org/doi/full/10.1073/pnas.2025334119"
+    },
+    {
+      "record_id": "rauchfleisch_2020",
+      "dataset_id": "rauchfleisch_2020_botometer",
+      "platform": "X",
+      "period": "historical",
+      "source_type": "bot detector validation study",
+      "constructs": {
+        "O": "unknown",
+        "P": "unknown",
+        "A": "measurement_validation",
+        "C": "unknown",
+        "D": "unknown",
+        "E": "unknown",
+        "R": "unknown",
+        "I": "unknown"
+      },
+      "independence_note": "False positives and prevalence dependence; not a foreign-operation dataset",
+      "evidence_status": "full text reviewed",
+      "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0241045"
+    },
+    {
+      "record_id": "seckin_2025",
+      "dataset_id": "seckin_2025_io_controls",
+      "platform": "X",
+      "period": "multiple",
+      "source_type": "platform-attributed campaigns with topic/time controls",
+      "constructs": {
+        "O": "unknown",
+        "P": "platform_disclosure",
+        "A": "unknown",
+        "C": "platform_disclosure",
+        "D": "platform_disclosure",
+        "E": "unknown",
+        "R": "unknown",
+        "I": "unknown"
+      },
+      "independence_note": "26 campaigns; control accounts are not independently verified negatives",
+      "evidence_status": "dataset paper reviewed; access request required",
+      "source": "https://ojs.aaai.org/index.php/ICWSM/article/view/35958"
+    },
+    {
+      "record_id": "reddit_suspicious_accounts",
+      "dataset_id": "reddit_suspicious_accounts_archive",
+      "platform": "Reddit",
+      "period": "historical",
+      "source_type": "platform-published suspicious-account list",
+      "constructs": {
+        "O": "unknown",
+        "P": "proxy",
+        "A": "unknown",
+        "C": "unknown",
+        "D": "unknown",
+        "E": "unknown",
+        "R": "unknown",
+        "I": "unknown"
+      },
+      "independence_note": "Page title says investigated suspicious accounts; attribution and completeness require source-context review",
+      "evidence_status": "candidate source only",
+      "source": "https://www.reddit.com/wiki/suspiciousaccounts/"
+    },
+    {
+      "record_id": "chandio_2024",
+      "dataset_id": "chandio_2024_youtube_audit",
+      "platform": "YouTube",
+      "period": "historical",
+      "source_type": "recommendation-audit methods experiment",
+      "constructs": {
+        "O": "unknown",
+        "P": "unknown",
+        "A": "unknown",
+        "C": "unknown",
+        "D": "unknown",
+        "E": "proxy",
+        "R": "proxy",
+        "I": "unknown"
+      },
+      "independence_note": "Shows audit configuration changes observations; not a foreign-operation study",
+      "evidence_status": "abstract reviewed; full text pending",
+      "source": "https://ojs.aaai.org/index.php/ICWSM/article/view/31311"
+    },
+    {
+      "record_id": "bail_2020",
+      "dataset_id": "bail_2020_ira_2017",
+      "platform": "X",
+      "period": "2017",
+      "source_type": "linked survey and platform-attributed IRA interaction records",
+      "constructs": {
+        "O": "unknown",
+        "P": "platform_disclosure",
+        "A": "unknown",
+        "C": "unknown",
+        "D": "unknown",
+        "E": "proxy",
+        "R": "unknown",
+        "I": "measured_association"
+      },
+      "independence_note": "Direct interactions and indirect network contact are mixed; actual viewing of indirect content unknown; observational outcome design",
+      "evidence_status": "author-hosted full PDF reviewed; independent coding pending",
+      "source": "https://sites.duke.edu/hillygus/files/2020/02/2020.PNAS_.Bailetal.pdf"
+    },
+    {
+      "record_id": "cirone_hobbs_2023",
+      "dataset_id": "x_ira_archive_2018",
+      "platform": "X",
+      "period": "historical",
+      "source_type": "content analysis of platform-disclosed IRA archive",
+      "constructs": {
+        "O": "unknown",
+        "P": "platform_disclosure",
+        "A": "unknown",
+        "C": "unknown",
+        "D": "unknown",
+        "E": "unknown",
+        "R": "unknown",
+        "I": "unknown"
+      },
+      "independence_note": "Same platform disclosure corpus may overlap Eady and Bail attribution inputs; publication analysis is a separate source not an independent attribution validation",
+      "evidence_status": "full article reviewed; independent coding pending",
+      "source": "https://www.cambridge.org/core/journals/political-science-research-and-methods/article/asymmetric-flooding-as-a-tool-for-foreign-influence-on-social-media/1D007EBDEF5D511812B615B9F6D61B02"
+    },
+    {
+      "record_id": "recabarren_2023",
+      "dataset_id": "recabarren_2023_venezuela",
+      "platform": "Twitter/X",
+      "period": "study collection period",
+      "source_type": "interviews and participant-reported controlled accounts",
+      "constructs": {
+        "O": "proxy",
+        "P": "proxy",
+        "A": "unknown",
+        "C": "proxy",
+        "D": "proxy",
+        "E": "unknown",
+        "R": "unknown",
+        "I": "unknown"
+      },
+      "independence_note": "Interviewees described group coordination and some sockpuppet control; subset account validation does not independently verify every case or foreign-target transfer",
+      "evidence_status": "full paper reviewed; independent coding pending",
+      "source": "https://www.usenix.org/system/files/usenixsecurity23-recabarren.pdf"
+    },
+    {
+      "record_id": "hassan_2026",
+      "dataset_id": "hassan_2026_youtube_geopolitical_narratives",
+      "platform": "YouTube",
+      "period": "2024 election",
+      "source_type": "official-campaign video content and engagement analysis",
+      "constructs": {
+        "O": "unknown",
+        "P": "unknown",
+        "A": "unknown",
+        "C": "unknown",
+        "D": "unknown",
+        "E": "unknown",
+        "R": "unknown",
+        "I": "unknown"
+      },
+      "independence_note": "Engagement outcomes do not measure observed feed delivery or recommender behavior; no foreign-operation attribution",
+      "evidence_status": "full article page reviewed; independent coding pending",
+      "source": "https://www.frontiersin.org/journals/political-science/articles/10.3389/fpos.2026.1901653/full"
+    }
+  ],
+  "transitions": [
+    {
+      "transition_id": "local_origin_600:origin_signal_to_coordination",
+      "dataset_id": "local_origin_600",
+      "platform": "X",
+      "edge": "origin_signal_to_coordination",
+      "classification": "untested",
+      "design_basis": "Displayed-country contrast among selected visible reposters",
+      "limitation": "No coordination measure; origin is a displayed signal",
+      "source": "../studies/foreign_origin_amplification_600/REPORT_v1.md"
+    },
+    {
+      "transition_id": "figshare_28033772_v1:ranking_to_feed_composition",
+      "dataset_id": "figshare_28033772_v1",
+      "platform": "X",
+      "edge": "ranking_to_feed_composition",
+      "classification": "measured_association",
+      "design_basis": "Matched For You versus followed-feed composition in same public dataset",
+      "limitation": "Historical matched feeds identify a comparison but causal ranking effect depends on feed comparability and capture design",
+      "source": "../studies/political_recommendation_amplification/public_results/heterogeneity/report.md"
+    },
+    {
+      "transition_id": "figshare_28033772_v1:foreign_operation_to_ranking",
+      "dataset_id": "figshare_28033772_v1",
+      "platform": "X",
+      "edge": "foreign_operation_to_ranking",
+      "classification": "untested",
+      "design_basis": "Accounts anonymized in public data",
+      "limitation": "No operation or account-origin labels",
+      "source": "../studies/political_recommendation_amplification/public_results/heterogeneity/report.md"
+    },
+    {
+      "transition_id": "pnas_2610388123:ranking_to_value_exposure",
+      "dataset_id": "pnas_2610388123",
+      "platform": "X",
+      "edge": "ranking_to_value_exposure",
+      "classification": "measured_association",
+      "design_basis": "Matched amplified content versus followed-account inventory",
+      "limitation": "Value alignment outcome differs from 2023 source ideology; no randomized holdback",
+      "source": "../studies/political_recommendation_amplification/public_results/synthesis/report.md"
+    },
+    {
+      "transition_id": "rogers_righetti_2025_facebook:coordination_to_deception",
+      "dataset_id": "rogers_righetti_2025_facebook",
+      "platform": "Facebook",
+      "edge": "coordination_to_deception",
+      "classification": "proxy_only",
+      "design_basis": "Similar link-sharing coordination signatures across media groups and an influence operation",
+      "limitation": "Coordination does not independently establish deceptive organizational presentation",
+      "source": "https://journals.sagepub.com/doi/10.1177/29768624251369784"
+    },
+    {
+      "transition_id": "eady_2023_ira_2016:campaign_attribution_to_actual_feed_delivery",
+      "dataset_id": "eady_2023_ira_2016",
+      "platform": "X",
+      "edge": "campaign_attribution_to_actual_feed_delivery",
+      "classification": "proxy_only",
+      "design_basis": "Platform-attributed account list crossed with followed users and posts",
+      "limitation": "Potential exposure reconstructed; actual feed delivery and viewing not observed",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9829855/"
+    },
+    {
+      "transition_id": "eady_2023_ira_2016:potential_exposure_to_attitude_or_vote_change",
+      "dataset_id": "eady_2023_ira_2016",
+      "platform": "X",
+      "edge": "potential_exposure_to_attitude_or_vote_change",
+      "classification": "measured_association",
+      "design_basis": "Longitudinal survey and reconstructed timeline exposure",
+      "limitation": "Observational design; no meaningful association detected but causal impact not identified",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9829855/"
+    },
+    {
+      "transition_id": "huszar_2021_holdback:ranking_to_political_source_exposure",
+      "dataset_id": "huszar_2021_holdback",
+      "platform": "X",
+      "edge": "ranking_to_political_source_exposure",
+      "classification": "causal_test",
+      "design_basis": "Platform randomized ranked versus chronological holdback",
+      "limitation": "Political source groups not classified as foreign operations",
+      "source": "https://www.pnas.org/doi/full/10.1073/pnas.2025334119"
+    },
+    {
+      "transition_id": "rauchfleisch_2020_botometer:bot_score_to_verified_automation",
+      "dataset_id": "rauchfleisch_2020_botometer",
+      "platform": "X",
+      "edge": "bot_score_to_verified_automation",
+      "classification": "proxy_only",
+      "design_basis": "Threshold compared with human-coded reference groups and manual review",
+      "limitation": "Score is imperfect and changes with language and time; does not classify 2026 accounts",
+      "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0241045"
+    },
+    {
+      "transition_id": "bail_2020_ira_2017:recorded_ira_interaction_to_attitude_or_behavior_outcome",
+      "dataset_id": "bail_2020_ira_2017",
+      "platform": "X",
+      "edge": "recorded_ira_interaction_to_attitude_or_behavior_outcome",
+      "classification": "measured_association",
+      "design_basis": "Longitudinal survey linked to direct and indirect interactions with platform-attributed IRA accounts",
+      "limitation": "Observational interaction measure mixes direct actions and indirect network contact; actual viewing of indirect content unknown; non-significant association does not prove zero effect",
+      "source": "https://sites.duke.edu/hillygus/files/2020/02/2020.PNAS_.Bailetal.pdf"
+    },
+    {
+      "transition_id": "x_ira_archive_2018:platform_attribution_to_feed_delivery",
+      "dataset_id": "x_ira_archive_2018",
+      "platform": "X",
+      "edge": "platform_attribution_to_feed_delivery",
+      "classification": "untested",
+      "design_basis": "Content analysis uses a platform-disclosed IRA archive",
+      "limitation": "Archive describes posted content and strategy rather than audience feed delivery; attribution corpus can overlap other analyses",
+      "source": "https://www.cambridge.org/core/journals/political-science-research-and-methods/article/asymmetric-flooding-as-a-tool-for-foreign-influence-on-social-media/1D007EBDEF5D511812B615B9F6D61B02"
+    },
+    {
+      "transition_id": "recabarren_2023_venezuela:participant_reported_coordination_to_account_behavior",
+      "dataset_id": "recabarren_2023_venezuela",
+      "platform": "Twitter/X",
+      "edge": "participant_reported_coordination_to_account_behavior",
+      "classification": "proxy_only",
+      "design_basis": "Interviews describe coordinated groups and participant-reported controlled accounts with subset validation",
+      "limitation": "Self-reports and selected accounts do not establish all participants or a general foreign-operation effect; no observed feed delivery",
+      "source": "https://www.usenix.org/system/files/usenixsecurity23-recabarren.pdf"
+    },
+    {
+      "transition_id": "hassan_2026_youtube_geopolitical_narratives:video_engagement_to_recommendation_increment",
+      "dataset_id": "hassan_2026_youtube_geopolitical_narratives",
+      "platform": "YouTube",
+      "edge": "video_engagement_to_recommendation_increment",
+      "classification": "untested",
+      "design_basis": "Official campaign video engagement outcomes",
+      "limitation": "Authors state recommender behavior was not directly measured; engagement cannot supply a feed-selection counterfactual",
+      "source": "https://www.frontiersin.org/journals/political-science/articles/10.3389/fpos.2026.1901653/full"
+    }
+  ]
+}

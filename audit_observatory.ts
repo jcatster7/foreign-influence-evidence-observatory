@@ -79,6 +79,16 @@ const evidenceSeedRecords = readFileSync(resolve(folder, 'EVIDENCE_MAP_SEED.csv'
 const edgeSeedRecords = readFileSync(resolve(folder, 'EDGE_MAP_SEED.csv'), 'utf8').trim().split('\n').length - 1;
 assert.equal(evidenceSeedRecords, 18);
 assert.equal(edgeSeedRecords, 13);
+const graphBuild = JSON.parse(execFileSync(process.execPath, [
+  '--experimental-strip-types', resolve(folder, 'build_claim_evidence_graph.ts'),
+], { encoding: 'utf8' }));
+assert.equal(graphBuild.status, 'passed');
+const claimGraph = json<Record<string, any>>(resolve(folder, 'CLAIM_EVIDENCE_GRAPH_PROVISIONAL.json'));
+assert.equal(claimGraph.status, 'scoping_only_not_systematic_review');
+assert.equal(claimGraph.datasets.length, evidenceSeedRecords);
+assert.equal(claimGraph.transitions.length, edgeSeedRecords);
+assert.equal(claimGraph.interpretation.unknown_is_valid, true);
+assert.equal(claimGraph.interpretation.final_review_complete, false);
 const metaStudyMemo = readFileSync(resolve(folder, 'META_STUDY_OPTIONS.md'), 'utf8');
 assert(metaStudyMemo.includes('8,587 deduplicated records remain unscreened'), 'meta-study memo has stale screening status');
 assert(metaStudyMemo.includes('1,719-record independent calibration sample'), 'meta-study memo omits registered calibration count');
