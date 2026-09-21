@@ -98,10 +98,22 @@ assert.equal(benchmark.release_gates.ready_for_final_benchmark, false);
 
 const replicationPath = argument('replication', resolve(folder, 'replication', 'REPLICATION_STATUS.json'));
 const replication = json<Record<string, any>>(replicationPath);
+const acquisitionCheckpointPath = resolve(folder, String(replication.acquisition_checkpoint_file));
+const acquisitionCheckpoint = json<Record<string, any>>(acquisitionCheckpointPath);
 assert.equal(sha256(resolve(folder, String(replication.protocol_file))), replication.protocol_sha256, 'replication protocol hash mismatch');
 assert.equal(replication.included_in_immutable_registration, true);
 assert.equal(replication.sampling_amendment_registered, true);
 assert.equal(replication.target_inventories_created, 0);
+assert.equal(sha256(acquisitionCheckpointPath), replication.acquisition_checkpoint_sha256,
+  'replication acquisition checkpoint hash mismatch');
+assert.equal(acquisitionCheckpoint.accounts_examined, replication.partial_accounts_examined);
+assert.equal(acquisitionCheckpoint.in_window_posts_seen_total, replication.partial_in_window_posts_seen);
+assert.equal(acquisitionCheckpoint.complete_target_inventories, 0);
+assert.equal(acquisitionCheckpoint.origin_or_about_fields_collected, false);
+assert.equal(acquisitionCheckpoint.target_about_panels_inspected, 0);
+assert.equal(acquisitionCheckpoint.sample_frozen, false);
+assert.equal(acquisitionCheckpoint.observations_collected, 0);
+assert.equal(replication.partial_checkpoint_is_sample, false);
 assert.equal(replication.target_frame_about_panels_inspected, 0);
 assert.equal(replication.authorized_x_session_available, replication.latest_preflight_passed,
   'authorized-session and preflight states disagree');
@@ -154,6 +166,9 @@ const requirements = {
     status: 'incomplete',
     protocol_registered: replication.included_in_immutable_registration,
     access_preflight_passed: replication.latest_preflight_passed,
+    partial_accounts_examined: replication.partial_accounts_examined,
+    partial_in_window_posts_seen: replication.partial_in_window_posts_seen,
+    partial_checkpoint_is_sample: replication.partial_checkpoint_is_sample,
     new_observations: replication.new_observations,
     replication_claim_ready: replication.replication_claim_ready,
   },
@@ -169,7 +184,7 @@ const report = {
     '8,587 registered title/abstract records need Reviewer A decisions; 1,719 calibration records also need independent Reviewer B decisions.',
     'Admitted full texts and all eight construct labels need two independent coders before the evidence map is final.',
     'The benchmark needs completed independent adjudication, a real qualifying held-out pool, and predictions frozen before label reveal.',
-    'The replication preflight passes; it still needs a prospectively frozen sample, archived observations, and independent coding.',
+    'The replication preflight passes and 14 target summaries are checkpointed; six target checks, complete inventory export, a frozen sample, archived observations, and independent coding remain.',
   ],
 };
 const outputPath = argument('output', resolve(folder, 'OBSERVATORY_STATUS.json'));

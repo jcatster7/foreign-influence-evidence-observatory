@@ -41,6 +41,9 @@
       "status": "incomplete",
       "protocol_registered": true,
       "access_preflight_passed": true,
+      "partial_accounts_examined": 14,
+      "partial_in_window_posts_seen": 4318,
+      "partial_checkpoint_is_sample": false,
       "new_observations": 0,
       "replication_claim_ready": false
     },
@@ -55,6 +58,6 @@
     "8,587 registered title/abstract records need Reviewer A decisions; 1,719 calibration records also need independent Reviewer B decisions.",
     "Admitted full texts and all eight construct labels need two independent coders before the evidence map is final.",
     "The benchmark needs completed independent adjudication, a real qualifying held-out pool, and predictions frozen before label reveal.",
-    "The replication preflight passes; it still needs a prospectively frozen sample, archived observations, and independent coding."
+    "The replication preflight passes and 14 target summaries are checkpointed; six target checks, complete inventory export, a frozen sample, archived observations, and independent coding remain."
   ]
 }
