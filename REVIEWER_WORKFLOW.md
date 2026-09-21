@@ -12,6 +12,15 @@ node --experimental-strip-types make_reviewer_packets.ts --queue=/absolute/path/
 
 The generator checks the complete registered-queue status, queue SHA-256, unique record keys, row count, and the 20% calibration count in each of five primary-query strata. It writes the same deterministic shuffled order on every run, excluding the priority score and calibration flag from reviewer records. Reviewer A receives all rows; reviewer B receives the frozen calibration rows. The manifest records both packet hashes. Existing differing packets cause an error. Reviewer aliases are `A` and `B`; keep any real-name mapping outside the public repository.
 
+## Reviewer workbooks
+
+Two Excel workbooks provide a human-readable interface over the immutable JSONL packets:
+
+- `outputs/01a0bc0d-6825-7f03-a634-a1c583c931ed/observatory_reviewer_A.xlsx` contains all 8,587 registered records.
+- `outputs/01a0bc0d-6825-7f03-a634-a1c583c931ed/observatory_reviewer_B_calibration.xlsx` contains the frozen 1,719-record calibration sample.
+
+Each workbook has a summary, instructions, frozen identifiers, source metadata, the missing-title container attachment, and validated decision choices. Reviewers edit only `decision`, `reason`, `decided_at_utc`, and `source_locator`. The workbook manifest records the frozen queue hash, source packet hash, attachment hash, output hashes, and assigned counts. The JSONL packets remain canonical; returned workbooks must be checked against their manifest before their four decision columns are imported. Do not distribute Reviewer A's completed workbook to Reviewer B before B's initial calibration decisions are locked.
+
 The practice mode accepts only the partial preregistration queue and marks its output `practice_only`:
 
 ```bash

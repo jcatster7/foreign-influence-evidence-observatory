@@ -1,0 +1,28 @@
+{
+  "status": "reviewer_workbooks_empty_decision_state",
+  "generated_at_utc": "2026-09-21T07:20:40.302Z",
+  "frozen_queue_sha256": "9b76667ab1dd89ccecc822e58b62a8c96d54f0108f1ce565624bf288fd237a4a",
+  "source_packet_manifest_sha256": "a50f87f59087a7c461bbaa014ffb48a47c526470a1eba07b9fe723830b4af16b",
+  "container_attachment_sha256": "2c9d0e04990dfea986d4ff07664c19405ae24b1857d4150cb5bf62f923abf8a4",
+  "workbooks": [
+    {
+      "reviewer_id": "A",
+      "file": "observatory_reviewer_A.xlsx",
+      "assigned_records": 8587,
+      "sha256": "07c4cdb93674f2107599c5965b16ccdf09936797324a885632787d86d158dbc0"
+    },
+    {
+      "reviewer_id": "B",
+      "file": "observatory_reviewer_B_calibration.xlsx",
+      "assigned_records": 1719,
+      "sha256": "7b1884f33c256fe52636504cce15afd49d308f4d7059bd3a502cce210ce9470e"
+    }
+  ],
+  "editable_columns": [
+    "decision",
+    "reason",
+    "decided_at_utc",
+    "source_locator"
+  ],
+  "source_columns_unchanged": true
+}
