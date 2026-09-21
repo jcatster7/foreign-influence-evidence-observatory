@@ -1,0 +1,98 @@
+{
+  "review_version": "1.0.0",
+  "reviewed_at_utc": "2026-09-21T07:32:33Z",
+  "review_scope": "Rights and redistribution status for every distinct source referenced by benchmark_cases.json. This is a conservative repository-use review, not legal advice.",
+  "repository_policy": {
+    "external_articles": "Store case metadata, locators, URLs, and response hashes only. Do not redistribute article bytes, even when an open license would permit it.",
+    "local_reports": "Retain the three project-authored report copies already included for auditability. Do not imply that their underlying datasets, linked files, platform data, or cited third-party works are relicensed.",
+    "case_metadata": "Original benchmark metadata and prose are covered by the repository's CC BY 4.0 text license."
+  },
+  "sources": [
+    {
+      "source": "sources/local_reports/origin_600_report_v1.md",
+      "case_ids": ["displayed_origin_only"],
+      "source_kind": "project_authored_local_report",
+      "rights_evidence": "Project working report copied into the preregistration packet; no third-party full text or raw platform account data is embedded.",
+      "license_id": null,
+      "full_text_in_repository": true,
+      "redistribution_decision": "approved_for_current_repository_use",
+      "limitations": "No separate reuse license is granted for the report or its missing linked files; no rights are granted to platform data."
+    },
+    {
+      "source": "sources/local_reports/matched_feed_2023_heterogeneity_report.md",
+      "case_ids": ["feed_shift_only", "anonymous_news_source"],
+      "source_kind": "project_authored_local_report",
+      "rights_evidence": "Project-authored secondary-analysis report using public anonymized results; it contains no account names, post text, or underlying dataset.",
+      "license_id": null,
+      "full_text_in_repository": true,
+      "redistribution_decision": "approved_for_current_repository_use",
+      "limitations": "The report does not relicense the underlying public dataset, cited works, or source-label data."
+    },
+    {
+      "source": "sources/local_reports/matched_feed_2024_synthesis_report.md",
+      "case_ids": ["values_misalignment_only"],
+      "source_kind": "project_authored_local_report",
+      "rights_evidence": "Project-authored synthesis report; it does not include account names, post text, or a copy of the underlying dataset.",
+      "license_id": null,
+      "full_text_in_repository": true,
+      "redistribution_decision": "approved_for_current_repository_use",
+      "limitations": "The report does not relicense underlying data or cited third-party works."
+    },
+    {
+      "source": "https://pure.uva.nl/ws/files/256825421/rogers-righetti-2025-coordinated-inauthentic-behaviour-on-facebook-a-typology-of-manufactured-attention.pdf",
+      "case_ids": ["facebook_media_coordination"],
+      "source_kind": "external_open_access_article",
+      "rights_evidence": "The University of Amsterdam repository cover page identifies the final published version and a CC BY license.",
+      "license_id": "CC-BY-4.0",
+      "full_text_in_repository": false,
+      "redistribution_decision": "approved_for_current_repository_use",
+      "limitations": "The repository retains only the URL, locator, paraphrase, and SHA-256; article bytes are not redistributed."
+    },
+    {
+      "source": "https://ojs.aaai.org/index.php/ICWSM/article/view/42711",
+      "case_ids": ["tiktok_duet_signal_only"],
+      "source_kind": "external_copyrighted_article",
+      "rights_evidence": "The official article metadata states Copyright © 2026 Association for the Advancement of Artificial Intelligence and does not state an article reuse license.",
+      "license_id": null,
+      "full_text_in_repository": false,
+      "redistribution_decision": "approved_for_current_repository_use",
+      "limitations": "Link, bibliographic metadata, source locator, short paraphrase, and response hash only; no article full text or figure is redistributed."
+    },
+    {
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9829855/",
+      "case_ids": ["ira_potential_exposure"],
+      "source_kind": "external_open_access_article",
+      "rights_evidence": "The PubMed Central article states that it is licensed under Creative Commons Attribution 4.0; its data-availability statement separately limits nonpublic Twitter and survey data.",
+      "license_id": "CC-BY-4.0",
+      "full_text_in_repository": false,
+      "redistribution_decision": "approved_for_current_repository_use",
+      "limitations": "No article bytes, participant data, or restricted Twitter data are redistributed."
+    },
+    {
+      "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0241045",
+      "case_ids": ["botometer_score_only", "botometer_reviewed_false_positive_group"],
+      "source_kind": "external_open_access_article",
+      "rights_evidence": "The official PLOS article states that it is distributed under the Creative Commons Attribution License.",
+      "license_id": "CC-BY-4.0",
+      "full_text_in_repository": false,
+      "redistribution_decision": "approved_for_current_repository_use",
+      "limitations": "The repository retains only case metadata, a link, locator, paraphrase, and response hash."
+    },
+    {
+      "source": "https://www.frontiersin.org/journals/political-science/articles/10.3389/fpos.2026.1901653/full",
+      "case_ids": ["youtube_engagement_not_recommendation"],
+      "source_kind": "external_open_access_article",
+      "rights_evidence": "The official Frontiers article identifies the work as open access under Creative Commons Attribution 4.0.",
+      "license_id": "CC-BY-4.0",
+      "full_text_in_repository": false,
+      "redistribution_decision": "approved_for_current_repository_use",
+      "limitations": "The repository retains only case metadata, a link, locator, paraphrase, and response hash."
+    }
+  ],
+  "review_result": {
+    "distinct_sources_reviewed": 8,
+    "cases_covered": 10,
+    "external_full_text_files_redistributed": 0,
+    "approved_for_current_repository_use": true
+  }
+}

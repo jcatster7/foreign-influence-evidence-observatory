@@ -24,7 +24,7 @@
   "provenance": {
     "review": "Single-reviewer provisional labels on all ten cases; independent adjudication pending.",
     "sources": "Four local-source case references cover three report files; six external case references cover five distinct sources. Every case has a source hash, and external source bytes are not redistributed.",
-    "rights": "Original case metadata may be shared under the repository text license. Linked articles and three local report copies retain their own rights; article full text and restricted platform account data are not redistributed. Case-level redistribution review remains pending."
+    "rights": "The case-by-case review in BENCHMARK_SOURCE_RIGHTS.json approves the current repository use. Original case metadata is covered by the repository text license; external article bytes and restricted platform or participant data are not redistributed. The three project-authored local report copies do not relicense their underlying datasets or cited works."
   },
   "evaluation": {
     "current_use": "Deterministic scorer self-check with safe, targeted-error, and overclaim fixtures.",
@@ -49,7 +49,7 @@
   ],
   "release_gates": {
     "source_hashes_complete": true,
-    "source_rights_reviewed": false,
+    "source_rights_reviewed": true,
     "independent_adjudication_completed": false,
     "held_out_campaign_period_split_established": false,
     "unseen_predictions_scored": false,

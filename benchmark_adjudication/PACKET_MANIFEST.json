@@ -1,0 +1,16 @@
+{
+  "status": "blind_independent_adjudication_packet",
+  "case_file": "benchmark_cases.json",
+  "case_file_sha256": "6ed070b346b9540e2cbaf13ff3b2fa857cd373c064708a6c6d3d632973957601",
+  "packet_file": "independent_reviewer_packet.jsonl",
+  "packet_sha256": "9eaf324d1bf2de31153c8edf4fb35f5ffb315189e2101d43cc89b12a1fabc431",
+  "cases": 10,
+  "claims_per_case": 8,
+  "rows": 80,
+  "labels_withheld": true,
+  "allowed_labels": [
+    "supported",
+    "contradicted",
+    "unknown"
+  ]
+}

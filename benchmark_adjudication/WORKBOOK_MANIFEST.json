@@ -1,0 +1,16 @@
+{
+  "status": "blank_independent_adjudication_workbook",
+  "workbook_file": "outputs/01a0bc0d-6825-7f03-a634-a1c583c931ed/benchmark_independent_adjudication.xlsx",
+  "workbook_sha256": "d611ff7f7a1bcc5da2d4d28a2f4160a77706a3cb44d9e8ed4600ac9bc34a889d",
+  "packet_file": "benchmark_adjudication/independent_reviewer_packet.jsonl",
+  "packet_sha256": "9eaf324d1bf2de31153c8edf4fb35f5ffb315189e2101d43cc89b12a1fabc431",
+  "sheets": [
+    "Summary",
+    "Adjudication",
+    "Instructions"
+  ],
+  "rows": 80,
+  "labels_withheld": true,
+  "decisions_present": 0,
+  "independent_adjudication_completed": false
+}

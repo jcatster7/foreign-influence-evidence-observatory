@@ -21,12 +21,14 @@
     "local source hashes match current file bytes",
     "external sources have retrieval times and syntactically valid hashes",
     "card counts, platforms, source-hash gate, and case-file hash match the case file",
+    "every distinct source has a conservative repository-use rights decision and no external article bytes are redistributed",
+    "the independent adjudication packet covers all 80 claim slots without exposing provisional labels",
     "unknown labels remain distinct from verified negatives",
     "final readiness equals the conjunction of all required release gates"
   ],
   "release_gates": {
     "source_hashes_complete": true,
-    "source_rights_reviewed": false,
+    "source_rights_reviewed": true,
     "independent_adjudication_completed": false,
     "held_out_campaign_period_split_established": false,
     "unseen_predictions_scored": false,
@@ -34,7 +36,6 @@
     "ready_for_final_benchmark": false
   },
   "open_blockers": [
-    "source_rights_reviewed",
     "independent_adjudication_completed",
     "held_out_campaign_period_split_established",
     "unseen_predictions_scored"

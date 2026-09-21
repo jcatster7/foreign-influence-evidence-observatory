@@ -38,6 +38,26 @@ type Card = {
   release_gates: Record<string, boolean>;
 };
 
+type RightsReview = {
+  reviewed_at_utc: string;
+  sources: Array<{
+    source: string;
+    case_ids: string[];
+    source_kind: string;
+    rights_evidence: string;
+    license_id: string | null;
+    full_text_in_repository: boolean;
+    redistribution_decision: string;
+    limitations: string;
+  }>;
+  review_result: {
+    distinct_sources_reviewed: number;
+    cases_covered: number;
+    external_full_text_files_redistributed: number;
+    approved_for_current_repository_use: boolean;
+  };
+};
+
 function argument(name: string, fallback: string): string {
   const prefix = `--${name}=`;
   return process.argv.find((value) => value.startsWith(prefix))?.slice(prefix.length) ?? fallback;
@@ -45,10 +65,13 @@ function argument(name: string, fallback: string): string {
 
 const casesPath = resolve(argument('cases', resolve(folder, 'benchmark_cases.json')));
 const cardPath = resolve(argument('card', resolve(folder, 'BENCHMARK_CARD_PROVISIONAL.json')));
+const rightsPath = resolve(argument('rights', resolve(folder, 'BENCHMARK_SOURCE_RIGHTS.json')));
+const adjudicationDir = resolve(argument('adjudication-dir', resolve(folder, 'benchmark_adjudication')));
 const outputPath = resolve(argument('output', resolve(folder, 'BENCHMARK_AUDIT_PROVISIONAL.json')));
 const caseBytes = readFileSync(casesPath);
 const cases = JSON.parse(caseBytes.toString('utf8')) as BenchmarkCase[];
 const card = JSON.parse(readFileSync(cardPath, 'utf8')) as Card;
+const rights = JSON.parse(readFileSync(rightsPath, 'utf8')) as RightsReview;
 
 const ids = new Set<string>();
 const labelCounts: Record<Label, number> = { supported: 0, contradicted: 0, unknown: 0 };
@@ -118,6 +141,62 @@ assert(card.prohibited_uses.some((item) => item.includes('unknown cases into ver
 assert.equal(card.release_gates.source_hashes_complete, sourceHashMissing === 0, 'source-hash gate mismatch');
 assert.equal(card.release_gates.bias_card_present, true, 'bias-card gate must be true for this card');
 
+assert(!Number.isNaN(Date.parse(rights.reviewed_at_utc)), 'invalid rights-review timestamp');
+const casesBySource = new Map<string, string[]>();
+for (const item of cases) casesBySource.set(item.source, [...(casesBySource.get(item.source) ?? []), item.case_id]);
+const rightsSources = new Set<string>();
+const rightsCaseIds = new Set<string>();
+let externalFullTextFiles = 0;
+for (const item of rights.sources) {
+  assert(!rightsSources.has(item.source), `duplicate rights-review source: ${item.source}`);
+  rightsSources.add(item.source);
+  assert(casesBySource.has(item.source), `rights review includes unknown source: ${item.source}`);
+  assert.deepEqual([...item.case_ids].sort(), [...casesBySource.get(item.source)!].sort(), `rights case mapping mismatch: ${item.source}`);
+  assert(item.source_kind && item.rights_evidence && item.limitations, `incomplete rights review: ${item.source}`);
+  assert.equal(item.redistribution_decision, 'approved_for_current_repository_use', `source not approved for current use: ${item.source}`);
+  if (item.source.startsWith('https://')) {
+    assert.equal(item.full_text_in_repository, false, `external full text must not be redistributed: ${item.source}`);
+    if (item.full_text_in_repository) externalFullTextFiles++;
+  } else assert.equal(item.full_text_in_repository, true, `local report missing from repository: ${item.source}`);
+  for (const caseId of item.case_ids) {
+    assert(!rightsCaseIds.has(caseId), `case appears twice in rights review: ${caseId}`);
+    rightsCaseIds.add(caseId);
+  }
+}
+const rightsComplete = rightsSources.size === casesBySource.size && rightsCaseIds.size === cases.length &&
+  rights.review_result.approved_for_current_repository_use;
+assert.equal(rights.review_result.distinct_sources_reviewed, rightsSources.size, 'rights source count mismatch');
+assert.equal(rights.review_result.cases_covered, rightsCaseIds.size, 'rights case count mismatch');
+assert.equal(rights.review_result.external_full_text_files_redistributed, externalFullTextFiles, 'external full-text count mismatch');
+assert.equal(card.release_gates.source_rights_reviewed, rightsComplete, 'source-rights gate mismatch');
+
+const packetPath = resolve(adjudicationDir, 'independent_reviewer_packet.jsonl');
+const packetManifestPath = resolve(adjudicationDir, 'PACKET_MANIFEST.json');
+const workbookManifestPath = resolve(adjudicationDir, 'WORKBOOK_MANIFEST.json');
+const packetBytes = readFileSync(packetPath);
+const packetRows = packetBytes.toString('utf8').trim().split('\n').filter(Boolean).map((line) => JSON.parse(line) as Record<string, unknown>);
+const packetManifest = JSON.parse(readFileSync(packetManifestPath, 'utf8')) as Record<string, unknown>;
+const workbookManifest = JSON.parse(readFileSync(workbookManifestPath, 'utf8')) as Record<string, unknown>;
+assert.equal(packetManifest.status, 'blind_independent_adjudication_packet');
+assert.equal(packetManifest.case_file_sha256, caseFileSha256, 'adjudication packet uses a different case file');
+assert.equal(packetManifest.packet_sha256, createHash('sha256').update(packetBytes).digest('hex'), 'adjudication packet hash mismatch');
+assert.equal(packetManifest.labels_withheld, true, 'provisional labels leaked into adjudication manifest');
+assert.equal(packetRows.length, cases.length * CLAIMS.length, 'adjudication packet row count mismatch');
+const expectedAdjudicationKeys = new Set(cases.flatMap((item) => CLAIMS.map((claim) => `${item.case_id}:${claim}`)));
+for (const row of packetRows) {
+  assert.equal(typeof row.row_key, 'string', 'adjudication row lacks row key');
+  assert(expectedAdjudicationKeys.delete(row.row_key as string), `duplicate or unexpected adjudication row: ${row.row_key}`);
+  assert(!('labels' in row) && !('provisional_label' in row), `provisional label leaked into adjudication row: ${row.row_key}`);
+}
+assert.equal(expectedAdjudicationKeys.size, 0, 'adjudication packet is missing rows');
+assert.equal(workbookManifest.packet_sha256, packetManifest.packet_sha256, 'workbook uses a different adjudication packet');
+assert.equal(workbookManifest.labels_withheld, true, 'workbook manifest does not confirm blinded labels');
+assert.equal(workbookManifest.decisions_present, 0, 'blank workbook manifest unexpectedly reports decisions');
+const workbookPath = resolve(folder, String(workbookManifest.workbook_file));
+assert(existsSync(workbookPath), 'independent adjudication workbook is missing');
+assert.equal(workbookManifest.workbook_sha256, createHash('sha256').update(readFileSync(workbookPath)).digest('hex'), 'adjudication workbook hash mismatch');
+assert.equal(card.release_gates.independent_adjudication_completed, false, 'independent adjudication cannot pass before validated decisions exist');
+
 const finalGateInputs = [
   'source_hashes_complete',
   'source_rights_reviewed',
@@ -144,6 +223,8 @@ const audit = {
     'local source hashes match current file bytes',
     'external sources have retrieval times and syntactically valid hashes',
     'card counts, platforms, source-hash gate, and case-file hash match the case file',
+    'every distinct source has a conservative repository-use rights decision and no external article bytes are redistributed',
+    'the independent adjudication packet covers all 80 claim slots without exposing provisional labels',
     'unknown labels remain distinct from verified negatives',
     'final readiness equals the conjunction of all required release gates',
   ],

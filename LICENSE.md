@@ -7,3 +7,5 @@ OpenAlex metadata in `searches/` is provided by OpenAlex under [CC0](https://hel
 The three byte-identical local report copies in `sources/local_reports/` are included as evidence for the provisional benchmark cases. This repository does not grant separate reuse rights for those reports or their linked underlying data. The preregistration packet inherits these same boundaries.
 
 Nothing here grants rights to platform account data, restricted datasets, or publisher articles linked from the evidence map.
+
+The benchmark's source-by-source repository-use decisions are recorded in `BENCHMARK_SOURCE_RIGHTS.json`. External article bytes are not stored in this repository, including where an article is openly licensed.
