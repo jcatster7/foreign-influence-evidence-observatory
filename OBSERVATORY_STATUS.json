@@ -44,6 +44,11 @@
       "partial_accounts_examined": 14,
       "partial_in_window_posts_seen": 4318,
       "partial_checkpoint_is_sample": false,
+      "latest_recheck_date_utc": "2026-09-26",
+      "latest_recheck_access_available": true,
+      "latest_recheck_target": "WesternJournalX",
+      "latest_recheck_in_window_lower_bound": 375,
+      "latest_recheck_window_traversal_complete": false,
       "new_observations": 0,
       "replication_claim_ready": false
     },
@@ -58,6 +63,6 @@
     "8,587 registered title/abstract records need Reviewer A decisions; 1,719 calibration records also need independent Reviewer B decisions.",
     "Admitted full texts and all eight construct labels need two independent coders before the evidence map is final.",
     "The benchmark needs completed independent adjudication, a real qualifying held-out pool, and predictions frozen before label reveal.",
-    "The replication preflight passes and 14 target summaries are checkpointed; six target checks, complete inventory export, a frozen sample, archived observations, and independent coding remain."
+    "The replication preflight passes and 14 target summaries are checkpointed. A 2026-09-26 access recheck recovered 375 in-window WesternJournalX posts but stopped before the registered window start; six complete target inventories, complete exports, a frozen sample, archived observations, and independent coding remain."
   ]
 }
