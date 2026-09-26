@@ -136,6 +136,11 @@ const acquisitionCheckpointPath = resolve(folder, String(replication.acquisition
 const acquisitionCheckpoint = json<Record<string, any>>(acquisitionCheckpointPath);
 const latestRecheckPath = resolve(folder, String(replication.latest_recheck_file));
 const latestRecheck = json<Record<string, any>>(latestRecheckPath);
+const acquisitionRechecks = replication.acquisition_rechecks.map((item: Record<string, string>) => {
+  const path = resolve(folder, item.file);
+  assert.equal(sha256(path), item.sha256, `replication acquisition recheck hash mismatch: ${item.file}`);
+  return json<Record<string, any>>(path);
+});
 assert.equal(sha256(resolve(folder, String(replication.protocol_file))), replication.protocol_sha256, 'replication protocol hash mismatch');
 assert.equal(replication.included_in_immutable_registration, true);
 assert.equal(replication.sampling_amendment_registered, true);
@@ -152,8 +157,12 @@ assert.equal(acquisitionCheckpoint.observations_collected, 0);
 assert.equal(sha256(latestRecheckPath), replication.latest_recheck_sha256,
   'replication acquisition recheck hash mismatch');
 assert.equal(latestRecheck.status, 'partial_recheck_not_sample');
-assert.equal(latestRecheck.target_account.target_handle, 'WesternJournalX');
-assert.equal(latestRecheck.target_account.in_window_posts_seen, 375);
+assert.deepEqual(acquisitionRechecks.map((item: Record<string, any>) => item.target_account.target_handle),
+  ['WesternJournalX', 'realDailyWire']);
+assert.deepEqual(acquisitionRechecks.map((item: Record<string, any>) => item.target_account.in_window_posts_seen),
+  [375, 5]);
+assert.equal(latestRecheck.target_account.target_handle, 'realDailyWire');
+assert.equal(latestRecheck.target_account.in_window_posts_seen, 5);
 assert.equal(latestRecheck.target_account.window_start_reached, false);
 assert.equal(latestRecheck.target_account.window_traversal_complete, false);
 assert.equal(latestRecheck.origin_or_about_fields_collected, false);
@@ -234,7 +243,7 @@ const report = {
     '8,587 registered title/abstract records need Reviewer A decisions; 1,719 calibration records also need independent Reviewer B decisions.',
     'Admitted full texts and all eight construct labels need two independent coders before the evidence map is final.',
     'The benchmark needs completed independent adjudication, a real qualifying held-out pool, and predictions frozen before label reveal.',
-    'The replication preflight passes and 14 target summaries are checkpointed. A 2026-09-26 access recheck recovered 375 in-window WesternJournalX posts but stopped before the registered window start; six complete target inventories, complete exports, a frozen sample, archived observations, and independent coding remain.',
+    'The replication preflight passes and 14 target summaries are checkpointed. Rechecks recovered lower bounds of 375 in-window WesternJournalX posts and 5 realDailyWire posts, but both stopped before the registered window start; six complete target inventories, complete exports, a frozen sample, archived observations, and independent coding remain.',
   ],
 };
 const outputPath = argument('output', resolve(folder, 'OBSERVATORY_STATUS.json'));

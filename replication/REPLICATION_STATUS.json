@@ -13,8 +13,18 @@
   "target_inventories_created": 0,
   "acquisition_checkpoint_file": "replication/ACQUISITION_CHECKPOINT_2026-09-21.json",
   "acquisition_checkpoint_sha256": "7b5e003534de7aad84c9fca483c1742f880de0c4b045c6e762c1c5671c0c2e3a",
-  "latest_recheck_file": "replication/ACQUISITION_RECHECK_2026-09-26.json",
-  "latest_recheck_sha256": "094e4cfb5ffb206e29f6fbef274fabfe9a3af740f4cb1cd8798044bd6d1b3d5f",
+  "acquisition_rechecks": [
+    {
+      "file": "replication/ACQUISITION_RECHECK_2026-09-26.json",
+      "sha256": "094e4cfb5ffb206e29f6fbef274fabfe9a3af740f4cb1cd8798044bd6d1b3d5f"
+    },
+    {
+      "file": "replication/ACQUISITION_RECHECK_REALDAILYWIRE_2026-09-26.json",
+      "sha256": "23913962f02796b2cf858babcd7a9cdf25d578a6e2c54943d52bfc349bc2cd67"
+    }
+  ],
+  "latest_recheck_file": "replication/ACQUISITION_RECHECK_REALDAILYWIRE_2026-09-26.json",
+  "latest_recheck_sha256": "23913962f02796b2cf858babcd7a9cdf25d578a6e2c54943d52bfc349bc2cd67",
   "latest_recheck_date_utc": "2026-09-26",
   "latest_recheck_access_available": true,
   "latest_recheck_window_traversal_complete": false,
