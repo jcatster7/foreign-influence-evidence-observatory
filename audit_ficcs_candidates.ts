@@ -10,7 +10,7 @@ const bytes = readFileSync(path);
 const records = bytes.toString('utf8').split('\n').filter(Boolean).map((line) => JSON.parse(line));
 const types = ['research', 'platform', 'government', 'journalism'];
 
-assert.equal(records.length, 36);
+assert.equal(records.length, 60);
 assert.equal(new Set(records.map((record) => record.document_id)).size, records.length, 'duplicate document ID');
 assert.equal(new Set(records.map((record) => record.canonical_url)).size, records.length, 'duplicate canonical URL');
 for (const record of records) {
@@ -24,7 +24,7 @@ for (const record of records) {
 }
 
 const counts = Object.fromEntries(types.map((type) => [type, records.filter((record) => record.source_type === type).length]));
-assert.deepEqual(counts, { research: 10, platform: 7, government: 7, journalism: 12 });
+assert.deepEqual(counts, { research: 16, platform: 13, government: 13, journalism: 18 });
 
 console.log(JSON.stringify({
   status: 'passed',
