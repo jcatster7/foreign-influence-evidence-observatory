@@ -1,0 +1,21 @@
+{
+  "status": "frozen",
+  "immutable": true,
+  "tag": "v0.7.0-ficcs-source-frame-freeze",
+  "release_url": "https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.7.0-ficcs-source-frame-freeze",
+  "released_at": "2026-09-28T01:06:22Z",
+  "commit": "9d2b26e4f6affac02db3f8bcbbc218337a55eddf",
+  "source_frame_path": "ficcs/source_frame_v1.jsonl",
+  "source_frame_sha256": "82934041725094ad0b7e1de7904ccacacd4c630437ae7f1af16d32f512211be9",
+  "asset": "FICCS_SOURCE_FRAME_FREEZE_PACKET_v0.7.0.zip",
+  "asset_sha256": "3ab081aa01e6388b5ddcd75568ca1c752ea049cdbace02feb01e893d1f187dbd",
+  "manifest_asset": "FICCS_SOURCE_FRAME_FREEZE_MANIFEST_v0.7.0.json",
+  "manifest_asset_sha256": "5472dd8836c54ed4b44f5e206acb56e19be01e77ac1f517b7ab5a99aa903d9fd",
+  "candidate_records": 62,
+  "eligible_source_documents": 60,
+  "excluded_source_documents": 2,
+  "corpus_claims_at_freeze": 0,
+  "independent_codings_at_freeze": 0,
+  "stress_test_predictions_at_freeze": 0,
+  "external_spend_usd": 0
+}

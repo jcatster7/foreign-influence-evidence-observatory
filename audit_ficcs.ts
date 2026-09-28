@@ -17,6 +17,8 @@ const frameSchema = json('ficcs/source_frame.schema.json');
 const registration = json('ficcs/REGISTRATION_STATUS.json');
 const manifest = json('registration/FICCS_REGISTRATION_MANIFEST_v0.6.0.json');
 const sourceFrameManifest = json('registration/FICCS_SOURCE_FRAME_MANIFEST_v0.6.1.json');
+const frozenFrameManifest = json('registration/FICCS_SOURCE_FRAME_FREEZE_MANIFEST_v0.7.0.json');
+const frozenFrameStatus = json('ficcs/SOURCE_FRAME_STATUS.json');
 
 for (const phrase of [
   'at least 100 atomic claims',
@@ -50,6 +52,18 @@ assert.equal(registration.source_frame_amendment.asset_sha256,
   sha256(readFileSync(resolve(folder, 'registration/FICCS_SOURCE_FRAME_PACKET_v0.6.1.zip'))));
 assert.equal(sourceFrameManifest.prospective_state.source_frame_records, 0);
 assert.equal(sourceFrameManifest.prospective_state.corpus_claims, 0);
+assert.equal(frozenFrameStatus.status, 'frozen');
+assert.equal(frozenFrameStatus.immutable, true);
+assert.equal(frozenFrameStatus.tag, frozenFrameManifest.tag);
+assert.equal(frozenFrameStatus.source_frame_sha256, sha256(readFileSync(resolve(folder, 'ficcs/source_frame_v1.jsonl'))));
+assert.equal(frozenFrameStatus.asset_sha256,
+  sha256(readFileSync(resolve(folder, 'registration/FICCS_SOURCE_FRAME_FREEZE_PACKET_v0.7.0.zip'))));
+assert.equal(frozenFrameStatus.manifest_asset_sha256,
+  sha256(readFileSync(resolve(folder, 'registration/FICCS_SOURCE_FRAME_FREEZE_MANIFEST_v0.7.0.json'))));
+assert.equal(frozenFrameManifest.freeze_state.eligible_source_documents, 60);
+assert.equal(frozenFrameManifest.freeze_state.corpus_claims, 0);
+assert.equal(frozenFrameManifest.freeze_state.independent_codings, 0);
+assert.equal(frozenFrameManifest.freeze_state.stress_test_predictions, 0);
 for (const path of ['ficcs/AMENDMENT_v0.6.1_SOURCE_FRAME.md', 'build_ficcs_source_frame.ts']) {
   const frozen = sourceFrameManifest.files.find((item: Record<string, any>) => item.path === path);
   assert(frozen, `source-frame amendment entry missing: ${path}`);
@@ -66,6 +80,10 @@ console.log(JSON.stringify({
   protocol_status: 'registered_immutable',
   release_url: registration.release_url,
   source_frame_amendment_url: registration.source_frame_amendment.release_url,
+  source_frame_status: 'frozen_immutable',
+  source_frame_release_url: frozenFrameStatus.release_url,
+  eligible_source_documents: frozenFrameStatus.eligible_source_documents,
+  source_frame_sha256: frozenFrameStatus.source_frame_sha256,
   corpus_claims: 0,
   independent_codings: 0,
   claim_schema_sha256: sha256(claimSchemaText),
