@@ -37,6 +37,19 @@
         "unseen_predictions_scored"
       ]
     },
+    "ficcs_claim_chain_standard": {
+      "status": "incomplete",
+      "registration_immutable": true,
+      "primary_claims": 100,
+      "balanced_source_strata": true,
+      "blinded_reviewer_workbooks": 2,
+      "independent_codings": 0,
+      "policy_schemas_valid": true,
+      "automatic_promotion_rejected": true,
+      "case_study_boundaries_frozen": 3,
+      "case_study_findings_ready": false,
+      "final_standard_ready": false
+    },
     "low_cost_replication": {
       "status": "incomplete",
       "protocol_registered": true,
@@ -60,6 +73,7 @@
     }
   },
   "authoritative_blockers": [
+    "The 100 FICCS claims need two independent evidence codings and adjudication before inference-jump frequencies, institutional consequences, or final policy language can be released.",
     "8,587 registered title/abstract records need Reviewer A decisions; 1,719 calibration records also need independent Reviewer B decisions.",
     "Admitted full texts and all eight construct labels need two independent coders before the evidence map is final.",
     "The benchmark needs completed independent adjudication, a real qualifying held-out pool, and predictions frozen before label reveal.",

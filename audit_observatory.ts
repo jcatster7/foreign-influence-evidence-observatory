@@ -130,6 +130,21 @@ const benchmark = JSON.parse(execFileSync(process.execPath, [
 assert.equal(benchmark.status, 'passed');
 assert.equal(benchmark.release_gates.ready_for_final_benchmark, false);
 
+const ficcs = JSON.parse(execFileSync(process.execPath, [
+  '--experimental-strip-types', resolve(folder, 'audit_ficcs.ts'),
+], { encoding: 'utf8' }));
+const ficcsCodingPacket = JSON.parse(execFileSync(process.execPath, [
+  '--experimental-strip-types', resolve(folder, 'audit_ficcs_coding_packet.ts'),
+], { encoding: 'utf8' }));
+const ficcsCases = JSON.parse(execFileSync(process.execPath, [
+  '--experimental-strip-types', resolve(folder, 'audit_ficcs_case_frame.ts'),
+], { encoding: 'utf8' }));
+const ficcsPolicy = JSON.parse(execFileSync('python3', [resolve(folder, 'audit_ficcs_policy.py')], { encoding: 'utf8' }));
+assert.equal(ficcs.selected_primary_claims, 100);
+assert.equal(ficcsCodingPacket.labels_withheld, true);
+assert.equal(ficcsCases.cases, 3);
+assert.equal(ficcsPolicy.automatic_promotion_rejected, true);
+
 const replicationPath = argument('replication', resolve(folder, 'replication', 'REPLICATION_STATUS.json'));
 const replication = json<Record<string, any>>(replicationPath);
 const acquisitionCheckpointPath = resolve(folder, String(replication.acquisition_checkpoint_file));
@@ -216,6 +231,19 @@ const requirements = {
     release_gates: benchmark.release_gates,
     open_blockers: benchmark.open_blockers,
   },
+  ficcs_claim_chain_standard: {
+    status: 'incomplete',
+    registration_immutable: ficcs.protocol_status === 'registered_immutable',
+    primary_claims: ficcs.selected_primary_claims,
+    balanced_source_strata: true,
+    blinded_reviewer_workbooks: ficcsCodingPacket.workbooks,
+    independent_codings: ficcs.independent_codings,
+    policy_schemas_valid: ficcsPolicy.status === 'passed',
+    automatic_promotion_rejected: ficcsPolicy.automatic_promotion_rejected,
+    case_study_boundaries_frozen: ficcsCases.cases,
+    case_study_findings_ready: false,
+    final_standard_ready: false,
+  },
   low_cost_replication: {
     status: 'incomplete',
     protocol_registered: replication.included_in_immutable_registration,
@@ -240,6 +268,7 @@ const report = {
   overall_goal_complete: overallComplete,
   requirements,
   authoritative_blockers: [
+    'The 100 FICCS claims need two independent evidence codings and adjudication before inference-jump frequencies, institutional consequences, or final policy language can be released.',
     '8,587 registered title/abstract records need Reviewer A decisions; 1,719 calibration records also need independent Reviewer B decisions.',
     'Admitted full texts and all eight construct labels need two independent coders before the evidence map is final.',
     'The benchmark needs completed independent adjudication, a real qualifying held-out pool, and predictions frozen before label reveal.',

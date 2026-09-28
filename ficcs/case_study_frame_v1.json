@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0",
+  "frozen_at_utc": "2026-09-28T02:27:17Z",
+  "status": "boundaries_frozen_coding_pending",
+  "selection_basis": "Three major influence operations represented in the frozen FICCS primary corpus and spanning distinct claim-chain problems; selected before independent coding.",
+  "empirical_findings": false,
+  "cases": [
+    {
+      "case_id": "ficcs_case_ira_twitter",
+      "name": "Internet Research Agency activity on Twitter",
+      "audit_focus": ["P", "E", "I", "E>I"],
+      "claim_ids": ["ficcs_claim_research_004", "ficcs_claim_research_009", "ficcs_claim_research_011", "ficcs_claim_research_020", "ficcs_claim_research_025"]
+    },
+    {
+      "case_id": "ficcs_case_doppelganger",
+      "name": "Doppelgänger influence operation",
+      "audit_focus": ["O", "P", "D", "P>D"],
+      "claim_ids": ["ficcs_claim_government_003", "ficcs_claim_government_006", "ficcs_claim_government_016", "ficcs_claim_government_019", "ficcs_claim_journalism_010"]
+    },
+    {
+      "case_id": "ficcs_case_spamouflage",
+      "name": "Spamouflage cross-platform influence operation",
+      "audit_focus": ["O", "P", "C", "D", "C>P", "C>D"],
+      "claim_ids": ["ficcs_claim_platform_004", "ficcs_claim_platform_017"]
+    }
+  ]
+}

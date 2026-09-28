@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jcatster7.github.io/foreign-influence-evidence-observatory/schemas/ficcs-evidence-label-1.0.0.json",
+  "title": "FICCS evidence label",
+  "description": "One evidence decision for one construct, subject, unit, and period. Unknown is a first-class outcome.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["construct", "asserted", "decision", "evidence_stage", "evidence_sources", "locator", "rationale", "confidence", "missing_links"],
+  "properties": {
+    "construct": { "enum": ["O", "P", "A", "C", "D", "E", "R", "I"] },
+    "asserted": { "type": "boolean" },
+    "decision": { "enum": ["supported", "contradicted", "unknown"] },
+    "evidence_stage": { "enum": ["direct", "proxy", "platform_disclosure", "measurement_validation", "unknown"] },
+    "evidence_sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["relationship", "url", "authority", "retrieved_at_utc"],
+        "properties": {
+          "relationship": { "enum": ["source_supplies", "source_cites", "source_repeats"] },
+          "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+          "authority": { "type": "string", "minLength": 1 },
+          "retrieved_at_utc": { "type": "string", "format": "date-time" },
+          "sha256": { "type": ["string", "null"], "pattern": "^[a-f0-9]{64}$" }
+        }
+      }
+    },
+    "locator": { "type": ["string", "null"] },
+    "rationale": { "type": "string", "minLength": 1 },
+    "confidence": { "enum": ["high", "moderate", "low"] },
+    "missing_links": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^(O|P|A|C|D|E|R|I|engagement|displayed_location|bot_score)>(O|P|A|C|D|E|R|I)$" }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "decision": { "enum": ["supported", "contradicted"] } }, "required": ["decision"] },
+      "then": {
+        "properties": {
+          "evidence_sources": { "minItems": 1 },
+          "locator": { "type": "string", "minLength": 1 },
+          "evidence_stage": { "enum": ["direct", "proxy", "platform_disclosure", "measurement_validation"] }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "decision": { "const": "unknown" } }, "required": ["decision"] },
+      "then": { "properties": { "confidence": { "enum": ["moderate", "low"] } } }
+    },
+    {
+      "if": { "properties": { "evidence_stage": { "const": "unknown" } }, "required": ["evidence_stage"] },
+      "then": { "properties": { "decision": { "const": "unknown" } } }
+    }
+  ]
+}
