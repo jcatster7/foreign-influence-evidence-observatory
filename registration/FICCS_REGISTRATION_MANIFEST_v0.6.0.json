@@ -1,0 +1,50 @@
+{
+  "tag": "v0.6.0-ficcs-preregistration",
+  "study": "Foreign Influence Claim Chain Standard (FICCS)",
+  "registration_type": "prospective public immutable GitHub release",
+  "prospective_state": {
+    "source_frame_records": 0,
+    "corpus_claims": 0,
+    "independent_codings": 0,
+    "adjudicated_claims": 0,
+    "stress_test_predictions": 0
+  },
+  "external_spend_usd": 0,
+  "files": [
+    {
+      "path": "ficcs/PREREGISTRATION.md",
+      "sha256": "309c4f853ec27649d61bcf4f795f8f95e6373c3ce225fded674486d9063aa5c3",
+      "bytes": 10901
+    },
+    {
+      "path": "ficcs/README.md",
+      "sha256": "10e2d3bc32392e65a13b7a823fbc0d6b52e54f64eed6badbbcd4cae7b875d68e",
+      "bytes": 1050
+    },
+    {
+      "path": "ficcs/claim.schema.json",
+      "sha256": "e23859a5dc3d47cf1422659c8e06d0a6017e09eb00a80c7e29f7a5e15fa9146e",
+      "bytes": 5771
+    },
+    {
+      "path": "ficcs/source_frame.schema.json",
+      "sha256": "e736bce214be609f1ad82ae48bea208d69ae2e4ead71eea9f198ab1473c5d213",
+      "bytes": 1256
+    },
+    {
+      "path": "audit_ficcs.ts",
+      "sha256": "1be845e596c36326f8d42cc30c5496f5e4504b20683ebf87018e8984553b2b3d",
+      "bytes": 2290
+    },
+    {
+      "path": "EXTRACTION_CODEBOOK.md",
+      "sha256": "2fd5d4e982fc44729eb2d5ca65eafb03bbdad366d11e9fab3af56cd02f6ff3eb",
+      "bytes": 6888
+    },
+    {
+      "path": "BUDGET_LEDGER.csv",
+      "sha256": "d6ef411b21085159f90231e70cd027ace804169005969fe7c80488b41d7d591e",
+      "bytes": 940
+    }
+  ]
+}
