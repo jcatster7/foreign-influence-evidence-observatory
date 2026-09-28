@@ -1,0 +1,88 @@
+{
+  "tag": "v0.7.0-ficcs-source-frame-freeze",
+  "parent_releases": [
+    "v0.6.0-ficcs-preregistration",
+    "v0.6.1-ficcs-source-frame-amendment"
+  ],
+  "freeze_date": "2026-09-27",
+  "registered_seed": "FICCS-v0.6.1-source-frame-order-2026-09-27",
+  "freeze_state": {
+    "candidate_records": 62,
+    "eligible_source_documents": 60,
+    "excluded_source_documents": 2,
+    "eligible_by_source_type": {
+      "research": 16,
+      "platform": 13,
+      "government": 13,
+      "journalism": 18
+    },
+    "corpus_claims": 0,
+    "independent_codings": 0,
+    "adjudicated_claims": 0,
+    "stress_test_predictions": 0
+  },
+  "source_frame_sha256": "82934041725094ad0b7e1de7904ccacacd4c630437ae7f1af16d32f512211be9",
+  "external_spend_usd": 0,
+  "files": [
+    {
+      "path": "ficcs/PREREGISTRATION.md",
+      "sha256": "309c4f853ec27649d61bcf4f795f8f95e6373c3ce225fded674486d9063aa5c3",
+      "bytes": 10901
+    },
+    {
+      "path": "ficcs/AMENDMENT_v0.6.1_SOURCE_FRAME.md",
+      "sha256": "d93090376b166d8780940b4a68abd71684208228c3df8a129b5a799e2c513a0b",
+      "bytes": 3108
+    },
+    {
+      "path": "ficcs/source_frame.schema.json",
+      "sha256": "e736bce214be609f1ad82ae48bea208d69ae2e4ead71eea9f198ab1473c5d213",
+      "bytes": 1256
+    },
+    {
+      "path": "ficcs/source_candidates_v1.jsonl",
+      "sha256": "ca14912da2199e79a7202dd11611d15d8e30eb836f26c13f5176888f8f0ccda0",
+      "bytes": 34905
+    },
+    {
+      "path": "ficcs/source_preflight_v1.jsonl",
+      "sha256": "265872950f90687f2e85bd5edf11bb13ffbe97499166526b844d326f1ba9cc93",
+      "bytes": 31462
+    },
+    {
+      "path": "ficcs/source_eligibility_v1.jsonl",
+      "sha256": "a724de90222b847278d16b4a0cde72953b5011bba15632ce04289d97ae29f563",
+      "bytes": 34537
+    },
+    {
+      "path": "ficcs/source_frame_v1.jsonl",
+      "sha256": "82934041725094ad0b7e1de7904ccacacd4c630437ae7f1af16d32f512211be9",
+      "bytes": 38744
+    },
+    {
+      "path": "build_ficcs_source_frame.ts",
+      "sha256": "a68118529808ef4306446bff020d2b32b0d6a89d05a200f9dc418d983d7517a6",
+      "bytes": 3563
+    },
+    {
+      "path": "audit_ficcs_candidates.ts",
+      "sha256": "235237d84419501ed61a7a71b1261e8d16c5af0b6021ab921372c891d1f81f2d",
+      "bytes": 2357
+    },
+    {
+      "path": "audit_ficcs_preflight.ts",
+      "sha256": "7a3d9759fd399d67a6825b911a502d9cdd99985ae22f141f79b888dfa5059681",
+      "bytes": 1798
+    },
+    {
+      "path": "audit_ficcs_eligibility.ts",
+      "sha256": "e789ae8fcdfc8072885fdffdb9ffb4dc29874df199f7bb405485c3715261393a",
+      "bytes": 2447
+    },
+    {
+      "path": "audit_ficcs_source_frame.ts",
+      "sha256": "8425f158ff52dcccea115d929f784693f97a0a0c9e0dea41af6ec48a17349ac8",
+      "bytes": 2203
+    }
+  ]
+}
