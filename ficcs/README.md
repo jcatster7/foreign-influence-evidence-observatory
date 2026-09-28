@@ -13,5 +13,8 @@ Protocol version `0.1.0`, dated 2026-09-27, is frozen in the [immutable `v0.6.0-
 - `source_frame.schema.json`: schema for candidate-source enumeration before claim sampling.
 - `REGISTRATION_STATUS.json`: release timestamp, commit, immutability state, and packet digest.
 - `AMENDMENT_v0.6.1_SOURCE_FRAME.md`: prospective source canonicalization and deterministic ordering specification.
+- `source_candidates_v1.jsonl`: post-registration candidate enumeration; every record remains pending and has no ordering key.
+
+The candidate file is not the frozen source frame. Eligibility, publication metadata, canonical URLs, and duplicate families must be verified before running the registered frame builder. Run `node --experimental-strip-types audit_ficcs_candidates.ts` from the repository root to confirm that no sampling order or eligibility decision has been created prematurely.
 
 The existing observatory provides definitions and prior-known examples. Those materials are development inputs, not confirmatory FICCS observations.

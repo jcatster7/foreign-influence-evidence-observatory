@@ -49,6 +49,7 @@ node --experimental-strip-types prepare_screening_queue.ts
 node --experimental-strip-types audit_screening.ts
 node --experimental-strip-types audit_living_update.ts
 node --experimental-strip-types audit_ficcs.ts
+node --experimental-strip-types audit_ficcs_candidates.ts
 ```
 
 The scorer and component audits must pass. The integrated audit regenerates `OBSERVATORY_STATUS.json` and keeps acquisition completion distinct from final evidence-map completion. The screening audit defaults to the pre-registration queue and can also read a registered queue with `--queue=`, `--summary=`, and `--decisions=`. It always reports `ready_for_final_study_count: false`: an indexed screening check cannot certify supplemental source intake, independent-dataset merges, construct coding, or risk of bias. Search acquisition scripts use public Crossref and OpenAlex endpoints; consult `SEARCH_STATUS.md` before rerunning because the current keyless OpenAlex quota was exhausted. Source pages may change, so preserve dates, URLs, and response hashes.
