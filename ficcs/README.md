@@ -20,7 +20,11 @@ Protocol version `0.1.0`, dated 2026-09-27, is frozen in the [immutable `v0.6.0-
 - `SOURCE_FRAME_STATUS.json`: immutable release identity and verified local and release-asset digests.
 - `claim_selection_queue_v1.jsonl`: five complete round-robin passes over the frozen eligible frame; traversal continues until each stratum has 25 selected claims or a document is recorded as exhausted.
 - `claim_extraction.schema.json`: pre-coding schema that keeps verbatim claim selection separate from evidence decisions.
-- `claim_extractions_v1.jsonl`: source-located atomic claims selected so far; every record explicitly states that independent coding has not started.
+- `claim_extractions_v1.jsonl`: the complete, balanced 100-claim corpus; every record explicitly states that independent coding has not started.
+- `coding/blind_claim_packet_v1.jsonl`: deterministic 100-claim packet with all coding labels withheld.
+- `CODING_WORKFLOW.md`: separation, completion, import, agreement, and adjudication procedure for Reviewer A and Reviewer B.
+
+The frozen corpus now contains 100 claims, exactly 25 per source stratum. Reviewer A and Reviewer B workbooks are under `outputs/01a0bc0d-6825-7f03-a634-a1c583c931ed/`. Generate them with `make_ficcs_coding_packet.ts` and `make_ficcs_coding_workbooks.mjs`; verify them with `audit_ficcs_coding_packet.ts`. Returned workbooks must pass `import_ficcs_coding.py` before `compare_ficcs_codings.ts` calculates raw agreement, nominal Krippendorff alpha, and a disagreement queue.
 
 The candidate file is the pre-order disposition record and is not used directly for sampling. Run `node --experimental-strip-types audit_ficcs_candidates.ts` and `node --experimental-strip-types audit_ficcs_eligibility.ts` to verify complete dispositions and the 60-document minimum. Run `node --experimental-strip-types audit_ficcs_source_frame.ts` to independently recompute every registered order key and the frozen frame digest.
 

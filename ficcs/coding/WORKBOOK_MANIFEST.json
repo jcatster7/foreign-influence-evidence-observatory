@@ -1,0 +1,15 @@
+{
+  "status": "blinded_workbooks_generated",
+  "packet": "ficcs/coding/blind_claim_packet_v1.jsonl",
+  "outputs": [
+    {
+      "path": "outputs/01a0bc0d-6825-7f03-a634-a1c583c931ed/ficcs_reviewer_a_coding.xlsx",
+      "sha256": "178188e69be63b8c5f430a85b54a492e539843cb42c6a9a243eddbfa05b68b37"
+    },
+    {
+      "path": "outputs/01a0bc0d-6825-7f03-a634-a1c583c931ed/ficcs_reviewer_b_coding.xlsx",
+      "sha256": "8ccf733091e79006aec663026e2ec36e2d5df78d4683ce6ec781493f13735394"
+    }
+  ],
+  "decisions_prefilled": false
+}

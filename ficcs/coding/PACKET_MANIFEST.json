@@ -1,0 +1,13 @@
+{
+  "status": "blind_independent_coding_packet",
+  "version": "1.0.0",
+  "source_file": "ficcs/claim_extractions_v1.jsonl",
+  "source_sha256": "4457f0782a34ad2eaf792f100272561d60e09128a814fd3aef81cb1f5fe2b90e",
+  "packet_file": "ficcs/coding/blind_claim_packet_v1.jsonl",
+  "packet_sha256": "cf0e52b8fb2c46b5fc7b10c546d642d4ba4620966889efe086449156aab16b9e",
+  "claims": 100,
+  "construct_slots": 800,
+  "registered_edge_slots": 700,
+  "labels_withheld": true,
+  "generated_by": "deterministic transformation; no coding decisions generated"
+}
