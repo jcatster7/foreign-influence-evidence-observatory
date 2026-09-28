@@ -2,7 +2,41 @@
 
 This is the minimum external work needed to advance the registered evidence map, benchmark, and replication. Do not send passwords, API keys, or private account credentials to reviewers or commit them to this repository.
 
-## 1. Registered evidence-map screening
+## 1. FICCS independent claim-chain coding
+
+This is the direct blocker for the 100-claim FICCS study. Assign two people who can work independently and disclose relevant conflicts. Do not use Codex or the same person under two aliases as independent reviewers.
+
+### Reviewer A
+
+Send only:
+
+- `outputs/01a0bc0d-6825-7f03-a634-a1c583c931ed/ficcs_reviewer_a_coding.xlsx`
+- `ficcs/CODING_WORKFLOW.md`
+- `EXTRACTION_CODEBOOK.md`
+
+Expected blank-workbook SHA-256:
+
+`178188e69be63b8c5f430a85b54a492e539843cb42c6a9a243eddbfa05b68b37`
+
+### Reviewer B
+
+Send only:
+
+- `outputs/01a0bc0d-6825-7f03-a634-a1c583c931ed/ficcs_reviewer_b_coding.xlsx`
+- `ficcs/CODING_WORKFLOW.md`
+- `EXTRACTION_CODEBOOK.md`
+
+Expected blank-workbook SHA-256:
+
+`8ccf733091e79006aec663026e2ec36e2d5df78d4683ce6ec781493f13735394`
+
+Both reviewers complete 800 construct rows, 700 registered-edge rows, 100 consequence rows, the identity alias, conflict disclosure, no-collaboration attestation, and UTC completion time. Each opens the cited source and supplies a precise locator and rationale. They must not see each other's file before both originals are returned and hash-locked.
+
+### Return processing
+
+Preserve the returned files under new names. Import each with `import_ficcs_coding.py`, compare them with `compare_ficcs_codings.ts`, and resolve only the generated disagreements under `ficcs/adjudication-resolution.schema.json`. Then run `finalize_ficcs_adjudication.ts`, `analyze_ficcs_adjudicated.ts`, `fit_ficcs_confirmatory_model.py`, and `build_ficcs_case_audits.ts` in that order. Every stage verifies the prior file hash; never overwrite either independent original.
+
+## 2. Registered evidence-map screening
 
 ### Reviewer A
 
@@ -38,7 +72,7 @@ Keep the real-name-to-alias mapping outside the public repository. No reviewer w
 
 Save returned workbooks under new names. Do not overwrite the blank copies. Validate each with `import_reviewer_workbook.py`, then run `compare_screening_decisions.ts`. The importer rejects partial or altered workbooks. The comparator creates a disagreement queue; it does not overwrite either initial judgment.
 
-## 2. Independent benchmark adjudication
+## 3. Independent benchmark adjudication
 
 Send an independent reviewer:
 
@@ -53,7 +87,7 @@ Do not send `benchmark_cases.json`, scorer fixtures, the provisional benchmark c
 
 Validate the returned workbook with `import_benchmark_adjudication.py`. Run `compare_benchmark_adjudication.ts` only on the validated JSONL. Any disagreement requires a separate consensus label and rationale.
 
-## 3. X replication access
+## 4. X replication access
 
 Required website: `https://x.com/`
 
