@@ -14,7 +14,10 @@ Protocol version `0.1.0`, dated 2026-09-27, is frozen in the [immutable `v0.6.0-
 - `REGISTRATION_STATUS.json`: release timestamp, commit, immutability state, and packet digest.
 - `AMENDMENT_v0.6.1_SOURCE_FRAME.md`: prospective source canonicalization and deterministic ordering specification.
 - `source_candidates_v1.jsonl`: post-registration candidate enumeration; every record remains pending and has no ordering key.
+- `source_preflight_v1.jsonl`: one access result, resolved URL, response digest, and retrieval timestamp for every candidate; it stores no source body text.
 
 The candidate file is not the frozen source frame. Eligibility, publication metadata, canonical URLs, and duplicate families must be verified before running the registered frame builder. Run `node --experimental-strip-types audit_ficcs_candidates.ts` from the repository root to confirm that no sampling order or eligibility decision has been created prematurely.
+
+Run `node --experimental-strip-types audit_ficcs_preflight.ts` to verify complete preflight coverage. A non-success response records an access-control or network observation from the automated client; it is not itself an eligibility decision. Such records require verification through an inspectable publisher page, archive, or metadata source before disposition.
 
 The existing observatory provides definitions and prior-known examples. Those materials are development inputs, not confirmatory FICCS observations.
