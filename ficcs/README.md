@@ -18,9 +18,14 @@ Protocol version `0.1.0`, dated 2026-09-27, is frozen in the [immutable `v0.6.0-
 - `source_eligibility_v1.jsonl`: screening audit trail, including reviewer identity, verification method, basis, and an explicit statement that no claim coding occurred.
 - `source_frame_v1.jsonl`: immutable, deterministically ordered source frame containing all eligible and excluded dispositions.
 - `SOURCE_FRAME_STATUS.json`: immutable release identity and verified local and release-asset digests.
+- `claim_selection_queue_v1.jsonl`: five complete round-robin passes over the frozen eligible frame; traversal continues until each stratum has 25 selected claims or a document is recorded as exhausted.
+- `claim_extraction.schema.json`: pre-coding schema that keeps verbatim claim selection separate from evidence decisions.
+- `claim_extractions_v1.jsonl`: source-located atomic claims selected so far; every record explicitly states that independent coding has not started.
 
 The candidate file is the pre-order disposition record and is not used directly for sampling. Run `node --experimental-strip-types audit_ficcs_candidates.ts` and `node --experimental-strip-types audit_ficcs_eligibility.ts` to verify complete dispositions and the 60-document minimum. Run `node --experimental-strip-types audit_ficcs_source_frame.ts` to independently recompute every registered order key and the frozen frame digest.
 
 Run `node --experimental-strip-types audit_ficcs_preflight.ts` to verify complete preflight coverage. A non-success response records an access-control or network observation from the automated client; it is not itself an eligibility decision. Such records require verification through an inspectable publisher page, archive, or metadata source before disposition.
+
+Run `node --experimental-strip-types audit_ficcs_claim_queue.ts` to verify round-robin traversal and `node --experimental-strip-types audit_ficcs_extractions.ts` to verify source-frame linkage, quotation limits, atomic-claim metadata, and the separation between selection and independent coding.
 
 The existing observatory provides definitions and prior-known examples. Those materials are development inputs, not confirmatory FICCS observations.

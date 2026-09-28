@@ -19,6 +19,7 @@ const manifest = json('registration/FICCS_REGISTRATION_MANIFEST_v0.6.0.json');
 const sourceFrameManifest = json('registration/FICCS_SOURCE_FRAME_MANIFEST_v0.6.1.json');
 const frozenFrameManifest = json('registration/FICCS_SOURCE_FRAME_FREEZE_MANIFEST_v0.7.0.json');
 const frozenFrameStatus = json('ficcs/SOURCE_FRAME_STATUS.json');
+const selectedClaims = read('ficcs/claim_extractions_v1.jsonl').split('\n').filter(Boolean).map((line) => JSON.parse(line));
 
 for (const phrase of [
   'at least 100 atomic claims',
@@ -64,6 +65,11 @@ assert.equal(frozenFrameManifest.freeze_state.eligible_source_documents, 60);
 assert.equal(frozenFrameManifest.freeze_state.corpus_claims, 0);
 assert.equal(frozenFrameManifest.freeze_state.independent_codings, 0);
 assert.equal(frozenFrameManifest.freeze_state.stress_test_predictions, 0);
+for (const frozen of frozenFrameManifest.files) {
+  assert.equal(sha256(readFileSync(resolve(folder, frozen.path))), frozen.sha256,
+    `frozen source-frame file changed: ${frozen.path}`);
+}
+assert(selectedClaims.every((record) => record.extraction_status.claim_coding_started === false));
 for (const path of ['ficcs/AMENDMENT_v0.6.1_SOURCE_FRAME.md', 'build_ficcs_source_frame.ts']) {
   const frozen = sourceFrameManifest.files.find((item: Record<string, any>) => item.path === path);
   assert(frozen, `source-frame amendment entry missing: ${path}`);
@@ -84,7 +90,8 @@ console.log(JSON.stringify({
   source_frame_release_url: frozenFrameStatus.release_url,
   eligible_source_documents: frozenFrameStatus.eligible_source_documents,
   source_frame_sha256: frozenFrameStatus.source_frame_sha256,
-  corpus_claims: 0,
+  selected_primary_claims: selectedClaims.length,
+  confirmatory_claims_ready: 0,
   independent_codings: 0,
   claim_schema_sha256: sha256(claimSchemaText),
   source_frame_schema_sha256: sha256(frameSchemaText),
