@@ -1,0 +1,31 @@
+{
+  "tag": "v0.6.1-ficcs-source-frame-amendment",
+  "parent_release": "v0.6.0-ficcs-preregistration",
+  "parent_packet_sha256": "680ee35324d44ae8f8f3eaa20f6cf42cfed0aceac511513c928da4c8f0d396c6",
+  "prospective_state": {
+    "source_frame_records": 0,
+    "corpus_claims": 0,
+    "independent_codings": 0,
+    "adjudicated_claims": 0,
+    "stress_test_predictions": 0
+  },
+  "registered_seed": "FICCS-v0.6.1-source-frame-order-2026-09-27",
+  "external_spend_usd": 0,
+  "files": [
+    {
+      "path": "ficcs/AMENDMENT_v0.6.1_SOURCE_FRAME.md",
+      "sha256": "d93090376b166d8780940b4a68abd71684208228c3df8a129b5a799e2c513a0b",
+      "bytes": 3108
+    },
+    {
+      "path": "build_ficcs_source_frame.ts",
+      "sha256": "a68118529808ef4306446bff020d2b32b0d6a89d05a200f9dc418d983d7517a6",
+      "bytes": 3563
+    },
+    {
+      "path": "ficcs/source_frame.schema.json",
+      "sha256": "e736bce214be609f1ad82ae48bea208d69ae2e4ead71eea9f198ab1473c5d213",
+      "bytes": 1256
+    }
+  ]
+}
