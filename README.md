@@ -8,7 +8,7 @@ Explore the audited provisional evidence at **[jcatster7.github.io/foreign-influ
 
 ## Current materials
 
-- [FICCS preregistration candidate and machine-readable schemas](ficcs/README.md), defining the prospective 100-claim policy study without treating development examples as results
+- [Immutable FICCS preregistration and machine-readable schemas](ficcs/README.md), defining the prospective 100-claim policy study without treating development examples as results
 - [Current observatory synthesis](OBSERVATORY_SYNTHESIS.md), aggregating the claim boundaries, cross-platform evidence, benchmark, replication, and recommended meta-study program
 - [Preregistration draft](PREREGISTRATION_DRAFT.md), [exact search protocol](SEARCH_PROTOCOL.md), and [extraction codebook](EXTRACTION_CODEBOOK.md)
 - [Source extractions](SOURCE_EXTRACTIONS.md), [provisional evidence map](EVIDENCE_MAP_SEED.csv), [edge map](EDGE_MAP_SEED.csv), and [machine-readable claim-evidence graph](CLAIM_EVIDENCE_GRAPH_PROVISIONAL.json)

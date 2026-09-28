@@ -7,13 +7,15 @@ import { fileURLToPath } from 'node:url';
 const folder = dirname(fileURLToPath(import.meta.url));
 const read = (path: string): string => readFileSync(resolve(folder, path), 'utf8');
 const json = (path: string): Record<string, any> => JSON.parse(read(path));
-const sha256 = (text: string): string => createHash('sha256').update(text).digest('hex');
+const sha256 = (text: string | Buffer): string => createHash('sha256').update(text).digest('hex');
 
 const protocol = read('ficcs/PREREGISTRATION.md');
 const claimSchemaText = read('ficcs/claim.schema.json');
 const frameSchemaText = read('ficcs/source_frame.schema.json');
 const claimSchema = json('ficcs/claim.schema.json');
 const frameSchema = json('ficcs/source_frame.schema.json');
+const registration = json('ficcs/REGISTRATION_STATUS.json');
+const manifest = json('registration/FICCS_REGISTRATION_MANIFEST_v0.6.0.json');
 
 for (const phrase of [
   'at least 100 atomic claims',
@@ -33,10 +35,23 @@ assert(claimSchema.$defs.edge.properties.status.enum.includes('proxy_only'));
 assert.equal(claimSchema.properties.source.properties.quote_word_count.maximum, 25);
 assert.deepEqual(frameSchema.properties.source_type.enum, ['research', 'platform', 'government', 'journalism']);
 assert(frameSchema.required.includes('duplicate_family_id'));
+assert.equal(registration.status, 'registered');
+assert.equal(registration.immutable, true);
+assert.equal(registration.tag, manifest.tag);
+assert.equal(registration.asset_sha256, sha256(readFileSync(resolve(folder, 'registration/FICCS_PREREGISTRATION_PACKET_v0.6.0.zip'))));
+assert.equal(manifest.prospective_state.source_frame_records, 0);
+assert.equal(manifest.prospective_state.corpus_claims, 0);
+assert.equal(manifest.prospective_state.independent_codings, 0);
+for (const path of ['ficcs/PREREGISTRATION.md', 'ficcs/claim.schema.json', 'ficcs/source_frame.schema.json', 'EXTRACTION_CODEBOOK.md']) {
+  const frozen = manifest.files.find((item: Record<string, any>) => item.path === path);
+  assert(frozen, `registered manifest entry missing: ${path}`);
+  assert.equal(sha256(readFileSync(resolve(folder, path))), frozen.sha256, `registered file changed: ${path}`);
+}
 
 console.log(JSON.stringify({
   status: 'passed',
-  protocol_status: 'candidate_not_registered',
+  protocol_status: 'registered_immutable',
+  release_url: registration.release_url,
   corpus_claims: 0,
   independent_codings: 0,
   claim_schema_sha256: sha256(claimSchemaText),

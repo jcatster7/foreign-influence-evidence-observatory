@@ -1,0 +1,17 @@
+{
+  "status": "registered",
+  "route": "public immutable GitHub release",
+  "release_url": "https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.6.0-ficcs-preregistration",
+  "tag": "v0.6.0-ficcs-preregistration",
+  "tag_commit_sha": "59c767d6689a4f299c62dccd8e092ee3a18a8b70",
+  "published_at_utc": "2026-09-28T00:50:08Z",
+  "immutable": true,
+  "asset_name": "FICCS_PREREGISTRATION_PACKET_v0.6.0.zip",
+  "asset_sha256": "680ee35324d44ae8f8f3eaa20f6cf42cfed0aceac511513c928da4c8f0d396c6",
+  "source_frame_records_before_release": 0,
+  "corpus_claims_before_release": 0,
+  "independent_codings_before_release": 0,
+  "adjudicated_claims_before_release": 0,
+  "stress_test_predictions_before_release": 0,
+  "external_spend_usd": 0
+}
