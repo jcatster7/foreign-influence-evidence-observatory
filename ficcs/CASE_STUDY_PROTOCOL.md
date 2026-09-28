@@ -27,6 +27,8 @@ For each case:
 
 Each audit will contain a human-readable report, machine-readable claim-chain JSON, evidence-source table, decision-difference table, and conformance report against `policy-disclosure.schema.json`. Reports remain `pending_independent_coding` until both reviewer files and adjudication are complete.
 
+After adjudication, run `build_ficcs_case_audits.ts --decisions=<adjudicated.jsonl>`. The builder refuses unvalidated inputs, requires all 16 decision rows per claim, embeds the final decision hash, and emits one report and one complete decision-trail JSON file per frozen case.
+
 ## Cross-case synthesis
 
 After all three audits pass, compare which constructs and links are supported, unknown, proxy-only, or contradicted. The synthesis may describe recurring mechanisms but may not calculate confirmatory corpus frequencies from these purposively selected cases.

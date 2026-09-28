@@ -7,10 +7,13 @@ from jsonschema import Draft202012Validator
 root = Path(__file__).resolve().parent
 label_path = root / 'ficcs/evidence-label.schema.json'
 policy_path = root / 'ficcs/policy-disclosure.schema.json'
+adjudication_path = root / 'ficcs/adjudication-resolution.schema.json'
 label = json.loads(label_path.read_text())
 policy = json.loads(policy_path.read_text())
+adjudication = json.loads(adjudication_path.read_text())
 Draft202012Validator.check_schema(label)
 Draft202012Validator.check_schema(policy)
+Draft202012Validator.check_schema(adjudication)
 registry = Registry().with_resource(label['$id'], Resource.from_contents(label)).with_resource('https://jcatster7.github.io/foreign-influence-evidence-observatory/schemas/evidence-label.schema.json', Resource.from_contents(label))
 registry = registry.with_resource((policy_path.parent / 'evidence-label.schema.json').as_uri(), Resource.from_contents(label))
 
@@ -37,4 +40,4 @@ text = (root/'ficcs/POLICY_STANDARD.md').read_text()
 for code in codes: assert f'| {code} |' in text
 for phrase in ('MUST NOT', '`unknown`', 'correction route', 'automatic_promotion_prohibited'):
   assert phrase in text
-print(json.dumps({'status':'passed','schemas':2,'constructs':8,'valid_record_accepted':True,'automatic_promotion_rejected':True,'unsupported_without_source_rejected':True,'empirical_findings_generated':False},indent=2))
+print(json.dumps({'status':'passed','schemas':3,'constructs':8,'valid_record_accepted':True,'automatic_promotion_rejected':True,'unsupported_without_source_rejected':True,'adjudication_schema_valid':True,'empirical_findings_generated':False},indent=2))

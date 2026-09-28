@@ -47,6 +47,10 @@
       "policy_schemas_valid": true,
       "automatic_promotion_rejected": true,
       "case_study_boundaries_frozen": 3,
+      "adjudication_pipeline_ready": true,
+      "descriptive_analysis_pipeline_ready": true,
+      "confirmatory_model_pipeline_ready": true,
+      "case_audit_builder_ready": true,
       "case_study_findings_ready": false,
       "final_standard_ready": false
     },

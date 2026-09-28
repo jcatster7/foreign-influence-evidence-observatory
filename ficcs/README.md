@@ -26,6 +26,7 @@ Protocol version `0.1.0`, dated 2026-09-27, is frozen in the [immutable `v0.6.0-
 - `POLICY_STANDARD.md` and `MODEL_POLICY_LANGUAGE.md`: prospective disclosure requirements and calibrated public-language templates.
 - `evidence-label.schema.json` and `policy-disclosure.schema.json`: reusable machine-readable evidence and policy records.
 - `CASE_STUDY_PROTOCOL.md` and `case_study_frame_v1.json`: coding-blind boundaries for the IRA, Doppelgänger, and Spamouflage demonstrations.
+- `adjudication-resolution.schema.json`, `finalize_ficcs_adjudication.ts`, and `analyze_ficcs_adjudicated.ts`: immutable disagreement resolution and confirmatory descriptive analysis.
 
 The frozen corpus now contains 100 claims, exactly 25 per source stratum. Reviewer A and Reviewer B workbooks are under `outputs/01a0bc0d-6825-7f03-a634-a1c583c931ed/`. Generate them with `make_ficcs_coding_packet.ts` and `make_ficcs_coding_workbooks.mjs`; verify them with `audit_ficcs_coding_packet.ts`. Returned workbooks must pass `import_ficcs_coding.py` before `compare_ficcs_codings.ts` calculates raw agreement, nominal Krippendorff alpha, and a disagreement queue.
 

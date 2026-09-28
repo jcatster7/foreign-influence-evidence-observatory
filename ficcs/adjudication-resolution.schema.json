@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jcatster7.github.io/foreign-influence-evidence-observatory/schemas/ficcs-adjudication-resolution-1.0.0.json",
+  "title": "FICCS disagreement resolution",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["row_key", "resolution", "adjudicator_id", "rationale", "decided_at_utc"],
+  "properties": {
+    "row_key": { "type": "string", "minLength": 1 },
+    "resolution": { "enum": ["reviewer_a", "reviewer_b", "third_decision"] },
+    "adjudicator_id": { "type": "string", "minLength": 1 },
+    "rationale": { "type": "string", "minLength": 1 },
+    "decided_at_utc": { "type": "string", "format": "date-time" },
+    "third_decision": { "type": ["object", "null"] }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "resolution": { "const": "third_decision" } }, "required": ["resolution"] },
+      "then": { "required": ["third_decision"], "properties": { "third_decision": { "type": "object" } } },
+      "else": { "properties": { "third_decision": { "type": "null" } } }
+    }
+  ]
+}
