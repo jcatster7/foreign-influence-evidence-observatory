@@ -8,6 +8,7 @@ Explore the audited provisional evidence at **[jcatster7.github.io/foreign-influ
 
 ## Current materials
 
+- [FICCS preregistration candidate and machine-readable schemas](ficcs/README.md), defining the prospective 100-claim policy study without treating development examples as results
 - [Current observatory synthesis](OBSERVATORY_SYNTHESIS.md), aggregating the claim boundaries, cross-platform evidence, benchmark, replication, and recommended meta-study program
 - [Preregistration draft](PREREGISTRATION_DRAFT.md), [exact search protocol](SEARCH_PROTOCOL.md), and [extraction codebook](EXTRACTION_CODEBOOK.md)
 - [Source extractions](SOURCE_EXTRACTIONS.md), [provisional evidence map](EVIDENCE_MAP_SEED.csv), [edge map](EDGE_MAP_SEED.csv), and [machine-readable claim-evidence graph](CLAIM_EVIDENCE_GRAPH_PROVISIONAL.json)
@@ -47,6 +48,7 @@ node --experimental-strip-types audit_observatory.ts
 node --experimental-strip-types prepare_screening_queue.ts
 node --experimental-strip-types audit_screening.ts
 node --experimental-strip-types audit_living_update.ts
+node --experimental-strip-types audit_ficcs.ts
 ```
 
 The scorer and component audits must pass. The integrated audit regenerates `OBSERVATORY_STATUS.json` and keeps acquisition completion distinct from final evidence-map completion. The screening audit defaults to the pre-registration queue and can also read a registered queue with `--queue=`, `--summary=`, and `--decisions=`. It always reports `ready_for_final_study_count: false`: an indexed screening check cannot certify supplemental source intake, independent-dataset merges, construct coding, or risk of bias. Search acquisition scripts use public Crossref and OpenAlex endpoints; consult `SEARCH_STATUS.md` before rerunning because the current keyless OpenAlex quota was exhausted. Source pages may change, so preserve dates, URLs, and response hashes.

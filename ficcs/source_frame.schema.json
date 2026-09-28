@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jcatster7.github.io/foreign-influence-evidence-observatory/schemas/ficcs-source-frame-0.1.0.json",
+  "title": "FICCS source-frame record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["document_id", "source_type", "canonical_url", "title", "author_or_institution", "published_date", "discovered_by", "eligibility_status", "duplicate_family_id"],
+  "properties": {
+    "document_id": { "type": "string", "pattern": "^ficcs_doc_[a-z0-9_]+$" },
+    "source_type": { "enum": ["research", "platform", "government", "journalism"] },
+    "canonical_url": { "type": "string", "format": "uri", "pattern": "^https://" },
+    "title": { "type": "string", "minLength": 1 },
+    "author_or_institution": { "type": "string", "minLength": 1 },
+    "published_date": { "type": "string", "format": "date" },
+    "discovered_by": { "type": "string", "minLength": 1 },
+    "eligibility_status": { "enum": ["pending", "eligible", "excluded", "inaccessible"] },
+    "exclusion_reason": { "type": ["string", "null"] },
+    "duplicate_family_id": { "type": "string", "minLength": 1 },
+    "frozen_order_key": { "type": ["string", "null"], "pattern": "^[a-f0-9]{64}$" }
+  }
+}

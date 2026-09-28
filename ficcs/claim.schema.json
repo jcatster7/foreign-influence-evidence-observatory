@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jcatster7.github.io/foreign-influence-evidence-observatory/schemas/ficcs-claim-0.1.0.json",
+  "title": "FICCS atomic public claim",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["claim_id", "claim_family_id", "corpus_role", "source", "claim", "constructs", "edges", "evidence_items", "institutional_consequences", "coding_status"],
+  "properties": {
+    "claim_id": { "type": "string", "pattern": "^ficcs_[a-z0-9_]+$" },
+    "claim_family_id": { "type": "string", "minLength": 1 },
+    "corpus_role": { "enum": ["primary", "development_only", "supplemental"] },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["document_id", "source_type", "title", "author_or_institution", "published_date", "retrieved_at_utc", "canonical_url", "locator", "quote_word_count"],
+      "properties": {
+        "document_id": { "type": "string", "minLength": 1 },
+        "source_type": { "enum": ["research", "platform", "government", "journalism"] },
+        "title": { "type": "string", "minLength": 1 },
+        "author_or_institution": { "type": "string", "minLength": 1 },
+        "published_date": { "type": "string", "format": "date" },
+        "retrieved_at_utc": { "type": "string", "format": "date-time" },
+        "canonical_url": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "locator": { "type": "string", "minLength": 1 },
+        "source_sha256": { "type": ["string", "null"], "pattern": "^[a-f0-9]{64}$" },
+        "archive_url": { "type": ["string", "null"], "format": "uri" },
+        "quote_word_count": { "type": "integer", "minimum": 0, "maximum": 25 }
+      }
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["verbatim_excerpt", "paraphrase", "subject", "unit", "platform", "period", "asserted_constructs"],
+      "properties": {
+        "verbatim_excerpt": { "type": "string", "maxLength": 500 },
+        "paraphrase": { "type": "string", "minLength": 1 },
+        "subject": { "type": "string", "minLength": 1 },
+        "unit": { "enum": ["account", "group", "campaign", "content", "feed", "audience", "platform", "other"] },
+        "platform": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+        "period": { "type": "string", "minLength": 1 },
+        "asserted_constructs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "enum": ["O", "P", "A", "C", "D", "E", "R", "I"] } }
+      }
+    },
+    "constructs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["O", "P", "A", "C", "D", "E", "R", "I"],
+      "properties": {
+        "O": { "$ref": "#/$defs/constructDecision" }, "P": { "$ref": "#/$defs/constructDecision" },
+        "A": { "$ref": "#/$defs/constructDecision" }, "C": { "$ref": "#/$defs/constructDecision" },
+        "D": { "$ref": "#/$defs/constructDecision" }, "E": { "$ref": "#/$defs/constructDecision" },
+        "R": { "$ref": "#/$defs/constructDecision" }, "I": { "$ref": "#/$defs/constructDecision" }
+      }
+    },
+    "edges": { "type": "array", "items": { "$ref": "#/$defs/edge" } },
+    "evidence_items": { "type": "array", "items": { "$ref": "#/$defs/evidenceItem" } },
+    "institutional_consequences": {
+      "type": "array", "uniqueItems": true,
+      "items": { "enum": ["none_descriptive", "account_enforcement", "content_enforcement", "public_attribution", "sanctions_or_diplomacy", "legislation_or_regulation", "resource_allocation", "public_warning", "other"] }
+    },
+    "coding_status": {
+      "type": "object", "additionalProperties": false,
+      "required": ["reviewer_a_complete", "reviewer_b_complete", "adjudicated"],
+      "properties": {
+        "reviewer_a_complete": { "type": "boolean" },
+        "reviewer_b_complete": { "type": "boolean" },
+        "adjudicated": { "type": "boolean" }
+      }
+    }
+  },
+  "$defs": {
+    "constructDecision": {
+      "type": "object", "additionalProperties": false,
+      "required": ["asserted", "decision", "evidence_stage", "locator", "rationale", "confidence"],
+      "properties": {
+        "asserted": { "type": "boolean" },
+        "decision": { "enum": ["supported", "contradicted", "unknown"] },
+        "evidence_stage": { "enum": ["direct", "proxy", "platform_disclosure", "measurement_validation", "unknown"] },
+        "locator": { "type": ["string", "null"] },
+        "rationale": { "type": "string", "minLength": 1 },
+        "confidence": { "enum": ["high", "moderate", "low"] }
+      }
+    },
+    "edge": {
+      "type": "object", "additionalProperties": false,
+      "required": ["from", "to", "asserted", "status", "rationale"],
+      "properties": {
+        "from": { "enum": ["O", "P", "A", "C", "D", "E", "R", "I", "engagement", "displayed_location", "bot_score"] },
+        "to": { "enum": ["O", "P", "A", "C", "D", "E", "R", "I"] },
+        "asserted": { "type": "boolean" },
+        "status": { "enum": ["supported_link", "measured_association", "proxy_only", "untested", "contradicted_link"] },
+        "rationale": { "type": "string", "minLength": 1 }
+      }
+    },
+    "evidenceItem": {
+      "type": "object", "additionalProperties": false,
+      "required": ["evidence_id", "relationship", "url", "locator", "evidence_dataset_id"],
+      "properties": {
+        "evidence_id": { "type": "string", "minLength": 1 },
+        "relationship": { "enum": ["source_supplies", "source_cites", "source_repeats"] },
+        "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "locator": { "type": "string", "minLength": 1 },
+        "evidence_dataset_id": { "type": ["string", "null"] }
+      }
+    }
+  }
+}
