@@ -16,6 +16,7 @@ const claimSchema = json('ficcs/claim.schema.json');
 const frameSchema = json('ficcs/source_frame.schema.json');
 const registration = json('ficcs/REGISTRATION_STATUS.json');
 const manifest = json('registration/FICCS_REGISTRATION_MANIFEST_v0.6.0.json');
+const sourceFrameManifest = json('registration/FICCS_SOURCE_FRAME_MANIFEST_v0.6.1.json');
 
 for (const phrase of [
   'at least 100 atomic claims',
@@ -42,6 +43,18 @@ assert.equal(registration.asset_sha256, sha256(readFileSync(resolve(folder, 'reg
 assert.equal(manifest.prospective_state.source_frame_records, 0);
 assert.equal(manifest.prospective_state.corpus_claims, 0);
 assert.equal(manifest.prospective_state.independent_codings, 0);
+assert.equal(registration.source_frame_amendment.immutable, true);
+assert.equal(registration.source_frame_amendment.tag, sourceFrameManifest.tag);
+assert.equal(registration.source_frame_amendment.registered_seed, sourceFrameManifest.registered_seed);
+assert.equal(registration.source_frame_amendment.asset_sha256,
+  sha256(readFileSync(resolve(folder, 'registration/FICCS_SOURCE_FRAME_PACKET_v0.6.1.zip'))));
+assert.equal(sourceFrameManifest.prospective_state.source_frame_records, 0);
+assert.equal(sourceFrameManifest.prospective_state.corpus_claims, 0);
+for (const path of ['ficcs/AMENDMENT_v0.6.1_SOURCE_FRAME.md', 'build_ficcs_source_frame.ts']) {
+  const frozen = sourceFrameManifest.files.find((item: Record<string, any>) => item.path === path);
+  assert(frozen, `source-frame amendment entry missing: ${path}`);
+  assert.equal(sha256(readFileSync(resolve(folder, path))), frozen.sha256, `registered amendment file changed: ${path}`);
+}
 for (const path of ['ficcs/PREREGISTRATION.md', 'ficcs/claim.schema.json', 'ficcs/source_frame.schema.json', 'EXTRACTION_CODEBOOK.md']) {
   const frozen = manifest.files.find((item: Record<string, any>) => item.path === path);
   assert(frozen, `registered manifest entry missing: ${path}`);
@@ -52,6 +65,7 @@ console.log(JSON.stringify({
   status: 'passed',
   protocol_status: 'registered_immutable',
   release_url: registration.release_url,
+  source_frame_amendment_url: registration.source_frame_amendment.release_url,
   corpus_claims: 0,
   independent_codings: 0,
   claim_schema_sha256: sha256(claimSchemaText),

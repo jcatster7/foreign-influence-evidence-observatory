@@ -13,5 +13,18 @@
   "independent_codings_before_release": 0,
   "adjudicated_claims_before_release": 0,
   "stress_test_predictions_before_release": 0,
-  "external_spend_usd": 0
+  "external_spend_usd": 0,
+  "source_frame_amendment": {
+    "status": "registered",
+    "release_url": "https://github.com/jcatster7/foreign-influence-evidence-observatory/releases/tag/v0.6.1-ficcs-source-frame-amendment",
+    "tag": "v0.6.1-ficcs-source-frame-amendment",
+    "tag_commit_sha": "bcf84a7d4548b7f7f9ab073e0ac4c55dbdfc7669",
+    "published_at_utc": "2026-09-28T00:52:20Z",
+    "immutable": true,
+    "asset_name": "FICCS_SOURCE_FRAME_PACKET_v0.6.1.zip",
+    "asset_sha256": "db4fc610790d995686fd3d21c2e42a56925746c0d4eebc7a1a620130589d1c5a",
+    "registered_seed": "FICCS-v0.6.1-source-frame-order-2026-09-27",
+    "source_frame_records_before_release": 0,
+    "corpus_claims_before_release": 0
+  }
 }
